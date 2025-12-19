@@ -1,16 +1,16 @@
 [
   {
     "id": "strength",
-    "title": "Strength,STR", 
+    "title": "", 
     "shape": "clock",
     "clock": {
       "type": "str",
       "faces": 1,
       "floatingInputs": [
         {
-          "id": "blah",
-          "position": [30, 55],
-          "size": [70, 20]
+          "id": "str",
+          "position": [75, 35],
+          "size": [50, 20]
         }
       ]
     }
