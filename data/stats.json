@@ -9,8 +9,13 @@
       "floatingInputs": [
         {
           "id": "str",
-          "position": [75, 35],
-          "size": [50, 20]
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "strmod",
+          "position": [19, 95],
+          "size": [40, 25]
         }
       ]
     }
