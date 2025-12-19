@@ -1,0 +1,13 @@
+[
+  {
+    "id": "t1",
+    "title": "Placeholder",
+    "description": "This is a placeholder move.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "This move does nothing and is a placeholder for future development."
+      }
+    ]
+  }
+]
