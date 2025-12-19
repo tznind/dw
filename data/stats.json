@@ -5,7 +5,7 @@
     "shape": "clock",
     "clock": {
       "type": "str",
-      "faces": 2
+      "faces": 1
     }
   },
   {
