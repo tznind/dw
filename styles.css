@@ -53,6 +53,21 @@ label {
   box-sizing: border-box;
 }
 
+/* === LOOK FIELD === */
+.basic-info .form-field:has(label[for="look"]) {
+  grid-column: 1 / -1; /* Span all columns */
+}
+
+.form-field label[for="look"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-field input#look {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* === COMBAT AND PROGRESSION STATS === */
 .all-stats {
   display: flex;
