@@ -243,15 +243,46 @@
     "title": "Undertake A Perilous Journey",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you **travel through hostile territory**, choose one member of the party to act as trailblazer, one to scout ahead, and one to be quartermaster (the same character cannot have two jobs). If you don't have enough party members or choose not to assign a job, treat that job as if it had rolled a 6. Each character with a job to do rolls+Wis.",
-    "outcomes": [
+    "description": "When you **travel through hostile territory**, choose one member of the party to act as trailblazer, one to scout ahead, and one to be quartermaster (the same character cannot have two jobs). If you don't have enough party members or choose not to assign a job, treat that job as if it had rolled a 6.",
+    "submoves": [
       {
-        "range": "≥ 10",
-        "text": "Quartermaster: reduce the number of rations required by one. Trailblazer: reduce the amount of time it takes to reach your destination (the GM will say by how much). Scout: spot any trouble quick enough to let you get the drop on it."
+        "title": "Trailblazer (+Wis)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "You reduce the amount of time it takes to reach your destination (the GM will say by how much)."
+          },
+          {
+            "range": "7–9",
+            "text": "The journey takes about as long as expected."
+          }
+        ]
       },
       {
-        "range": "7–9",
-        "text": "Each role performs their job as expected: the normal number of rations are consumed, the journey takes about as long as expected, no one gets the drop on you but you don't get the drop on them either."
+        "title": "Scout (+Wis)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "You spot any trouble quick enough to let your party get the drop on it."
+          },
+          {
+            "range": "7–9",
+            "text": "You perform your job as expected: no one gets the drop on you but you don't get the drop on them either."
+          }
+        ]
+      },
+      {
+        "title": "Quartermaster (+Wis)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "You reduce the number of rations required by one."
+          },
+          {
+            "range": "7–9",
+            "text": "The normal number of rations are consumed."
+          }
+        ]
       }
     ]
   },
@@ -260,33 +291,23 @@
     "title": "Level Up",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you have downtime (hours or days) and XP equal to (or greater than) your current level+7, subtract your current level +7 from your XP, increase your level by 1, and choose a new advanced move from your class. If you are the wizard, you also get to add a new spell to your spellbook. Choose one of your stats and increase it by 1 (this may change your modifier). Note that changing your Constitution increases your maximum and current HP. Ability scores can't go higher than 18.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "Subtract level+7 from XP, increase level by 1, choose a new advanced move, increase one stat by 1 (max 18)."
-      }
-    ]
+    "description": "When you have **downtime (hours or days) and XP equal to (or greater than) your current level+7**, subtract your current level +7 from your XP, increase your level by 1, and choose a new advanced move from your class. If you are the wizard, you also get to add a new spell to your spellbook. Choose one of your stats and increase it by 1 (this may change your modifier). Note that changing your Constitution increases your maximum and current HP. Ability scores can't go higher than 18."
   },
   {
     "id": "sm7",
     "title": "End Of Session",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you reach the end of a session, choose one your bonds that you feel is resolved (completely explored, no longer relevant, or otherwise). Ask the player of the character you have the bond with if they agree. If they do, mark XP and write a new bond with whomever you wish.\n\nOnce bonds have been updated look at your alignment. If you fulfilled that alignment at least once this session, mark XP. Then answer these three questions as a group:",
+    "description": "When you **reach the end of a session**, choose one your bonds that you feel is resolved (completely explored, no longer relevant, or otherwise). Ask the player of the character you have the bond with if they agree. If they do, mark XP and write a new bond with whomever you wish.\n\nOnce bonds have been updated look at your alignment. If you fulfilled that alignment at least once this session, mark XP. Then answer these three questions as a group:",
     "outcomes": [
       {
         "range": "",
-        "text": "Resolve a bond (if agreed): mark XP and write a new bond. Fulfilled alignment: mark XP. Then answer as a group:",
+        "text": "For each \"yes\" answer everyone marks XP.",
         "bullets": [
           "Did we learn something new and important about the world?",
           "Did we overcome a notable monster or enemy?",
           "Did we loot a memorable treasure?"
         ]
-      },
-      {
-        "range": "",
-        "text": "For each \"yes\" answer everyone marks XP."
       }
     ]
   },
@@ -295,7 +316,7 @@
     "title": "Carouse",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you return triumphant and throw a big party, spend 100 coin and roll + extra 100s of coin spent.",
+    "description": "When you **return triumphant and throw a big party**, spend 100 coin and roll + extra 100s of coin spent.",
     "outcomes": [
       {
         "range": "≥ 10",
@@ -322,7 +343,7 @@
     "title": "Supply (+Cha)",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you go to buy something with money on hand, if it's something readily available in the settlement you're in, you can buy it at market price. If it's something special, beyond what's usually available here, or non-mundane, roll+Cha.",
+    "description": "When you go to **buy something with money on hand**, if it's something readily available in the settlement you're in, you can buy it at market price. If it's something special, beyond what's usually available here, or non-mundane, roll+Cha.",
     "outcomes": [
       {
         "range": "≥ 10",
@@ -339,7 +360,7 @@
     "title": "Recover",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you do nothing but rest in comfort and safety after a day of rest you recover all your HP. After three days of rest you remove one debility of your choice. If you're under the care of a healer (magical or otherwise) you heal a debility for every two days of rest instead.",
+    "description": "When you **do nothing but rest in comfort and safety** after a day of rest you recover all your HP. After three days of rest you remove one debility of your choice. If you're under the care of a healer (magical or otherwise) you heal a debility for every two days of rest instead.",
     "outcomes": [
       {
         "range": "",
@@ -352,7 +373,7 @@
     "title": "Recruit",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you put out word that you're looking to hire help, roll. If you make it known...\n- ...that your pay is generous, take +1\n- ...what you're setting out to do, take +1\n- ...that they'll get a share of whatever you find, take +1\n\nIf you have a useful reputation around these parts take an additional +1.",
+    "description": "When you **put out word that you're looking to hire help**, roll. If you make it known...\n- ...that your pay is generous, take +1\n- ...what you're setting out to do, take +1\n- ...that they'll get a share of whatever you find, take +1\n\nIf you have a useful reputation around these parts take an additional +1.",
     "outcomes": [
       {
         "range": "≥ 10",
@@ -373,7 +394,7 @@
     "title": "Outstanding Warrants (+Cha)",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you return to a civilized place in which you've caused trouble before, roll+Cha. On a hit, word has spread of your deeds and everyone recognizes you.",
+    "description": "When you **return to a civilized place in which you've caused trouble before**, roll+Cha. On a hit, word has spread of your deeds and everyone recognizes you.",
     "outcomes": [
       {
         "range": "≥ 10",
@@ -381,7 +402,7 @@
       },
       {
         "range": "7–9",
-        "text": "Word has spread and everyone recognizes you, and the GM chooses a complication:",
+        "text": "As above, but the GM chooses a complication:",
         "bullets": [
           "The local constabulary has a warrant out for your arrest",
           "Someone has put a price on your head",
@@ -395,7 +416,13 @@
     "title": "Bolster",
     "category": "Special Moves",
     "hideCheckbox": true,
-    "description": "When you spend your leisure time in study, meditation, or hard practice, you gain preparation. If you prepare for a week or two, 1 preparation. If you prepare for a month or longer, 3 preparation. When your preparation pays off spend 1 preparation for +1 to any roll. You can only spend one preparation per roll.",
+    "description": "When you **spend your leisure time in study, meditation, or hard practice**, you gain preparation. If you prepare for a week or two, 1 preparation. If you prepare for a month or longer, 3 preparation. When your preparation pays off spend 1 preparation for +1 to any roll. You can only spend one preparation per roll.",
+    "tracks": [
+    {
+      "name": "Preparation",
+      "max": 3
+    }
+    ],
     "outcomes": [
       {
         "range": "",
