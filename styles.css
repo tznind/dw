@@ -673,7 +673,7 @@ button:focus {
 
 /* Push clock containers down to align with hexagons and squares */
 .hex-container:has(.stat-clock) {
-  margin-top: 5px;
+  margin-top: -40px;
 }
 
 .hex-input-wrapper {
@@ -1083,7 +1083,6 @@ input.clock-floating-input:focus {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
   flex-wrap: wrap;
   margin: 20px 0;
 }
@@ -1871,10 +1870,7 @@ hr {
   .role-controls {
     gap: 10px;
   }
-  
-  .hex-row {
-    gap: 20px;
-  }
+
   
   .hex-input-wrapper {
     width: 100px;
@@ -1894,7 +1890,7 @@ hr {
   }
   
   .hex-container:has(.stat-clock) {
-    margin-top: 4px;
+    margin-top: -50px;
   }
 
   /* Scale clock wrapper to maintain floating input positions - ratio 110/130 = 0.846 */
@@ -1963,11 +1959,6 @@ hr {
     margin-bottom: 15px;
   }
   
-  /* Compress hex layout */
-  .hex-row {
-    gap: 15px;
-  }
-  
   .hex-input-wrapper {
     width: 85px;
   }
@@ -1986,7 +1977,7 @@ hr {
   }
   
   .hex-container:has(.stat-clock) {
-    margin-top: 3px;
+    margin-top: -50px;
   }
   
   .hex-title {
