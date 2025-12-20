@@ -43,7 +43,7 @@
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "description": "Universal moves available to all characters.",
-    "cards": ["common"],
+    "cards": [],
     "bm1": true,
     "bm2": true,
     "bm3": true,
