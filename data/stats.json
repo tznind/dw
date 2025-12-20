@@ -14,7 +14,7 @@
         },
         {
           "id": "strmod",
-          "position": [19, 95],
+          "position": [12, 93],
           "size": [40, 25]
         }
       ]
@@ -22,62 +22,107 @@
   },
   {
     "id": "dexterity",
-    "title": "Dexterity,DEX",
-    "shape": "double-up",
-    "tracks": [
-      {
-        "endLabel": "Shaky (-1)",
-        "max": 1,
-        "shape": "square"
-      }
-    ]
+    "title": "", 
+    "shape": "clock",
+    "clock": {
+      "type": "dex",
+      "faces": 1,
+      "floatingInputs": [
+        {
+          "id": "dex",
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "dexmod",
+          "position": [12, 93],
+          "size": [40, 25]
+        }
+      ]
+    }
   },
   {
     "id": "constitution",
-    "title": "Constitution,CON",
-    "shape": "double-up",
-    "tracks": [
-      {
-        "endLabel": "Sick (-1)",
-        "max": 1,
-        "shape": "square"
-      }
-    ]
+    "title": "", 
+    "shape": "clock",
+    "clock": {
+      "type": "cons",
+      "faces": 1,
+      "floatingInputs": [
+        {
+          "id": "con",
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "conmod",
+          "position": [12, 93],
+          "size": [40, 25]
+        }
+      ]
+    }
   },
   {
     "id": "intelligence",
-    "title": "Intelligence,INT",
-    "shape": "double-up",
-    "tracks": [
-      {
-        "endLabel": "Stunned (-1)",
-        "max": 1,
-        "shape": "square"
-      }
-    ]
+    "title": "", 
+    "shape": "clock",
+    "clock": {
+      "type": "int",
+      "faces": 1,
+      "floatingInputs": [
+        {
+          "id": "int",
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "intmod",
+          "position": [12, 93],
+          "size": [40, 25]
+        }
+      ]
+    }
   },
   {
     "id": "wisdom",
-    "title": "Wisdom,WIS",
-    "shape": "double-up",
-    "tracks": [
-      {
-        "endLabel": "Confused (-1)",
-        "max": 1,
-        "shape": "square"
-      }
-    ]
+    "title": "", 
+    "shape": "clock",
+    "clock": {
+      "type": "wis",
+      "faces": 1,
+      "floatingInputs": [
+        {
+          "id": "wis",
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "wismod",
+          "position": [12, 93],
+          "size": [40, 25]
+        }
+      ]
+    }
   },
   {
     "id": "charisma",
-    "title": "Charisma,CHA",
-    "shape": "double-up",
-    "tracks": [
-      {
-        "endLabel": "Scarred (-1)",
-        "max": 1,
-        "shape": "square"
-      }
-    ]
+    "title": "", 
+    "shape": "clock",
+    "clock": {
+      "type": "cha",
+      "faces": 1,
+      "floatingInputs": [
+        {
+          "id": "cha",
+          "position": [75, 31],
+          "size": [48, 30]
+        },
+        {
+          "id": "chamod",
+          "position": [12, 93],
+          "size": [40, 25]
+        }
+      ]
+    }
   }
 ]
