@@ -53,6 +53,26 @@
     "_movesFile": "data/moves/everyone.json",
     "description": "Universal moves available to all characters.",
     "cards": ["common"],
-    "universal": true
+    "bm1": true,
+    "bm2": true,
+    "bm3": true,
+    "bm4": true,
+    "bm5": true,
+    "bm6": true,
+    "bm7": true,
+    "bm8": true,
+    "sm1": true,
+    "sm2": true,
+    "sm3": true,
+    "sm4": true,
+    "sm5": true,
+    "sm6": true,
+    "sm7": true,
+    "sm8": true,
+    "sm9": true,
+    "sm10": true,
+    "sm11": true,
+    "sm12": true,
+    "sm13": true
   }
 }
