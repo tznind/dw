@@ -1,8 +1,14 @@
 {
   "Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
-    "cards": [],
-    "ba": true
+    "cards": ["bonds"],
+    "ba": true,
+    "default-bonds": [
+      "X is puny and foolish, but amusing to me.",
+      "X's ways are strange and confusing.",
+      "X is always getting into trouble - I must protect them from themselves.",
+      "X shares my hunger for glory; the earth will tremble at our passing!"
+    ]
   },
   "Bard": {
     "_movesFile": "data/moves/bard.json",

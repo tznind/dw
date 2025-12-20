@@ -1,0 +1,13 @@
+{
+  "id": "bonds",
+  "title": "Bonds",
+  "path": "data/cards/bonds",
+  "description": "Your relationships with other party members",
+  "version": "1.0.0",
+  "author": "Dungeon World",
+  "files": {
+    "html": "card.html",
+    "css": "card.css",
+    "js": "card.js"
+  }
+}
