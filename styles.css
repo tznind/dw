@@ -1871,6 +1871,10 @@ hr {
     gap: 10px;
   }
 
+  .hex-container:has(.stat-clock) {
+    margin-top: -10px;
+  }
+
   .move {
     padding: 15px;
   }
@@ -1929,6 +1933,10 @@ hr {
   .move {
     padding: 12px 8px;
     margin-bottom: 15px;
+  }
+
+  .hex-container:has(.stat-clock) {
+    margin-top: 0px;
   }
 
   /* Reduce various section margins */
