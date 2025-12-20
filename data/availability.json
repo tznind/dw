@@ -4,10 +4,10 @@
     "cards": ["bonds"],
     "ba": true,
     "default-bonds": [
-      "X is puny and foolish, but amusing to me.",
-      "X's ways are strange and confusing.",
-      "X is always getting into trouble - I must protect them from themselves.",
-      "X shares my hunger for glory; the earth will tremble at our passing!"
+      "________ is puny and foolish, but amusing to me.",
+      "________'s ways are strange and confusing.",
+      "________ is always getting into trouble - I must protect them from themselves.",
+      "________ shares my hunger for glory; the earth will tremble at our passing!"
     ]
   },
   "Bard": {
