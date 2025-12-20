@@ -1,7 +1,7 @@
 # DW
 This is a [Dungeon World](https://www.dungeon-world.com/) implementation of [PbtA-style](https://en.wikipedia.org/wiki/Powered_by_the_Apocalypse?utm_source=chatgpt.com) character sheets.
 
-It is online at https://tznind.github.io/st/dw.html
+It is online at https://tznind.github.io/dw/cs.html
 
 
 ## Live Character Sheet
