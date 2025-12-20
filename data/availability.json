@@ -1,52 +1,43 @@
 {
   "Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
-    "description": "A fierce warrior from the wild lands, drawing strength from primal rage.",
-    "cards": []
+    "cards": [],
+    "ba": true
   },
   "Bard": {
     "_movesFile": "data/moves/bard.json",
-    "description": "A charismatic performer who weaves magic through music and tale.",
     "cards": []
   },
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
-    "description": "A devoted servant of a deity, wielding divine magic and faith.",
     "cards": []
   },
   "Druid": {
     "_movesFile": "data/moves/druid.json",
-    "description": "A guardian of nature who can shapeshift into beasts.",
     "cards": []
   },
   "Fighter": {
     "_movesFile": "data/moves/fighter.json",
-    "description": "A master of arms and armor, trained in the art of combat.",
     "cards": []
   },
   "Immolator": {
     "_movesFile": "data/moves/immolator.json",
-    "description": "A wielder of elemental fire, burning with destructive power.",
     "cards": []
   },
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
-    "description": "A holy warrior sworn to uphold justice and defend the innocent.",
     "cards": []
   },
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
-    "description": "A skilled tracker and hunter who thrives in the wilderness.",
     "cards": []
   },
   "Thief": {
     "_movesFile": "data/moves/thief.json",
-    "description": "A nimble rogue skilled in stealth, trickery, and trap-finding.",
     "cards": []
   },
   "Wizard": {
     "_movesFile": "data/moves/wizard.json",
-    "description": "A master of arcane magic who studies ancient spells and rituals.",
     "cards": []
   },
   "Everyone": {

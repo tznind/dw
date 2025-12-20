@@ -1,5 +1,18 @@
 [
   {
+    "id": "ba",
+    "hideCheckbox": true,
+    "title":"",
+    "category": "Alignment",
+    "pickOne": [
+      "**Chaotic** - Eschew a convention of the civilized world.",
+      "**Neutral** - Teach someone the ways of your people.",
+      "Other - Describe below"
+    ],
+    "details": true
+
+  },
+  {
     "id": "b1",
     "title": "Placeholder",
     "description": "This is a placeholder move.",

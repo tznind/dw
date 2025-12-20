@@ -49,11 +49,10 @@
            - Wildcard for all roles: data-roles="*"
            - No attribute: shows all roles (same as *) -->
       <div class="role-controls">
-        <label for="role">Origin:</label>
+        <label for="role">Class:</label>
         <select id="role" name="role" data-roles="*">
           <option value="">Select origin...</option>
-        </select>
-        <button type="button" id="role-help-button" class="help-icon" title="Show role description">?</button>
+        </select>       
   <!--
         <label for="role2">Career:</label>
         <select id="role2" name="role2" data-roles="*">
@@ -73,6 +72,33 @@
     <hr>
     <div id="stats-container"></div>
     <hr>
+
+    
+      <!-- Combat and Progression Stats -->
+      <div class="all-stats">
+        <label for="damage">
+          Damage
+          <input type="text" id="damage" name="damage">
+        </label>
+        <label for="hp">
+          HP
+          <input type="text" id="hp" name="hp">
+        </label>
+        <label for="armor">
+          Armor
+          <input type="text" id="armor" name="armor">
+        </label>
+        
+        <label for="xp">
+          XP
+          <input type="text" id="xp" name="xp">
+        </label>
+        
+        <label for="level">
+          Level
+          <input type="text" id="level" name="level">
+        </label>
+      </div>
     
     <!-- UI Control -->
     <div class="ui-control">
