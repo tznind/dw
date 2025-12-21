@@ -2,11 +2,17 @@
   <h3 class="card-title">🤝 Bonds</h3>
   <div class="card-content">
     <p class="bonds-instruction">Fill in the name of one of your companions in at least one:</p>
-    <div id="bonds-list" class="bonds-list">
-      <!-- Bonds will be dynamically added here -->
-    </div>
+    <table id="bonds" data-dynamic-table data-table-max="20">
+      <thead>
+        <tr>
+          <th data-field="bond">Bonds</th>
+          <th></th> <!-- Empty header for delete button column -->
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
     <div class="bonds-buttons">
-      <button type="button" id="add-bond-btn" class="add-bond-btn">+ Add Bond</button>
+      <button type="button" data-table-add="bonds" class="add-bond-btn">+ Add Bond</button>
       <button type="button" id="load-default-bonds-btn" class="load-default-bonds-btn">Load Defaults</button>
     </div>
   </div>
