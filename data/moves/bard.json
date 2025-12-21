@@ -27,13 +27,45 @@
   },
   {
     "id": "a1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
+    "category": "Starting Moves",
+    "title": "Arcane Art (+CHA)",
+    "description": "When you **weave a performance into a basic spell**, choose an ally and an effect:\n- Heal 1d8 damage\n- +1d4 forward to damage\n- Their mind is shaken clear of one enchantment\n- The next time someone successfully assists the target with aid, they get +2 instead of +1\n\nThen roll+CHA.",
     "outcomes": [
       {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
+        "range": "≥ 10",
+        "text": "The ally gets the selected effect."
+      },
+      {
+        "range": "7-9",
+        "text": "Your spell still works, but you draw unwanted attention or your magic reverberates to other targets affecting them as well, GM's choice."
       }
     ]
+  },
+  {
+    "id": "a2",
+    "category": "Starting Moves",
+    "title": "Charming & Open",
+    "description": "When you **speak frankly with someone**, you can ask their player a question from the list below. They must answer it truthfully, then they may ask you a question from the list (which you must answer truthfully).\n- Whom do you serve?\n- What do you wish I would do?\n- How can I get you to _______?\n- What are you really feeling right now?\n- What do you most desire?"
+  },
+  {
+    "id": "a3",
+    "category": "Starting Moves",
+    "title": "Bardic Lore",
+    "description": "Choose an area of expertise:\n\nWhen you **first encounter an important creature, location, or item** (your call) covered by your bardic lore you can ask the GM any one question about it; the GM will answer truthfully. The GM may then ask you what tale, song, or legend you heard that information in.",
+    "pickOne": [
+      "Spells and Magicks",
+      "The Dead and Undead",
+      "Grand Histories of the Known World",
+      "A Bestiary of Creatures Unusual",
+      "The Planar Spheres",
+      "Legends of Heroes Past",
+      "Gods and Their Servants"
+    ]
+  },
+  {
+    "id": "a4",
+    "category": "Starting Moves",
+    "title": "A Port In The Storm",
+    "description": "When you **return to a civilized settlement you've visited before**, tell the GM when you were last here. They'll tell you how it's changed since then."
   }
 ]

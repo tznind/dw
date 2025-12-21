@@ -48,7 +48,11 @@
       "________ does not trust me, and for good reason"
     ],
     "aa": true,
-    "ar": true
+    "ar": true,
+    "a1": true,
+    "a2": true,
+    "a3": true,
+    "a4": true
   },
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
