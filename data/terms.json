@@ -1,7 +1,15 @@
 [
   {
-    "term":"+1 forward",
-    "description":"Your next roll gets a +1 bonus."
+    "term":"Debility",
+    "description":"Losing HP is a general thing, it's getting tired, bruised, cut, and so on. Some wounds are deeper though. These are debilities. \n- Weak (STR): You can't exert much force. Maybe it's just fatigue and injury, or maybe your strength was drained by magic.\n- Shaky (DEX): You're unsteady on your feet and you've got a shake in your hands.\n- Sick (CON): Something just isn't right inside. Maybe you've got a disease or a wasting illness. Maybe you just drank too much ale last night and it's coming back to haunt you.\n- Stunned (INT): That last knock to the head shook something loose. Brain not work so good.\n- Confused (WIS): Ears ringing. Vision blurred. You're more than a little out of it.\n- Scarred (CHA): It may not be permanent, but for now you don't look so good"
+  },
+  {
+    "term":"+n forward",
+    "description":"Your next roll gets a +n bonus (or penalty if negative)."
+  },  
+  {
+    "term":"+n ongoing",
+    "description":"Take +n to all move rolls (not damage). There also might be a condition, such as \"take +n ongoing to volley\". An ongoing bonus also says what causes it to end, like \"until you dismiss the spell\" or \"until you atone to your deity\"."
   },
   {
     "term":"Ammo",

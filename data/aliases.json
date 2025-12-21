@@ -2,5 +2,9 @@
     {
         "alias":"take your last breath",
         "move":"Last Breath"
+    },
+    {
+        "alias":"+1 forward",
+        "term":"+n forward"
     }
 ]

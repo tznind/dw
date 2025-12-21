@@ -64,7 +64,8 @@
       "Conquest",
       "Riches and property",
       "Fame and glory"
-    ]
+    ],
+    "details": true
   },
   {
     "id": "b5",
@@ -85,6 +86,152 @@
     "description": "Take a move from the Fighter, Bard, or Thief class list.  You may not take multiclass moves from those classes.",
     "takeFrom": ["fighter", "bard", "thief"],
     "takeCategory": ["Starting Moves","Advanced Moves"]
+  },
+  {
+    "id": "b8",
+    "category": "Advanced Moves",
+    "title": "My Love For You Is Like A Truck",
+    "description": "When you perform a feat of strength, name someone present whom you have impressed and take **+1 forward** to **parley** with them."
+  },
+  {
+    "id": "b9",
+    "category": "Advanced Moves",
+    "title": "What Is Best In Life",
+    "description": "At the end of a session, if during this session you have crushed your enemies, seen them driven before you, or have heard the lamentations of their kinfolk mark XP."
+  },
+  {
+    "id": "b10",
+    "category": "Advanced Moves",
+    "title": "Wide-Wanderer",
+    "description": "You've travelled the wide world over. When you arrive someplace ask the GM about any important traditions, rituals, and so on, they'll tell you what you need to know."
+  },
+  {
+    "id": "b11",
+    "category": "Advanced Moves",
+    "title": "Usurper",
+    "description": "When you prove yourself superior to a person in power, take **+1 forward** with their followers, underlings, and hangers on."
+  },
+  {
+    "id": "b12",
+    "category": "Advanced Moves",
+    "title": "Khan Of Khans",
+    "description": "Your hirelings always accept the gratuitous fulfillment of one of your appetites as payment."
+  },
+  {
+    "id": "b13",
+    "category": "Advanced Moves",
+    "title": "Samson",
+    "description": "You may take a **debility** to immediately break free of any physical or mental restraint."
+  },
+  {
+    "id": "b14",
+    "category": "Advanced Moves",
+    "title": "Smash!",
+    "description": "When you **Hack & Slash**, on a 12+ deal your damage and choose something physical your target has (a weapon, their position, a limb): they lose it."
+  },
+  {
+    "id": "b15",
+    "category": "Advanced Moves",
+    "title": "Indestructible Hunger",
+    "description": "When you take damage you can choose to take -1 ongoing until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option."
+  },
+  {
+    "id": "b16",
+    "category": "Advanced Moves",
+    "title": "Eye For Weakness",
+    "description": "When you **Discern Realities** add \"What here is weak or vulnerable?\" to the list of questions you can ask."
+  },
+  {
+    "id": "b17",
+    "category": "Advanced Moves",
+    "title": "On The Move",
+    "description": "When you **defy a danger** caused by movement (maybe falling off a narrow bridge or rushing past an armed guard) take +1."
+  },
+  {
+    "id": "b18",
+    "category": "Advanced Moves",
+    "title": "A Good Day To Die (Requires level 6+)",
+    "weight": 1,
+    "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take +1 ongoing."
+  },
+  {
+    "id": "b19",
+    "category": "Advanced Moves",
+    "title": "Kill 'Em All (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Appetite for Destruction\n\nTake another move from the Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.",
+    "takeFrom": ["fighter", "bard", "thief"],
+    "takeCategory": ["Starting Moves","Advanced Moves"]
+  },
+  {
+    "id": "b20",
+    "category": "Advanced Moves",
+    "title": "War Cry (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **enter the battle with a show of force**, roll +CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Both:",
+        "bullets": [
+          "Your allies are rallied and take **+1 forward**.",
+          "Your enemies feel fear and act accordingly (avoiding you, hiding, attacking with fear-driven abandon)"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose only 1"
+      }
+    ]
+  },
+  {
+    "id": "b21",
+    "category": "Advanced Moves",
+    "title": "Mark Of Might (Requires level 6+)",
+    "weight": 1,
+    "description": "When you take this move and spend some uninterrupted time reflecting on your past glories, you may mark yourself with a symbol of your power (a long braid tied with bells, ritual scars or tattoos, etc.) Any intelligent mortal creature who sees this symbol knows instinctively that you are a force to be reckoned with and treats you appropriately."
+  },
+  {
+    "id": "b22",
+    "category": "Advanced Moves",
+    "title": "More! Always More! (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **satisfy an appetite to the extreme** (destroying something unique and significant, gaining enormous fame, riches, power, etc.) you may choose to resolve it. Cross it off the list and mark XP. While you may pursue that appetite again, you no longer feel the burning desire you once did. In its place, choose a new appetite from the list or write your own."
+  },
+  {
+    "id": "b23",
+    "category": "Advanced Moves",
+    "title": "The One Who Knocks (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **Defy Danger**, on a 12+ you turn the danger back on itself, the GM will describe how."
+  },
+  {
+    "id": "b24",
+    "category": "Advanced Moves",
+    "title": "Healthy Distrust (Requires level 6+)",
+    "weight": 1,
+    "description": "Whenever the unclean magic wielded by mortal men causes you to **Defy Danger**, treat any result of 6- as a 7-9."
+  },
+  {
+    "id": "b25",
+    "category": "Advanced Moves",
+    "title": "For The Blood God (Requires level 6+)",
+    "weight": 1,
+    "description": "You are initiated in the old ways, the ways of sacrifice. Choose something your gods (or the ancestor spirits, or your totem, etc) value—gold, blood, bones or the like. When you **sacrifice those things as per your rites and rituals**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM will grant you insight into your current trouble or a boon to help you."
+      },
+      {
+        "range": "7-9",
+        "text": "The sacrifice is not enough and your gods take of your flesh as well, but still grant you some insight or boon."
+      },
+      {
+        "range": "≤ 6",
+        "text": "You earn the ire of the fickle spirits."
+      }
+    ]
   }
 
 ]
