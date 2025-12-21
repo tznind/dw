@@ -44,7 +44,7 @@
     "outcomes": [
       {
         "range": "≥10",
-        "text": "They treat you as the most obvious threat to be dealt with and ignore your companions, take +2 damage ongoing against them."
+        "text": "They treat you as the most obvious threat to be dealt with and ignore your companions, take **+2 damage ongoing** against them."
       },
       {
         "range": "7-9",
@@ -133,7 +133,7 @@
     "id": "b15",
     "category": "Advanced Moves",
     "title": "Indestructible Hunger",
-    "description": "When you take damage you can choose to take -1 ongoing until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option."
+    "description": "When you take damage you can choose to take **-1 ongoing** until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option."
   },
   {
     "id": "b16",
@@ -152,7 +152,7 @@
     "category": "Advanced Moves",
     "title": "A Good Day To Die (Requires level 6+)",
     "weight": 1,
-    "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take +1 ongoing."
+    "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take **+1 ongoing**."
   },
   {
     "id": "b19",
