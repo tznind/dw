@@ -110,5 +110,162 @@
         "text": "You also momentarily daze intelligent undead and cause mindless undead to flee. Aggression breaks the effects and they are able to act as normal."
       }
     ]
+  },
+  {
+    "id": "c6",
+    "category": "Advanced Moves",
+    "title": "Chosen One",
+    "description": "Choose one spell. You are granted that spell as if it was one level lower.",
+    "details": true
+  },
+  {
+    "id": "c7",
+    "category": "Advanced Moves",
+    "title": "Invigorate",
+    "description": "When you **heal someone** they take **+2 forward** to their damage."
+  },
+  {
+    "id": "c8",
+    "category": "Advanced Moves",
+    "title": "The Scales Of Life And Death",
+    "description": "When someone **takes their last breath** in your presence, they take +1 to the roll."
+  },
+  {
+    "id": "c9",
+    "category": "Advanced Moves",
+    "title": "Serenity",
+    "description": "When you **cast a spell** you ignore the first -1 penalty from ongoing spells."
+  },
+  {
+    "id": "c10",
+    "category": "Advanced Moves",
+    "title": "First Aid",
+    "description": "**Cure Light Wounds** is a rote for you, and therefore doesn't count against your limit of granted spells."
+  },
+  {
+    "id": "c11",
+    "category": "Advanced Moves",
+    "title": "Empower",
+    "description": "When you **cast a spell**, on a 10+ you have the option of choosing from the 7-9 list. If you do, you may choose one of these effects as well",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "The spell's *effects* are doubled",
+          "The spell's *targets* are doubled"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c12",
+    "category": "Advanced Moves",
+    "title": "Divine Intervention",
+    "description": "When you **Commune** you get 1 hold and lose any hold you already had. Spend that hold when you or an ally takes damage to call on your deity, they intervene with an appropriate manifestation (a sudden gust of wind, a lucky slip, a burst of light) and negate the damage."
+  },
+  {
+    "id": "c13",
+    "category": "Advanced Moves",
+    "title": "Penitent",
+    "description": "When you **take damage** and embrace the pain, you may take +1d4 damage (ignoring armor). If you do, take **+1 forward** to cast a spell."
+  },
+  {
+    "id": "c14",
+    "category": "Advanced Moves",
+    "title": "Orison For Guidance",
+    "description": "When you **sacrifice something of value** to your deity and pray for guidance, your deity tells you what it would have you do. If you do it, mark experience."
+  },
+  {
+    "id": "c15",
+    "category": "Advanced Moves",
+    "title": "Divine Protection",
+    "description": "When you **wear no armor or shield** you get 2 armor."
+  },
+  {
+    "id": "c16",
+    "category": "Advanced Moves",
+    "title": "Devoted Healer",
+    "description": "When you **heal someone else** of damage, add your level to the amount of damage healed."
+  },
+  {
+    "id": "c17",
+    "category": "Advanced Moves",
+    "title": "Anointed (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: **Chosen One**\n\nChoose one spell in addition to the one you picked for **Chosen One**. You are granted that spell as if it was one level lower.",
+    "details": true
+  },
+  {
+    "id": "c18",
+    "category": "Advanced Moves",
+    "title": "Apotheosis (Requires level 6+)",
+    "weight": 1,
+    "description": "The first time you **spend time in prayer** as appropriate to your god after taking this move, choose a feature associated with your deity (rending claws, wings of sapphire feathers, an all-seeing third eye, etc.). When you emerge from prayer, you permanently gain that physical feature.",
+    "details": true
+  },
+  {
+    "id": "c19",
+    "category": "Advanced Moves",
+    "title": "Reaper (Requires level 6+)",
+    "weight": 1,
+    "description": "When you take time after a conflict to dedicate your victory to your deity and deal with the dead, take **+1 forward**."
+  },
+  {
+    "id": "c20",
+    "category": "Advanced Moves",
+    "title": "Providence (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Serenity**\n\nYou ignore the -1 penalty from up to two spells you maintain. If you maintain more than two you take normal penalties."
+  },
+  {
+    "id": "c21",
+    "category": "Advanced Moves",
+    "title": "Divine Invincibility (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Divine Intervention**\n\nWhen you **Commune** you gain 2 hold and lose any hold you already had. Spend that hold when you or an ally takes damage to call on your deity, who intervenes with an appropriate manifestation (a sudden gust of wind, a lucky slip, a burst of light) and negates the damage.",
+    "tracks": [
+    {
+      "name": "Hold",
+      "max": 2,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "c22",
+    "category": "Advanced Moves",
+    "title": "Martyr (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Penitent**\n\nWhen you **take damage** and embrace the pain, you may take +1d4 damage (ignoring armor). If you do, take **+1 forward** to cast a spell and add your level to any damage done or healed by the spell."
+  },
+  {
+    "id": "c23",
+    "category": "Advanced Moves",
+    "title": "Divine Armor (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Divine Protection**\n\nWhen you **wear no armor** or shield you get 3 armor."
+  },
+  {
+    "id": "c24",
+    "category": "Advanced Moves",
+    "title": "Greater Empower (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Empower**\n\nWhen you **cast a spell**, on a 10-11 you have the option of choosing from the 7-9 list. If you do, you may choose one of these effects as well. On a 12+ you get to choose one of these effects for free.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "The spell's *effects* are doubled",
+          "The spell's *targets* are doubled"
+        ]
+      }
+    ]
+
+  },
+  {
+    "id": "c25",
+    "category": "Advanced Moves",
+    "title": "Greater First Aid (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: **First Aid**\n\n**Cure Moderate Wounds** is a rote for you, and therefore doesn't count against your limit of granted spells."
   }
 ]
