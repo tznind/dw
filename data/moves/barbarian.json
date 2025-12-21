@@ -71,5 +71,20 @@
     "category": "Starting Moves",
     "title": "Musclebound",
     "description": "While you wield a weapon it gains the **forceful** and **messy** tags"
+  },
+  {
+    "id": "b6",
+    "category": "Advanced Moves",
+    "title": "Still Hungry",
+    "description": "Choose an additional appetite"
+  },
+  {
+    "id": "b7",
+    "category": "Advanced Moves",
+    "title": "Appetite For Destruction",
+    "description": "Take a move from the Fighter, Bard, or Thief class list.  You may not take multiclass moves from those classes.",
+    "takeFrom": ["fighter", "bard", "thief"],
+    "takeCategory": ["Starting Moves","Advanced Moves"]
   }
+
 ]

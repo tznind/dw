@@ -14,7 +14,9 @@
     "b2": true,
     "b3": true,
     "b4": true,
-    "b5": true
+    "b5": true,
+    "b6": false,
+    "b7": false
   },
   "Bard": {
     "_movesFile": "data/moves/bard.json",
