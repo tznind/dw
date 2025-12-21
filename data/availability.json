@@ -76,7 +76,21 @@
   },
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
-    "cards": []
+    "cards": [],
+    "default-bonds": [
+      "________ has insulted my deity; I do not trust them.",
+      "________ is a good and faithful person; I trust them implicitly.",
+      "________ is in constant danger, I will keep them safe.",
+      "I am working on converting ________ to my faith."
+    ],
+    "ca": true,
+    "cr": true,
+    "c1": true,
+    "c1b": true,
+    "c2": true,
+    "c3": true,
+    "c4": true,
+    "c5": true
   },
   "Druid": {
     "_movesFile": "data/moves/druid.json",
