@@ -1,16 +1,5 @@
 [
   {
-    "id": "a1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
-      }
-    ]
-  },
-  {
     "id": "aa",
     "hideCheckbox": true,
     "title":"",
@@ -22,5 +11,29 @@
       "Other - Describe below"
     ],
     "details": true
+  },
+  {
+    "id": "ar",
+    "category": "Starting Moves",
+    "title":"Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elf - When you **enter an important location** (your call) you can ask the GM for one fact from the history of that location.",
+      "Human - When you **first enter a civilized settlement** someone who respects the custom of hospitality to minstrels will take you in as their guest.",
+      "Other (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "a1",
+    "title": "Placeholder",
+    "description": "This is a placeholder move.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "This move does nothing and is a placeholder for future development."
+      }
+    ]
   }
 ]

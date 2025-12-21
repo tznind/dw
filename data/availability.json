@@ -47,7 +47,8 @@
       "________ trusted me with a secret",
       "________ does not trust me, and for good reason"
     ],
-    "aa": true
+    "aa": true,
+    "ar": true
   },
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
