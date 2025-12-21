@@ -1,155 +1,237 @@
-// Bonds card initialization
-window.CardInitializers = window.CardInitializers || {};
-window.CardInitializers.bonds = function() {
-  console.log('Bonds card initializing...');
+// Bonds card - Relationship tracking functionality
+(function() {
+  'use strict';
 
-  const bondsListEl = document.querySelector('.bonds-list');
-  const addBondBtn = document.querySelector('.add-bond-btn');
+  console.log('Bonds script loading...');
 
-  let bondCounter = 0;
+  let bondCount = 0;
 
-  function createBondItem(text = '') {
-    const bondItem = document.createElement('div');
-    bondItem.className = 'bond-item';
-    bondItem.dataset.bondId = bondCounter++;
+  function initializeBonds() {
+    console.log('Initializing bonds...');
 
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.name = `bond_${bondItem.dataset.bondId}`;
-    input.id = `bond_${bondItem.dataset.bondId}`;
-    input.value = text;
-    input.placeholder = 'Enter a bond (use X for other character\'s name)';
+    const addBondBtn = document.getElementById('add-bond-btn');
+    const loadDefaultsBtn = document.getElementById('load-default-bonds-btn');
+    const bondsContainer = document.getElementById('bonds-list');
 
-    const removeBtn = document.createElement('button');
-    removeBtn.type = 'button';
-    removeBtn.className = 'remove-bond-btn';
-    removeBtn.textContent = '−';
-    removeBtn.onclick = () => removeBond(bondItem);
-
-    bondItem.appendChild(input);
-    bondItem.appendChild(removeBtn);
-
-    return bondItem;
-  }
-
-  function addBond(text = '') {
-    const bondItem = createBondItem(text);
-    bondsListEl.appendChild(bondItem);
-
-    // Save state after adding
-    if (window.Utils && window.Utils.saveFormState) {
-      window.Utils.saveFormState();
-    }
-  }
-
-  function removeBond(bondItem) {
-    bondItem.remove();
-
-    // Save state after removing
-    if (window.Utils && window.Utils.saveFormState) {
-      window.Utils.saveFormState();
-    }
-  }
-
-  function loadDefaultBonds() {
-    console.log('Loading default bonds...');
-
-    // Get current roles using Utils
-    const roles = window.Utils ? window.Utils.getCurrentRoles() : [];
-    const selectedRole = roles.length > 0 ? roles[0] : null;
-
-    console.log('Selected role:', selectedRole);
-
-    if (!selectedRole) {
-      console.log('No role selected');
+    if (!addBondBtn || !bondsContainer) {
+      console.log('Bonds elements not found');
       return;
     }
 
-    // Get availability data
-    if (!window.availableMap) {
-      console.log('No availableMap found');
-      return;
-    }
+    // Get initial values from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    bondCount = parseInt(urlParams.get('bond_cnt')) || 0;
 
-    const roleData = window.availableMap[selectedRole];
-    if (!roleData || !roleData['default-bonds']) {
-      console.log('No default bonds for role:', selectedRole);
-      return;
-    }
+    console.log('Initial bond count:', bondCount);
 
-    // Clear existing bonds
-    bondsListEl.innerHTML = '';
-    bondCounter = 0;
+    function updateURL() {
+      const params = new URLSearchParams(window.location.search);
 
-    // Add default bonds
-    const defaultBonds = roleData['default-bonds'];
-    console.log('Default bonds:', defaultBonds);
-
-    defaultBonds.forEach(bond => {
-      addBond(bond);
-    });
-
-    // Mark that we've initialized bonds for the first time
-    let bftInput = document.getElementById('bft');
-    if (!bftInput) {
-      bftInput = document.createElement('input');
-      bftInput.type = 'hidden';
-      bftInput.id = 'bft';
-      bftInput.name = 'bft';
-      document.querySelector('form').appendChild(bftInput);
-    }
-    bftInput.value = '1';
-
-    // Save state
-    if (window.Utils && window.Utils.saveFormState) {
-      window.Utils.saveFormState();
-    }
-  }
-
-  // Add bond button click handler
-  if (addBondBtn) {
-    addBondBtn.addEventListener('click', () => addBond());
-  }
-
-  // Check if this is the first time (bft = bonds first time)
-  const bftInput = document.getElementById('bft');
-  const isFirstTime = !bftInput || bftInput.value !== '1';
-
-  // Find highest bond counter from existing bonds
-  const savedBonds = document.querySelectorAll('[name^="bond_"]');
-  savedBonds.forEach(input => {
-    const bondId = parseInt(input.name.replace('bond_', ''));
-    if (bondId >= bondCounter) {
-      bondCounter = bondId + 1;
-    }
-  });
-
-  // Only load defaults if it's the first time
-  if (isFirstTime && savedBonds.length === 0) {
-    console.log('First time - loading default bonds');
-    loadDefaultBonds();
-  } else {
-    console.log('Not first time or bonds already exist, skipping default load');
-  }
-
-  // Listen for role changes
-  const roleSelect = document.getElementById('role');
-  if (roleSelect && !roleSelect.hasAttribute('data-bonds-listener')) {
-    roleSelect.addEventListener('change', () => {
-      // Reset bft on role change so defaults load again
-      const bftInput = document.getElementById('bft');
-      if (bftInput) {
-        bftInput.value = '';
+      // Update bond count
+      if (bondCount > 0) {
+        params.set('bond_cnt', bondCount.toString());
+      } else {
+        params.delete('bond_cnt');
       }
 
-      // Ask user if they want to reset bonds
-      if (confirm('Load default bonds for this class? This will replace your current bonds.')) {
-        loadDefaultBonds();
+      // Update bond data
+      for (let i = 0; i < bondCount; i++) {
+        const bondInput = document.getElementById(`bond_${i}`);
+
+        if (bondInput && bondInput.value) {
+          params.set(`bond_${i}`, bondInput.value);
+        } else {
+          params.delete(`bond_${i}`);
+        }
       }
-    });
-    roleSelect.setAttribute('data-bonds-listener', 'true');
-    console.log('Added role change listener');
+
+      const newUrl = params.toString() ? '?' + params.toString() : window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+    }
+
+    function createBondRow(index) {
+      const row = document.createElement('div');
+      row.className = 'bond-item';
+      row.innerHTML = `
+        <input type="text" class="bond-input" id="bond_${index}" placeholder="Enter a bond (use X for other character's name)">
+        <button type="button" class="remove-bond-btn" onclick="removeBond(${index})">−</button>
+      `;
+
+      // Add event listener for URL updates
+      const input = row.querySelector('input');
+      input.addEventListener('input', updateURL);
+
+      return row;
+    }
+
+    function addBond() {
+      console.log('Adding bond, current count:', bondCount);
+
+      const row = createBondRow(bondCount);
+      bondsContainer.appendChild(row);
+
+      bondCount++;
+      console.log('Bond added, new count:', bondCount);
+      updateURL();
+    }
+
+    function removeBond(index) {
+      console.log('Removing bond at index:', index);
+
+      // Collect all remaining bond data before re-indexing
+      const remainingBonds = [];
+      for (let i = 0; i < bondCount; i++) {
+        if (i === index) continue; // Skip the deleted bond
+
+        const bondInput = document.getElementById(`bond_${i}`);
+
+        // Only include if the row still exists in DOM
+        if (bondInput) {
+          remainingBonds.push(bondInput.value || '');
+        }
+      }
+
+      // Clean up all old bond URL params
+      const params = new URLSearchParams(window.location.search);
+      for (let i = 0; i < bondCount; i++) {
+        params.delete(`bond_${i}`);
+      }
+
+      // Update bond count
+      bondCount = remainingBonds.length;
+
+      // Clear the container
+      bondsContainer.innerHTML = '';
+
+      // If no bonds left, just remove from URL
+      if (bondCount === 0) {
+        params.delete('bond_cnt');
+      } else {
+        // Re-add bonds with sequential indices
+        params.set('bond_cnt', bondCount.toString());
+        remainingBonds.forEach((bondText, newIndex) => {
+          // Add to URL
+          if (bondText) params.set(`bond_${newIndex}`, bondText);
+
+          // Create the row in DOM
+          const row = createBondRow(newIndex);
+          bondsContainer.appendChild(row);
+
+          // Populate value
+          const bondInput = document.getElementById(`bond_${newIndex}`);
+          if (bondInput) bondInput.value = bondText;
+        });
+      }
+
+      const newUrl = params.toString() ? '?' + params.toString() : window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+
+      console.log('Bond removed, new count:', bondCount);
+    }
+
+    function loadDefaultBonds() {
+      console.log('Loading default bonds...');
+
+      // Get current roles using Utils
+      const roles = window.Utils ? window.Utils.getCurrentRoles() : [];
+      const selectedRole = roles.length > 0 ? roles[0] : null;
+
+      console.log('Selected role:', selectedRole);
+
+      if (!selectedRole) {
+        alert('Please select a class first');
+        return;
+      }
+
+      // Get availability data
+      if (!window.availableMap) {
+        console.log('No availableMap found');
+        alert('Role data not available');
+        return;
+      }
+
+      const roleData = window.availableMap[selectedRole];
+      if (!roleData || !roleData['default-bonds']) {
+        console.log('No default bonds for role:', selectedRole);
+        alert('No default bonds available for this class');
+        return;
+      }
+
+      const defaultBonds = roleData['default-bonds'];
+      console.log('Default bonds:', defaultBonds);
+
+      // Confirm replacement if bonds already exist
+      if (bondCount > 0) {
+        if (!confirm('This will replace your current bonds. Continue?')) {
+          return;
+        }
+      }
+
+      // Clear existing bonds
+      bondsContainer.innerHTML = '';
+      const params = new URLSearchParams(window.location.search);
+      for (let i = 0; i < bondCount; i++) {
+        params.delete(`bond_${i}`);
+      }
+
+      // Add default bonds
+      bondCount = defaultBonds.length;
+      params.set('bond_cnt', bondCount.toString());
+
+      defaultBonds.forEach((bondText, index) => {
+        // Add to URL
+        params.set(`bond_${index}`, bondText);
+
+        // Create the row in DOM
+        const row = createBondRow(index);
+        bondsContainer.appendChild(row);
+
+        // Populate value
+        const bondInput = document.getElementById(`bond_${index}`);
+        if (bondInput) bondInput.value = bondText;
+      });
+
+      const newUrl = params.toString() ? '?' + params.toString() : window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+
+      console.log('Default bonds loaded, count:', bondCount);
+    }
+
+    // Make removeBond globally accessible
+    window.removeBond = removeBond;
+
+    // Add event listeners (only if not already added)
+    if (!addBondBtn.hasAttribute('data-listener-added')) {
+      addBondBtn.addEventListener('click', addBond);
+      addBondBtn.setAttribute('data-listener-added', 'true');
+      console.log('Add bond event listener added');
+    }
+
+    if (loadDefaultsBtn && !loadDefaultsBtn.hasAttribute('data-listener-added')) {
+      loadDefaultsBtn.addEventListener('click', loadDefaultBonds);
+      loadDefaultsBtn.setAttribute('data-listener-added', 'true');
+      console.log('Load defaults event listener added');
+    }
+
+    // Load existing bonds from URL
+    // Clear container first to prevent doubling if initialized multiple times
+    bondsContainer.innerHTML = '';
+
+    for (let i = 0; i < bondCount; i++) {
+      const row = createBondRow(i);
+      bondsContainer.appendChild(row);
+
+      // Populate value from URL
+      const bondVal = urlParams.get(`bond_${i}`);
+      if (bondVal) {
+        document.getElementById(`bond_${i}`).value = bondVal;
+      }
+    }
+
+    console.log('Bonds initialization complete');
   }
 
-  console.log('Bonds card initialization complete');
-};
+  // Export initialization function for the card system
+  window.CardInitializers = window.CardInitializers || {};
+  window.CardInitializers.bonds = initializeBonds;
+})();

@@ -1,7 +1,7 @@
 {
   "Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
-    "cards": ["bonds"],
+    "cards": [],
     "default-bonds": [
       "________ is puny and foolish, but amusing to me.",
       "________'s ways are strange and confusing.",
@@ -38,7 +38,16 @@
   },
   "Bard": {
     "_movesFile": "data/moves/bard.json",
-    "cards": []
+    "cards": [],
+    "default-bonds":[
+      "This is not my first adventure with ________",
+      "I sang stories of ________ long before I ever met them in person.",
+      "________ is often the butt of my jokes.",
+      "I am writing a ballad about the adventures of ________",
+      "________ trusted me with a secret",
+      "________ does not trust me, and for good reason"
+    ],
+    "aa": true
   },
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
@@ -75,7 +84,7 @@
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "description": "Universal moves available to all characters.",
-    "cards": [],
+    "cards": ["bonds"],
     "bm1": true,
     "bm2": true,
     "bm3": true,
