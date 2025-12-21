@@ -22,5 +22,17 @@
     {
         "alias":"defy a danger",
         "move":"defy danger"
+    },
+    {
+        "alias":"heal with Arcane Art",
+        "move":"Arcane Art"
+    },
+    {
+        "alias":"grant bonus damage with Arcane Art",
+        "move":"Arcane Art"
+    },
+    {
+        "alias":"parley with someone",
+        "move":"Parley"
     }
 ]

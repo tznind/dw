@@ -67,5 +67,171 @@
     "category": "Starting Moves",
     "title": "A Port In The Storm",
     "description": "When you **return to a civilized settlement you've visited before**, tell the GM when you were last here. They'll tell you how it's changed since then."
+  },
+  {
+    "id": "a5",
+    "category": "Advanced Moves",
+    "title": "Healing Song",
+    "description": "When you **heal with Arcane Art**, you heal +1d8 damage."
+  },
+  {
+    "id": "a6",
+    "category": "Advanced Moves",
+    "title": "Vicious Cacophony",
+    "description": "When you **grant bonus damage with Arcane Art**, you grant an extra +1d4 damage."
+  },
+  {
+    "id": "a7",
+    "category": "Advanced Moves",
+    "title": "It Goes To Eleven (+CHA)",
+    "description": "When you **unleash a crazed performance** (a righteous lute solo or mighty brass blast, maybe) choose a target who can hear you and roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The target attacks their nearest ally in range."
+      },
+      {
+        "range": "7-9",
+        "text": "They attack their nearest ally, but you also draw their attention and ire."
+      }
+    ]
+  },
+  {
+    "id": "a8",
+    "category": "Advanced Moves",
+    "title": "Metal Hurlant (+CON)",
+    "description": "When you **shout with great force or play a shattering note** choose a target and roll+CON.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The target takes 1d10 damage and is deafened for a few minutes."
+      },
+      {
+        "range": "7-9",
+        "text": "You still damage your target, but it's out of control: the GM will choose an additional target nearby."
+      }
+    ]
+  },
+  {
+    "id": "a9",
+    "category": "Advanced Moves",
+    "title": "A Little Help From My Friends",
+    "description": "When you **successfully aid someone** you take **+1 forward** as well."
+  },
+  {
+    "id": "a10",
+    "category": "Advanced Moves",
+    "title": "Eldritch Tones",
+    "description": "Your **Arcane Art** is strong, allowing you to choose two effects instead of one."
+  },
+  {
+    "id": "a11",
+    "category": "Advanced Moves",
+    "title": "Duelist's Parry",
+    "description": "When you **Hack & Slash**, you take +1 armor forward."
+  },
+  {
+    "id": "a12",
+    "category": "Advanced Moves",
+    "title": "Bamboozle",
+    "description": "When you **parley with someone**, on a 7+ you also take **+1 forward** with them."
+  },
+  {
+    "id": "a13",
+    "category": "Advanced Moves",
+    "title": "Multiclass Dabbler",
+    "description": "Get one move from another class. Treat your level as one lower for choosing the move.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Starting Moves", "Advanced Moves"]
+  },
+  {
+    "id": "a14",
+    "category": "Advanced Moves",
+    "title": "Multiclass Initiate",
+    "description": "Get one move from another class. Treat your level as one lower for choosing the move.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Starting Moves", "Advanced Moves"]
+  },
+  {
+    "id": "a15",
+    "category": "Advanced Moves",
+    "title": "Healing Chorus (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Healing Song**\n\nWhen you **heal with Arcane Art**, you heal +2d8 damage."
+  },
+  {
+    "id": "a16",
+    "category": "Advanced Moves",
+    "title": "Vicious Blast (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Vicious Cacophony**\n\nWhen you **grant bonus damage with Arcane Art**, you grant an extra +2d4 damage."
+  },
+  {
+    "id": "a17",
+    "category": "Advanced Moves",
+    "title": "Unforgettable Face (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **meet someone you've met before** (your call) after some time apart you take **+1 forward** against them."
+  },
+  {
+    "id": "a18",
+    "category": "Advanced Moves",
+    "title": "Reputation (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **first meet someone who's heard songs about you**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Tell the GM two things they've heard about you."
+      },
+      {
+        "range": "7-9",
+        "text": "Tell the GM one thing they've heard, and the GM tells you one thing."
+      }
+    ]
+  },
+  {
+    "id": "a19",
+    "category": "Advanced Moves",
+    "title": "Eldritch Chord (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Eldritch Tones**\n\nWhen you use **Arcane Art**, you choose two effects. You also get to choose one of those effects to double."
+  },
+  {
+    "id": "a20",
+    "category": "Advanced Moves",
+    "title": "An Ear For Magic (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **hear an enemy cast a spell** the GM will tell you the name of the spell and its effects. Take **+1 forward** when acting on the answers."
+  },
+  {
+    "id": "a21",
+    "category": "Advanced Moves",
+    "title": "Devious (Requires level 6+)",
+    "weight": 1,
+    "description": "When you use **Charming & Open** you may also ask \"How are you vulnerable to me?\" Your subject may not ask this question of you."
+  },
+  {
+    "id": "a22",
+    "category": "Advanced Moves",
+    "title": "Duelist's Block (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Duelist's Parry**\n\nWhen you **Hack & Slash**, you take +2 armor forward."
+  },
+  {
+    "id": "a23",
+    "category": "Advanced Moves",
+    "title": "Con (Requires level 6+)",
+    "weight": 1,
+    "description": "Replaces: **Bamboozle**\n\nWhen you **parley with someone**, on a 7+ you also take **+1 forward** with them and get to ask their player one question which they must answer truthfully."
+  },
+  {
+    "id": "a24",
+    "category": "Advanced Moves",
+    "title": "Multiclass Master (Requires level 6+)",
+    "weight": 1,
+    "description": "Get a move from another class. Treat your level as one lower for choosing the move.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Starting Moves", "Advanced Moves"]
   }
 ]
