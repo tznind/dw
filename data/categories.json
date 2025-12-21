@@ -1,6 +1,7 @@
 {
   "order": [
     "Alignment",
+    "Starting Moves",
     "Moves",
     "Equipment",
     "Advancement"

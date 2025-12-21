@@ -13,9 +13,18 @@
 
   },
   {
+    "id": "br",
+    "category": "Starting Moves",
+    "title":"Race - Outsider",
+    "weight": -1,
+    "description": "You may be elf, dwarf, halfling, or human, but you and your people are not from around here. At the beginning of each session, the GM will **ask you something about your homeland**, why you left, or what you left behind. If you answer them, mark XP.",
+    "details": true
+  },
+  {
     "id": "b1",
     "title": "Armor",
     "description": "Choose onef of these to start with:",
+    "category": "Starting Moves",
     "pickOne": [
       "You ignore the clumsy tag on armor.",
       "So long as you are below your Load and neither wear armor nor carry a shield, take +1 armor."
@@ -24,10 +33,12 @@
   {
     "id": "b2",
     "title": "The Upper Hand",
+    "category": "Starting Moves",
     "description": "When you **take your last breath**, on a 7-9 you make an offer to Death in return for your life.  If Death accepts he will return you to life. If not, you die."
   },
   {
     "id":"b3",
+    "category": "Starting Moves",
     "title": "What are you waiting for? (+Con)",
     "description": "When you **cry out a challenge to your enemies**, roll+Con",
     "outcomes": [
@@ -43,6 +54,7 @@
   },
   {
     "id": "b4",
+    "category": "Starting Moves",
     "title": "Herculean Appetites",
     "description": "Others may content themselves with just a taste of wine, or dominion over a servant or two, but you want more. Choose two appetites. While **pursuing one of your appetites if you would roll for a move**, instead of rolling 2d6 you roll 1d6+1d8. If the d6 is the higher die of the pair, the GM will also introduce a complication or danger that comes about due to your heedless pursuits.",
     "pick": [
@@ -56,6 +68,7 @@
   },
   {
     "id": "b5",
+    "category": "Starting Moves",
     "title": "Musclebound",
     "description": "While you wield a weapon it gains the **forceful** and **messy** tags"
   }
