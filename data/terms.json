@@ -1,10 +1,66 @@
 [
   {
-    "term": "Debility",
-    "description": "A lasting condition that hampers your effectiveness. When you suffer a Debility, mark it on your character sheet. Choose from\n- Weakened\n- Miserable\n- Broken."
-  },
-  {
     "term":"+1 forward",
     "description":"Your next roll gets a +1 bonus."
+  },
+  {
+    "term":"Ammo",
+    "description":"It counts as ammunition for appropriate ranged weapons. The number indicated does not represent individual arrows or sling stones, but represents what you have left on hand."
+  },
+  {
+    "term":"Forceful",
+    "description":"It can knock someone back a pace, maybe even off their feet."
+  },
+  {
+    "term":"+n Damage",
+    "description":"It is particularly harmful to your enemies. When you deal damage, you add n to it."
+  },
+  {
+    "term":"Ignores Armor",
+    "description":"Don't subtract armor from the damage taken."
+  },
+  {
+    "term":"Messy",
+    "description":"It does damage in a particularly destructive way, ripping people and things apart."
+  },
+  {
+    "term":"n Piercing",
+    "description":"It goes right through armor. When you deal damage with n piercing, you subtract n from the enemy's armor for that attack."
+  },
+  {
+    "term":"Precise",
+    "description":"It rewards careful strikes. You use DEX to hack and slash with this weapon, not STR."
+  },
+  {
+    "term":"Reload",
+    "description":"After you attack with it, it takes more than a moment to reset for another attack."
+  },
+  {
+    "term":"Stun",
+    "description":"When you attack with it, it does stun damage instead of normal damage."
+  },
+  {
+    "term":"Thrown",
+    "description":"Throw it at someone to hurt them. If you volley with this weapon, you can't choose to mark off ammo on a 7–9; once you throw it, it's gone until you can recover it."
+  },
+  {
+    "term":"Hand",
+    "description":"It's useful for attacking something within your reach, no further."
+  },
+  {
+    "term":"Close",
+    "description":"It's useful for attacking something at arm's reach plus a foot or two."
+  },
+  {
+    "term":"Reach",
+    "description":"It's useful for attacking something that's several feet away—maybe as far as ten."
+  },
+  {
+    "term":"Near",
+    "description":"It's useful for attacking if you can see the whites of their eyes."
+  },
+  {
+    "term":"Far",
+    "description":"It's useful for attacking something in shouting distance."
   }
 ]
