@@ -267,5 +267,29 @@
     "title": "Greater First Aid (Requires level 6+)",
     "weight": 1,
     "description": "Requires: **First Aid**\n\n**Cure Moderate Wounds** is a rote for you, and therefore doesn't count against your limit of granted spells."
+  },
+  {
+    "id": "cs1",
+    "category": "🕯️Cleric Spells",
+    "title": "Light - Rote",
+    "description": "An item you touch glows with divine light, about as bright as a torch. It gives off no heat or sound and requires no fuel, but it is otherwise like a mundane torch. You have complete control of the color of the flame. The spell lasts as long as it is in your presence"
+  },
+  {
+    "id": "cs2",
+    "category": "🕯️Cleric Spells",
+    "title": "Sanctify - Rote",
+    "description": "Food or water you hold in your hands while you cast this spell is consecrated by your deity. In addition to now being holy or unholy, the affected substance is purified of any mundane spoilage."
+  },
+  {
+    "id": "cs3",
+    "category": "🕯️Cleric Spells",
+    "title": "Guidance - Rote",
+    "description": "The symbol of your deity appears before you and gestures towards the direction or course of action your deity would have you take then disappears. The message is through gesture only; your communication through this spell is severely limited"
+  },
+  {
+    "id": "cs4",
+    "category": "🕯️Cleric Spells",
+    "title": "Bless - Level 1",
+    "description": "Your deity smiles upon a combatant of your choice. They take **+1 ongoing** so long as battle continues and they stand and fight. While this spell is ongoing you take -1 to **cast a spell**."
   }
 ]

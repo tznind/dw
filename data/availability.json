@@ -111,7 +111,11 @@
     "c23": false,
     "c24": false,
     "c25": false,
-    "a13": false
+    "a13": false,
+    "cs1": false,
+    "cs2": false,
+    "cs3": false,
+    "cs4": false
   },
   "Druid": {
     "_movesFile": "data/moves/druid.json",
