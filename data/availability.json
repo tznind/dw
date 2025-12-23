@@ -185,36 +185,71 @@
   "Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "cards": [],
+    "default-bonds": [
+      "________ owes me their life, wether they admit it or not.",
+      "I have sworn to protect ________",
+      "I worry about the ability of ________ to survive in the dungeon",
+      "________ is soft, but I will make them hard like me"
+    ],
     "fa": true,
     "fr": true
   },
   "Immolator": {
     "_movesFile": "data/moves/immolator.json",
     "cards": [],
+    "default-bonds": [
+      "________ has felt the hellish touch of fire, now they know my strength.",
+      "I will teach ________ the true meaning of sacrifice.",
+      "I cast something into the fire for ________ and still owe them their due."
+    ],
     "ia": true,
     "ir": true
   },
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
     "cards": [],
+    "default-bonds": [
+      "________'s misguided behavior endangers their very soul!",
+      "________ has stood by me in battle and can be trusted completely.",
+      "I respect the beliefs of ________ but hope they will someday see the true way.",
+      "________ is a brave soul, I have much to learn from them."
+    ],
     "pa": true,
     "pr": true
   },
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
     "cards": [],
+    "default-bonds": [
+      "I have guided ________ before and they owe me for it.",
+      "________ is a friend of nature, so I will be their friend as well.",
+      "________ has no respect for nature, so I have no respect for them.",
+      "________ does not understand life in the wild, so I will teach them."
+    ],
     "ra": true,
     "rr": true
   },
   "Thief": {
     "_movesFile": "data/moves/thief.json",
     "cards": [],
+    "default-bonds": [
+      "I stole something from ________.",
+      "________ has my back when things go wrong.",
+      "________ knows incriminating details about me",
+      "________ and I have a con running."
+
+    ],
     "ta": true,
     "tr": true
   },
   "Wizard": {
     "_movesFile": "data/moves/wizard.json",
     "cards": [],
+    "default-bonds": [
+      "________ will play an important role in the events to come. I have forseen it!",
+      "________ is keeping an important secret from me",
+      "________ is woefully misinformed about the world; I will teach them all I can"
+    ],
     "wa": true,
     "wr": true
   },
