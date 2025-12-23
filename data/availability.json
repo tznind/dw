@@ -184,27 +184,39 @@
   },
   "Fighter": {
     "_movesFile": "data/moves/fighter.json",
-    "cards": []
+    "cards": [],
+    "fa": true,
+    "fr": true
   },
   "Immolator": {
     "_movesFile": "data/moves/immolator.json",
-    "cards": []
+    "cards": [],
+    "ia": true,
+    "ir": true
   },
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
-    "cards": []
+    "cards": [],
+    "pa": true,
+    "pr": true
   },
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
-    "cards": []
+    "cards": [],
+    "ra": true,
+    "rr": true
   },
   "Thief": {
     "_movesFile": "data/moves/thief.json",
-    "cards": []
+    "cards": [],
+    "ta": true,
+    "tr": true
   },
   "Wizard": {
     "_movesFile": "data/moves/wizard.json",
-    "cards": []
+    "cards": [],
+    "wa": true,
+    "wr": true
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",

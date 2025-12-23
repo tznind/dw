@@ -1,4 +1,33 @@
 [
+  
+  {
+    "id": "wa",
+    "hideCheckbox": true,
+    "title":"",
+    "category": "Alignment",
+    "pickOne": [
+      "**Good** - Use magic to directly aid another.",
+      "**Neutral** - Discover something about a magical mystery.",
+      "**Evil** - Use magic to cause terror and fear.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "wr",
+    "category": "Starting Moves",
+    "title":"Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elf - Magic is as natural as breath to you. Detect Magic is a cantrip for you.",
+      "Human - Choose one cleric spell. You can cast it as if it was a wizard spell.",
+      "Other (Describe)"
+    ],
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Cleric Spells"],
+    "details": true
+  },
   {
     "id": "w1",
     "title": "Placeholder",

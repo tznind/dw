@@ -1,4 +1,29 @@
-[
+[{
+    "id": "ia",
+    "hideCheckbox": true,
+    "title":"",
+    "category": "Alignment",
+    "pickOne": [
+      "**Evil** - Sacrifice an unqilling victim to the flames.",
+      "**Chaotic** - Spread a dangerous new idea.",
+      "**Neutral** - Exchange a sacrifice, freely given, for a service rendered.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "ir",
+    "category": "Starting Moves",
+    "title":"Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Human - When you Make Camp next to a large, open flame, regain all your HP.",
+      "Salamander - Non-magical heat and fire cannot harm you.",
+      "Other (Describe)"
+    ],
+    "details": true
+  },
   {
     "id": "i1",
     "title": "Placeholder",

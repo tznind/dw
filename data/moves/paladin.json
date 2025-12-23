@@ -1,5 +1,29 @@
 [
   {
+    "id": "pa",
+    "hideCheckbox": true,
+    "title":"",
+    "category": "Alignment",
+    "pickOne": [
+      "**Lawful** - Deny mercy to a criminal or unbeliever.",
+      "**Good** - Endanger yourself to protect someone weaker than you.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "pr",
+    "category": "Starting Moves",
+    "title":"Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Human - When you **pray for guidance, even for a moment and ask \"what here is evil?\"** the GM will tell you, honestly.",
+      "Other (Describe)"
+    ],
+    "details": true
+  },
+  {
     "id": "p1",
     "title": "Placeholder",
     "description": "This is a placeholder move.",

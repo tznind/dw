@@ -1,5 +1,31 @@
 [
   {
+    "id": "ra",
+    "hideCheckbox": true,
+    "title":"",
+    "category": "Alignment",
+    "pickOne": [
+      "**Chaotic** - Free someone from literal or figurative bonds.",
+      "**Good** - Endanger yourself to combat an unnatural threat.",
+      "**Neutral** - Help an animal or spirit of the wild.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "rr",
+    "category": "Starting Moves",
+    "title":"Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elf - When you **Undertake A Perilous Journey** through wilderness whatever job you take you suceed as if you rolled a 10+.",
+      "Human - When you **Make Camp** in a dungeon or city, you don't need to consume a ration.",
+      "Other (Describe)"
+    ],
+    "details": true
+  },
+  {
     "id": "r1",
     "title": "Placeholder",
     "description": "This is a placeholder move.",
