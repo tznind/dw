@@ -169,7 +169,7 @@
     "id": "w14",
     "title": "Counterspell (+INT)",
     "category": "Advanced Moves",
-    "description": "When you **attempt to counter an arcane spell that will otherwise affect you**, stake one of your prepared spells on the defense and roll+INT.",
+    "description": "When you attempt to **counter an arcane spell** that will otherwise affect you, stake one of your prepared spells on the defense and roll+INT.\n**NOTE:** Your counterspell protects you alone; if the countered spell has other targets they are affected as normal.",
     "outcomes": [
       {
         "range": "≥10",
@@ -186,7 +186,7 @@
     "id": "w15",
     "title": "Quick Study",
     "category": "Advanced Moves",
-    "description": "When you see the effects of an arcane spell, ask the GM the name of the spell and its effects. You take **+1** when acting on the answers."
+    "description": "When you **see the effects of an arcane spell**, ask the GM the name of the spell and its effects. You **take +1** when acting on the answers."
   },
   {
     "id": "w16",
@@ -245,28 +245,29 @@
     "title": "Protective Counter (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "Requires: **Counterspell**\n\nWhen an ally within sight of you is affected by an arcane spell, you can counter it as if it affected you. If the spell affects multiple allies you must counter for each ally separately."
+    "description": "Requires: **Counterspell**\n\nWhen an ally within sight of you is **affected by an arcane spell**, you can counter it as if it affected you. If the spell affects multiple allies you must counter for each ally separately."
   },
   {
     "id": "w23",
     "title": "Ethereal Tether (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "When you have time with a willing or helpless subject you can craft an ethereal tether with them. You perceive what they do and can discern realities about them or their surroundings, no matter the distance. Someone willingly tethered to you can communicate with you over the tether as if you were in the room with them."
+    "description": "When you have time with a willing or helpless subject you can craft an ethereal tether with them. You perceive what they do and can **discern realities** about them or their surroundings, no matter the distance. Someone willingly tethered to you can communicate with you over the tether as if you were in the room with them."
   },
   {
     "id": "w24",
     "title": "Spell Augmentation (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "When you deal damage to a creature, you can shunt a spell's energy into them—end one of your ongoing spells and add the spell's level to the damage dealt."
+    "description": "When you **deal damage to a creature**, you can shunt a spell's energy into them—end one of your ongoing spells and add the spell's level to the damage dealt."
   },
   {
     "id": "w25",
     "title": "Self-Powered (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "When you have time, arcane materials, and a safe space, you can create your own place of power. Describe to the GM what kind of power it is and how you're binding it to this place, the GM will tell you one kind of creature that will have an interest in this."
+    "description": "When you have time, arcane materials, and a safe space, you can create your own place of power. Describe to the GM what kind of power it is and how you're binding it to this place, the GM will tell you one kind of creature that will have an interest in this.",
+    "details": true
   },
   {
     "id": "ws1",
