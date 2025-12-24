@@ -2,6 +2,11 @@
   "Barbarian": {
     "_movesFile": "data/moves/barbarian.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d10",
+      "hp": "8+Con",
+      "load": "8+Str"
+    },
     "default-bonds": [
       "________ is puny and foolish, but amusing to me.",
       "________'s ways are strange and confusing.",
@@ -39,6 +44,11 @@
   "Bard": {
     "_movesFile": "data/moves/bard.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "6+Con",
+      "load": "9+Str"
+    },
     "default-bonds":[
       "This is not my first adventure with ________",
       "I sang stories of ________ long before I ever met them in person.",
@@ -77,6 +87,11 @@
   "Cleric": {
     "_movesFile": "data/moves/cleric.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "8+Con",
+      "load": "10+Str"
+    },
     "default-bonds": [
       "________ has insulted my deity; I do not trust them.",
       "________ is a good and faithful person; I trust them implicitly.",
@@ -149,6 +164,11 @@
   "Druid": {
     "_movesFile": "data/moves/druid.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "6+Con",
+      "load": "6+Str"
+    },
     "default-bonds": [
       "________ smells more like prey than a hunter.",
       "The spirits spoke to me of a great danger that follows ________.",
@@ -185,6 +205,11 @@
   "Fighter": {
     "_movesFile": "data/moves/fighter.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d10",
+      "hp": "10+Con",
+      "load": "12+Str"
+    },
     "default-bonds": [
       "________ owes me their life, wether they admit it or not.",
       "I have sworn to protect ________",
@@ -219,6 +244,11 @@
   "Immolator": {
     "_movesFile": "data/moves/immolator.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "4+Con",
+      "load": "9+Str"
+    },
     "default-bonds": [
       "________ has felt the hellish touch of fire, now they know my strength.",
       "I will teach ________ the true meaning of sacrifice.",
@@ -249,6 +279,11 @@
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d10",
+      "hp": "10+Con",
+      "load": "12+Str"
+    },
     "default-bonds": [
       "________'s misguided behavior endangers their very soul!",
       "________ has stood by me in battle and can be trusted completely.",
@@ -262,6 +297,11 @@
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "11+Str"
+    },
     "default-bonds": [
       "I have guided ________ before and they owe me for it.",
       "________ is a friend of nature, so I will be their friend as well.",
@@ -275,6 +315,11 @@
   "Thief": {
     "_movesFile": "data/moves/thief.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "6+Con",
+      "load": "9+Str"
+    },
     "default-bonds": [
       "I stole something from ________.",
       "________ has my back when things go wrong.",
@@ -288,6 +333,11 @@
   "Wizard": {
     "_movesFile": "data/moves/wizard.json",
     "cards": [],
+    "placeholders": {
+      "damage": "d4",
+      "hp": "4+Con",
+      "load": "7+Str"
+    },
     "default-bonds": [
       "________ will play an important role in the events to come. I have forseen it!",
       "________ is keeping an important secret from me",
