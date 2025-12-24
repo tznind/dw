@@ -18,7 +18,7 @@
     "title":"Race",
     "weight": -1,
     "hideCheckbox": true,
-    "pickOne": [
+    "pick": [
       "Elf - When you **Undertake A Perilous Journey** through wilderness whatever job you take you suceed as if you rolled a 10+.",
       "Human - When you **Make Camp** in a dungeon or city, you don't need to consume a ration.",
       "Other (Describe)"
@@ -118,5 +118,137 @@
         ]
       }
     ]
+  },
+  {
+    "id": "r5",
+    "category": "Advanced Moves",
+    "title": "Half-elven",
+    "description": "Somewhere in your lineage lies mixed blood and it begins to show its presence. You gain the elf starting move if you took the human one at character creation or vice versa. **You may take this move only if it is your first advancement**."
+  },
+  {
+    "id": "r6",
+    "category": "Advanced Moves",
+    "title": "Wild Empathy",
+    "description": "You can speak with and understand animals."
+  },
+  {
+    "id": "r7",
+    "category": "Advanced Moves",
+    "title": "Familiar Prey",
+    "description": "When you **Spout Lore** **about a monster** you use WIS instead of INT."
+  },
+  {
+    "id": "r8",
+    "category": "Advanced Moves",
+    "title": "Viper's Strike",
+    "description": "When you **strike an enemy with two weapons at once**, add an extra 1d4 damage for your off-hand strike."
+  },
+  {
+    "id": "r9",
+    "category": "Advanced Moves",
+    "title": "Camouflage",
+    "description": "When you **keep still in natural surroundings**, enemies never spot you until you make a movement."
+  },
+  {
+    "id": "r10",
+    "category": "Advanced Moves",
+    "title": "Man's Best Friend",
+    "description": "When you **allow your animal companion to take a blow that was meant for you**, the damage is negated and your animal companion's ferocity becomes 0. If its ferocity is already 0 you can't use this ability. When you have a few hours of rest with your animal companion its ferocity returns to normal.",
+    "tracks": [
+      {
+        "name": "Ferocity Penalty",
+        "max": 5,
+        "dynamic": true,
+        "shape": "square"
+      }
+    ]
+  },
+  {
+    "id": "r11",
+    "category": "Advanced Moves",
+    "title": "Blot Out The Sun",
+    "description": "When you **Volley** you may spend extra ammo before rolling. For each point of ammo spent you may choose an extra target. Roll once and apply damage to all targets."
+  },
+  {
+    "id": "r12",
+    "category": "Advanced Moves",
+    "title": "Well-trained",
+    "description": "Choose another training for your animal companion."
+  },
+  {
+    "id": "r13",
+    "category": "Advanced Moves",
+    "title": "God Amidst The Wastes",
+    "description": "Dedicate yourself to a deity (name a new one or choose one that's already been established). You gain the commune and cast a spell cleric moves. When you select this move, treat yourself as a cleric of level 1 for using spells. Every time you gain a level thereafter, increase your effective cleric level by 1.",
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Cleric Spells"],
+    "details": true
+  },
+  {
+    "id": "r14",
+    "category": "Advanced Moves",
+    "title": "Follow Me",
+    "description": "When you **Undertake A Perilous Journey** you can take two roles. You make a separate roll for each."
+  },
+  {
+    "id": "r15",
+    "category": "Advanced Moves",
+    "title": "A Safe Place",
+    "description": "When you **set the watch for the night**, everyone takes +1 to **Take Watch**."
+  },
+  {
+    "id": "r16",
+    "category": "Advanced Moves",
+    "title": "Wild Speech (Requires level 6+)",
+    "description": "Replaces: **Wild Empathy**\n\nYou can speak with and understand any non-magical, non-planar creature."
+  },
+  {
+    "id": "r17",
+    "category": "Advanced Moves",
+    "title": "Hunter's Prey (Requires level 6+)",
+    "description": "Replaces: **Familiar Prey**\n\nWhen you **Spout Lore** about a monster you use WIS instead of INT. On a 12+, in addition to the normal effects, you get to ask the GM any one question about the subject."
+  },
+  {
+    "id": "r18",
+    "category": "Advanced Moves",
+    "title": "Viper's Fangs (Requires level 6+)",
+    "description": "Replaces: **Viper's Strike**\n\nWhen you **strike an enemy with two weapons at once**, add an extra 1d8 damage for your off-hand strike."
+  },
+  {
+    "id": "r19",
+    "category": "Advanced Moves",
+    "title": "Smaug's Belly (Requires level 6+)",
+    "description": "When you **know your target's weakest point** your arrows have 2 piercing."
+  },
+  {
+    "id": "r20",
+    "category": "Advanced Moves",
+    "title": "Strider (Requires level 6+)",
+    "description": "Replaces: **Follow Me**\n\nWhen you **Undertake A Perilous Journey** you can take two roles. Roll twice and use the better result for both roles."
+  },
+  {
+    "id": "r21",
+    "category": "Advanced Moves",
+    "title": "A Safer Place (Requires level 6+)",
+    "description": "Replaces: **A Safe Place**\n\nWhen you **set the watch for the night**, everyone takes +1 to **Take Watch**. After a night in camp when you set the watch everyone takes **+1 forward**."
+  },
+  {
+    "id": "r22",
+    "category": "Advanced Moves",
+    "title": "Observant (Requires level 6+)",
+    "description": "When you **hunt and track**, on a hit you may also ask one question about the creature you are tracking from the **Discern Realities** list for free."
+  },
+  {
+    "id": "r23",
+    "category": "Advanced Moves",
+    "title": "Special Trick (Requires level 6+)",
+    "description": "Choose a move from another class. So long as you are working with your animal companion you have access to that move.",
+    "takeFrom": ["*"]
+  },
+  {
+    "id": "r24",
+    "category": "Advanced Moves",
+    "title": "Unnatural Ally (Requires level 6+)",
+    "description": "Your animal companion is a monster, not an animal. Describe it. Give it +2 ferocity and +1 instinct, plus a new training."
   }
 ]
