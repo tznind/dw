@@ -909,6 +909,30 @@ data/cards/mycard/
 └── card.js       # Custom JavaScript (optional)
 ```
 
+#### When Do You Need JavaScript?
+
+**Most cards don't need JavaScript!** The following features work automatically with just HTML:
+
+✅ **No JavaScript needed for:**
+- Basic form inputs (text, number, checkbox, select, textarea)
+- Automatic persistence to URL
+- Dynamic tables (`data-dynamic-table`)
+- Track counters (`data-track` attributes)
+- Hide-when-untaken visibility (`data-hide-when-untaken`)
+- Form validation (HTML5 validation attributes)
+
+⚠️ **Only create `card.js` if you need:**
+- Auto-fill based on selections (e.g., ship class presets)
+- Custom validation beyond HTML5
+- Field dependencies (e.g., "void shields require plasma drive")
+- Programmatic table manipulation (add/clear rows via code)
+- Programmatic track manipulation (add/update tracks via code)
+- Custom event handlers or business logic
+
+**Examples:**
+- The `robotic-companion` card has NO JavaScript - just basic HTML form inputs
+- The `squad` card has NO JavaScript - uses dynamic tables, tracks, and hide-when-untaken, all with just HTML!
+
 #### Card Definition (card.json)
 ```json
 {
@@ -1042,7 +1066,9 @@ Edit `data/availability.json` and add a `cards` array to any role:
 
 **When to use:** For tracking arbitrary rows of data (crew members, inventory, squad rosters, etc.).
 
-#### What to Add to Your Card
+#### Basic Usage (No JavaScript Required!)
+
+Dynamic tables are **automatically initialized** by the card system. Just add the HTML - no JavaScript needed unless you want programmatic manipulation.
 
 **HTML** (`card.html`):
 ```html
@@ -1061,17 +1087,21 @@ Edit `data/availability.json` and add a `cards` array to any role:
 <button type="button" data-table-add="members">+ Add Row</button>
 ```
 
+That's it! The table will automatically:
+- Add/delete rows via the button
+- Persist data to the URL
+- Work with duplicate cards
+
+#### Advanced: Programmatic Manipulation (Optional)
+
+**Only create a `card.js` file if you need to manipulate tables via code.** For example:
+
 **JavaScript** (`card.js`):
 ```javascript
 window.CardInitializers.mycard = function(container, suffix) {
   const helpers = window.CardHelpers.createScopedHelpers(container, suffix);
 
-  // Initialize dynamic tables
-  if (window.DynamicTable) {
-    window.DynamicTable.initializeInContainer(container, suffix);
-  }
-
-  // Example: Add helper functions for users
+  // Example: Add a quick-add button for common entries
   helpers.addEventListener('quick_add_btn', 'click', () => {
     helpers.addTableRow('members', {
       name: 'New Member',
@@ -1132,6 +1162,188 @@ All helpers automatically handle suffix for duplicate cards - just use the base 
 - Works with duplicate cards (both `takeFromAllowsDuplicates` and `grantsCardAllowsDuplicates`)
 - Multiple tables per card supported
 - Programmatic manipulation via helper methods
+
+### Card Helper Functions
+
+The CardHelpers module provides utilities to make card development easier and reduce boilerplate code.
+
+#### Hide Untaken Options
+
+Automatically hide optional fields/elements when they're "untaken" (empty/unchecked) and "Hide untaken moves" is enabled.
+
+**Works with any input type:** checkbox, radio, text, select, number, date, etc.
+
+**Usage:**
+
+Add `data-hide-if-untaken` to any optional element you want to hide when untaken:
+
+**Checkboxes:**
+```html
+<div class="card initiates-card">
+  <h3 class="card-title">Initiates of Danu</h3>
+
+  <!-- These elements will auto-hide when unchecked and "Hide untaken moves" is enabled -->
+  <div class="initiate-row">
+    <input type="checkbox" id="enfys_selected" data-hide-if-untaken>
+    <label for="enfys_selected" data-hide-if-untaken>
+      <h4>Enfys, the acolyte</h4>
+      <!-- Rest of initiate content -->
+    </label>
+  </div>
+
+  <div class="initiate-row">
+    <input type="checkbox" id="afon_selected" data-hide-if-untaken>
+    <label for="afon_selected" data-hide-if-untaken>
+      <h4>Afon, a fellow initiate</h4>
+      <!-- Rest of initiate content -->
+    </label>
+  </div>
+</div>
+```
+
+**Radio buttons (hide unpicked options):**
+```html
+<div class="form-field">
+  <label>Pick a Specialty:</label>
+  <div class="specialty-options">
+    <input type="radio" id="engineering" name="specialty" value="engineering" data-hide-if-untaken>
+    <label for="engineering" data-hide-if-untaken>Engineering</label>
+
+    <input type="radio" id="fighting" name="specialty" value="fighting" data-hide-if-untaken>
+    <label for="fighting" data-hide-if-untaken>Fighting</label>
+
+    <input type="radio" id="medical" name="specialty" value="medical" data-hide-if-untaken>
+    <label for="medical" data-hide-if-untaken>Medical</label>
+  </div>
+</div>
+```
+
+**How it works:**
+- No JavaScript required in your card
+- Elements are automatically hidden when:
+  1. The element itself is "untaken" (unchecked for checkboxes, empty for text/select/etc.), AND
+  2. The global "Hide untaken moves" checkbox is enabled
+- Elements automatically show when either condition changes
+- Works with any element type (inputs, labels, divs, sections, rows, etc.)
+- Supports all input types:
+  - **Checkbox/Radio**: Hidden when unchecked
+  - **Text/Textarea**: Hidden when empty
+  - **Select**: Hidden when no value selected
+  - **Number/Date**: Hidden when empty
+
+#### Add Track Counters
+
+Track counters are **automatically initialized** from data attributes. Just add the HTML - no JavaScript needed unless you want programmatic control.
+
+**Basic Usage (No JavaScript Required!):**
+
+```html
+<div class="card mycard-card">
+  <h3>My Card</h3>
+
+  <!-- Single track with circles -->
+  <div id="loyalty_track"
+       data-track
+       data-track-name="Loyalty"
+       data-track-max="3"
+       data-track-shape="circle"></div>
+
+  <!-- Multiple tracks in separate containers -->
+  <div id="wounds_track"
+       data-track
+       data-track-name="Wounds"
+       data-track-max="6"
+       data-track-shape="square"></div>
+
+  <div id="armor_track"
+       data-track
+       data-track-name="Armor"
+       data-track-max="3"
+       data-track-shape="hexagon"></div>
+</div>
+```
+
+That's it! The tracks will automatically initialize and persist to the URL.
+
+**Advanced: Programmatic Control (Optional)**
+
+Only create a `card.js` file if you need to add tracks dynamically via code:
+
+```javascript
+window.CardInitializers.mycard = function(container, suffix) {
+  const helpers = window.CardHelpers.createScopedHelpers(container, suffix);
+
+  // Programmatically add tracks
+  helpers.addTrack('loyalty-container', [
+    {
+      name: 'Loyalty',
+      max: 3,
+      shape: 'circle'
+    }
+  ]);
+};
+```
+
+**Track Configuration:**
+
+**Data Attributes:**
+- `data-track` (required): Marks element as a track container
+- `data-track-name` (required): Display name for the track
+- `data-track-max` (optional, default 5): Maximum number of points
+- `data-track-shape` (optional, default 'square'): Shape of track points
+  - Options: `'square'`, `'circle'`, `'triangle'`, `'hexagon'`
+- `data-track-dynamic` (optional, default false): Add a "max..." button to adjust maximum
+
+**Programmatic (addTrack method):**
+- `name` (required): Display name for the track
+- `max` (optional, default 5): Maximum number of points
+- `shape` (optional, default 'square'): Shape of track points
+- `dynamic` (optional, default false): Add a "max..." button to adjust maximum
+
+**Features:**
+- Automatic click handling and persistence
+- Works with duplicate cards (automatically handles suffixes)
+- Visual feedback (filled/unfilled shapes)
+- Keyboard accessible (Tab to focus, Space/Enter to click)
+- All values persist to URL automatically
+- CSS automatically adjusted for card context (static positioning vs absolute for moves)
+
+**Example with dynamic max (data attributes):**
+
+```html
+<div id="inventory_track"
+     data-track
+     data-track-name="Inventory Slots"
+     data-track-max="5"
+     data-track-shape="square"
+     data-track-dynamic="true"></div>
+```
+
+#### Automatic Suffixing for Duplicate Cards
+
+When cards are used with `grantsCardAllowsDuplicates` or `takeFromAllowsDuplicates`, all form control attributes are **automatically suffixed** - no manual code required!
+
+**Automatically suffixed attributes:**
+- `id` - Element IDs (e.g., `sq_name` → `sq_name_1`)
+- `for` - Label associations (e.g., `for="sq_name"` → `for="sq_name_1"`)
+- `name` - Form control grouping (e.g., `name="sq_specialty"` → `name="sq_specialty_1"`)
+- `data-table-add` - Dynamic table buttons
+
+**Example - Radio buttons just work:**
+
+```html
+<!-- In your card HTML -->
+<input type="radio" id="sq_spec_engineering" name="sq_specialty" value="engineering">
+<input type="radio" id="sq_spec_fighting" name="sq_specialty" value="fighting">
+<input type="radio" id="sq_spec_medical" name="sq_specialty" value="medical">
+```
+
+**Result for duplicate instances:**
+- Card 1: `name="sq_specialty_1"` (all three radio buttons share this name)
+- Card 2: `name="sq_specialty_2"` (independent from Card 1)
+- Each card instance has its own radio button group
+
+**No JavaScript required** - the suffixing happens automatically during card rendering!
 
 ### Everyone System - Universal Cards and Moves
 
