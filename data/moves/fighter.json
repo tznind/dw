@@ -261,5 +261,14 @@
     "category": "Advanced Moves",
     "weight": 1,
     "description": "Replaces: **Scent Of Blood**\n\nWhen you **Hack & Slash** an enemy, your next attack against that same foe deals +1d8 damage."
+  },
+  {
+    "id": "f21",
+    "title": "Multiclass Initiate (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Get one move from another class. Treat your level as one lower for choosing the move.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Starting Moves", "Advanced Moves"]
   }
 ]
