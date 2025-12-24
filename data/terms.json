@@ -70,5 +70,57 @@
   {
     "term":"Far",
     "description":"It's useful for attacking something in shouting distance."
+  },
+  {
+    "term":"Applied",
+    "description":"It's only useful when carefully applied to a person or to something they eat or drink."
+  },
+  {
+    "term":"Awkward",
+    "description":"It's unwieldy and tough to use."
+  },
+  {
+    "term":"Bonus",
+    "description":"It modifies your effectiveness in a specified situation. It might be \"+1 forward to spout lore\" or \"-1 ongoing to hack and slash.\""
+  },
+  {
+    "term":"n coins",
+    "description":"How much it costs to buy, normally. If the cost includes \"-Charisma\" a little negotiation subtracts the haggler's Charisma score (not modifier) from the price."
+  },
+  {
+    "term":"Dangerous",
+    "description":"It's easy to get in trouble with it. If you interact with it without proper precautions the GM may freely invoke the consequences of your foolish actions."
+  },
+  {
+    "term":"Ration",
+    "description":"It's edible, more or less."
+  },
+  {
+    "term":"Requires",
+    "description":"It's only useful to certain people. If you don't meet the requirements it works poorly, if at all."
+  },
+  {
+    "term":"Slow",
+    "description":"It takes minutes or more to use."
+  },
+  {
+    "term":"Touch",
+    "description":"It's used by touching it to the target's skin."
+  },
+  {
+    "term":"Two-handed",
+    "description":"It takes two hands to use it effectively."
+  },
+  {
+    "term":"n weight",
+    "description":"Count the listed amount against your Load. Something with no listed weight isn't designed to be carried. 100 coins in standard denominations is 1 weight. The same value in gems or fine art may be lighter or heavier."
+  },
+  {
+    "term":"Worn",
+    "description":"To use it, you have to be wearing it."
+  },
+  {
+    "term":"n Uses",
+    "description":"It can only be used n times."
   }
 ]

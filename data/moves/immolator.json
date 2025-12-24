@@ -27,7 +27,7 @@
   {
     "id": "i1",
     "title": "Burning Brand (+Con)",
-    "description": "When you **conjure a weapon of pure flame**, roll+Con. You may treat your Int as your Str or Dex in regards to making attacks with this weapon.  The weapon always begins with the *fiery*, *touch*, *dangerous* and 3 *uses* tags. Each attack with the weapon consumes one use",
+    "description": "When you **conjure a weapon of pure flame**, roll+Con. You may treat your Int as your Str or Dex in regards to making attacks with this weapon.  The weapon always begins with the **fiery**, **touch**, **dangerous** and 3 **uses** tags. Each attack with the weapon consumes one use",
     "category": "Starting Moves",
     "tracks": [
       {
@@ -42,10 +42,10 @@
         "range": "≥10",
         "text": "Choose two of the following tags.",
         "bullets": [
-          "hand",
-          "thrown, near",
+          "**hand**",
+          "**thrown**, **near**",
           "+1 damage",
-          "remove the *dangerous* tag"
+          "remove the **dangerous** tag"
         ]
       },
       {
@@ -129,7 +129,7 @@
     "id": "i9",
     "title": "This Killing Fire",
     "category": "Advanced Moves",
-    "description": "Add the following tags to your options for **Burning Brand**: messy, forceful, reach, near, far."
+    "description": "Add the following tags to your options for **Burning Brand**: **messy**, **forceful**, **reach**, **near**, **far**."
   },
   {
     "id": "i10",
@@ -181,7 +181,7 @@
     "id": "i13",
     "title": "Burning Bridges",
     "category": "Advanced Moves",
-    "description": "When you **would take your last breath**, don't. Instead, you may erase one of your Bonds. This is permanent and lowers your total available Bonds forever. You are alive and have 1d6 hp. If you have no more Bonds, take your last breath as normal."
+    "description": "When you **would take your** **last breath**, don't. Instead, you may erase one of your Bonds. This is permanent and lowers your total available Bonds forever. You are alive and have 1d6 hp. If you have no more Bonds, take your last breath as normal."
   },
   {
     "id": "i14",
@@ -228,7 +228,7 @@
     "title": "From Hell's Heart (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "When you **summon fire with any of your moves**, you can replace it with the black fires of hell itself. This fire does not burn with heat and ignores armor, scorching the soul itself. Those creatures without souls cannot be harmed by this type of flame."
+    "description": "When you **summon fire** with any of your moves, you can replace it with the black fires of hell itself. This fire does not burn with heat and ignores armor, scorching the soul itself. Those creatures without souls cannot be harmed by this type of flame."
   },
   {
     "id": "i17",
@@ -263,7 +263,7 @@
     "title": "Watch The World Burn (+WIS) (Requires level 6+)",
     "category": "Advanced Moves",
     "weight": 1,
-    "description": "When you **open a channel to the burning planes and call a firestorm**, tell the GM what you're sacrificing and roll+WIS. The sky opens up and fire pours like rain from it within an area about equal to a small village. Everyone and everything in the area takes damage as appropriate.",
+    "description": "When you **open a channel to the burning planes** and call a firestorm, tell the GM what you're sacrificing and roll+WIS. The sky opens up and fire pours like rain from it within an area about equal to a small village. Everyone and everything in the area takes damage as appropriate.",
     "outcomes": [
       {
         "range": "10+",
