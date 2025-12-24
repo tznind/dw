@@ -29,5 +29,183 @@
     "category": "Starting Moves",
     "grantsCard": "quest",
     "description": "When you **dedicate yourself to a mission** through prayer and ritual cleansing, state what you set out to do:"
+  },
+  {
+    "id": "p2",
+    "category": "Advanced Moves",
+    "title": "Divine Favor",
+    "description": "Dedicate yourself to a deity (name a new one or choose one that's already been established). You gain the commune and cast a spell cleric moves. When you select this move, treat yourself as a cleric of level 1 for using spells. Every time you gain a level thereafter, increase your effective cleric level by 1.",
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Cleric Spells"],
+    "details": true,
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+
+  },
+  {
+    "id": "p3",
+    "category": "Advanced Moves",
+    "title": "Bloody Aegis",
+    "description": "When you **take damage** you can grit your teeth and accept the blow. If you do you take no damage but instead suffer a debility of your choice. If you already have all six debilities you can't use this move."
+  },
+  {
+    "id": "p4",
+    "category": "Advanced Moves",
+    "title": "Smite",
+    "description": "While on a Quest you deal +1d4 damage."
+  },
+  {
+    "id": "p5",
+    "category": "Advanced Moves",
+    "title": "Holy Protection",
+    "description": "You get +1 armor while on a Quest."
+  },
+  {
+    "id": "p6",
+    "category": "Advanced Moves",
+    "title": "Voice Of Authority",
+    "description": "Take +1 to order hirelings."
+  },
+  {
+    "id": "p7",
+    "category": "Advanced Moves",
+    "title": "Hospitaller",
+    "description": "When you **heal an ally**, you heal +1d8 damage."
+  },
+  {
+    "id": "p8",
+    "category": "Advanced Moves",
+    "title": "Exterminatus",
+    "description": "When you **speak aloud your promise to defeat an enemy**, you deal +2d4 damage against that enemy and -4 damage against anyone else. This effect lasts until the enemy is defeated. If you fail to defeat the enemy or give up the fight, you can admit your failure, but the effect continues until you find a way to redeem yourself."
+  },
+  {
+    "id": "p9",
+    "category": "Advanced Moves",
+    "title": "Charge!",
+    "description": "When you **lead the charge into combat**, those you lead take **+1 forward**."
+  },
+  {
+    "id": "p10",
+    "category": "Advanced Moves",
+    "title": "Staunch Defender",
+    "description": "When you **Defend** you always get +1 hold, even on a 6-."
+  },
+  {
+    "id": "p11",
+    "category": "Advanced Moves",
+    "title": "Setup Strike",
+    "description": "When you **Hack & Slash**, choose an ally. Their next attack against your target does +1d4 damage."
+  },
+  {
+    "id": "p12",
+    "category": "Advanced Moves",
+    "title": "Evidence Of Faith (Requires level 6+)",
+    "description": "Requires: **Divine Favor**\n\nWhen you **see divine magic as it happens**, you can ask the GM which deity granted the spell and its effects. Take +1 when acting on the answers."
+  },
+  {
+    "id": "p13",
+    "category": "Advanced Moves",
+    "title": "Holy Smite (Requires level 6+)",
+    "description": "Replaces: **Smite**\n\nWhile on a Quest you deal +1d8 damage."
+  },
+  {
+    "id": "p14",
+    "category": "Advanced Moves",
+    "title": "Ever Onward (Requires level 6+)",
+    "description": "Replaces: **Charge!**\n\nWhen you **lead the charge into combat**, those you lead take +1 forward and +2 armor forward."
+  },
+  {
+    "id": "p15",
+    "category": "Advanced Moves",
+    "title": "Impervious Defender (Requires level 6+)",
+    "description": "Replaces: **Staunch Defender**\n\nWhen you **Defend** you always get +1 hold, even on a 6-. When you get a 12+ to defend instead of getting hold the nearest attacking creature is stymied giving you a clear advantage, the GM will describe it."
+  },
+  {
+    "id": "p16",
+    "category": "Advanced Moves",
+    "title": "Perfect Knight (Requires level 6+)",
+    "description": "When you **Quest** you choose three boons instead of two."
+  },
+  {
+    "id": "p17",
+    "category": "Advanced Moves",
+    "title": "Tandem Strike (Requires level 6+)",
+    "description": "Replaces: **Setup Strike**\n\nWhen you **Hack & Slash**, choose an ally. Their next attack against your target does +1d4 damage and they take **+1 forward** against them."
+  },
+  {
+    "id": "p18",
+    "category": "Advanced Moves",
+    "title": "Divine Protection (Requires level 6+)",
+    "description": "Replaces: **Holy Protection**\n\nYou get +2 armor while on a Quest."
+  },
+  {
+    "id": "p19",
+    "category": "Advanced Moves",
+    "title": "Divine Authority (Requires level 6+)",
+    "description": "Replaces: **Voice Of Authority**\n\nTake +1 to order hirelings. When you roll a 12+ the hireling transcends their moment of fear and doubt and carries out your order with particular effectiveness or efficiency."
+  },
+  {
+    "id": "p20",
+    "category": "Advanced Moves",
+    "title": "Perfect Hospitaller (Requires level 6+)",
+    "description": "Replaces: **Hospitaller**\n\nWhen you **heal an ally**, you heal +2d8 damage."
+  },
+  {
+    "id": "p21",
+    "category": "Advanced Moves",
+    "title": "Indomitable (Requires level 6+)",
+    "description": "When you **suffer a debility** (even through Bloody Aegis) take +1 forward against whatever caused it."
+  },
+  {
+    "id": "p22",
+    "category": "Starting Moves",
+    "title": "Lay On Hands (+CHA)",
+    "description": "When you **touch someone**, skin to skin, and pray for their well-being, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "You heal 1d8 damage or remove one disease."
+      },
+      {
+        "range": "7-9",
+        "text": "They are healed, but the damage or disease is transferred to you."
+      }
+    ]
+  },
+  {
+    "id": "p23",
+    "category": "Starting Moves",
+    "title": "I Am The Law (+CHA)",
+    "description": "When you give an NPC an order based on your divine authority, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "They choose one, and you take **+1 forward** against them:",
+        "bullets": [
+          "Do what you say",
+          "Back away cautiously, then flee",
+          "Attack you"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "They choose one"
+      },
+      {
+        "range": "≤6",
+        "text": "They do as they please and you take **-1 forward** against them."
+      }
+    ]
+  },
+  {
+    "id": "p24",
+    "category": "Starting Moves",
+    "title": "Armored",
+    "description": "You ignore the **clumsy** tag on armor you wear."
   }
 ]

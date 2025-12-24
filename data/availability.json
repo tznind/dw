@@ -292,7 +292,30 @@
     ],
     "pa": true,
     "pr": true,
-    "p1": true
+    "p1": true,
+    "p2": false,
+    "p3": false,
+    "p4": false,
+    "p5": false,
+    "p6": false,
+    "p7": false,
+    "p8": false,
+    "p9": false,
+    "p10": false,
+    "p11": false,
+    "p12": false,
+    "p13": false,
+    "p14": false,
+    "p15": false,
+    "p16": false,
+    "p17": false,
+    "p18": false,
+    "p19": false,
+    "p20": false,
+    "p21": false,
+    "p22": true,
+    "p23": true,
+    "p24": true
   },
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
@@ -310,7 +333,10 @@
     ],
     "ra": true,
     "rr": true,
-    "r1": true
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "r4": true
   },
   "Thief": {
     "_movesFile": "data/moves/thief.json",

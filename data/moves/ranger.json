@@ -31,5 +31,92 @@
     "category": "Starting Moves",
     "grantsCard": "animal-companion",
     "description": "You have a supernatural connection with a loyal animal. You can't talk to it per se but it always acts as you wish it to."
+  },
+  {
+    "id": "r2",
+    "title": "Hunt & Track (+WIS)",
+    "category": "Starting Moves",
+    "description": "When you **follow a trail of clues left behind by passing creatures**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "You follow the creature's trail until there's a significant change in its direction or mode of travel, and choose 1:",
+        "bullets": [
+          "Gain a useful bit of information about your quarry, the GM will tell you what",
+          "Determine what caused the trail to end"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "You follow the creature's trail until there's a significant change in its direction or mode of travel."
+      }
+    ]
+  },
+  {
+    "id": "r3",
+    "title": "Called Shot",
+    "category": "Starting Moves",
+    "description": "When you **attack a defenseless or surprised enemy at range**, you can choose to deal your damage or name your target and roll+DEX.",
+    "submoves": [
+      {
+        "title": "Head",
+            "outcomes": [
+            {
+              "range": "≥10",
+              "text": "As 7-9, plus your damage."
+            },
+            {
+              "range": "7-9",
+              "text": "They do nothing but stand and drool for a few moments."
+            }
+          ]
+      },
+      {
+        "title": "Arms",
+        "outcomes": [
+          {
+            "range": "≥10",
+            "text": "As 7-9, plus your damage."
+          },
+          {
+            "range": "7-9",
+            "text": "They drop anything they're holding."
+          }
+        ]
+      },
+      {
+        "title": "Legs",
+        "outcomes": [
+          {
+            "range": "≥10",
+            "text": "As 7-9, plus your damage."
+          },
+          {
+            "range": "7-9",
+            "text": "They're hobbled and slow moving."
+          }
+        ]
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "r4",
+    "title": "Command",
+    "category": "Starting Moves",
+    "description": "When you **work with your animal companion on something it's trained in**:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "and you attack the same target, add its *ferocity* to your damage",
+          "and you track, add its *cunning* to your roll",
+          "and you take damage, add its *armor* to your *armor*",
+          "and you **Discern Realities**, add its *cunning* to your roll",
+          "and you **Parley**, add its *cunning* to your roll",
+          "and someone Interferes with you, add its *instinct* to their roll"
+        ]
+      }
+    ]
   }
 ]
