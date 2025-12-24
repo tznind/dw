@@ -24,7 +24,7 @@
   {
     "id": "b1",
     "title": "Armor",
-    "description": "Choose onef of these to start with:",
+    "description": "Choose one of these to start with:",
     "category": "Starting Moves",
     "pickOne": [
       "You ignore the clumsy tag on armor.",
