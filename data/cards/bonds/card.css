@@ -44,8 +44,14 @@
   background: #007bff;
 }
 
-.load-default-bonds-btn:hover {
+.load-default-bonds-btn:hover:not(:disabled) {
   background: #0056b3;
+}
+
+.load-default-bonds-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .add-bond-btn:focus,

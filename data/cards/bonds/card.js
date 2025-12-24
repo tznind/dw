@@ -8,6 +8,21 @@ window.CardInitializers.bonds = function(container, suffix) {
     window.DynamicTable.initializeInContainer(container, suffix);
   }
 
+  // Get the button element
+  const loadDefaultsBtn = helpers.getElement('load-default-bonds-btn');
+
+  // Disable button until data is ready
+  if (loadDefaultsBtn) {
+    loadDefaultsBtn.disabled = !window.availableMap;
+
+    // Enable button when data is ready (if not already loaded)
+    if (!window.availableMap) {
+      window.addEventListener('movesDataReady', () => {
+        loadDefaultsBtn.disabled = false;
+      }, { once: true });
+    }
+  }
+
   // Handle Load Defaults button
   helpers.addEventListener('load-default-bonds-btn', 'click', () => {
     // Get current roles using Utils
