@@ -1,0 +1,142 @@
+.equipment-card {
+  margin-bottom: 20px;
+}
+
+.equipment-card table {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Make weight column narrow */
+.equipment-card table th.weight-col,
+.equipment-card table td:nth-child(2) {
+  width: 70px;
+  min-width: 70px;
+  max-width: 70px;
+}
+
+/* Hide placeholder text in weight inputs */
+.equipment-card table td:nth-child(2) input::placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+.equipment-card table td:nth-child(2) input::-webkit-input-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+.equipment-card table td:nth-child(2) input::-moz-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+.equipment-card table td:nth-child(2) input:-ms-input-placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+.equipment-card table .totals-row {
+  border-top: 1px solid #999;
+  background-color: #f8f9fa;
+}
+
+.equipment-card table .totals-row td {
+  padding: 6px 8px;
+  font-size: 0.9em;
+}
+
+.equipment-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-equipment-btn,
+.load-default-gear-btn {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  flex: 1;
+}
+
+.add-equipment-btn {
+  background: #28a745;
+}
+
+.add-equipment-btn:hover {
+  background: #218838;
+}
+
+.load-default-gear-btn {
+  background: #007bff;
+}
+
+.load-default-gear-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.load-default-gear-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.gear-help-btn {
+  padding: 6px 12px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.gear-help-btn:hover {
+  background: #5a6268;
+}
+
+.add-equipment-btn:focus,
+.load-default-gear-btn:focus,
+.gear-help-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+.equipment-notes-section {
+  margin-top: 15px;
+}
+
+.equipment-notes-section label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.equipment-notes-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.equipment-notes-section textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}

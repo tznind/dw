@@ -1,0 +1,13 @@
+{
+  "id": "equipment",
+  "title": "Equipment",
+  "path": "data/cards/equipment",
+  "description": "Your starting gear and equipment",
+  "version": "1.0.0",
+  "author": "Dungeon World",
+  "files": {
+    "html": "card.html",
+    "css": "card.css",
+    "js": "card.js"
+  }
+}

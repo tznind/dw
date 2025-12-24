@@ -13,6 +13,18 @@
       "________ is always getting into trouble - I must protect them from themselves.",
       "________ shares my hunger for glory; the earth will tremble at our passing!"
     ],
+    "default-gear": [
+      { "item": "Dungeon Rations (5 uses)", "weight": 1 },
+      { "item": "Dagger (hand)", "weight": 1 },
+      { "item": "Some Token of where you've travelled or where you're from", "weight": 0 },
+      { "item": "Choose your weapon:", "weight": 0 },
+      { "item": "  Axe (close)", "weight": 1 },
+      { "item": "  Two-handed Sword (close, +1 damage)", "weight": 2 },
+      { "item": "", "weight": 0 },
+      { "item": "Choose one:", "weight": 0 },
+      { "item": "  Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2 },
+      { "item": "  Chainmail (1 armor, worn)", "weight": 1 }
+    ],
     "ba": true,
     "br": true,
     "b1": true,
@@ -57,6 +69,7 @@
       "________ trusted me with a secret",
       "________ does not trust me, and for good reason"
     ],
+    "default-gear": [],
     "aa": true,
     "ar": true,
     "a1": true,
@@ -98,6 +111,7 @@
       "________ is in constant danger, I will keep them safe.",
       "I am working on converting ________ to my faith."
     ],
+    "default-gear": [],
     "ca": true,
     "cr": true,
     "c1": true,
@@ -175,6 +189,7 @@
       "I have showed ________ a secret rite of the land.",
       "________ has tasted my blood and I theirs. We are bound by it."
     ],
+    "default-gear": [],
     "da": true,
     "dr": true,
     "d1": true,
@@ -216,6 +231,7 @@
       "I worry about the ability of ________ to survive in the dungeon",
       "________ is soft, but I will make them hard like me"
     ],
+    "default-gear": [],
     "fa": true,
     "fr": true,
     "f1": true,
@@ -254,6 +270,7 @@
       "I will teach ________ the true meaning of sacrifice.",
       "I cast something into the fire for ________ and still owe them their due."
     ],
+    "default-gear": [],
     "ia": true,
     "ir": true,
     "i1": true,
@@ -290,6 +307,7 @@
       "I respect the beliefs of ________ but hope they will someday see the true way.",
       "________ is a brave soul, I have much to learn from them."
     ],
+    "default-gear": [],
     "pa": true,
     "pr": true,
     "p1": true,
@@ -331,6 +349,7 @@
       "________ has no respect for nature, so I have no respect for them.",
       "________ does not understand life in the wild, so I will teach them."
     ],
+    "default-gear": [],
     "ra": true,
     "rr": true,
     "r1": true,
@@ -373,6 +392,7 @@
       "________ and I have a con running."
 
     ],
+    "default-gear": [],
     "ta": true,
     "tr": true,
     "t1": true,
@@ -412,6 +432,7 @@
       "________ is keeping an important secret from me",
       "________ is woefully misinformed about the world; I will teach them all I can"
     ],
+    "default-gear": [],
     "wa": true,
     "wr": true,
     "w1": true,
@@ -473,7 +494,7 @@
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",
     "description": "Universal moves available to all characters.",
-    "cards": ["bonds"],
+    "cards": ["bonds", "equipment"],
     "bm1": true,
     "bm2": true,
     "bm3": true,

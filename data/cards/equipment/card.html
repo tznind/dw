@@ -1,0 +1,31 @@
+<div class="card equipment-card">
+  <h3 class="card-title">🎒 Equipment</h3>
+  <div class="card-content">
+    <table id="equipment" data-dynamic-table data-table-max="50">
+      <thead>
+        <tr>
+          <th data-field="item">Item</th>
+          <th data-field="weight" data-type="number" data-default="0" data-placeholder="" class="weight-col">Weight</th>
+          <th></th> <!-- Empty header for delete button column -->
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr class="totals-row">
+          <td>Total Weight:</td>
+          <td id="total-weight">0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="equipment-buttons">
+      <button type="button" data-table-add="equipment" class="add-equipment-btn">+ Add Item</button>
+      <button type="button" id="load-default-gear-btn" class="load-default-gear-btn">Load Defaults</button>
+      <button type="button" id="gear-help-btn" class="gear-help-btn" title="Delete items as required for starting gear">?</button>
+    </div>
+    <div class="equipment-notes-section">
+      <label for="equipment-notes">Notes:</label>
+      <textarea id="equipment-notes" data-persist rows="4"></textarea>
+    </div>
+  </div>
+</div>
