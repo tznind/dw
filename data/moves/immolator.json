@@ -155,7 +155,11 @@
     "id": "i11",
     "title": "Ogdru Jahad",
     "category": "Advanced Moves",
-    "description": "Gain the Wizard move **Ritual**. The GM will always tell you what you have to sacrifice to gain the effect you desire."
+    "description": "Gain the Wizard move **Ritual**. The GM will always tell you what you have to sacrifice to gain the effect you desire.",
+    "submoves": [{
+      "title": "Ritual",
+      "description": "When you draw on a place of power to create a magical effect, tell the GM what you're trying to achieve. Ritual effects are always possible, but the GM will *tell you what you have to sacrifice*:"
+    }]
   },
   {
     "id": "i12",

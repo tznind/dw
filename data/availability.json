@@ -294,7 +294,12 @@
       "________ is woefully misinformed about the world; I will teach them all I can"
     ],
     "wa": true,
-    "wr": true
+    "wr": true,
+    "w1": true,
+    "w2": true,
+    "w3": true,
+    "w4": true,
+    "w5": true
   },
   "Everyone": {
     "_movesFile": "data/moves/everyone.json",

@@ -30,12 +30,72 @@
   },
   {
     "id": "w1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
+    "title": "Cast A Spell (+INT)",
+    "category": "Starting Moves",
+    "description": "When you **release a spell you've prepared**, roll+INT.",
     "outcomes": [
       {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
+        "range": "≥10",
+        "text": "The spell is successfully cast and you may cast the spell again later."
+      },
+      {
+        "range": "7-9",
+        "text": "The spell is cast, but choose one:",
+        "bullets": [
+          "You draw unwelcome attention or put yourself in a spot. The GM will tell you how.",
+          "The spell disturbs the fabric of reality as it is cast; take **-1 ongoing** to cast a spell until the next time you Prepare Spells.",
+          "After it is cast, the spell is forgotten. You cannot cast the spell again until you prepare spells."
+        ]
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "w2",
+    "title": "Spellbook",
+    "category": "Starting Moves",
+    "description": "You have mastered several spells and inscribed them in your spellbook. You start out with three first level spells, as well as all your cantrips. Whenever you gain a level, you inscribe a new spell of your level or lower. Your spellbook is **1 weight**.",
+    "details": true
+  },
+  {
+    "id": "w3",
+    "title": "Spell Defense",
+    "category": "Starting Moves",
+    "description": "You may end any ongoing spell immediately and use the energy of its dissipation to deflect an oncoming attack. The spell ends and you subtract its level from the damage done to you."
+  },
+  {
+    "id": "w4",
+    "title": "Prepare Spells",
+    "category": "Starting Moves",
+    "description": "When you spend uninterrupted time (an hour or so) in **quiet contemplation** of your spellbook, you:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Lose any spells you already prepared",
+          "Prepare new spells chosen from your spellbook whose total levels don't exceed your own level +1",
+          "Prepare your cantrips which never count against your limit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w5",
+    "title": "Ritual",
+    "category": "Starting Moves",
+    "description": "When you **draw on a place of power to create a magical effect**, tell the GM what you're trying to achieve. Ritual effects are always possible, but the GM will give you one to four of the following conditions:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "It's going to take days/weeks/months",
+          "First you must ______",
+          "You'll need help from ______",
+          "It will require a lot of money",
+          "The best you can do is a lesser version, unreliable and limited",
+          "You and your allies will risk danger from ______",
+          "You'll have to disenchant ______ to do it"
+        ]
       }
     ]
   }
