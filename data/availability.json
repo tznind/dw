@@ -230,7 +230,21 @@
     "i2": true,
     "i3": true,
     "i4": true,
-    "i5": true
+    "i5": true,
+    "i6": false,
+    "i7": false,
+    "i8": false,
+    "i9": false,
+    "i10": false,
+    "i11": false,
+    "i12": false,
+    "i13": false,
+    "i14": false,
+    "i15": false,
+    "i16": false,
+    "i17": false,
+    "i18": false,
+    "i19": false
   },
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
@@ -242,7 +256,8 @@
       "________ is a brave soul, I have much to learn from them."
     ],
     "pa": true,
-    "pr": true
+    "pr": true,
+    "p1": true
   },
   "Ranger": {
     "_movesFile": "data/moves/ranger.json",
@@ -254,7 +269,8 @@
       "________ does not understand life in the wild, so I will teach them."
     ],
     "ra": true,
-    "rr": true
+    "rr": true,
+    "r1": true
   },
   "Thief": {
     "_movesFile": "data/moves/thief.json",

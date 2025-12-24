@@ -1,0 +1,109 @@
+<div class="card quest-card">
+  <h3 class="card-title">⚔️ Quest</h3>
+  <div class="card-content">
+    <!-- Mission Selection -->
+    <div class="form-section">
+      <label class="section-label">Choose your mission:</label>
+      <div class="mission-options">
+        <div class="mission-option">
+          <input type="radio" id="mission-slay" name="quest-mission" value="Slay" data-hide-if-untaken>
+          <label for="mission-slay" data-hide-if-untaken>Slay</label>
+          <input type="text" id="mission-slay-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken>, a great blight on the land</span>
+        </div>
+        <div class="mission-option">
+          <input type="radio" id="mission-defend" name="quest-mission" value="Defend" data-hide-if-untaken>
+          <label for="mission-defend" data-hide-if-untaken>Defend</label>
+          <input type="text" id="mission-defend-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken> from the iniquities that beset them</span>
+        </div>
+        <div class="mission-option">
+          <input type="radio" id="mission-discover" name="quest-mission" value="Discover" data-hide-if-untaken>
+          <label for="mission-discover" data-hide-if-untaken>Discover the truth of</label>
+          <input type="text" id="mission-discover-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken>.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boons -->
+    <div class="form-section">
+      <label class="section-label">Choose up to two boons:</label>
+      <div class="checkbox-group">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-direction">
+          <label for="boon-direction">
+            An unwavering sense of direction to
+            <input type="text" id="boon-direction-target" class="inline-text" placeholder="your destination">
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-invulnerability">
+          <label for="boon-invulnerability">
+            Invulnerability to
+            <input type="text" id="boon-invulnerability-target" class="inline-text" placeholder="edged weapons, fire, enchantment, etc.">
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-authority">
+          <label for="boon-authority">A mark of divine authority</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-senses">
+          <label for="boon-senses">Senses that pierce lies</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-voice">
+          <label for="boon-voice">A voice that transcends language</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-freedom">
+          <label for="boon-freedom">Freedom from hunger, thirst, and sleep</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vows -->
+    <div class="form-section">
+      <label class="section-label">The GM will tell you what vow(s) are required:</label>
+      <div class="checkbox-group">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-honor">
+          <label for="vow-honor">
+            <strong>Honor</strong> (forbidden: cowardly tactics and tricks)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-temperance">
+          <label for="vow-temperance">
+            <strong>Temperance</strong> (forbidden: gluttony in food, drink, and pleasure of the flesh)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-piety">
+          <label for="vow-piety">
+            <strong>Piety</strong> (required: observance of daily holy services)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-valor">
+          <label for="vow-valor">
+            <strong>Valor</strong> (forbidden: suffering an evil creature to live)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-truth">
+          <label for="vow-truth">
+            <strong>Truth</strong> (forbidden: lies)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-hospitality">
+          <label for="vow-hospitality">
+            <strong>Hospitality</strong> (required: comfort to those in need, no matter who they are)
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -25,13 +25,9 @@
   },
   {
     "id": "p1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
-      }
-    ]
+    "title": "Quest",
+    "category": "Starting Moves",
+    "grantsCard": "quest",
+    "description": "When you **dedicate yourself to a mission** through prayer and ritual cleansing, state what you set out to do:"
   }
 ]

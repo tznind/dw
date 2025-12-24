@@ -1,0 +1,229 @@
+<div class="card animal-companion-card">
+  <h3 class="card-title">🐺 Animal Companion</h3>
+  <div class="card-content">
+
+    <!-- Name -->
+    <div class="form-section">
+      <label class="section-label" for="companion-name">Name:</label>
+      <input type="text" id="companion-name" class="name-input" placeholder="Your companion's name">
+    </div>
+
+    <!-- Species -->
+    <div class="form-section">
+      <label class="section-label">Species:</label>
+      <div class="radio-group-inline">
+        <div class="radio-item">
+          <input type="radio" id="species-wolf" name="companion-species" value="Wolf" data-hide-if-untaken>
+          <label for="species-wolf" data-hide-if-untaken>Wolf</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-cougar" name="companion-species" value="Cougar" data-hide-if-untaken>
+          <label for="species-cougar" data-hide-if-untaken>Cougar</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-bear" name="companion-species" value="Bear" data-hide-if-untaken>
+          <label for="species-bear" data-hide-if-untaken>Bear</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-eagle" name="companion-species" value="Eagle" data-hide-if-untaken>
+          <label for="species-eagle" data-hide-if-untaken>Eagle</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-dog" name="companion-species" value="Dog" data-hide-if-untaken>
+          <label for="species-dog" data-hide-if-untaken>Dog</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-hawk" name="companion-species" value="Hawk" data-hide-if-untaken>
+          <label for="species-hawk" data-hide-if-untaken>Hawk</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-cat" name="companion-species" value="Cat" data-hide-if-untaken>
+          <label for="species-cat" data-hide-if-untaken>Cat</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-owl" name="companion-species" value="Owl" data-hide-if-untaken>
+          <label for="species-owl" data-hide-if-untaken>Owl</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-pigeon" name="companion-species" value="Pigeon" data-hide-if-untaken>
+          <label for="species-pigeon" data-hide-if-untaken>Pigeon</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-rat" name="companion-species" value="Rat" data-hide-if-untaken>
+          <label for="species-rat" data-hide-if-untaken>Rat</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="species-mule" name="companion-species" value="Mule" data-hide-if-untaken>
+          <label for="species-mule" data-hide-if-untaken>Mule</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Base Stats -->
+    <div class="form-section">
+      <label class="section-label">Choose a base:</label>
+      <div class="base-options">
+        <div class="base-option">
+          <input type="radio" id="base-1" name="companion-base" value="base-1" data-hide-if-untaken>
+          <label for="base-1" data-hide-if-untaken>Ferocity +2, Cunning +1, Instinct +1, 1 Armor</label>
+        </div>
+        <div class="base-option">
+          <input type="radio" id="base-2" name="companion-base" value="base-2" data-hide-if-untaken>
+          <label for="base-2" data-hide-if-untaken>Ferocity +2, Cunning +2, Instinct +1, 0 Armor</label>
+        </div>
+        <div class="base-option">
+          <input type="radio" id="base-3" name="companion-base" value="base-3" data-hide-if-untaken>
+          <label for="base-3" data-hide-if-untaken>Ferocity +1, Cunning +2, Instinct +1, 1 Armor</label>
+        </div>
+        <div class="base-option">
+          <input type="radio" id="base-4" name="companion-base" value="base-4" data-hide-if-untaken>
+          <label for="base-4" data-hide-if-untaken>Ferocity +3, Cunning +1, Instinct +2, 1 Armor</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strengths -->
+    <div class="form-section">
+      <label class="section-label">Choose as many strengths as its Ferocity:</label>
+      <div class="checkbox-group-columns">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-fast">
+          <label for="strength-fast">Fast</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-burly">
+          <label for="strength-burly">Burly</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-huge">
+          <label for="strength-huge">Huge</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-calm">
+          <label for="strength-calm">Calm</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-adaptable">
+          <label for="strength-adaptable">Adaptable</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-tireless">
+          <label for="strength-tireless">Tireless</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-reflexes">
+          <label for="strength-reflexes">Quick Reflexes</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-camouflage">
+          <label for="strength-camouflage">Camouflage</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-ferocious">
+          <label for="strength-ferocious">Ferocious</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-intimidating">
+          <label for="strength-intimidating">Intimidating</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-senses">
+          <label for="strength-senses">Keen Senses</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="strength-stealthy">
+          <label for="strength-stealthy">Stealthy</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainings -->
+    <div class="form-section">
+      <label class="section-label">Your animal companion is trained to fight humanoids. Choose as many additional trainings as its Cunning:</label>
+      <div class="checkbox-group-columns">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-hunt">
+          <label for="training-hunt">Hunt</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-search">
+          <label for="training-search">Search</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-scout">
+          <label for="training-scout">Scout</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-guard">
+          <label for="training-guard">Guard</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-labor">
+          <label for="training-labor">Labor</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-travel">
+          <label for="training-travel">Travel</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-monsters">
+          <label for="training-monsters">Fight Monsters</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="training-perform">
+          <label for="training-perform">Perform</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weaknesses -->
+    <div class="form-section">
+      <label class="section-label">Choose as many weaknesses as its Instinct:</label>
+      <div class="checkbox-group-columns">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-flighty">
+          <label for="weakness-flighty">Flighty</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-savage">
+          <label for="weakness-savage">Savage</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-slow">
+          <label for="weakness-slow">Slow</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-broken">
+          <label for="weakness-broken">Broken</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-frightening">
+          <label for="weakness-frightening">Frightening</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-forgetful">
+          <label for="weakness-forgetful">Forgetful</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-stubborn">
+          <label for="weakness-stubborn">Stubborn</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="weakness-lame">
+          <label for="weakness-lame">Lame</label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -96,5 +96,187 @@
     "title": "Hand Crafted",
     "description": "You may use your hands in place of tools and fire to craft metal objects.  Mundane weapons, armor and metal jewellery can all be formed from their raw components.  You may unmake these things, as well, but do so without time and safety might require that you **defy danger** first.",
     "category": "Starting Moves"
+  },
+  {
+    "id": "i6",
+    "title": "Lore Of Flame (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **stare into a source of fire, looking for answers**, roll+WIS. If you already know all there is to know, the GM will tell you that.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "The GM will tell you something new and interesting about the current situation with good detail."
+      },
+      {
+        "range": "7-9",
+        "text": "The GM will give you an impression."
+      }
+    ]
+  },
+  {
+    "id": "i7",
+    "title": "Burns Twice As Bright",
+    "category": "Advanced Moves",
+    "description": "When you **channel the flames of fate**, you may treat a missed roll as a 7-9 or a 7-9 result as a 10+. This may be a roll you or another character has made. Tell the GM something you've lost; an emotion, a memory or some innate piece of your being. You may not use this move again until you've used **Burns Half As Long**."
+  },
+  {
+    "id": "i8",
+    "title": "Burns Half As Long",
+    "category": "Advanced Moves",
+    "description": "You gain this move when you gain **Burns Twice As Bright**.\n\nWhen you **sacrifice a victory to the flames of fate**, treat any roll of 10+ as a miss."
+  },
+  {
+    "id": "i9",
+    "title": "This Killing Fire",
+    "category": "Advanced Moves",
+    "description": "Add the following tags to your options for **Burning Brand**: messy, forceful, reach, near, far."
+  },
+  {
+    "id": "i10",
+    "title": "Firebrand (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **introduce a new idea to an NPC**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "They believe the idea to be their own and take to it with fervour."
+      },
+      {
+        "range": "7-9",
+        "text": "Their passion fades after a day or two."
+      },
+      {
+        "range": "6-",
+        "text": "They respond negatively, speaking out against the idea."
+      }
+    ]
+  },
+  {
+    "id": "i11",
+    "title": "Ogdru Jahad",
+    "category": "Advanced Moves",
+    "description": "Gain the Wizard move **Ritual**. The GM will always tell you what you have to sacrifice to gain the effect you desire."
+  },
+  {
+    "id": "i12",
+    "title": "Moth To The Flame (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **tempt a weak mind with your inner fire**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Their will is suppressed, they'll follow you and do as you desire, so long as nothing startles or surprises them."
+      },
+      {
+        "range": "7-9",
+        "text": "The effect is only strong enough to distract or confuse them."
+      },
+      {
+        "range": "6-",
+        "text": "They become agitated and upset, your fire having sparked their hidden desires."
+      }
+    ]
+  },
+  {
+    "id": "i13",
+    "title": "Burning Bridges",
+    "category": "Advanced Moves",
+    "description": "When you **would take your last breath**, don't. Instead, you may erase one of your Bonds. This is permanent and lowers your total available Bonds forever. You are alive and have 1d6 hp. If you have no more Bonds, take your last breath as normal."
+  },
+  {
+    "id": "i14",
+    "title": "The Enkindler (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **bolster the courage of others**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "They shake off all fear and doubt, becoming brave in an instant."
+      },
+      {
+        "range": "7-9",
+        "text": "This effect is fleeting, they realize its superficiality and resort to cowardice after a moment or two."
+      },
+      {
+        "range": "6-",
+        "text": "They're cowed or terrified by your presence."
+      }
+    ]
+  },
+  {
+    "id": "i15",
+    "title": "Sick Burn (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **insult an NPC**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "You leave them no room to react, they bear your insult and the scorn of all who hear it."
+      },
+      {
+        "range": "7-9",
+        "text": "You cross a line, they will have their revenge, someday."
+      },
+      {
+        "range": "6-",
+        "text": "You've gone too far, they blow up here and now."
+      }
+    ]
+  },
+  {
+    "id": "i16",
+    "title": "From Hell's Heart (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **summon fire with any of your moves**, you can replace it with the black fires of hell itself. This fire does not burn with heat and ignores armor, scorching the soul itself. Those creatures without souls cannot be harmed by this type of flame."
+  },
+  {
+    "id": "i17",
+    "title": "Burning Ring Of Fire (+CHA) (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **fuse a willing person's soul to yours**, roll+CHA. This fusion, once performed, cannot be undone by mortal means.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "You are bound together, able to sense each other at any distance, as well as sharing your emotional state."
+      },
+      {
+        "range": "7-9",
+        "text": "The connection is unstable and dangerous. When you take a debility, so do they (and vice versa)."
+      },
+      {
+        "range": "6-",
+        "text": "The branding is rejected and you both erase any Bonds you have to each other. You may write new Bonds with them at the End of Session as usual."
+      }
+    ]
+  },
+  {
+    "id": "i18",
+    "title": "Fanning The Flames (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Requires: **Firebrand**\n\nYou may apply the effects of your **Firebrand** move to a group of people - a dozen or so - all at once."
+  },
+  {
+    "id": "i19",
+    "title": "Watch The World Burn (+WIS) (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **open a channel to the burning planes and call a firestorm**, tell the GM what you're sacrificing and roll+WIS. The sky opens up and fire pours like rain from it within an area about equal to a small village. Everyone and everything in the area takes damage as appropriate.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "You can extinguish the storm with a little effort."
+      },
+      {
+        "range": "7-9",
+        "text": "The fires rage out of your control, spreading and gusting where they are carried by wind and weather."
+      },
+      {
+        "range": "6-",
+        "text": "Something cruel, intelligent and hungry comes with the storm."
+      }
+    ]
   }
 ]

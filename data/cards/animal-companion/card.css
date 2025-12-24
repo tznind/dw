@@ -1,4 +1,4 @@
-.signature-weapon-card {
+.animal-companion-card {
   margin-bottom: 20px;
 }
 
@@ -18,29 +18,82 @@
   font-size: 1em;
 }
 
+.name-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #5a8a3a;
+  box-shadow: 0 0 0 2px rgba(90, 138, 58, 0.1);
+}
+
 .radio-group-inline {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  align-items: center;
 }
 
-.radio-group-inline input[type="radio"] {
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.radio-item input[type="radio"] {
   margin: 0;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
-.radio-group-inline label {
+.radio-item label {
   cursor: pointer;
   user-select: none;
-  margin-right: 15px;
 }
 
-.radio-group-inline label:hover {
+.radio-item label:hover {
   color: #0056b3;
 }
 
-.radio-group-inline input[type="radio"]:checked + label {
+.radio-item input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #000;
+}
+
+.base-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.base-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.base-option input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.base-option label {
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+}
+
+.base-option label:hover {
+  color: #0056b3;
+}
+
+.base-option input[type="radio"]:checked + label {
   font-weight: bold;
   color: #000;
 }

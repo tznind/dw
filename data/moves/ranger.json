@@ -27,13 +27,9 @@
   },
   {
     "id": "r1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
-      }
-    ]
+    "title": "Animal Companion",
+    "category": "Starting Moves",
+    "grantsCard": "animal-companion",
+    "description": "You have a supernatural connection with a loyal animal. You can't talk to it per se but it always acts as you wish it to."
   }
 ]
