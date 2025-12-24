@@ -31,6 +31,235 @@
     "id": "f1",
     "title": "Signature Weapon",
     "category": "Starting Moves",
-    "grantsCard": "signature-weapon"
+    "grantsCard": "signature-weapon",
+    "details": true
+  },
+  {
+    "id": "f2",
+    "title": "Bend Bars, Lift Gates",
+    "category": "Starting Moves",
+    "description": "When you use pure strength to destroy an inanimate obstacle, roll+STR.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Choose 3:",
+        "bullets": [
+          "It doesn't take a very long time",
+          "Nothing of value is damaged",
+          "It doesn't make an inordinate amount of noise",
+          "You can fix the thing again without a lot of effort"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 2"
+      }
+    ]
+  },
+  {
+    "id": "f3",
+    "title": "Armored",
+    "category": "Starting Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "You ignore the clumsy tag on any armor you wear."
+      }
+    ]
+  },
+  {
+    "id": "f4",
+    "title": "Merciless",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you **deal damage**, deal +1d4 damage."
+      }
+    ]
+  },
+  {
+    "id": "f5",
+    "title": "Heirloom (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **consult the spirits that reside within your signature weapon**, they will give you an insight relating to the current situation, and might ask you some questions in return, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "The GM will give you good detail."
+      },
+      {
+        "range": "7-9",
+        "text": "The GM will give you an impression."
+      }
+    ]
+  },
+  {
+    "id": "f6",
+    "title": "Improved Weapon",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Choose one extra enhancement for your signature weapon."
+      }
+    ]
+  },
+  {
+    "id": "f7",
+    "title": "Blacksmith",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you have access to a forge you can graft the magical powers of a weapon onto your signature weapon. This process destroys the magical weapon. Your signature weapon gains the magical powers of the destroyed weapon."
+      }
+    ]
+  },
+  {
+    "id": "f8",
+    "title": "Iron Hide",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "You gain +1 armor."
+      }
+    ]
+  },
+  {
+    "id": "f9",
+    "title": "Armor Mastery",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you make your armor take the brunt of damage dealt to you, the damage is negated but you must reduce the armor value of your armor or shield (your choice) by 1. The value is reduced each time you make this choice. If the reduction leaves the item with 0 armor it is destroyed."
+      }
+    ]
+  },
+  {
+    "id": "f10",
+    "title": "Seeing Red",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you **Discern Realities** during combat, you take +1."
+      }
+    ]
+  },
+  {
+    "id": "f11",
+    "title": "Interrogator",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you **parley** **using threats of violence as leverage**, you may use STR instead of CHA."
+      }
+    ]
+  },
+  {
+    "id": "f12",
+    "title": "Scent Of Blood",
+    "category": "Advanced Moves",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "When you **Hack & Slash** an enemy, your next attack against that same foe deals +1d4 damage."
+      }
+    ]
+  },
+  {
+    "id": "f13",
+    "title": "Bloodthirsty (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Replaces: **Merciless**\n\nWhen you deal damage, deal +1d8 damage."
+  },
+  {
+    "id": "f14",
+    "title": "Through Death's Eyes (+WIS) (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **go into battle**, roll+WIS.  Name NPCs, not player characters. The GM will make your vision come true, if it's even remotely possible.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Name someone who will live *and* someone who will die."
+      },
+      {
+        "range": "7-9",
+        "text": "Name someone who will live *or* someone who will die."
+      },
+      {
+        "range": "6-",
+        "text": "You see your own death and consequently take -1 ongoing throughout the battle."
+      }
+    ]
+  },
+  {
+    "id": "f15",
+    "title": "Eye For Weaponry (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **look over an enemy's weaponry**, ask the GM how much damage they do."
+  },
+  {
+    "id": "f16",
+    "title": "Superior Warrior (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "When you **Hack & Slash**, on a 12+ you deal your damage, avoid their attack, and impress, dismay, or frighten your enemy."
+  },
+  {
+    "id": "f17",
+    "title": "Steel Hide (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Replaces: **Iron Hide**\n\nYou gain +2 armor."
+  },
+  {
+    "id": "f18",
+    "title": "Armored Perfection (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Replaces: **Armor Mastery**\n\nWhen you choose to let your armor take the brunt of damage dealt to you, the damage is negated and you take +1 forward against the attacker, but you must reduce the armor value of your armor or shield (your choice) by 1. The value is reduced each time you make this choice. If the reduction leaves the item with 0 armor it is destroyed."
+  },
+  {
+    "id": "f19",
+    "title": "Evil Eye (+CHA) (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Requires: **Seeing Red**\n\nWhen you enter combat, roll+CHA.",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 2,
+        "shape": "square"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Hold 2. Spend your hold to make eye contact with an NPC present, who freezes or flinches and can't act until you break it off."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 1."
+      },
+      {
+        "range": "6-",
+        "text": "Your enemies immediately identify you as their biggest threat."
+      }
+    ]
+  },
+  {
+    "id": "f20",
+    "title": "Taste Of Blood (Requires level 6+)",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "description": "Replaces: **Scent Of Blood**\n\nWhen you **Hack & Slash** an enemy, your next attack against that same foe deals +1d8 damage."
   }
 ]
