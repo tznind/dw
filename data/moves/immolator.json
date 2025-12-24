@@ -26,13 +26,75 @@
   },
   {
     "id": "i1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
+    "title": "Burning Brand (Con)",
+    "description": "When you **conjure a weapon of pure flame**, roll+Con. You may treat your Int as your Str or Dex in regards to making attacks with this weapon.  The weapon always begins with the *fiery*, *touch*, *dangerous* and 3 *uses* tags. Each attack with the weapon consumes one use",
+    "category": "Starting Moves",
+    "tracks": [
+      {
+        "name": "Uses",
+        "shape": "circle",
+        "max": 3,
+        "dynamic": true
+      }
+    ],
     "outcomes": [
       {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
+        "range": "≥10",
+        "text": "Choose two of the following tags.",
+        "bullets": [
+          "hand",
+          "thrown, near",
+          "+1 damage",
+          "remove the *dangerous* tag"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one of the following tags."
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "i2",
+    "title": "Fighting Fire with Fire",
+    "category": "Starting Moves",
+    "description": "When you take damage and that damage is odd (after armor) the flames within you come to your aid.  Roll 1d4 and either:",
+    "outcomes": [{
+      "text": "",
+      "bullets": [
+         "Add that many uses to your burning brand (if active)",
+         "Take that result forward to summon your burning brand",
+         "Or reduce the damage by that amount, your choice."
+      ]
+    }]
+  },
+  {
+    "id":"i3",
+    "title": "Give Me Fuel, Give Me Fire",
+    "description": "When you **gaze intensely into someones eyes**, you may ask their player \"what fuels the flames of your desire?\" they'll answer with the truth, even if the character does not know or would otherwise keep this hidden",
+    "category": "Starting Moves"
+  },
+  {
+    "id":"i4",
+    "title": "Zuko Style (Wis)",
+    "description": "When you **bend a flame to your will**, roll +Wis",
+    "category": "Starting Moves",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "It does as you command, taking the shape and move ment you desire for as long as it has fuel on which to burn."
+      },
+      {
+        "range": "7-9",
+        "text": "The effect is short-lived, lasting only a moment."
       }
     ]
+  },
+  {
+    "id":"i5",
+    "title": "Hand Crafted",
+    "description": "You may use your hands in place of tools and fire to craft metal objects.  Mundane weapons, armor and metal jewellery can all be formed from their raw components.  You may unmake these things, as well, but do so without time and safety might require that you **defy danger** first.",
+    "category": "Starting Moves"
   }
 ]

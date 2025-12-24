@@ -29,13 +29,8 @@
   },
   {
     "id": "f1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
-      }
-    ]
+    "title": "Signature Weapon",
+    "category": "Starting Moves",
+    "grantsCard": "signature-weapon"
   }
 ]

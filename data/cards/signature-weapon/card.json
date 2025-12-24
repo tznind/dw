@@ -1,0 +1,12 @@
+{
+  "id": "signature-weapon",
+  "title": "Signature Weapon",
+  "path": "data/cards/signature-weapon",
+  "description": "Your signature weapon customization",
+  "version": "1.0.0",
+  "author": "Dungeon World",
+  "files": {
+    "html": "card.html",
+    "css": "card.css"
+  }
+}

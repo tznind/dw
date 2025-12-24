@@ -192,7 +192,8 @@
       "________ is soft, but I will make them hard like me"
     ],
     "fa": true,
-    "fr": true
+    "fr": true,
+    "f1": true
   },
   "Immolator": {
     "_movesFile": "data/moves/immolator.json",
@@ -203,7 +204,12 @@
       "I cast something into the fire for ________ and still owe them their due."
     ],
     "ia": true,
-    "ir": true
+    "ir": true,
+    "i1": true,
+    "i2": true,
+    "i3": true,
+    "i4": true,
+    "i5": true
   },
   "Paladin": {
     "_movesFile": "data/moves/paladin.json",
