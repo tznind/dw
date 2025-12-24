@@ -28,13 +28,258 @@
   },
   {
     "id": "t1",
-    "title": "Placeholder",
-    "description": "This is a placeholder move.",
+    "category": "Starting Moves",
+    "title": "Trap Expert (+DEX)",
+    "description": "When you **spend a moment to survey a dangerous area**, roll+DEX.",
     "outcomes": [
       {
-        "range": "",
-        "text": "This move does nothing and is a placeholder for future development."
+        "range": "≥10",
+        "text": "Hold 3. Spend your hold as you walk through the area to ask these questions:",
+        "bullets": [
+          "Is there a trap here and if so, what activates it?",
+          "What does the trap do when activated?",
+          "What else is hidden here?"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 1."
+      }
+    ],
+    "tracks": [{
+      "name": "Hold",
+      "max": 3,
+      "shape": "circle"
+    }]
+  },
+  {
+    "id": "t2",
+    "category": "Starting Moves",
+    "title": "Flexible Morals",
+    "description": "When **someone tries to detect your alignment** you can tell them any alignment you like."
+  },
+  {
+    "id": "t3",
+    "category": "Starting Moves",
+    "title": "Tricks Of The Trade (+DEX)",
+    "description": "When you **pick locks or pockets or disable traps**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "You do it, no problem."
+      },
+      {
+        "range": "7-9",
+        "text": "You still do it, but the GM will offer you two options between suspicion, danger, or cost."
       }
     ]
+  },
+  {
+    "id": "t4",
+    "category": "Starting Moves",
+    "title": "Backstab (+DEX)",
+    "description": "When you **attack a surprised or defenseless enemy with a melee weapon**, you can choose to deal your damage or roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Choose two:",
+        "bullets": [
+          "You don't get into melee with them",
+          "You deal your damage+1d6",
+          "You create an advantage, **+1 forward** to you or an ally acting on it",
+          "Reduce their armor by 1 until they repair it"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one:"
+      }
+    ]
+  },
+  {
+    "id": "t5",
+    "category": "Starting Moves",
+    "title": "Poisoner",
+    "description": "You've mastered the care and use of a poison. Choose a poison from the list below; that poison is no longer dangerous for you to use. You also start with three uses of the poison you choose. Whenever you have time to gather materials and a safe place to brew you can make three uses of the poison you choose for free. Note that some poisons are **applied**, meaning you have to carefully apply it to the target or something they eat or drink. **Touch** poisons just need to touch the target, they can even be used on the blade of a weapon.",
+    "pickOne": [
+      "Oil of Tagit - **(applied)** The target falls into a light sleep.",
+      "Bloodweed - **(touch)** The target deals -1d4 damage ongoing until cured.",
+      "Goldenroot - **(applied)** The target treats the next creature they see as a trusted ally, until proved otherwise.",
+      "Serpent's Tears - **(touch)** Anyone dealing damage to the target rolls twice and takes the better result."
+    ],
+    "details": true,
+    "tracks": [
+      {
+        "name": "Uses",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ]    
+  },
+  {
+    "id": "t6",
+    "category": "Advanced Moves",
+    "title": "Cheap Shot",
+    "description": "When using a **precise** or **hand** weapon, your **Backstab** deals an extra +1d6 damage."
+  },
+  {
+    "id": "t7",
+    "category": "Advanced Moves",
+    "title": "Cautious",
+    "description": "When you use **Trap Expert** you always get +1 hold, even on a 6-."
+  },
+  {
+    "id": "t8",
+    "category": "Advanced Moves",
+    "title": "Wealth And Taste",
+    "description": "When you **make a show of flashing around your most valuable possession**, choose someone present. They will do anything they can to obtain your item or one like it."
+  },
+  {
+    "id": "t9",
+    "category": "Advanced Moves",
+    "title": "Shoot First",
+    "description": "You're never caught by surprise. When an enemy would get the drop on you, you get to act first instead."
+  },
+  {
+    "id": "t10",
+    "category": "Advanced Moves",
+    "title": "Underdog",
+    "description": "When you're outnumbered, you have +1 armor."
+  },
+  {
+    "id": "t11",
+    "category": "Advanced Moves",
+    "title": "Poison Master",
+    "description": "After you've **used a poison once** it's no longer dangerous for you to use."
+  },
+  {
+    "id": "t12",
+    "category": "Advanced Moves",
+    "title": "Envenom",
+    "description": "You can apply even complex poisons with a pinprick. When you **apply a poison** that's not dangerous for you to use to your weapon it's **touch** instead of **applied**."
+  },
+  {
+    "id": "t13",
+    "category": "Advanced Moves",
+    "title": "Brewer",
+    "description": "When you **have time to gather materials and a safe place to brew** you can create three doses of any one poison you've used before.",
+    "tracks": [
+      {
+        "name": "Doses",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "t14",
+    "category": "Advanced Moves",
+    "title": "Connections (+CHA)",
+    "description": "When you **put out word to the criminal underbelly about something you want or need**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Someone has it, just for you."
+      },
+      {
+        "range": "7-9",
+        "text": "You'll have to settle for something close or it comes with strings attached, your call."
+      }
+    ]
+  },
+  {
+    "id": "t15",
+    "category": "Advanced Moves",
+    "title": "Dirty Fighter (Requires level 6+)",
+    "description": "Replaces: **Cheap Shot**\n\nWhen using a **precise** or **hand** weapon, your **Backstab** deals an extra +1d8 damage and all other attacks deal +1d4 damage."
+  },
+  {
+    "id": "t16",
+    "category": "Advanced Moves",
+    "title": "Extremely Cautious (Requires level 6+)",
+    "description": "Replaces: **Cautious**\n\nWhen you use **Trap Expert** you always get +1 hold, even on a 6-. On a 12+ you get 3 hold and the next time you come near a trap the GM will immediately tell you what it does, what triggers it, who set it, and how you can use it to your advantage."
+  },
+  {
+    "id": "t17",
+    "category": "Advanced Moves",
+    "title": "Serious Underdog (Requires level 6+)",
+    "description": "Replaces: **Underdog**\n\nYou have +1 armor. When you're outnumbered, you have +2 armor instead."
+  },
+  {
+    "id": "t18",
+    "category": "Advanced Moves",
+    "title": "Evasion (Requires level 6+)",
+    "description": "When you **Defy Danger** on a 12+, you transcend the danger. You not only do what you set out to, but the GM will offer you a better outcome, true beauty, or a moment of grace."
+  },
+  {
+    "id": "t19",
+    "category": "Advanced Moves",
+    "title": "Heist (Requires level 6+)",
+    "description": "When you **take time to make a plan to steal something**, name the thing you want to steal and ask the GM these questions. When acting on the answers you and your allies take **+1 forward**.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Who will notice it's missing?",
+          "What's its most powerful defense?",
+          "Who will come after it?",
+          "Who else wants it?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "t20",
+    "category": "Advanced Moves",
+    "title": "Alchemist (Requires level 6+)",
+    "description": "Replaces: **Brewer**\n\nWhen you **have time to gather materials and a safe place to brew** you can create three doses of any poison you've used before. Alternately you can describe the effects of a poison you'd like to create. The GM will tell you that you can create it, but with one or more caveats:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "It will only work under specific circumstances",
+          "The best you can manage is a weaker version",
+          "It'll take a while to take effect",
+          "It'll have obvious side effects"
+        ]
+      }
+    ],
+    "details": true,
+    "tracks": [
+      {
+        "name": "Doses",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ]
+  },
+  {
+    "id": "t21",
+    "category": "Advanced Moves",
+    "title": "Escape Route (+DEX) (Requires level 6+)",
+    "description": "When you're **in too deep and need a way out**, name your escape route and roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "You're gone."
+      },
+      {
+        "range": "7-9",
+        "text": "You can stay or go, but if you go it costs you: leave something behind or take something with you, the GM will tell you what."
+      }
+    ]
+  },
+  {
+    "id": "t22",
+    "category": "Advanced Moves",
+    "title": "Disguise (Requires level 6+)",
+    "description": "When you **have time and materials** you can create a disguise that will fool anyone into thinking you're another creature of about the same size and shape. Your actions can give you away but your appearance won't."
+  },
+  {
+    "id": "t23",
+    "category": "Advanced Moves",
+    "title": "Strong Arm, True Aim (Requires level 6+)",
+    "description": "You can throw any melee weapon, using it to **Volley**. A thrown melee weapon is gone; you can never choose to reduce ammo on a 7-9."
   }
 ]
