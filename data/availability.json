@@ -14,16 +14,34 @@
       "________ shares my hunger for glory; the earth will tremble at our passing!"
     ],
     "default-gear": [
-      { "item": "Dungeon Rations (5 uses)", "weight": 1 },
-      { "item": "Dagger (hand)", "weight": 1 },
-      { "item": "Some Token of where you've travelled or where you're from", "weight": 0 },
-      { "item": "Choose your weapon:", "weight": 0 },
-      { "item": "  Axe (close)", "weight": 1 },
-      { "item": "  Two-handed Sword (close, +1 damage)", "weight": 2 },
-      { "item": "", "weight": 0 },
-      { "item": "Choose one:", "weight": 0 },
-      { "item": "  Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2 },
-      { "item": "  Chainmail (1 armor, worn)", "weight": 1 }
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses)", "weight": 1}]
+      },
+      {
+        "type": "get",
+        "options": [{"item": "Dagger (hand)", "weight": 1}]
+      },
+      {
+        "type": "get",
+        "options": [{"item": "Some Token of where you've travelled or where you're from", "weight": 0}]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your weapon:",
+        "options": [
+          {"item": "Axe (close)", "weight": 1},
+          {"item": "Two-handed Sword (close, +1 damage)", "weight": 2}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2},
+          {"item": "Chainmail (1 armor, worn)", "weight": 1}
+        ]
+      }
     ],
     "ba": true,
     "br": true,
@@ -69,7 +87,52 @@
       "________ trusted me with a secret",
       "________ does not trust me, and for good reason"
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses)", "weight": 1}]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one, all are weight 0 for you:",
+        "options": [
+          {"item": "Your father's Mandolin, repaired", "weight": 0},
+          {"item": "A fine Lute, a gift from a noble", "weight": 0},
+          {"item": "The Pipes with which you courted your first love", "weight": 0},
+          {"item": "A stolen Horn", "weight": 0},
+          {"item": "A Fiddle, never before played", "weight": 0},
+          {"item": "A Songbook in a forgotten tongue", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your clothing:",
+        "options": [
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "Ostentatious Clothes (worn)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Dueling Rapier (close, precise)", "weight": 2},
+          {"item": "Worn Bow (near)", "weight": 2},
+          {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+          {"item": "Short Sword (close)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "3 coins", "weight": 0}
+        ]
+      }
+    ],
     "aa": true,
     "ar": true,
     "a1": true,

@@ -48,17 +48,17 @@ window.CardInitializers.equipment = function(container, suffix) {
   setTimeout(updateTotalWeight, 200);
 
   // Get the button elements
-  const loadDefaultsBtn = helpers.getElement('load-default-gear-btn');
+  const selectGearBtn = helpers.getElement('select-starting-gear-btn');
   const helpBtn = helpers.getElement('gear-help-btn');
 
   // Disable button until data is ready
-  if (loadDefaultsBtn) {
-    loadDefaultsBtn.disabled = !window.availableMap;
+  if (selectGearBtn) {
+    selectGearBtn.disabled = !window.availableMap;
 
     // Enable button when data is ready (if not already loaded)
     if (!window.availableMap) {
       window.addEventListener('movesDataReady', () => {
-        loadDefaultsBtn.disabled = false;
+        selectGearBtn.disabled = false;
       }, { once: true });
     }
   }
@@ -70,9 +70,9 @@ window.CardInitializers.equipment = function(container, suffix) {
     });
   }
 
-  // Handle Load Defaults button
-  helpers.addEventListener('load-default-gear-btn', 'click', () => {
-    // Get current roles using Utils
+  // Handle Select Starting Gear button
+  helpers.addEventListener('select-starting-gear-btn', 'click', async () => {
+    // Get current selected role
     const roles = window.Utils ? window.Utils.getCurrentRoles() : [];
     const selectedRole = roles.length > 0 ? roles[0] : null;
 
@@ -81,19 +81,16 @@ window.CardInitializers.equipment = function(container, suffix) {
       return;
     }
 
-    // Get availability data
     if (!window.availableMap) {
       alert('Role data not available');
       return;
     }
 
     const roleData = window.availableMap[selectedRole];
-    if (!roleData || !roleData['default-gear']) {
+    if (!roleData || !roleData['default-gear'] || roleData['default-gear'].length === 0) {
       alert('No default gear available for this class');
       return;
     }
-
-    const defaultGear = roleData['default-gear'];
 
     // Confirm replacement if equipment already exists
     const currentData = helpers.getTableData('equipment');
@@ -103,22 +100,43 @@ window.CardInitializers.equipment = function(container, suffix) {
       }
     }
 
-    // Clear and add default gear
-    helpers.clearTable('equipment');
-    defaultGear.forEach(gearItem => {
-      // Handle both object format {item, weight} and legacy string format
-      if (typeof gearItem === 'object' && gearItem.item !== undefined) {
-        helpers.addTableRow('equipment', {
-          item: gearItem.item,
-          weight: gearItem.weight || 0
-        });
-      } else {
-        // Legacy string format
-        helpers.addTableRow('equipment', { item: gearItem });
-      }
+    const gearData = roleData['default-gear'];
+
+    // Transform gear data for wizard (extract strings and build weight map)
+    const wizardData = [];
+    const weightMap = {}; // Map item name -> weight
+
+    gearData.forEach(entry => {
+      const wizardEntry = {
+        type: entry.type,
+        title: entry.title
+      };
+
+      // Extract item names and build weight map
+      wizardEntry.options = entry.options.map(opt => {
+        const itemName = opt.item;
+        weightMap[itemName] = opt.weight || 0;
+        return itemName;
+      });
+
+      wizardData.push(wizardEntry);
     });
 
-    // Update total weight after loading defaults
-    setTimeout(updateTotalWeight, 100);
+    // Show wizard and get selections
+    const selectedItems = await window.Wizard.show(wizardData, {
+      title: `Select Starting Gear - ${selectedRole}`
+    });
+
+    // If user didn't cancel, add items to table
+    if (selectedItems) {
+      helpers.clearTable('equipment');
+      selectedItems.forEach(itemName => {
+        helpers.addTableRow('equipment', {
+          item: itemName,
+          weight: weightMap[itemName] || 0
+        });
+      });
+      setTimeout(updateTotalWeight, 100);
+    }
   });
 };
