@@ -174,7 +174,41 @@
       "________ is in constant danger, I will keep them safe.",
       "I am working on converting ________ to my faith."
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Some Symbol of the Divine (describe: _____)", "weight": 1}]
+      },
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      },
+      {
+        "type": "pick",
+        "title": "Choose your defenses:",
+        "options": [
+          {"item": "Chainmail (1 armor, worn)", "weight": 1},
+          {"item": "Shield (+1 armor)", "weight": 2}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Warhammer (close)", "weight": 1},
+          {"item": "Mace (close)", "weight": 1},
+          {"item": "Staff (close, two-handed) and Bandages (3 uses, slow)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2},
+          {"item": "Healing Potion", "weight": 0}
+        ]
+      }
+    ],
     "ca": true,
     "cr": true,
     "c1": true,
@@ -252,7 +286,67 @@
       "I have showed ________ a secret rite of the land.",
       "________ has tasted my blood and I theirs. We are bound by it."
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Some Token of your land (describe: _____)",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose your defenses:",
+        "options": [
+          {
+            "item": "Hide Armor (1 armor, worn)",
+            "weight": 1
+          },
+          {
+            "item": "Wooden Shield (+1 armor)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "item": "Shillelagh (close)",
+            "weight": 2
+          },
+          {
+            "item": "Staff (close, two-handed)",
+            "weight": 1
+          },
+          {
+            "item": "Spear (close, thrown, near)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {
+            "item": "Adventuring Gear (5 uses)",
+            "weight": 1
+          },
+          {
+            "item": "Poultices & Herbs (2 uses, slow)",
+            "weight": 1
+          },
+          {
+            "item": "Halfling Pipeleaf (6 uses)",
+            "weight": 0
+          }
+        ]
+      }
+    ],
     "da": true,
     "dr": true,
     "d1": true,
@@ -294,7 +388,58 @@
       "I worry about the ability of ________ to survive in the dungeon",
       "________ is soft, but I will make them hard like me"
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose your defenses:",
+        "options": [
+          {
+            "item": "Chainmail (1 armor, worn) and Adventuring Gear (5 uses)",
+            "weight": 2
+          },
+          {
+            "item": "Scale Armor (2 armor, worn, clumsy)",
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {
+            "item": "2 Healing Potions",
+            "weight": 0
+          },
+          {
+            "item": "Shield (+1 armor)",
+            "weight": 2
+          },
+          {
+            "item": "Antitoxin, Dungeon Rations (5 uses, ration), and Poultices & Herbs (2 uses, slow)",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "22 coins",
+            "weight": 0
+          }
+        ]
+      }
+    ],
     "fa": true,
     "fr": true,
     "f1": true,
@@ -333,7 +478,48 @@
       "I will teach ________ the true meaning of sacrifice.",
       "I cast something into the fire for ________ and still owe them their due."
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "A Symbol of your sacrifices past (describe: _____)",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Adventuring Gear (5 uses)",
+            "weight": 1
+          },
+          {
+            "item": "Healing Potion",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          },
+          {
+            "item": "Healing Potion",
+            "weight": 0
+          },
+          {
+            "item": "10 coins",
+            "weight": 0
+          }
+        ]
+      }
+    ],
     "ia": true,
     "ir": true,
     "i1": true,
@@ -370,7 +556,53 @@
       "I respect the beliefs of ________ but hope they will someday see the true way.",
       "________ is a brave soul, I have much to learn from them."
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          },
+          {
+            "item": "Scale Armor (2 armor, worn, clumsy)",
+            "weight": 3
+          },
+          {
+            "item": "Some Mark of Faith (describe: _____)",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your weapon:",
+        "options": [
+          {
+            "item": "Halberd (reach, +1 damage, two-handed)",
+            "weight": 2
+          },
+          {
+            "item": "Long Sword (close, +1 damage) and Shield (+1 armor)",
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {
+            "item": "Adventuring Gear (5 uses)",
+            "weight": 1
+          },
+          {
+            "item": "Dungeon Rations (5 uses, ration) and Healing Potion",
+            "weight": 1
+          }
+        ]
+      }
+    ],
     "pa": true,
     "pr": true,
     "p1": true,
@@ -412,7 +644,53 @@
       "________ has no respect for nature, so I have no respect for them.",
       "________ does not understand life in the wild, so I will teach them."
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          },
+          {
+            "item": "Leather Armor (1 armor, worn)",
+            "weight": 1
+          },
+          {
+            "item": "Bundle of Arrows (3 ammo)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "item": "Hunter's Bow (near, far) and Short Sword (close)",
+            "weight": 2
+          },
+          {
+            "item": "Hunter's Bow (near, far) and Spear (reach)",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {
+            "item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)",
+            "weight": 2
+          },
+          {
+            "item": "Adventuring Gear (5 uses) and Bundle of Arrows (3 ammo)",
+            "weight": 2
+          }
+        ]
+      }
+    ],
     "ra": true,
     "rr": true,
     "r1": true,
@@ -455,7 +733,71 @@
       "________ and I have a con running."
 
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          },
+          {
+            "item": "Leather Armor (1 armor, worn)",
+            "weight": 1
+          },
+          {
+            "item": "3 uses of your chosen Poison",
+            "weight": 0
+          },
+          {
+            "item": "10 coins",
+            "weight": 0
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your arms:",
+        "options": [
+          {
+            "item": "Dagger (hand) and Short Sword (close)",
+            "weight": 2
+          },
+          {
+            "item": "Rapier (close, precise)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose a ranged weapon:",
+        "options": [
+          {
+            "item": "3 Throwing Daggers (thrown, near)",
+            "weight": 0
+          },
+          {
+            "item": "Ragged Bow (near) and Bundle of Arrows (3 ammo)",
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {
+            "item": "Adventuring Gear (5 uses)",
+            "weight": 1
+          },
+          {
+            "item": "Healing Potion",
+            "weight": 0
+          }
+        ]
+      }
+    ],
     "ta": true,
     "tr": true,
     "t1": true,
@@ -495,7 +837,64 @@
       "________ is keeping an important secret from me",
       "________ is woefully misinformed about the world; I will teach them all I can"
     ],
-    "default-gear": [],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {
+            "item": "Spellbook",
+            "weight": 1
+          },
+          {
+            "item": "Dungeon Rations (5 uses, ration)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your defenses:",
+        "options": [
+          {
+            "item": "Leather Armor (1 armor, worn)",
+            "weight": 1
+          },
+          {
+            "item": "Bag of Books (5 uses) and 3 Healing Potions",
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your weapon:",
+        "options": [
+          {
+            "item": "Dagger (hand)",
+            "weight": 1
+          },
+          {
+            "item": "Staff (close, two-handed)",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {
+            "item": "Healing Potion",
+            "weight": 0
+          },
+          {
+            "item": "3 Antitoxin",
+            "weight": 0
+          }
+        ]
+      }
+    ],
+
     "wa": true,
     "wr": true,
     "w1": true,
