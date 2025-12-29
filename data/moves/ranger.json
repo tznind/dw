@@ -2,8 +2,8 @@
   {
     "id": "ra",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Chaotic** - Free someone from literal or figurative bonds.",
       "**Good** - Endanger yourself to combat an unnatural threat.",

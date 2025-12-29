@@ -1,8 +1,8 @@
 [{
     "id": "ia",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Evil** - Sacrifice an unqilling victim to the flames.",
       "**Chaotic** - Spread a dangerous new idea.",

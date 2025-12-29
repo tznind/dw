@@ -38,7 +38,12 @@
         "type": "pickOne",
         "title": "Choose one:",
         "options": [
-          {"item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2},
+          {
+            "items": [
+              {"item": "Adventuring Gear (5 uses)", "weight": 1},
+              {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
+            ]
+          },
           {"item": "Chainmail (1 armor, worn)", "weight": 1}
         ]
       }
@@ -117,9 +122,13 @@
         "title": "Choose your armament:",
         "options": [
           {"item": "Dueling Rapier (close, precise)", "weight": 2},
-          {"item": "Worn Bow (near)", "weight": 2},
-          {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
-          {"item": "Short Sword (close)", "weight": 1}
+          {
+            "items": [
+              {"item": "Worn Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Short Sword (close)", "weight": 1}
+            ]
+          }
         ]
       },
       {
@@ -197,14 +206,24 @@
         "options": [
           {"item": "Warhammer (close)", "weight": 1},
           {"item": "Mace (close)", "weight": 1},
-          {"item": "Staff (close, two-handed) and Bandages (3 uses, slow)", "weight": 1}
+          {
+            "items": [
+              {"item": "Staff (close, two-handed)", "weight": 1},
+              {"item": "Bandages (3 uses, slow)", "weight": 0}
+            ]
+          }
         ]
       },
       {
         "type": "pickOne",
         "title": "Choose one:",
         "options": [
-          {"item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)", "weight": 2},
+          {
+            "items": [
+              {"item": "Adventuring Gear (5 uses)", "weight": 1},
+              {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
+            ]
+          },
           {"item": "Healing Potion", "weight": 0}
         ]
       }
@@ -403,8 +422,10 @@
         "title": "Choose your defenses:",
         "options": [
           {
-            "item": "Chainmail (1 armor, worn) and Adventuring Gear (5 uses)",
-            "weight": 2
+            "items": [
+              {"item": "Chainmail (1 armor, worn)", "weight": 1},
+              {"item": "Adventuring Gear (5 uses)", "weight": 1}
+            ]
           },
           {
             "item": "Scale Armor (2 armor, worn, clumsy)",
@@ -425,8 +446,11 @@
             "weight": 2
           },
           {
-            "item": "Antitoxin, Dungeon Rations (5 uses, ration), and Poultices & Herbs (2 uses, slow)",
-            "weight": 2
+            "items": [
+              {"item": "Antitoxin", "weight": 0},
+              {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+              {"item": "Poultices & Herbs (2 uses, slow)", "weight": 1}
+            ]
           }
         ]
       },
@@ -583,8 +607,10 @@
             "weight": 2
           },
           {
-            "item": "Long Sword (close, +1 damage) and Shield (+1 armor)",
-            "weight": 3
+            "items": [
+              {"item": "Long Sword (close, +1 damage)", "weight": 1},
+              {"item": "Shield (+1 armor)", "weight": 2}
+            ]
           }
         ]
       },
@@ -597,8 +623,10 @@
             "weight": 1
           },
           {
-            "item": "Dungeon Rations (5 uses, ration) and Healing Potion",
-            "weight": 1
+            "items": [
+              {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+              {"item": "Healing Potion", "weight": 0}
+            ]
           }
         ]
       }
@@ -667,12 +695,16 @@
         "title": "Choose your armament:",
         "options": [
           {
-            "item": "Hunter's Bow (near, far) and Short Sword (close)",
-            "weight": 2
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Short Sword (close)", "weight": 1}
+            ]
           },
           {
-            "item": "Hunter's Bow (near, far) and Spear (reach)",
-            "weight": 2
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Spear (reach)", "weight": 1}
+            ]
           }
         ]
       },
@@ -681,12 +713,16 @@
         "title": "Choose one:",
         "options": [
           {
-            "item": "Adventuring Gear (5 uses) and Dungeon Rations (5 uses, ration)",
-            "weight": 2
+            "items": [
+              {"item": "Adventuring Gear (5 uses)", "weight": 1},
+              {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
+            ]
           },
           {
-            "item": "Adventuring Gear (5 uses) and Bundle of Arrows (3 ammo)",
-            "weight": 2
+            "items": [
+              {"item": "Adventuring Gear (5 uses)", "weight": 1},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+            ]
           }
         ]
       }
@@ -760,8 +796,10 @@
         "title": "Choose your arms:",
         "options": [
           {
-            "item": "Dagger (hand) and Short Sword (close)",
-            "weight": 2
+            "items": [
+              {"item": "Dagger (hand)", "weight": 1},
+              {"item": "Short Sword (close)", "weight": 1}
+            ]
           },
           {
             "item": "Rapier (close, precise)",
@@ -778,8 +816,10 @@
             "weight": 0
           },
           {
-            "item": "Ragged Bow (near) and Bundle of Arrows (3 ammo)",
-            "weight": 3
+            "items": [
+              {"item": "Ragged Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+            ]
           }
         ]
       },
@@ -860,8 +900,10 @@
             "weight": 1
           },
           {
-            "item": "Bag of Books (5 uses) and 3 Healing Potions",
-            "weight": 2
+            "items": [
+              {"item": "Bag of Books (5 uses)", "weight": 2},
+              {"item": "3 Healing Potions", "weight": 0}
+            ]
           }
         ]
       },

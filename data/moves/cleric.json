@@ -2,8 +2,8 @@
   {
     "id": "ca",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Good** - Endanger yourself to heal another.",
       "**Lawful** - Endanger yourself following the precepts of your church or god.",

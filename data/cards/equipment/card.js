@@ -112,14 +112,37 @@ window.CardInitializers.equipment = function(container, suffix) {
         title: entry.title
       };
 
-      // Extract item names and build weight map
+      // Extract item names and build weight map (backward compatible)
       wizardEntry.options = entry.options.map(opt => {
-        const itemName = opt.item;
-        weightMap[itemName] = opt.weight || 0;
-        return itemName;
+        let displayText;
+
+        if (opt.items) {
+          // New format: array of items
+          displayText = opt.items.map(i => i.item).join(' and ');
+        } else {
+          // Old format: single item
+          displayText = opt.item;
+          weightMap[opt.item] = opt.weight || 0;
+        }
+
+        return displayText;  // Wizard expects strings
       });
 
       wizardData.push(wizardEntry);
+    });
+
+    // Map display strings back to original options
+    const optionMap = new Map();
+    gearData.forEach(entry => {
+      entry.options.forEach(opt => {
+        let displayText;
+        if (opt.items) {
+          displayText = opt.items.map(i => i.item).join(' and ');
+        } else {
+          displayText = opt.item;
+        }
+        optionMap.set(displayText, opt);
+      });
     });
 
     // Show wizard and get selections
@@ -130,11 +153,24 @@ window.CardInitializers.equipment = function(container, suffix) {
     // If user didn't cancel, add items to table
     if (selectedItems) {
       helpers.clearTable('equipment');
-      selectedItems.forEach(itemName => {
-        helpers.addTableRow('equipment', {
-          item: itemName,
-          weight: weightMap[itemName] || 0
-        });
+      selectedItems.forEach(displayString => {
+        const option = optionMap.get(displayString);
+
+        if (option.items) {
+          // New format: add each item as separate row
+          option.items.forEach(itemData => {
+            helpers.addTableRow('equipment', {
+              item: itemData.item,
+              weight: itemData.weight || 0
+            });
+          });
+        } else {
+          // Old format: add single item
+          helpers.addTableRow('equipment', {
+            item: option.item,
+            weight: option.weight || 0
+          });
+        }
       });
       setTimeout(updateTotalWeight, 100);
     }

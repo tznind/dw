@@ -2,8 +2,8 @@
   {
     "id": "fa",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Good** - Defend those weaker than you.",
       "**Lawful** - Defeat a worthy opponent.",

@@ -2,8 +2,8 @@
   {
     "id": "pa",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Lawful** - Deny mercy to a criminal or unbeliever.",
       "**Good** - Endanger yourself to protect someone weaker than you.",

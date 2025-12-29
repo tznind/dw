@@ -2,8 +2,8 @@
   {
     "id": "aa",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Good** - Perform your art to aid someone else.",
       "**Neutral** - Avoid a conflict or defuse a tense situation.",

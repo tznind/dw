@@ -2,8 +2,8 @@
   {
     "id": "ba",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Chaotic** - Eschew a convention of the civilized world.",
       "**Neutral** - Teach someone the ways of your people.",

@@ -3,8 +3,8 @@
   {
     "id": "wa",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Good** - Use magic to directly aid another.",
       "**Neutral** - Discover something about a magical mystery.",

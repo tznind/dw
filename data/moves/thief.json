@@ -3,8 +3,8 @@
   {
     "id": "ta",
     "hideCheckbox": true,
-    "title":"",
-    "category": "Alignment",
+    "title":"Alignment",
+    "category": "Starting Moves",
     "pickOne": [
       "**Chaotic** - Leap into danger without a plan.",
       "**Neutral** - Avoid detection or infiltrate a location.",
