@@ -428,6 +428,7 @@
         "range": "",
         "text": "1-2 weeks: gain 1 preparation. 1+ month: gain 3 preparation. Spend 1 preparation for +1 to any roll (max 1 per roll)."
       }
-    ]
+    ],
+    "details": true
   }
 ]
