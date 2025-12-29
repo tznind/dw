@@ -453,17 +453,9 @@
             "items": [
               {"item": "Antitoxin", "weight": 0},
               {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
-              {"item": "Poultices & Herbs (2 uses, slow)", "weight": 1}
+              {"item": "Poultices & Herbs (2 uses, slow)", "weight": 1},
+              {            "item": "22 coins",            "weight": 0}
             ]
-          }
-        ]
-      },
-      {
-        "type": "get",
-        "options": [
-          {
-            "item": "22 coins",
-            "weight": 0
           }
         ]
       }
