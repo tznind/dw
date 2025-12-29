@@ -60,6 +60,13 @@ window.CardInitializers.equipment = function(container, suffix) {
       window.addEventListener('movesDataReady', () => {
         selectGearBtn.disabled = false;
       }, { once: true });
+
+      // Check again in case data loaded while we were setting up the listener
+      setTimeout(() => {
+        if (window.availableMap) {
+          selectGearBtn.disabled = false;
+        }
+      }, 0);
     }
   }
 
@@ -155,6 +162,11 @@ window.CardInitializers.equipment = function(container, suffix) {
       helpers.clearTable('equipment');
       selectedItems.forEach(displayString => {
         const option = optionMap.get(displayString);
+
+        if (!option) {
+          console.error('Option not found in optionMap:', displayString);
+          return;
+        }
 
         if (option.items) {
           // New format: add each item as separate row
