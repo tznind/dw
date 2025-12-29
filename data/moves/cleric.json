@@ -298,7 +298,8 @@
         "max": 1,
         "shape": "hexagon"
       }
-    ]
+    ],
+    "hideCheckbox": true
   },
   {
     "id": "cs2",
@@ -311,7 +312,8 @@
         "max": 1,
         "shape": "hexagon"
       }
-    ]
+    ],
+    "hideCheckbox": true
   },
   {
     "id": "cs3",
@@ -324,7 +326,8 @@
         "max": 1,
         "shape": "hexagon"
       }
-    ]
+    ],
+    "hideCheckbox": true
   },
   {
     "id": "cs4",
@@ -728,6 +731,7 @@
         "max": 1,
         "shape": "hexagon"
       }
-    ]
+    ],
+    tr
   }
 ]

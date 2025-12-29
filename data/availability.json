@@ -224,7 +224,7 @@
               {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
             ]
           },
-          {"item": "Healing Potion", "weight": 0}
+          {"item": "Healing Potion", "weight": 1}
         ]
       }
     ],
@@ -257,9 +257,9 @@
     "c24": false,
     "c25": false,
     "a13": false,
-    "cs1": false,
-    "cs2": false,
-    "cs3": false,
+    "cs1": true,
+    "cs2": true,
+    "cs3": true,
     "cs4": false,
     "cs5": false,
     "cs6": false,
@@ -439,7 +439,7 @@
         "options": [
           {
             "item": "2 Healing Potions",
-            "weight": 0
+            "weight": 2
           },
           {
             "item": "Shield (+1 armor)",
@@ -521,7 +521,7 @@
           },
           {
             "item": "Healing Potion",
-            "weight": 0
+            "weight": 1
           }
         ]
       },
@@ -535,7 +535,7 @@
           },
           {
             "item": "Healing Potion",
-            "weight": 0
+            "weight": 1
           },
           {
             "item": "10 coins",
@@ -625,7 +625,7 @@
           {
             "items": [
               {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
-              {"item": "Healing Potion", "weight": 0}
+              {"item": "Healing Potion", "weight": 1}
             ]
           }
         ]
@@ -833,7 +833,7 @@
           },
           {
             "item": "Healing Potion",
-            "weight": 0
+            "weight": 1
           }
         ]
       }
@@ -902,7 +902,7 @@
           {
             "items": [
               {"item": "Bag of Books (5 uses)", "weight": 2},
-              {"item": "3 Healing Potions", "weight": 0}
+              {"item": "3 Healing Potions", "weight": 3}
             ]
           }
         ]
@@ -927,7 +927,7 @@
         "options": [
           {
             "item": "Healing Potion",
-            "weight": 0
+            "weight": 1
           },
           {
             "item": "3 Antitoxin",
