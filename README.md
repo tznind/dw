@@ -27,7 +27,7 @@ Example Characters
       🔥
       <a title="Melisandrama - The Immolator" href="https://tznind.github.io/dw/cs.html?strength-value=0&dexterity-value=0&constitution-value=0&intelligence-value=0&wisdom-value=0&charisma-value=0&role=Immolator&name=Melisandrama&look=Beautiful+flowing+red+dresses%2C+piercing+eyes%2C+red+ruby+medallion.&intelligence_int=16&constitution_con=16&constitution_conmod=%2B2&intelligence_intmod=%2B2&level=2&wisdom_wis=13&wisdom_wismod=%2B1&strength_str=8&strength_strmod=-1&dexterity_dex=9&dexterity_dexmod=-&charisma_cha=12&charisma_chamod=-&move_ir_pickone=3&move_ir_dtl=Disguised+elder+hag+witch%2C+treat+as+human+racial.&bonds_cnt=3&bonds_0_bond=Jendry+has+felt+the+hellish+touch+of+fire%2C+now+they+know+my+strength.&bonds_1_bond=I+will+teach+Stannis+the+true+meaning+of+sacrifice.&bonds_2_bond=I+cast+something+into+the+fire+for+Rob+and+still+owe+them+their+due.&equipment_cnt=5&equipment_0_item=A+Symbol+of+your+sacrifices+past+%28Ruby+red+necklace%29&equipment_0_weight=0&equipment_1_item=Adventuring+Gear+%285+uses%29&equipment_1_weight=1&equipment_2_item=Healing+Potion&equipment_2_weight=1&equipment_3_item=Healing+Potion&equipment_3_weight=1&equipment_4_item=10+coins&equipment_4_weight=0&track_i1=3&move_i6=1&armor=0&xp=1&coin=10">Melisandrama</a>
     </td>   
-  </tr>-->
+  </tr>
 </table>
 
 ## Live Character Sheet
