@@ -362,6 +362,10 @@
           {
             "item": "Halfling Pipeleaf (6 uses)",
             "weight": 0
+          },
+          {
+            "item": "3 Antitoxin",
+            "weight": 0
           }
         ]
       }
