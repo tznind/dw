@@ -41,7 +41,6 @@ label {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   margin-bottom: 12px;
-  max-width: 500px; /* Limit width so fields don't stretch too wide */
 }
 
 .basic-info .form-field {
