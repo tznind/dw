@@ -46,6 +46,9 @@ Example Characters
       </tr>
 </table>
 
+<img width="1312" height="953" alt="{EF02926A-632A-48EE-9E24-2DF02A808C7C}" src="https://github.com/user-attachments/assets/ca07fb2f-8698-435a-bafc-2a37852e9d5c" />
+
+
 ## Live Character Sheet
 
 Players can create their own characters, choose skills etc. Data is saved only into the address bar (URL) - allowing sharing/saving for later e.g. as a bookmark.
