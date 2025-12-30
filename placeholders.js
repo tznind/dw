@@ -24,6 +24,28 @@
     }
 
     /**
+     * Parse a modifier string to a number
+     * @param {string} modString - Modifier string like "+1", "-2", "0"
+     * @returns {number} The numeric value
+     */
+    function parseModifier(modString) {
+        if (!modString) return 0;
+        const num = parseInt(modString.replace('+', ''), 10);
+        return isNaN(num) ? 0 : num;
+    }
+
+    /**
+     * Format a number as a modifier string
+     * @param {number} num - The numeric modifier value
+     * @returns {string} Formatted modifier like "+1", "-2", "0"
+     */
+    function formatModifier(num) {
+        if (num > 0) return `+${num}`;
+        if (num === 0) return '0';
+        return `${num}`;
+    }
+
+    /**
      * Update stat modifier placeholders based on stat values
      */
     function updateStatModPlaceholders() {
@@ -35,9 +57,30 @@
             const modInput = document.getElementById(`${stat}_${abbrevs[index]}mod`);
 
             if (statInput && modInput) {
-                const modifier = calculateModifier(statInput.value);
+                let modifier = calculateModifier(statInput.value);
+                let isDebuffed = false;
+
+                // Check if the stat clock is debuffed (value=1 means -1 modifier)
+                // The clock value is stored in a hidden input with id like "constitution-value"
+                const clockValueInput = document.getElementById(`${stat}-value`);
+                const clockValue = clockValueInput?.value;
+
+                if (clockValue === '1' && modifier) {
+                    // Apply -1 penalty for debuff
+                    const modValue = parseModifier(modifier);
+                    modifier = formatModifier(modValue - 1);
+                    isDebuffed = true;
+                }
+
                 if (modifier) {
                     modInput.placeholder = modifier;
+                }
+
+                // Apply red styling if debuffed
+                if (isDebuffed) {
+                    modInput.classList.add('debuffed-modifier');
+                } else {
+                    modInput.classList.remove('debuffed-modifier');
                 }
             }
         });
@@ -83,6 +126,14 @@
         const statPattern = /_(str|dex|con|int|wis|cha)$/;
         if (e.target.id && statPattern.test(e.target.id)) {
             updateStatModPlaceholders();
+        }
+    });
+
+    // Listen for clock clicks to update modifiers when debuffs change
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('stat-clock') || e.target.closest('.stat-clock')) {
+            // Small delay to let the clock update complete
+            setTimeout(updateStatModPlaceholders, 50);
         }
     });
 
