@@ -243,25 +243,16 @@ window.StatsPicker = (function() {
                 startY: touch.clientY,
                 dropSuccessful: false
             };
+
+            // Set as currently active chip immediately
+            currentlyDraggingChip = chip;
         }, { passive: true });
 
         document.addEventListener('touchmove', function(e) {
-            // Check if we're currently dragging any chip (not just if e.target is a chip)
-            if (currentlyDraggingChip && currentlyDraggingChip.touchData?.isDragging) {
-                // Prevent scrolling while any chip is being dragged
-                e.preventDefault();
-            }
+            // If we don't have an active chip, allow normal scrolling
+            if (!currentlyDraggingChip || !currentlyDraggingChip.touchData?.started) return;
 
-            // Find the chip being touched (might be different from e.target during drag)
-            let chip = null;
-            if (e.target.classList.contains('stat-value-chip') && e.target.touchData?.started) {
-                chip = e.target;
-            } else if (currentlyDraggingChip) {
-                chip = currentlyDraggingChip;
-            }
-
-            if (!chip || !chip.touchData?.started) return;
-
+            const chip = currentlyDraggingChip;
             const touch = e.touches[0];
             const deltaX = touch.clientX - chip.touchData.startX;
             const deltaY = touch.clientY - chip.touchData.startY;
@@ -271,11 +262,12 @@ window.StatsPicker = (function() {
             if (!chip.touchData.isDragging && distance > DRAG_THRESHOLD) {
                 chip.touchData.isDragging = true;
                 chip.classList.add('dragging');
-                currentlyDraggingChip = chip; // Set global tracking
             }
 
-            // Only do drag behavior if we're actually dragging
+            // Only prevent scrolling and do drag behavior if we're actually dragging
             if (chip.touchData.isDragging) {
+                e.preventDefault(); // Prevent scrolling only when dragging
+
                 // Move the chip visually
                 chip.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
                 chip.style.zIndex = '1000';
@@ -316,9 +308,10 @@ window.StatsPicker = (function() {
         }, { passive: false });
 
         document.addEventListener('touchend', function(e) {
-            const chip = e.target;
-            if (!chip.classList.contains('stat-value-chip') || !chip.touchData?.started) return;
+            // Use the globally tracked chip, not e.target (which might not be the chip)
+            if (!currentlyDraggingChip || !currentlyDraggingChip.touchData?.started) return;
 
+            const chip = currentlyDraggingChip;
             let dropZone = null;
 
             // Only try to find drop zone if we were actually dragging
