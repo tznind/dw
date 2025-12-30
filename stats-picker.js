@@ -228,6 +228,7 @@ window.StatsPicker = (function() {
      */
     function setupTouchDragForChips() {
         const DRAG_THRESHOLD = 8; // pixels to move before starting drag
+        let currentlyDraggingChip = null; // Track which chip is being dragged
 
         document.addEventListener('touchstart', function(e) {
             if (!e.target.classList.contains('stat-value-chip')) return;
@@ -245,8 +246,21 @@ window.StatsPicker = (function() {
         }, { passive: true });
 
         document.addEventListener('touchmove', function(e) {
-            const chip = e.target;
-            if (!chip.classList.contains('stat-value-chip') || !chip.touchData?.started) return;
+            // Check if we're currently dragging any chip (not just if e.target is a chip)
+            if (currentlyDraggingChip && currentlyDraggingChip.touchData?.isDragging) {
+                // Prevent scrolling while any chip is being dragged
+                e.preventDefault();
+            }
+
+            // Find the chip being touched (might be different from e.target during drag)
+            let chip = null;
+            if (e.target.classList.contains('stat-value-chip') && e.target.touchData?.started) {
+                chip = e.target;
+            } else if (currentlyDraggingChip) {
+                chip = currentlyDraggingChip;
+            }
+
+            if (!chip || !chip.touchData?.started) return;
 
             const touch = e.touches[0];
             const deltaX = touch.clientX - chip.touchData.startX;
@@ -257,12 +271,11 @@ window.StatsPicker = (function() {
             if (!chip.touchData.isDragging && distance > DRAG_THRESHOLD) {
                 chip.touchData.isDragging = true;
                 chip.classList.add('dragging');
+                currentlyDraggingChip = chip; // Set global tracking
             }
 
-            // Only prevent scrolling and do drag behavior if we're actually dragging
+            // Only do drag behavior if we're actually dragging
             if (chip.touchData.isDragging) {
-                e.preventDefault(); // Prevent scrolling only when dragging
-
                 // Move the chip visually
                 chip.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
                 chip.style.zIndex = '1000';
@@ -300,7 +313,7 @@ window.StatsPicker = (function() {
                     }
                 }
             }
-        });
+        }, { passive: false });
 
         document.addEventListener('touchend', function(e) {
             const chip = e.target;
@@ -357,6 +370,7 @@ window.StatsPicker = (function() {
 
             // Reset state
             delete chip.touchData;
+            currentlyDraggingChip = null; // Clear global tracking
         }, { passive: false });
     }
 
