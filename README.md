@@ -3,6 +3,8 @@ This is a [Dungeon World](https://www.dungeon-world.com/) implementation of [LC 
 
 It is online at https://tznind.github.io/dw/cs.html
 
+Dungeon World content created by Sage LaTorra and Adam Koebel https://github.com/Sagelt/Dungeon-World/blob/master/LICENSE
+
 Example Characters
 
 <table>
