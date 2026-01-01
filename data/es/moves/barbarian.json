@@ -158,79 +158,79 @@
   {
     "id": "b19",
     "category": "Movimientos Avanzados",
-    "title": "Kill 'Em All (Requiere nivel 6+)",
+    "title": " Mátalos a todos (Requiere nivel 6+)",
     "weight": 1,
-    "description": "Requires: Appetite for Destruction\n\nTake another move from the Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.",
+    "description": "Requiere: Apetito por la destrucción\n\nElige otro movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases..",
     "takeFrom": ["fighter", "bard", "thief"],
-    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados"]
+    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
   },
   {
     "id": "b20",
     "category": "Movimientos Avanzados",
-    "title": "War Cry (Requiere nivel 6+)",
+    "title": "Grito de guerra (Requiere nivel 6+)",
     "weight": 1,
-    "description": "When you **enter the battle with a show of force**, roll +CHA.",
+    "description": "Cuando entras en una batalla con una demostración de fuerza, tira+car.",
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "Both:",
+        "text": "Elige las dos opciones:",
         "bullets": [
-          "Your allies are rallied and take **+1 forward**.",
-          "Your enemies feel fear and act accordingly (avoiding you, hiding, attacking with fear-driven abandon)"
+          "Tus aliados se reagrupan y reciben +1 a la siguiente tirada.",
+          "Tus enemigos sienten miedo y actúan de acuerdo a ello (te evitan, se esconden, atacan con el miedo que les empuja a huir)."
         ]
       },
       {
         "range": "7-9",
-        "text": "Choose only 1"
+        "text": " elige una de las opciones"
       }
     ]
   },
   {
     "id": "b21",
     "category": "Movimientos Avanzados",
-    "title": "Mark Of Might (Requiere nivel 6+)",
+    "title": "Marca de poder (Requiere nivel 6+)",
     "weight": 1,
-    "description": "When you take this move and spend some uninterrupted time reflecting on your past glories, you may mark yourself with a symbol of your power (a long braid tied with bells, ritual scars or tattoos, etc.) Any intelligent mortal creature who sees this symbol knows instinctively that you are a force to be reckoned with and treats you appropriately."
+    "description": "Cuando elijas este movimiento y pases un tiempo ininterrumpido reflexionando sobre tus glorias pasadas, puedes marcarte a ti mismo con un símbolo de tu poder (una trenza larga atada con cascabeles, cicatrices o tatuajes rituales, etc.). Cualquier criatura mortal inteligente que vea este símbolo sabe instintivamente que eres una fuerza que hay que tener en cuenta y te trata adecuadamente."
   },
   {
     "id": "b22",
     "category": "Movimientos Avanzados",
-    "title": "More! Always More! (Requiere nivel 6+)",
+    "title": "¡Más! ¡Siempre más! (Requiere nivel 6+)",
     "weight": 1,
-    "description": "When you **satisfy an appetite to the extreme** (destroying something unique and significant, gaining enormous fame, riches, power, etc.) you may choose to resolve it. Cross it off the list and mark XP. While you may pursue that appetite again, you no longer feel the burning desire you once did. In its place, choose a new appetite from the list or write your own."
+    "description": "Cuando satisfaces un apetito hasta el extremo (destruir algo único y valioso, ganar muchísima fama, riquezas, poder, etc.) puedes elegir resolverlo. Táchalo y apunta PX. Aunque puedes volver a perseguir ese apetito de nuevo, no vuelves a sentir el deseo ardiente una vez que lo sacies. En su lugar, elige un nuevo apetito de la lista o escribe uno propio."
   },
   {
     "id": "b23",
     "category": "Movimientos Avanzados",
-    "title": "The One Who Knocks (Requiere nivel 6+)",
+    "title": "Yo soy el tío que llama (Requiere nivel 6+)",
     "weight": 1,
-    "description": "When you **Defy Danger**, on a 12+ you turn the danger back on itself, the GM will describe how."
+    "description": "Cuando desafías el peligro, con 12+ vuelves el peligro contra él mismo, el DJ describirá cómo."
   },
   {
     "id": "b24",
     "category": "Movimientos Avanzados",
-    "title": "Healthy Distrust (Requiere nivel 6+)",
+    "title": "Desconfianza sana (Requiere nivel 6+)",
     "weight": 1,
-    "description": "Whenever the unclean magic wielded by mortal men causes you to **Defy Danger**, treat any result of 6- as a 7-9."
+    "description": "En cualquier momento que la magia impura convocada por hombres mortales te haga desafiar el peligro, considera cualquier resultado de 6- como si fuera 7-9."
   },
   {
     "id": "b25",
     "category": "Movimientos Avanzados",
-    "title": "For The Blood God (Requiere nivel 6+)",
+    "title": "Por el dios de la sangre (Requiere nivel 6+)",
     "weight": 1,
-    "description": "You are initiated in the old ways, the ways of sacrifice. Choose something your gods (or the ancestor spirits, or your totem, etc) value—gold, blood, bones or the like. When you **sacrifice those things as per your rites and rituals**, roll+WIS.",
+    "description": "Eres un iniciado en las antiguas costumbres, las del sacrificio. Elige algo que tus dioses (o tus espíritus ancestros o tótems, etc.) valoren: oro, sangre, huesos o similares. Cuando sacrificas estas cosas según tus ritos y rituales, tira+sab",
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "The GM will grant you insight into your current trouble or a boon to help you."
+        "text": "el DJ te proporcionará conocimiento sobre tu problema actual o una bonificación para ayudarte."
       },
       {
         "range": "7-9",
-        "text": "The sacrifice is not enough and your gods take of your flesh as well, but still grant you some insight or boon."
+        "text": "el sacrificio no es suficiente y tus dioses también se llevan tu carne, pero te siguen concediendo algo de conocimiento o una bonificación."
       },
       {
         "range": "≤ 6",
-        "text": "You earn the ire of the fickle spirits."
+        "text": "Si fallas, la cólera de los caprichosos espíritus cae sobre ti."
       }
     ]
   }
