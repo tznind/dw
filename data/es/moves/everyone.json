@@ -1,0 +1,434 @@
+[
+  {
+    "id": "bm1",
+    "title": "Saja-Raja (+Fue)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando ataques a un enemigo en combate cuerpo a cuerpo, tira+fue.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose",
+        "bullets": [
+          "haces tu daño al enemigo y además evitas su ataque",
+          "tu elección, puedes hacer +1d6 de daño y exponerte a un ataque del enemigo"
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": " haces tu daño al enemigo y el enemigo hace un ataque contra ti."
+      }
+    ]
+  },
+  {
+    "id": "bm2",
+    "title": "Disparar (+Des)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando apuntas y disparas contra un enemigo a distancia, tira+des.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Consigues un buen disparo, tira daño."
+      },
+      {
+        "range": "7–9",
+        "text": "Haces daño pero elige una:",
+        "bullets": [
+          "Tienes que moverte, y eso te pone en peligro. El DJ te lo describirá.",
+          "Te tienes que conformar con lo que tienes: –1d6 daño.",
+          "Tienes que disparar varias veces, reduce en 1 tu munición."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bm3",
+    "title": "Desafiar el peligro",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando actúes a pesar de una amenaza inminente o sufras una desgracia, di cómo te enfrentas a ello y tira. Si lo haces…\n- mediante fuerza bruta, tira+fue.\n- apartándote o actuando rápido, tira+des.\n- aguantando, tira+con.\n- pensando rápido, tira+int.\n- mediante fortaleza mental, tira+sab.\n- usando tu encanto y habilidad social, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Consigues lo que pretendías y la amenaza no surte efecto."
+      },
+      {
+        "range": "7–9",
+        "text": "Tropiezas, dudas o no aguantas: el DJ te ofrecerá un resultado peor, un trato difícil o una elección complicada."
+      }
+    ]
+  },
+  {
+    "id": "bm4",
+    "title": "Defender (+Con)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando defiendes a otra persona, objeto o localización que sufra un ataque, tira+con.",
+    "tracks": [
+      {
+        "name": "Puntos",
+        "max": 3,
+        "shape": "square"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Recibes 3 puntos. Cuando tú o aquello a lo que defiendes sea atacado puedes gastar esos puntos a razón de 1 por cada una de las opciones siguientes:",
+        "bullets": [
+          "Redirigir hacia ti un ataque contra aquello que defiendes.",
+          "Reducir a la mitad el daño o el efecto del ataque.",
+          "Abrir la defensa del atacante a un compañero, que recibe +1 a la siguiente tirada contra el atacante.",
+          "Hacer un daño igual a tu nivel al atacante."
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": "Recibes 1 punto."
+      }
+    ]
+  },
+  {
+    "id": "bm5",
+    "title": "Exhibir conocimientos (+Int)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando consultas tus vastos conocimientos sobre un tema, tira+int.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "El DJ te dirá algo interesante y útil sobre un tema concerniente a tu situación."
+      },
+      {
+        "range": "7–9",
+        "text": "El DJ te dirá algo interesante. Depende de ti convertirlo en útil. El DJ puede preguntarte «¿Cómo lo sabes?». Dile la verdad."
+      }
+    ]
+  },
+  {
+    "id": "bm6",
+    "title": "Discernir la realidad (+Sab)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando estudias detenidamente una situación o persona, tira+sab.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Haz 3 preguntas de la lista siguiente al DJ. En cualquier caso, recibes +1 a la siguiente tirada cuando actúes de acuerdo con las respuestas.",
+        "bullets": [
+          "¿Qué ha pasado recientemente aquí?",
+          "¿Qué está a punto de pasar?",
+          "¿Qué debería estar buscando?",
+          "¿Qué hay aquí que sea útil o valioso para mí?",
+          "¿Quién manda aquí realmente?",
+          "¿Qué hay aquí que no es lo que parece?"
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": "Pregunta 1."
+      }
+    ]
+  },
+  {
+    "id": "bm7",
+    "title": "Parlamentar (+Car)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando tengas ventaja sobre un personaje del DJ y lo manipules, tira+car. La ventaja puede ser algo que quiera o necesite.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hace lo que le pides si antes le prometes que le darás lo que quieren de ti."
+      },
+      {
+        "range": "7–9",
+        "text": "Harán lo que le pides, pero antes querrá pruebas de que cumplirás tu promesa."
+      }
+    ]
+  },
+  {
+    "id": "bm8",
+    "title": "Ayudar o interferir (+Vínculo)",
+    "category": "Movimientos Básicos",
+    "hideCheckbox": true,
+    "description": "Cuando ayudas o entorpeces a alguien, tira+vínculo con él.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Reciben un +1 o –2 a su tirada, según elijas."
+      },
+      {
+        "range": "7–9",
+        "text": "Siguen recibiendo el modificador, pero también te expones a daño, un castigo o un coste."
+      }
+    ]
+  },
+  {
+    "id": "sm1",
+    "title": "Último aliento",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando estás al borde de la muerte llegas a entrever lo que hay más allá de las Puertas Negras del Reino de la Muerte (el DJ te lo describirá). Luego tira (simplemente tira+nada, a la Muerte no le importa lo guay que seas).",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Has engañado a la Muerte. Estás en una situación comprometida, pero sigues vivo."
+      },
+      {
+        "range": "7–9",
+        "text": "La Muerte te ofrecerá un trato. Acéptalo y te estabilizarás. Recházalo y cruzarás las Puertas Negras rumbo al destino que te aguarde."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Tu destino está sellado. Eres propiedad de la Muerte y no tardarás en cruzar el umbral. El DJ te dirá cuándo."
+      }
+    ]
+  },
+  {
+    "id": "sm2",
+    "title": "Impedimenta",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando haces un movimiento cargando peso, puede que tengas algunas dificultades. Si el peso que llevas es:",
+    "outcomes": [
+      {
+        "range": " Carga",
+        "text": "No sufres penalización.",
+        "bullets": []
+      },
+      {
+        "range": "≤ Carga +2",
+        "text": "Recibes –1 hasta que aligeres tu carga.",
+        "bullets": []
+      },
+      {
+        "range": "> Carga +2",
+        "text": "Tienes que elegir entre fallar automáticamente o dejar caer al menos 1 peso y tirar a –1.",
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": "sm3",
+    "title": "Acampar",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando te acomodes para descansar, consume una ración. Si estás en una zona peligrosa, decide el orden de guardia. Puedes subir de nivel si tienes bastantes PX. Cuando te despiertes tras, al menos, unas cuantas horas de sueño ininterrumpido, cúrate tanto daño como la mitad de tus PG máximos."
+  },
+  {
+    "id": "sm4",
+    "title": "Hacer guardia",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando estás de guardia y algo se aproxima al campamento, tira+sab.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Eres capaz de despertar al campamento para preparar una respuesta, todo el mundo en el campamento recibe +1 a la siguiente tirada."
+      },
+      {
+        "range": "7–9",
+        "text": "Reaccionas un segundo más tarde, tus compañeros en el campamento están despiertos, pero no han tenido tiempo para prepararse. Llevan sus armas y armaduras, pero poco más."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Estás en desventaja ante lo que sea que esté deambulando más allá de la luz de la fogata."
+      }
+    ]
+  },
+  {
+    "id": "sm5",
+    "title": "Realizar un viaje peligroso",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando viajáis a través de territorio hostil, elegid a un miembro del grupo para que actúe como guía, otro como vigía y otro como intendente. Cada personaje con una responsabilidad tira+sab.",
+    "submoves": [
+      {
+        "title": "Guía (+Sab)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "Reduces la cantidad de tiempo necesaria para alcanzar vuestro destino (el DJ dirá en cuánto)."
+          },
+          {
+            "range": "7–9",
+            "text": "El viaje dura lo esperado."
+          }
+        ]
+      },
+      {
+        "title": "Vigía (+Sab)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "Detectarás cualquier problema lo bastante rápido como para permitiros tener ventaja sobre el mismo."
+          },
+          {
+            "range": "7–9",
+            "text": "Desempeñas tu tarea adecuadamente: nadie os pilla por sorpresa, pero tampoco lo pilláis vosotros."
+          }
+        ]
+      },
+      {
+        "title": "Intendente (+Sab)",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "Reduces el número de raciones necesarias en 1."
+          },
+          {
+            "range": "7–9",
+            "text": "Se consume el número normal de raciones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm6",
+    "title": "Subir de nivel",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando tengas tiempo para descansar (horas o días) y PX iguales (o mayores) a tu nivel actual+7, puedes reflexionar sobre tus experiencias y perfeccionar tus habilidades.\n• Resta 7+tu nivel actual de tu total de PX.\n• Incrementa en 1 tu nivel.\n• Elige un nuevo movimiento avanzado de tu clase.\n• Si eres un mago también puedes añadir un nuevo conjuro a tu libro.\n• Elige una de tus características e increméntala en 1 (eso puede cambiar el modificador). Cambiar la Constitución incrementará tus PG máximos y actuales. Las puntuaciones de las características no pueden ser mayores de 18."
+  },
+  {
+    "id": "sm7",
+    "title": "Fin de sesión",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando llegas al final de la sesión, escoge un vínculo que creas que haya sido resuelto (que esté completamente explorado, que ya no sea importante u otra cosa). Pregunta al jugador con el que tienes el vínculo si está de acuerdo. Si lo está, marca PX y anota un nuevo vínculo con quien quieras.\n\nCuando se hayan actualizado todos los vínculos, echa un vistazo a tu alineamiento. Si lo cumpliste al menos una vez a lo largo de la sesión, marca PX. Luego responded juntos estas tres preguntas:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Por cada respuesta afirmativa, todo el mundo marca PX.",
+        "bullets": [
+          "¿Hemos aprendido algo nuevo e importante sobre el mundo?",
+          "¿Hemos vencido a un monstruo o enemigo importante?",
+          "¿Hemos obtenido un tesoro memorable?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm8",
+    "title": "Festejar",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando volváis triunfantes y hagáis una gran fiesta, gastad 100 monedas y tirad +1 por cada 100 monedas adicionales.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Elegid 3 de las siguientes opciones:",
+        "bullets": [
+          "Entabláis amistad con un PNJ útil.",
+          "Oís rumores sobre una oportunidad.",
+          "Obtenéis alguna información valiosa.",
+          "No os involucráis en ningún asunto turbio, os hechizan ni engañan."
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": "Elegid 1 de las siguientes opciones."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Elegid 1 de todos modos, pero la situación se os va de las manos (el DJ dirá en qué sentido)."
+      }
+    ]
+  },
+  {
+    "id": "sm9",
+    "title": "Abastecerse (+Car)",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando vas a comprar algo con dinero, puedes comprarlo al precio de mercado si se trata de algo que esté fácilmente disponible en el asentamiento en el que te encuentres. Si se trata de algo especial, más allá de lo que suele estar disponible, o no mundano, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Encuentras lo que buscas a un precio justo."
+      },
+      {
+        "range": "7–9",
+        "text": "Tendrás que pagar más o conformarte con algo que no es exactamente lo que buscas, pero casi. El DJ te dirá cuáles son tus opciones."
+      }
+    ]
+  },
+  {
+    "id": "sm10",
+    "title": "Recuperarse",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando no haces nada salvo descansar en un lugar cómodo y seguro durante un día, recuperas todos tus PG. Tras tres días de descanso puedes borrar una debilidad a tu elección. Si estás bajo los cuidados de un curandero (sea mágico o no), curas una debilidad por cada dos días de descanso.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Tras 1 día: recuperas todos los PG. Tras 3 días: borras una debilidad. Con curandero: curas una debilidad cada 2 días."
+      }
+    ]
+  },
+  {
+    "id": "sm11",
+    "title": "Reclutar",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando haces saber que quieres contratar ayudantes, tira:\n• +1 si haces saber que la paga será generosa.\n• +1 si haces saber qué te propones hacer.\n• +1 si haces saber que tendrán derecho a una parte de lo que sea que encuentres.\n• +1 si tienes una buena reputación por estos lares.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Puedes elegir entre una serie de solicitantes hábiles y no hay penalización por rechazarlos."
+      },
+      {
+        "range": "7–9",
+        "text": "Tienes que conformarte con alguien que es casi lo que buscas o rechazarlo."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Alguien influyente y poco adecuado para la tarea declara que quiere acompañarte (algún joven temerario, un bala perdida o un enemigo que aún no sabes que lo es, por ejemplo). Llévalo contigo y acepta las consecuencias, o recházalo. Si rechazas solicitantes, recibes –1 a la siguiente tirada de Reclutar."
+      }
+    ]
+  },
+  {
+    "id": "sm12",
+    "title": "Cuentas pendientes (+Car)",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando vuelves a un lugar civilizado en el que causaste problemas, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Se ha corrido la voz de tus actos y todos te reconocen."
+      },
+      {
+        "range": "7–9",
+        "text": "Lo mismo que antes, pero el DJ elige una complicación:",
+        "bullets": [
+          "Una autoridad local tiene una orden de arresto contra ti.",
+          "Alguien ha puesto precio a tu cabeza.",
+          "Alguien importante para ti ha sufrido las consecuencias de tus actos."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sm13",
+    "title": "Prepararse",
+    "category": "Movimientos especiales",
+    "hideCheckbox": true,
+    "description": "Cuando pasas tu tiempo de ocio estudiando, meditando o entrenando duramente, recibes puntos de preparación. Si te preparas durante una semana o más, recibes 1 punto. Si te preparas durante un mes o más, recibes 3 puntos. Cuando tu preparación sea útil, gasta 1 punto de preparación para recibir un +1 a cualquier tirada. Solo puedes gastar 1 punto de preparación por tirada.",
+    "tracks": [
+    {
+      "name": "Preparación",
+      "max": 3
+    }
+    ],
+    "outcomes": [
+      {
+        "range": "",
+        "text": "1 semana o más: recibes 1 punto de preparación. 1 mes o más: recibes 3 puntos de preparación. Gasta 1 punto de preparación para recibir +1 a cualquier tirada (máx. 1 por tirada)."
+      }
+    ],
+    "details": true
+  }
+]
