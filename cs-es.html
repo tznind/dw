@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoja de Personaje de Dungeon World</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Loading indicator -->
+  <div id="loading-indicator" class="loading-indicator">
+    <div class="loading-spinner"></div>
+    <span>Cargando...</span>
+  </div>
+
+  <!-- License Attribution -->
+  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 4px; padding: 10px; margin-bottom: 15px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px; font-size: 12px; color: #666; text-align: center;">
+    <span><a href="https://www.dungeon-world.com/" target="_blank" style="color: #007bff; text-decoration: none;">Dungeon World</a> contenido por <strong>Sage LaTorra and Adam Koebel</strong> diseño inspirado por <strong>Stefan Grambart</strong></span>
+    <span>•</span>
+    <span> Licenciado bajo<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" style="color: #007bff;"> CC BY 3.0</a></span>
+    <span>•</span>
+    <span><a href="https://github.com/tznind/dw" target="_blank" style="color: #007bff; text-decoration: none; display: inline-flex; align-items: center;"><img width="12" height="12" alt="GitHub logo" src="https://github.com/user-attachments/assets/d45893e9-0b26-4259-8764-a9737ee1426e" style="margin-right: 3px; background: #000; border-radius: 50%; padding: 1px;" /> Código Fuente</a></span>
+  </div>
+
+  <!-- Validation warning indicator (upper right, subtle) -->
+  <button type="button" id="validation-warning" class="validation-warning" style="display: none;" title="Haz clic para ver errores de validación">
+    <span class="warning-icon">⚠️</span>
+    <span class="warning-count">0</span>
+  </button>
+
+  <form>
+    <!-- Character Info Box -->
+    <div class="character-info-box">
+      <div class="basic-info">
+        <div class="form-field">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-field">
+          <label for="player">Jugador:</label>
+          <input type="text" id="player" name="player">
+        </div>
+        
+        <div class="form-field">
+          <label for="look">Aspecto:</label>
+          <input type="text" id="look" name="look" placeholder="Elige p. ej. Cuerpo, Ojos, Decoración, Ropa">
+        </div>
+      </div>
+      
+      <!-- Role selectors support data-roles attribute to limit which roles appear:
+           - Comma-separated list: data-roles="Navigator,Mech Adept" 
+           - Wildcard for all roles: data-roles="*"
+           - No attribute: shows all roles (same as *) -->
+      <div class="role-controls">
+        <label for="role">Clase:</label>
+        <select id="role" name="role" data-roles="*">
+          <option value="">Seleccionar clase...</option>
+        </select>       
+  <!--
+        <label for="role2">Career:</label>
+        <select id="role2" name="role2" data-roles="*">
+          <option value="">Select career...</option>
+        </select>-->
+        <button type="button" id="copy-url-button">
+          <span class="button-text">Copiar URL</span>
+          <span class="success-text">
+            <span class="checkmark"></span>
+            ¡Copiado!
+          </span>
+        </button>
+        <button type="button" id="clear-button">Limpiar</button>
+      </div>
+    </div>
+
+    <div id="stats-container"></div>
+    <div class="stats-help"></div>
+
+      <!-- Combat and Progression Stats -->
+      <div class="all-stats">
+        <label for="damage">
+          Daño
+          <input type="text" id="damage" name="damage">
+        </label>
+        <label for="hp">
+          PV
+          <input type="text" id="hp" name="hp">
+        </label>
+        <label for="armor">
+          Armadura
+          <input type="text" id="armor" name="armor">
+        </label>
+
+        <label for="xp">
+          PX
+          <input type="text" id="xp" name="xp">
+        </label>
+
+        <label for="level">
+          Nivel
+          <input type="text" id="level" name="level">
+        </label>
+        <label for="coin">
+          Monedas
+          <input type="text" id="coin" name="coin">
+        </label>
+        <label for="Load">
+          Carga
+          <input type="text" id="load" name="load">
+        </label>
+      </div>
+    
+    <!-- UI Control -->
+    <div class="ui-control">
+      <div class="hide-options">
+        <span class="hide-label">Ocultar:</span>
+        <label>
+          <input type="checkbox" id="hide_untaken" name="hide_untaken">
+          movimientos no tomados
+        </label>
+        <span class="separator">|</span>
+        <label>
+          <input type="checkbox" id="hide_help" name="hide_help">
+          ayuda
+        </label>
+      </div>
+      <div class="collapse-controls">
+        <button type="button" id="collapse-all-moves">Contraer Todo</button>
+        <button type="button" id="expand-all-moves">Expandir Todo</button>
+        <button type="button" id="show-contents" class="burger-menu" title="Tabla de Contenidos" aria-label="Mostrar tabla de contenidos">☰</button>
+      </div>
+    </div>
+
+    <div id="cards-container"></div>
+    
+    <div id="moves"></div>
+  </form>
+
+<!-- Auto-append lang=es to URL if not present -->
+<script>
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  if (!params.has('lang')) {
+    params.set('lang', 'es');
+    const newUrl = window.location.pathname + '?' + params.toString() + window.location.hash;
+    window.history.replaceState({}, '', newUrl);
+  }
+})();
+</script>
+
+<!-- Core dependencies -->
+<script src="events.js"></script>
+<script src="utils.js"></script>
+<script src="json-loader.js"></script>
+<script src="data-loader.js"></script>
+<script src="persistence.js"></script>
+<script src="validation.js"></script>
+<script src="stats.js"></script>
+<script src="clock.js"></script>
+<script src="text-formatter.js"></script>
+
+<!-- Cards and moves modules -->
+<script src="wizard.js"></script>
+<script src="card-helpers.js"></script>
+<script src="dynamic-table.js"></script>
+<script src="cards.js"></script>
+<script src="moves/moves-core.js"></script>
+<script src="moves/inline-cards.js"></script>
+<script src="moves/takefrom.js"></script>
+<script src="moves/track.js"></script>
+<script src="moves/moves.js"></script>
+
+<!-- Layout system -->
+<script src="layout.js"></script>
+
+<!-- Placeholder management -->
+<script src="placeholders.js"></script>
+
+<!-- Stats picker -->
+<script src="stats-picker.js"></script>
+
+<!-- Main application -->
+<script src="main.js"></script>
+
+</body>
+</html>
