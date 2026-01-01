@@ -1,0 +1,267 @@
+[
+  {
+    "id": "da",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Caótico** - Destruir un símbolo de la civilización.",
+      "**Bueno** - Ayudar a crecer a algo o alguien.",
+      "**Neutral** - Eliminar una amenaza no natural.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "dr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elfo - La savia de los antiguos árboles corre por tus venas. Además del lugar con el que elijas estar sintonizado (ver el movimiento Nacido del barro), se considera que los Grandes Bosques siempre han sido tu tierra natal.",
+      "Humano - Estás ligado a los animales igual que tu gente aprendió a domarlos para trabajar el campo y tenerlos en granjas. Siempre puedes adoptar la forma de cualquier animal domesticado, además de aquellos animales que habitan en las tierras con las que estás en sintonía (ver el movimiento Nacido del barro).",
+      "Mediano - Cantas canciones sanadoras sobre la primavera y los arroyos. Cuando acampas, tus compañeros y tú os curáis 1d6 PG más",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "d1",
+    "category": "Movimientos Iniciales",
+    "title": "Nacido del barro",
+    "description": "Has aprendido tu magia en un lugar en el que los espíritus son fuertes y te han marcado como uno de los suyos. No importa dónde vayas, ellos viven en ti y te permiten adoptar su forma. Elige una de las siguientes tierras. Estás sintonizado con ella y puedes adoptar la forma de cualquier animal que pueda vivir en ese lugar.\n\nElige un distintivo, un atributo físico que te marque como nacido del barro y que refleje el espíritu de la tierra que has elegido. Puede ser un rasgo animal como cuernos, manchas de leopardo o algo más genérico, como hojas por cabello u ojos brillantes como el cristal. Ese distintivo permanece contigo independientemente de la forma que adoptes.",
+    "pick": [
+      "Los Grandes Bosques",
+      "Las Praderas Susurrantes",
+      "El Gran Desierto",
+      "Las Ciénagas Apestosas",
+      "El Delta del Río",
+      "Las Profundidades de la Tierra",
+      "Las Islas Zafiro",
+      "El Mar Abierto",
+      "Las Montañas Encumbradas",
+      "El Norte Helado",
+      "Los Eriales Condenados"
+    ],
+    "details": true
+  },
+  {
+    "id": "d2",
+    "category": "Movimientos Iniciales",
+    "title": "Alimentado por la Naturaleza",
+    "description": "No necesitas comer o beber. Si un movimiento te dice que marques una ración, ignóralo."
+  },
+  {
+    "id": "d3",
+    "category": "Movimientos Iniciales",
+    "title": "Lengua de los espíritus",
+    "description": "Los gruñidos, ladridos, trinos y llamadas de las criaturas salvajes son lenguajes para ti. Puedes entender a cualquier animal autóctono de tu tierra (ver el movimiento Nacido del barro) o parecido a aquellos cuya esencia hayas estudiado."
+  },
+  {
+    "id": "d4",
+    "category": "Movimientos Iniciales",
+    "title": "Cambiaformas (+Sab)",
+    "description": "Cuando invocas a los espíritus para cambiar tu forma, tira+sab.\n\nPuedes adoptar la forma física de una criatura cuya esencia hayas estudiado o que viva en tu tierra: tus posesiones y tú os fundís para crear una copia perfecta de la forma física de esa criatura. Tienes todas las capacidades y debilidades de la nueva forma (garras, alas e incluso branquias para respirar bajo el agua). Sigues usando tus puntuaciones y modificadores de tus características, pero es posible que sea mucho más difícil desencadenar algunos movimientos (a un gato casero le va a costar trabajo combatir contra un ogro, por ejemplo). El DJ te dirá también uno o dos movimientos asociados con tu nueva forma. Gasta 1 punto para hacer ese movimiento. Cuando te quedes sin puntos vuelves a tu forma natural, pero también puedes decidir desprenderte de todos los puntos que te queden y volver a tu forma natural en cualquier momento.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Recibes 3 puntos."
+      },
+      {
+        "range": "7-9",
+        "text": "Recibes 2 puntos."
+      },
+      {
+        "range": "≤6",
+        "text": "Recibes 1 punto, además de acatar lo que elija el DJ."
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Puntos",
+        "shape": "hexagon",
+        "max": 3,
+        "dynamic": true
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "d5",
+    "category": "Movimientos Avanzados",
+    "title": "Hermano del cazador",
+    "description": "Elige un movimiento de la clase del explorador.",
+    "takeFrom": ["ranger"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  },
+  {
+    "id": "d6",
+    "category": "Movimientos Avanzados",
+    "title": "Dientes y garras rojas",
+    "description": "Cuando adoptes una forma animal apropiada (la de uno peligroso) aumenta tu daño a d8."
+  },
+  {
+    "id": "d7",
+    "category": "Movimientos Avanzados",
+    "title": "Comunión de susurros (+Sab)",
+    "description": "Cuando pasas tiempo en un lugar sintiendo a los espíritus que viven en él y apelando a ellos, tira+sab. Se te proporcionará una visión relevante para ti, tus compañeros y los espíritus que os rodean.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "La visión será clara y útil para ti."
+      },
+      {
+        "range": "7-9",
+        "text": "La visión es poco clara y su significado turbio."
+      },
+      {
+        "range": "≤6",
+        "text": "La visión es desagradable, aterradora o traumatizante; el DJ te la describirá y además recibes -1 a la siguiente tirada."
+      }
+    ]
+  },
+  {
+    "id": "d8",
+    "category": "Movimientos Avanzados",
+    "title": "Piel de corteza",
+    "description": "Recibes +1 armadura mientras tus pies estén tocando el suelo."
+  },
+  {
+    "id": "d9",
+    "category": "Movimientos Avanzados",
+    "title": "Ojos del tigre",
+    "description": "Cuando marcas a un animal (con barro, polvo o sangre) puedes ver a través de sus ojos como si fueran los tuyos propios, sin importar la distancia que os separe. Solo puedes dejar tu marca sobre un animal al mismo tiempo."
+  },
+  {
+    "id": "d10",
+    "category": "Movimientos Avanzados",
+    "title": "Mudar",
+    "description": "Cuando recibes daño mientras estás en un cambio de forma puedes elegir volver a tu forma natural para no recibir ese daño."
+  },
+  {
+    "id": "d11",
+    "category": "Movimientos Avanzados",
+    "title": "El que habla con las cosas",
+    "description": "Puedes ver a los espíritus de las arenas, del agua y de la piedra. Además de a los animales, puedes aplicar los movimientos de Lengua de los espíritus, Cambiaformas y Esencia estudiada a los objetos naturales inanimados (plantas y rocas) o a criaturas hechas a partir de ellas. Las formas adoptadas pueden ser copias idénticas de los originales o tener cierta movilidad, siendo vagamente humanoides."
+  },
+  {
+    "id": "d12",
+    "category": "Movimientos Avanzados",
+    "title": "Creaformas",
+    "description": "Cuando cambias de forma, elige una característica: recibes +1 a todas las tiradas usando esa característica hasta que vuelvas a tu forma natural. El DJ elegirá también otra característica: recibes -1 a todas las tiradas con esa característica hasta que vuelvas a tu forma natural."
+  },
+  {
+    "id": "d13",
+    "category": "Movimientos Avanzados",
+    "title": "Maestría elemental (+Sab)",
+    "description": "Cuando apelas a los espíritus primarios del agua, la tierra, el fuego o el aire para llevar a cabo una tarea, tira+sab.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Elige dos de las siguientes opciones:",
+        "bullets": [
+          "El efecto deseado tiene lugar.",
+          "Evitas pagar el precio de la naturaleza.",
+          "Tienes el control."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Elige una de las siguientes opciones."
+      },
+      {
+        "range": "≤6",
+        "text": "Tiene lugar una catástrofe como resultado de tu petición."
+      }
+    ]
+  },
+  {
+    "id": "d14",
+    "category": "Movimientos Avanzados",
+    "title": "Equilibrio",
+    "description": "Cuando haces daño, recibes 1 punto de equilibrio. Cuando tocas a alguien y canalizas los espíritus de la vida puedes gastar los puntos de equilibrio. Por cada punto de equilibrio que gastes curas 1d4 PG.",
+    "tracks": [
+      {
+        "name": "Equilibrio",
+        "max": 5,
+        "dynamic": true,
+        "shape": "square"
+      }
+    ]
+  },
+  {
+    "id": "d15",
+    "category": "Movimientos Avanzados",
+    "title": "Entregarse a la Forma (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando realices el movimiento de Cambiaformas tira 1d4 y suma el resultado a los puntos recibidos."
+  },
+  {
+    "id": "d16",
+    "category": "Movimientos Avanzados",
+    "title": "Danza del doppelgänger (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Puedes estudiar la esencia de individuos concretos para adoptar su forma exacta, incluyendo hombres, elfos y razas similares. Puedes eliminar tu rasgo distintivo, pero si lo haces recibes -1 hasta que vuelvas a tu forma natural."
+  },
+  {
+    "id": "d17",
+    "category": "Movimientos Avanzados",
+    "title": "Sangre y trueno (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Dientes y garras rojas**\n\nCuando adoptes una forma animal apropiada (la de uno peligroso) aumenta tu daño a d10."
+  },
+  {
+    "id": "d18",
+    "category": "Movimientos Avanzados",
+    "title": "El sueño del druida (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Una vez que tengas este movimiento, la próxima vez que te encuentres en un entorno seguro y tengas el tiempo suficiente podrás sintonizarte con una nueva tierra. Este efecto tiene lugar una sola vez y el DJ te dirá cuánto tiempo va a llevarte y qué precio tienes que pagar. A partir de ese momento se te considerará nacido del barro en ambos territorios.",
+    "details": true
+  },
+  {
+    "id": "d19",
+    "category": "Movimientos Avanzados",
+    "title": "Tejedor del clima (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando estás bajo el cielo abierto a la salida del sol, el DJ te preguntará qué tiempo va a hacer ese día. Dile qué tiempo quieres que haga y acabará pasando."
+  },
+  {
+    "id": "d20",
+    "category": "Movimientos Avanzados",
+    "title": "El que habla con el mundo (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Requiere: **El que habla con las cosas**\n\nPuedes ver los patrones que conforman el tejido del mundo. Ahora puedes aplicar los movimientos de Lengua de los espíritus, Cambiaformas y Esencia estudiada a los elementos en estado puro: tierra, fuego, agua y aire."
+  },
+  {
+    "id": "d21",
+    "category": "Movimientos Avanzados",
+    "title": "Moldeaformas (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Requiere: **Creaformas**\n\nPuedes aumentar tu armadura en 1 punto o hacer +1d4 de daño adicional mientras estás en forma animal. Elige una de las opciones cuando cambies de forma."
+  },
+  {
+    "id": "d22",
+    "category": "Movimientos Avanzados",
+    "title": "Desconfianza sana (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "En cualquier momento que la magia impura convocada por hombres mortales te haga desafiar el peligro, considera cualquier resultado de 6- como si fuera 7-9."
+  },
+  {
+    "id": "d23",
+    "category": "Movimientos Avanzados",
+    "title": "Quimera (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando cambias de forma puedes crear un cuerpo híbrido a partir de tres formas distintas. Puedes ser un oso con alas de águila y cabeza de carnero, por ejemplo. Cada característica te proporcionará un movimiento diferente. Por lo demás, tu forma de quimera sigue las mismas reglas que la de Cambiaformas.",
+    "details": true
+  },
+  {
+    "id": "d24",
+    "category": "Movimientos Avanzados",
+    "title": "Hermana del acechador (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Elige un movimiento de la clase del explorador.",
+    "takeFrom": ["ranger"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  }
+]
