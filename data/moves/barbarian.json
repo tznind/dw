@@ -35,7 +35,7 @@
     "id": "b2",
     "title": "The Upper Hand",
     "category": "Starting Moves",
-    "description": "When you **take your last breath**, on a 7-9 you make an offer to Death in return for your life.  If Death accepts he will return you to life. If not, you die."
+    "description": "You take +1 ongoing to last breath rolls. When you **take your last breath**, on a 7-9 you make an offer to Death in return for your life.  If Death accepts he will return you to life. If not, you die."
   },
   {
     "id":"b3",

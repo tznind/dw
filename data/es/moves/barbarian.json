@@ -1,0 +1,238 @@
+[
+  {
+    "id": "ba",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Caótico** - Romper una convención del mundo civilizado.",
+      "**Neutral** - Enséñale a alguien las costumbres de tu gente.",
+      "Otra - Describe a continuación"
+    ],
+    "details": true
+
+  },
+  {
+    "id": "br",
+    "category": "Movimientos Iniciales",
+    "title":"Raza - Extranjero",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "Puedes ser elfo, enano, mediano o humano, pero tu gente y tú no sois de por aquí. Al principio de cada sesión, el DJ te preguntará algo sobre tu hogar natal, por qué te marchaste o qué dejaste atrás. Si le respondes, anota PX.",
+    "details": true
+  },
+  {
+    "id": "b1",
+    "title": "Armadura",
+    "description": "Elige uno de los siguientes para empezar:",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "Blindado, armado y listo para partir!",
+      "Mientras estés por debajo de tu Carga y no lleves ni armadura ni escudo, recibes +1 armadura."
+    ]
+  },
+  {
+    "id": "b2",
+    "title": "Llevar la delantera",
+    "category": "Movimientos Iniciales",
+    "description": "Recibes +1 en adelante a las tiradas de Último aliento. Cuando expiras tu último aliento, con 7-9 le haces una oferta a la Muerte a cambio de tu vida. Si la Muerte acepta, te devolverá a la vida. Si no, mueres."
+  },
+  {
+    "id":"b3",
+    "category": "Movimientos Iniciales",
+    "title": "¿A qué estás esperando? (+Con)",
+    "description": "When you **cry out a challenge to your enemies**, roll+Con",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Te tratan como a la amenaza más obvia a la que se tienen que enfrentar e ignoran a tus compañeros, recibes daño +2 en adelante contra ellos."
+      },
+      {
+        "range": "7-9",
+        "text": "solo unos pocos (los más débiles o imprudentes de ellos) caen presa de tu provocación."
+      }
+    ]
+  },
+  {
+    "id": "b4",
+    "category": "Movimientos Iniciales",
+    "title": "Apetitos hercúleos",
+    "description": "Puede que otros se contenten con el sabor del vino o con dominar sobre un sirviente o dos, pero tú quieres más. Elige dos apetitos. Cuando persigues uno de tus apetitos, si vas a tirar para hacer un movimiento, en lugar de tirar 2d6 tira 1d6+1d8. Si el d6 tiene el resultado más alto de los dos, el DJ también introducirá una complicación o un peligro que sucede debido a tu descuidada búsqueda.",
+    "pick": [
+      "Pura destrucción",
+      "Poder sobre los otros",
+      "Placeres mortales",
+      "Conquista",
+      "Riquezas y posesiones",
+      "Fama y gloria"
+    ],
+    "details": true
+  },
+  {
+    "id": "b5",
+    "category": "Movimientos Iniciales",
+    "title": "Músculos",
+    "description": "Cuando empuñas un arma, esta recibe las etiquetas contundente y escabrosa."
+  },
+  {
+    "id": "b6",
+    "category": "Movimientos Avanzados",
+    "title": "Aún hambriento",
+    "description": "Elige un apetito adicional."
+  },
+  {
+    "id": "b7",
+    "category": "Movimientos Avanzados",
+    "title": "Apetito por la destrucción",
+    "description": "Elige un movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases.",
+    "takeFrom": ["fighter", "bard", "thief"],
+    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
+  },
+  {
+    "id": "b8",
+    "category": "Movimientos Avanzados",
+    "title": "Mi amor por ti es como un camión",
+    "description": "Cuando realizas una hazaña demostrando tu fortaleza, nombra a quiénes de los presentes has impresionado y recibe +1 a la siguiente tirada para Parlamentar con ellos."
+  },
+  {
+    "id": "b9",
+    "category": "Movimientos Avanzados",
+    "title": "¿Qué es lo mejor de la vida?",
+    "description": "Si durante la sesión de juego has aplastado a tus enemigos, les has visto destrozados o has oído el lamento de su gente, al final de la misma recibes PX."
+  },
+  {
+    "id": "b10",
+    "category": "Movimientos Avanzados",
+    "title": "Trotamundos",
+    "description": "Has viajado por todo el mundo. Cuando llegas a algún lugar, pregunta al DJ sobre cualquier tradición, ritual y demás que sea importante. Él te dirá lo que necesitas saber."
+  },
+  {
+    "id": "b11",
+    "category": "Movimientos Avanzados",
+    "title": "Usurpador",
+    "description": "Cuando demuestras que eres superior a una persona en poder, recibes +1 a la siguiente tirada con sus seguidores, subalternos y gorrones."
+  },
+  {
+    "id": "b12",
+    "category": "Movimientos Avanzados",
+    "title": "Kan de kanes",
+    "description": "Tus mercenarios siempre aceptan la gratificante satisfacción de uno de tus apetitos como pago."
+  },
+  {
+    "id": "b13",
+    "category": "Movimientos Avanzados",
+    "title": "Sansón",
+    "description": "Puedes recibir una debilidad para liberarte inmediatamente de cualquier limitación física o mental."
+  },
+  {
+    "id": "b14",
+    "category": "Movimientos Avanzados",
+    "title": "¡Aplastar!",
+    "description": "Cuando realizas el movimiento Saja-Raja y obtienes 12+, inflige tu daño y elige algo físico que tiene tu objetivo (un arma, su posición, una extremidad). Tu objetivo lo pierde."
+  },
+  {
+    "id": "b15",
+    "category": "Movimientos Avanzados",
+    "title": "Hambre indestructible",
+    "description": "Cuando recibes daño puedes elegir recibir -1 en adelante hasta que sacies uno de tus apetitos en lugar de recibir daño. Si ya tienes esta penalización, no puedes elegir esta opción."
+  },
+  {
+    "id": "b16",
+    "category": "Movimientos Avanzados",
+    "title": "Ojo para las debilidades",
+    "description": "Cuando **disciernas la realidad**, añade: «¿Qué es débil o vulnerable aquí?» a la lista de preguntas que puedes hacer."
+  },
+  {
+    "id": "b17",
+    "category": "Movimientos Avanzados",
+    "title": "En continuo movimiento",
+    "description": "Cuando desafíes un peligro causado por el movimiento (quizás caerse de un puente estrecho o arremeter contra un guardia armado), recibes +1."
+  },
+  {
+    "id": "b18",
+    "category": "Movimientos Avanzados",
+    "title": "Un buen día para morir (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take **+1 ongoing**."
+  },
+  {
+    "id": "b19",
+    "category": "Movimientos Avanzados",
+    "title": " Mátalos a todos (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Requiere: Apetito por la destrucción\n\nElige otro movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases..",
+    "takeFrom": ["fighter", "bard", "thief"],
+    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
+  },
+  {
+    "id": "b20",
+    "category": "Movimientos Avanzados",
+    "title": "Grito de guerra (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando entras en una batalla con una demostración de fuerza, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Elige las dos opciones:",
+        "bullets": [
+          "Tus aliados se reagrupan y reciben +1 a la siguiente tirada.",
+          "Tus enemigos sienten miedo y actúan de acuerdo a ello (te evitan, se esconden, atacan con el miedo que les empuja a huir)."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": " elige una de las opciones"
+      }
+    ]
+  },
+  {
+    "id": "b21",
+    "category": "Movimientos Avanzados",
+    "title": "Marca de poder (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando elijas este movimiento y pases un tiempo ininterrumpido reflexionando sobre tus glorias pasadas, puedes marcarte a ti mismo con un símbolo de tu poder (una trenza larga atada con cascabeles, cicatrices o tatuajes rituales, etc.). Cualquier criatura mortal inteligente que vea este símbolo sabe instintivamente que eres una fuerza que hay que tener en cuenta y te trata adecuadamente."
+  },
+  {
+    "id": "b22",
+    "category": "Movimientos Avanzados",
+    "title": "¡Más! ¡Siempre más! (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando satisfaces un apetito hasta el extremo (destruir algo único y valioso, ganar muchísima fama, riquezas, poder, etc.) puedes elegir resolverlo. Táchalo y apunta PX. Aunque puedes volver a perseguir ese apetito de nuevo, no vuelves a sentir el deseo ardiente una vez que lo sacies. En su lugar, elige un nuevo apetito de la lista o escribe uno propio."
+  },
+  {
+    "id": "b23",
+    "category": "Movimientos Avanzados",
+    "title": "Yo soy el tío que llama (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando desafías el peligro, con 12+ vuelves el peligro contra él mismo, el DJ describirá cómo."
+  },
+  {
+    "id": "b24",
+    "category": "Movimientos Avanzados",
+    "title": "Desconfianza sana (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "En cualquier momento que la magia impura convocada por hombres mortales te haga desafiar el peligro, considera cualquier resultado de 6- como si fuera 7-9."
+  },
+  {
+    "id": "b25",
+    "category": "Movimientos Avanzados",
+    "title": "Por el dios de la sangre (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Eres un iniciado en las antiguas costumbres, las del sacrificio. Elige algo que tus dioses (o tus espíritus ancestros o tótems, etc.) valoren: oro, sangre, huesos o similares. Cuando sacrificas estas cosas según tus ritos y rituales, tira+sab",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "el DJ te proporcionará conocimiento sobre tu problema actual o una bonificación para ayudarte."
+      },
+      {
+        "range": "7-9",
+        "text": "el sacrificio no es suficiente y tus dioses también se llevan tu carne, pero te siguen concediendo algo de conocimiento o una bonificación."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Si fallas, la cólera de los caprichosos espíritus cae sobre ti."
+      }
+    ]
+  }
+
+]
