@@ -91,74 +91,74 @@
   {
     "id": "b8",
     "category": "Movimientos Avanzados",
-    "title": "My Love For You Is Like A Truck",
-    "description": "When you perform a feat of strength, name someone present whom you have impressed and take **+1 forward** to **parley** with them."
+    "title": "Mi amor por ti es como un camión",
+    "description": "Cuando realizas una hazaña demostrando tu fortaleza, nombra a quiénes de los presentes has impresionado y recibe +1 a la siguiente tirada para Parlamentar con ellos."
   },
   {
     "id": "b9",
     "category": "Movimientos Avanzados",
-    "title": "What Is Best In Life",
-    "description": "At the end of a session, if during this session you have crushed your enemies, seen them driven before you, or have heard the lamentations of their kinfolk mark XP."
+    "title": "¿Qué es lo mejor de la vida?",
+    "description": "Si durante la sesión de juego has aplastado a tus enemigos, les has visto destrozados o has oído el lamento de su gente, al final de la misma recibes PX."
   },
   {
     "id": "b10",
     "category": "Movimientos Avanzados",
-    "title": "Wide-Wanderer",
-    "description": "You've travelled the wide world over. When you arrive someplace ask the GM about any important traditions, rituals, and so on, they'll tell you what you need to know."
+    "title": "Trotamundos",
+    "description": "Has viajado por todo el mundo. Cuando llegas a algún lugar, pregunta al DJ sobre cualquier tradición, ritual y demás que sea importante. Él te dirá lo que necesitas saber."
   },
   {
     "id": "b11",
     "category": "Movimientos Avanzados",
-    "title": "Usurper",
-    "description": "When you prove yourself superior to a person in power, take **+1 forward** with their followers, underlings, and hangers on."
+    "title": "Usurpador",
+    "description": "Cuando demuestras que eres superior a una persona en poder, recibes +1 a la siguiente tirada con sus seguidores, subalternos y gorrones."
   },
   {
     "id": "b12",
     "category": "Movimientos Avanzados",
-    "title": "Khan Of Khans",
-    "description": "Your hirelings always accept the gratuitous fulfillment of one of your appetites as payment."
+    "title": "Kan de kanes",
+    "description": "Tus mercenarios siempre aceptan la gratificante satisfacción de uno de tus apetitos como pago."
   },
   {
     "id": "b13",
     "category": "Movimientos Avanzados",
-    "title": "Samson",
-    "description": "You may take a **debility** to immediately break free of any physical or mental restraint."
+    "title": "Sansón",
+    "description": "Puedes recibir una debilidad para liberarte inmediatamente de cualquier limitación física o mental."
   },
   {
     "id": "b14",
     "category": "Movimientos Avanzados",
-    "title": "Smash!",
-    "description": "When you **Hack & Slash**, on a 12+ deal your damage and choose something physical your target has (a weapon, their position, a limb): they lose it."
+    "title": "¡Aplastar!",
+    "description": "Cuando realizas el movimiento Saja-Raja y obtienes 12+, inflige tu daño y elige algo físico que tiene tu objetivo (un arma, su posición, una extremidad). Tu objetivo lo pierde."
   },
   {
     "id": "b15",
     "category": "Movimientos Avanzados",
-    "title": "Indestructible Hunger",
-    "description": "When you take damage you can choose to take **-1 ongoing** until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option."
+    "title": "Hambre indestructible",
+    "description": "Cuando recibes daño puedes elegir recibir -1 en adelante hasta que sacies uno de tus apetitos en lugar de recibir daño. Si ya tienes esta penalización, no puedes elegir esta opción."
   },
   {
     "id": "b16",
     "category": "Movimientos Avanzados",
-    "title": "Eye For Weakness",
-    "description": "When you **Discern Realities** add \"What here is weak or vulnerable?\" to the list of questions you can ask."
+    "title": "Ojo para las debilidades",
+    "description": "Cuando **disciernas la realidad**, añade: «¿Qué es débil o vulnerable aquí?» a la lista de preguntas que puedes hacer."
   },
   {
     "id": "b17",
     "category": "Movimientos Avanzados",
-    "title": "On The Move",
-    "description": "When you **defy a danger** caused by movement (maybe falling off a narrow bridge or rushing past an armed guard) take +1."
+    "title": "En continuo movimiento",
+    "description": "Cuando desafíes un peligro causado por el movimiento (quizás caerse de un puente estrecho o arremeter contra un guardia armado), recibes +1."
   },
   {
     "id": "b18",
     "category": "Movimientos Avanzados",
-    "title": "A Good Day To Die (Requires level 6+)",
+    "title": "Un buen día para morir (Requiere nivel 6+)",
     "weight": 1,
     "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take **+1 ongoing**."
   },
   {
     "id": "b19",
     "category": "Movimientos Avanzados",
-    "title": "Kill 'Em All (Requires level 6+)",
+    "title": "Kill 'Em All (Requiere nivel 6+)",
     "weight": 1,
     "description": "Requires: Appetite for Destruction\n\nTake another move from the Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.",
     "takeFrom": ["fighter", "bard", "thief"],
@@ -167,7 +167,7 @@
   {
     "id": "b20",
     "category": "Movimientos Avanzados",
-    "title": "War Cry (Requires level 6+)",
+    "title": "War Cry (Requiere nivel 6+)",
     "weight": 1,
     "description": "When you **enter the battle with a show of force**, roll +CHA.",
     "outcomes": [
@@ -188,35 +188,35 @@
   {
     "id": "b21",
     "category": "Movimientos Avanzados",
-    "title": "Mark Of Might (Requires level 6+)",
+    "title": "Mark Of Might (Requiere nivel 6+)",
     "weight": 1,
     "description": "When you take this move and spend some uninterrupted time reflecting on your past glories, you may mark yourself with a symbol of your power (a long braid tied with bells, ritual scars or tattoos, etc.) Any intelligent mortal creature who sees this symbol knows instinctively that you are a force to be reckoned with and treats you appropriately."
   },
   {
     "id": "b22",
     "category": "Movimientos Avanzados",
-    "title": "More! Always More! (Requires level 6+)",
+    "title": "More! Always More! (Requiere nivel 6+)",
     "weight": 1,
     "description": "When you **satisfy an appetite to the extreme** (destroying something unique and significant, gaining enormous fame, riches, power, etc.) you may choose to resolve it. Cross it off the list and mark XP. While you may pursue that appetite again, you no longer feel the burning desire you once did. In its place, choose a new appetite from the list or write your own."
   },
   {
     "id": "b23",
     "category": "Movimientos Avanzados",
-    "title": "The One Who Knocks (Requires level 6+)",
+    "title": "The One Who Knocks (Requiere nivel 6+)",
     "weight": 1,
     "description": "When you **Defy Danger**, on a 12+ you turn the danger back on itself, the GM will describe how."
   },
   {
     "id": "b24",
     "category": "Movimientos Avanzados",
-    "title": "Healthy Distrust (Requires level 6+)",
+    "title": "Healthy Distrust (Requiere nivel 6+)",
     "weight": 1,
     "description": "Whenever the unclean magic wielded by mortal men causes you to **Defy Danger**, treat any result of 6- as a 7-9."
   },
   {
     "id": "b25",
     "category": "Movimientos Avanzados",
-    "title": "For The Blood God (Requires level 6+)",
+    "title": "For The Blood God (Requiere nivel 6+)",
     "weight": 1,
     "description": "You are initiated in the old ways, the ways of sacrifice. Choose something your gods (or the ancestor spirits, or your totem, etc) value—gold, blood, bones or the like. When you **sacrifice those things as per your rites and rituals**, roll+WIS.",
     "outcomes": [
