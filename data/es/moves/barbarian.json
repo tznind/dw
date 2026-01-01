@@ -2,8 +2,8 @@
   {
     "id": "ba",
     "hideCheckbox": true,
-    "title":"Alignment",
-    "category": "Starting Moves",
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
     "pickOne": [
       "**Caótico** - Romper una convención del mundo civilizado.",
       "**Neutral** - Enséñale a alguien las costumbres de tu gente.",
@@ -14,8 +14,8 @@
   },
   {
     "id": "br",
-    "category": "Starting Moves",
-    "title":"Race - Extranjero",
+    "category": "Movimientos Iniciales",
+    "title":"Raza - Extranjero",
     "weight": -1,
     "hideCheckbox": true,
     "description": "Puedes ser elfo, enano, mediano o humano, pero tu gente y tú no sois de por aquí. Al principio de cada sesión, el DJ te preguntará algo sobre tu hogar natal, por qué te marchaste o qué dejaste atrás. Si le respondes, anota PX.",
@@ -23,150 +23,150 @@
   },
   {
     "id": "b1",
-    "title": "Armor",
-    "description": "Choose one of these to start with:",
-    "category": "Starting Moves",
+    "title": "Armadura",
+    "description": "Elige uno de los siguientes para empezar:",
+    "category": "Movimientos Iniciales",
     "pickOne": [
-      "You ignore the clumsy tag on armor.",
-      "So long as you are below your Load and neither wear armor nor carry a shield, take +1 armor."
+      "Blindado, armado y listo para partir!",
+      "Mientras estés por debajo de tu Carga y no lleves ni armadura ni escudo, recibes +1 armadura."
     ]
   },
   {
     "id": "b2",
-    "title": "The Upper Hand",
-    "category": "Starting Moves",
-    "description": "When you **take your last breath**, on a 7-9 you make an offer to Death in return for your life.  If Death accepts he will return you to life. If not, you die."
+    "title": "Llevar la delantera",
+    "category": "Movimientos Iniciales",
+    "description": "Recibes +1 en adelante a las tiradas de Último aliento. Cuando expiras tu último aliento, con 7-9 le haces una oferta a la Muerte a cambio de tu vida. Si la Muerte acepta, te devolverá a la vida. Si no, mueres."
   },
   {
     "id":"b3",
-    "category": "Starting Moves",
-    "title": "What are you waiting for? (+Con)",
+    "category": "Movimientos Iniciales",
+    "title": "¿A qué estás esperando? (+Con)",
     "description": "When you **cry out a challenge to your enemies**, roll+Con",
     "outcomes": [
       {
         "range": "≥10",
-        "text": "They treat you as the most obvious threat to be dealt with and ignore your companions, take **+2 damage ongoing** against them."
+        "text": "Te tratan como a la amenaza más obvia a la que se tienen que enfrentar e ignoran a tus compañeros, recibes daño +2 en adelante contra ellos."
       },
       {
         "range": "7-9",
-        "text": "Only a few (the weakest or most foolhardy among them) fall prey to your taunting."
+        "text": "solo unos pocos (los más débiles o imprudentes de ellos) caen presa de tu provocación."
       }
     ]
   },
   {
     "id": "b4",
-    "category": "Starting Moves",
-    "title": "Herculean Appetites",
-    "description": "Others may content themselves with just a taste of wine, or dominion over a servant or two, but you want more. Choose two appetites. While **pursuing one of your appetites if you would roll for a move**, instead of rolling 2d6 you roll 1d6+1d8. If the d6 is the higher die of the pair, the GM will also introduce a complication or danger that comes about due to your heedless pursuits.",
+    "category": "Movimientos Iniciales",
+    "title": "Apetitos hercúleos",
+    "description": "Puede que otros se contenten con el sabor del vino o con dominar sobre un sirviente o dos, pero tú quieres más. Elige dos apetitos. Cuando persigues uno de tus apetitos, si vas a tirar para hacer un movimiento, en lugar de tirar 2d6 tira 1d6+1d8. Si el d6 tiene el resultado más alto de los dos, el DJ también introducirá una complicación o un peligro que sucede debido a tu descuidada búsqueda.",
     "pick": [
-      "Pure destruction",
-      "Power over others",
-      "Mortal pleasures",
-      "Conquest",
-      "Riches and property",
-      "Fame and glory"
+      "Pura destrucción",
+      "Poder sobre los otros",
+      "Placeres mortales",
+      "Conquista",
+      "Riquezas y posesiones",
+      "Fama y gloria"
     ],
     "details": true
   },
   {
     "id": "b5",
-    "category": "Starting Moves",
-    "title": "Musclebound",
-    "description": "While you wield a weapon it gains the **forceful** and **messy** tags"
+    "category": "Movimientos Iniciales",
+    "title": "Músculos",
+    "description": "Cuando empuñas un arma, esta recibe las etiquetas contundente y escabrosa."
   },
   {
     "id": "b6",
-    "category": "Advanced Moves",
-    "title": "Still Hungry",
-    "description": "Choose an additional appetite"
+    "category": "Movimientos Avanzados",
+    "title": "Aún hambriento",
+    "description": "Elige un apetito adicional."
   },
   {
     "id": "b7",
-    "category": "Advanced Moves",
-    "title": "Appetite For Destruction",
-    "description": "Take a move from the Fighter, Bard, or Thief class list.  You may not take multiclass moves from those classes.",
+    "category": "Movimientos Avanzados",
+    "title": "Apetito por la destrucción",
+    "description": "Elige un movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases.",
     "takeFrom": ["fighter", "bard", "thief"],
-    "takeCategory": ["Starting Moves","Advanced Moves"]
+    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
   },
   {
     "id": "b8",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "My Love For You Is Like A Truck",
     "description": "When you perform a feat of strength, name someone present whom you have impressed and take **+1 forward** to **parley** with them."
   },
   {
     "id": "b9",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "What Is Best In Life",
     "description": "At the end of a session, if during this session you have crushed your enemies, seen them driven before you, or have heard the lamentations of their kinfolk mark XP."
   },
   {
     "id": "b10",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Wide-Wanderer",
     "description": "You've travelled the wide world over. When you arrive someplace ask the GM about any important traditions, rituals, and so on, they'll tell you what you need to know."
   },
   {
     "id": "b11",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Usurper",
     "description": "When you prove yourself superior to a person in power, take **+1 forward** with their followers, underlings, and hangers on."
   },
   {
     "id": "b12",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Khan Of Khans",
     "description": "Your hirelings always accept the gratuitous fulfillment of one of your appetites as payment."
   },
   {
     "id": "b13",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Samson",
     "description": "You may take a **debility** to immediately break free of any physical or mental restraint."
   },
   {
     "id": "b14",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Smash!",
     "description": "When you **Hack & Slash**, on a 12+ deal your damage and choose something physical your target has (a weapon, their position, a limb): they lose it."
   },
   {
     "id": "b15",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Indestructible Hunger",
     "description": "When you take damage you can choose to take **-1 ongoing** until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option."
   },
   {
     "id": "b16",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Eye For Weakness",
     "description": "When you **Discern Realities** add \"What here is weak or vulnerable?\" to the list of questions you can ask."
   },
   {
     "id": "b17",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "On The Move",
     "description": "When you **defy a danger** caused by movement (maybe falling off a narrow bridge or rushing past an armed guard) take +1."
   },
   {
     "id": "b18",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "A Good Day To Die (Requires level 6+)",
     "weight": 1,
     "description": "As long as you have less than your CON in current HP (or 1, whichever is higher) take **+1 ongoing**."
   },
   {
     "id": "b19",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Kill 'Em All (Requires level 6+)",
     "weight": 1,
     "description": "Requires: Appetite for Destruction\n\nTake another move from the Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.",
     "takeFrom": ["fighter", "bard", "thief"],
-    "takeCategory": ["Starting Moves","Advanced Moves"]
+    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados"]
   },
   {
     "id": "b20",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "War Cry (Requires level 6+)",
     "weight": 1,
     "description": "When you **enter the battle with a show of force**, roll +CHA.",
@@ -187,35 +187,35 @@
   },
   {
     "id": "b21",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Mark Of Might (Requires level 6+)",
     "weight": 1,
     "description": "When you take this move and spend some uninterrupted time reflecting on your past glories, you may mark yourself with a symbol of your power (a long braid tied with bells, ritual scars or tattoos, etc.) Any intelligent mortal creature who sees this symbol knows instinctively that you are a force to be reckoned with and treats you appropriately."
   },
   {
     "id": "b22",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "More! Always More! (Requires level 6+)",
     "weight": 1,
     "description": "When you **satisfy an appetite to the extreme** (destroying something unique and significant, gaining enormous fame, riches, power, etc.) you may choose to resolve it. Cross it off the list and mark XP. While you may pursue that appetite again, you no longer feel the burning desire you once did. In its place, choose a new appetite from the list or write your own."
   },
   {
     "id": "b23",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "The One Who Knocks (Requires level 6+)",
     "weight": 1,
     "description": "When you **Defy Danger**, on a 12+ you turn the danger back on itself, the GM will describe how."
   },
   {
     "id": "b24",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "Healthy Distrust (Requires level 6+)",
     "weight": 1,
     "description": "Whenever the unclean magic wielded by mortal men causes you to **Defy Danger**, treat any result of 6- as a 7-9."
   },
   {
     "id": "b25",
-    "category": "Advanced Moves",
+    "category": "Movimientos Avanzados",
     "title": "For The Blood God (Requires level 6+)",
     "weight": 1,
     "description": "You are initiated in the old ways, the ways of sacrifice. Choose something your gods (or the ancestor spirits, or your totem, etc) value—gold, blood, bones or the like. When you **sacrifice those things as per your rites and rituals**, roll+WIS.",
