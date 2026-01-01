@@ -86,7 +86,7 @@
     "title": "Apetito por la destrucción",
     "description": "Elige un movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases.",
     "takeFrom": ["fighter", "bard", "thief"],
-    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
   },
   {
     "id": "b8",
@@ -162,7 +162,7 @@
     "weight": 1,
     "description": "Requiere: Apetito por la destrucción\n\nElige otro movimiento del Guerrero, del Bardo o del Ladrón. No puedes elegir movimientos multiclase de estas clases..",
     "takeFrom": ["fighter", "bard", "thief"],
-    "takeCategory": ["Movimientos Iniciales","Movimientos Avanzados", "Initial Moves", "Advanced Moves"]
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
   },
   {
     "id": "b20",

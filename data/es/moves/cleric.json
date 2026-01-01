@@ -1,0 +1,736 @@
+[
+  {
+    "id": "ca",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Bueno** - Ponerte en peligro por sanar a otro.",
+      "**Legal** - Ponerte en peligro siguiendo los preceptos de tu iglesia o deidad.",
+      "**Malvado** - Dañar a otros para demostrar la superioridad de tu iglesia o deidad.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "cr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Enano - Eres uno con la roca. Cuando entras en Comunión también se te concede una plegaria especial, una versión del conjuro Palabras de los Silentes que solo tiene efecto sobre la piedra.",
+      "Humano - Tu fe es heterogénea. Elige un conjuro de mago. Puedes lanzarlo y ser concedido como si fuera un conjuro de clérigo.",
+      "Otro (Describe)"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Palabras de los Silentes",
+        "description": "Con un toque hablas con los espíritus en el interior de las cosas. El objeto inanimado que tocas responde tres preguntas que le plantees, lo mejor que pueda."
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "c1",
+    "category": "Movimientos Iniciales",
+    "title": "Deidad - Dominio",
+    "description": "Sirves y adoras a alguna deidad o poder que te concede conjuros. Dale un nombre a tu dios y elige su dominio:",
+    "pickOne": [
+      "Curación y restauración",
+      "Conquista sangrienta",
+      "Civilización",
+      "Conocimiento y cosas ocultas",
+      "Los oprimidos y olvidados",
+      "Lo que yace en las profundidades"
+    ],
+    "details": true
+  },
+  {
+    "id":"c1b",
+    "category": "Movimientos Iniciales",
+    "title": "Deidad - Preceptos",
+    "description": "Elige un precepto religioso:",
+    "pickOne": [
+      "Tu religión predica la santidad del sufrimiento, añade **Petición: Sufrimiento**",
+      "Tu religión se compone de sectas aisladas, añade **Petición: Obtener secretos**",
+      "Tu religión tiene importantes ritos de sacrificio, añade **Petición: Ofrenda**",
+      "Tu religión cree en el juicio por combate, añade **Petición: Victoria personal**"
+          ]
+  },
+  {
+    "id": "c2",
+    "category": "Movimientos Iniciales",
+    "title": "Lanzar conjuro (+Sab)",
+    "description": "Cuando lanzas un conjuro concedido por tu deidad, tira+sab.\n\nNota: mantener conjuros con efectos continuos a veces causará una penalización a tu tirada para lanzar un conjuro.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "El conjuro es lanzado con éxito y tu deidad no revoca el conjuro, así que puedes lanzarlo de nuevo."
+      },
+      {
+        "range": "7-9",
+        "text": "El conjuro tiene efecto, pero elige una cosa de la siguiente lista:",
+        "bullets": [
+          "Atraes atención no deseada o te pones en riesgo. El DJ te dirá cómo.",
+          "El lanzamiento del conjuro te aleja de tu deidad. Recibes –1 a Lanzar conjuros hasta que vuelvas a entrar en comunión.",
+          "Después de lanzarlo, el conjuro es revocado por tu deidad. No puedes volver a lanzarlo hasta que no te vuelva a ser concedido."
+        ]
+      }
+    ],
+    "tracks": [{
+      "name": "Penalización",
+      "max": 5,
+      "shape": "hexagon",
+      "dynamic": true
+    }]
+  },
+  {
+    "id": "c3",
+    "category": "Movimientos Iniciales",
+    "title": "Orientación divina",
+    "description": "Cuando haces una petición a tu deidad acorde con el precepto de tu religión, se te proporciona un conocimiento útil o un beneficio relacionado con el dominio de tu deidad. El DJ te dirá de qué se trata."
+  },
+  {
+    "id": "c4",
+    "category": "Movimientos Iniciales",
+    "title": "Comunión",
+    "description": "Cuando pasas un tiempo ininterrumpido (una hora o así) en tranquila comunión con tu deidad:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+        "Pierdes todos los conjuros que se te habían concedido.",
+        "Recibes nuevos conjuros a tu elección, cuyo nivel total no supere tu propio nivel +1, siempre que ninguno sea de nivel superior a tu propio nivel.",
+        "Prepara todas tus plegarias, que no cuentan para el límite de conjuros."
+      ]}
+    ]
+
+  },
+  {
+    "id": "c5",
+    "category": "Movimientos Iniciales",
+    "title": "Expulsar muertos vivientes (+Sab)",
+    "description": "Cuando sostienes en alto tu símbolo sagrado y apelas a tu deidad para que te proteja, tira+sab.",
+    "outcomes": [
+      {
+        "range": "≥ 7",
+        "text": "Ningún muerto viviente podrá ponerse a tu alcance mientras continúes rezando y blandiendo tu símbolo sagrado."
+      },
+      {
+        "range": "≥ 10",
+        "text": "También puedes aturdir momentáneamente a los muertos vivientes inteligentes y hacer huir a aquellos sin mente. Una agresión terminará el efecto y podrán reaccionar de manera normal."
+      }
+    ]
+  },
+  {
+    "id": "c6",
+    "category": "Movimientos Avanzados",
+    "title": "Elegido",
+    "description": "Elige un conjuro. Se te concede ese conjuro como si fuera de un nivel inferior.",
+    "details": true
+  },
+  {
+    "id": "c7",
+    "category": "Movimientos Avanzados",
+    "title": "Fortalecer",
+    "description": "Cuando curas a alguien, también recibe +2 a la siguiente tirada de daño."
+  },
+  {
+    "id": "c8",
+    "category": "Movimientos Avanzados",
+    "title": "La Balanza de la Vida y la Muerte",
+    "description": "Cuando alguien toma su Último aliento en tu presencia, recibe +1 a la tirada."
+  },
+  {
+    "id": "c9",
+    "category": "Movimientos Avanzados",
+    "title": "Serenidad",
+    "description": "Cuando lanzas un conjuro ignora la primera penalización de –1 debida a conjuros activos."
+  },
+  {
+    "id": "c10",
+    "category": "Movimientos Avanzados",
+    "title": "Primeros auxilios",
+    "description": "Usa **Curar Heridas Leves** como si fuera una plegaria. No cuenta para el límite de conjuros concedidos."
+  },
+  {
+    "id": "c11",
+    "category": "Movimientos Avanzados",
+    "title": "Potenciar",
+    "description": "Cuando lanzas un conjuro, con un 10+ tienes la opción de elegir de la lista correspondiente al resultado de entre 7 y 9, y además elegir uno de los siguientes efectos:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Los efectos del conjuro se doblan.",
+          "El número de objetivos del conjuro se dobla."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c12",
+    "category": "Movimientos Avanzados",
+    "title": "Intervención divina",
+    "description": "Cuando entras en comunión, recibes 1 punto y pierdes cualquier punto que ya tuvieras. Puedes gastarlo para invocar a tu deidad cuando tú o un compañero reciba daño. Tu deidad intervendrá mediante una manifestación apropiada (un súbito golpe de viento, una explosión de luz) y el daño no tendrá efecto."
+  },
+  {
+    "id": "c13",
+    "category": "Movimientos Avanzados",
+    "title": "Penitente",
+    "description": "Cuando recibes daño y te entregas al dolor, puedes sufrir +1d4 de daño (ignora armadura). Si lo haces, recibes +1 a la siguiente tirada de Lanzar conjuros."
+  },
+  {
+    "id": "c14",
+    "category": "Movimientos Avanzados",
+    "title": "Oración de guía",
+    "description": "Cuando sacrifiques algo valioso a tu dios y le rezas pidiendo orientación, te contará lo que quiere que hagas. Si lo haces, marca experiencia."
+  },
+  {
+    "id": "c15",
+    "category": "Movimientos Avanzados",
+    "title": "Protección divina",
+    "description": "Cuando no lleves armadura ni escudo tienes armadura 2."
+  },
+  {
+    "id": "c16",
+    "category": "Movimientos Avanzados",
+    "title": "Curador devoto",
+    "description": "Cuando cures a otra persona, suma tu nivel a la cantidad de daño curada."
+  },
+  {
+    "id": "c17",
+    "category": "Movimientos Avanzados",
+    "title": "Consagrado (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Requiere: **Elegido**\n\nEscoge un conjuro adicional distinto al que seleccionaste para Elegido. Se te concede ese conjuro como si fuera de un nivel inferior.",
+    "details": true
+  },
+  {
+    "id": "c18",
+    "category": "Movimientos Avanzados",
+    "title": "Apoteosis (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "La primera vez que pases tiempo en oración de una forma adecuada para tu dios, después de elegir este movimiento, elige una característica asociada a él (garras afiladas, alas con plumas de zafiro, un tercer ojo que todo lo ve, etcétera). Cuando termines tus oraciones habrás ganado permanentemente esa característica física.",
+    "details": true
+  },
+  {
+    "id": "c19",
+    "category": "Movimientos Avanzados",
+    "title": "Segadora de almas (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando te tomas un tiempo tras un conflicto para dedicar la victoria a tu deidad y atiendes apropiadamente a los muertos, recibes +1 a la siguiente tirada."
+  },
+  {
+    "id": "c20",
+    "category": "Movimientos Avanzados",
+    "title": "Providencia (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Serenidad**\n\nIgnora dos penalizaciones de –1 debidas a conjuros activos."
+  },
+  {
+    "id": "c21",
+    "category": "Movimientos Avanzados",
+    "title": "Invencibilidad divina (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Intervención divina**\n\nCuando entras en comunión, recibes 2 puntos y pierdes cualquier punto que ya tuvieras. Puedes gastarlos para invocar en dos ocasiones a tu deidad cuando tú o un compañero reciba daño. Tu deidad intervendrá mediante una manifestación apropiada (un súbito golpe de viento, un resbalón afortunado, una explosión de luz) y el daño no tendrá efecto.",
+    "tracks": [
+    {
+      "name": "Puntos",
+      "max": 2,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "c22",
+    "category": "Movimientos Avanzados",
+    "title": "Mártir (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Penitente**\n\nCuando recibes daño y te entregas al dolor, puedes sufrir +1d4 de daño (ignora armadura). Si lo haces, recibes +1 a la siguiente tirada de Lanzar conjuros y sumas tu nivel al daño que el conjuro haga o cure."
+  },
+  {
+    "id": "c23",
+    "category": "Movimientos Avanzados",
+    "title": "Armadura divina (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Protección divina**\n\nCuando no lleves armadura ni escudo tienes armadura 3."
+  },
+  {
+    "id": "c24",
+    "category": "Movimientos Avanzados",
+    "title": "Potenciar mejorado (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Potenciar**\n\nCuando lanzas un conjuro, con un 10-11 tienes la opción de elegir de la lista correspondiente al resultado de entre 7 y 9, y elegir uno de los siguientes efectos. Con un 12+, puedes elegir uno de los siguientes efectos sin elegir nada de la lista de entre 7 y 9.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Los efectos del conjuro se doblan.",
+          "El número de objetivos del conjuro se dobla."
+        ]
+      }
+    ]
+
+  },
+  {
+    "id": "c25",
+    "category": "Movimientos Avanzados",
+    "title": "Primeros auxilios mejorados (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Requiere: **Primeros auxilios**\n\nUsa **Curar Heridas Moderadas** como si fuera una plegaria. No cuenta para el límite de conjuros concedidos."
+  },
+  {
+    "id": "cs1",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Luz - Plegaria",
+    "description": "Toca un objeto, el cual obtendrá un brillo divino similar al de una antorcha. No proporciona calor ni hace ruido y no requiere de ningún tipo de combustible, pero por lo demás funciona como una antorcha normal y corriente. Tienes control completo sobre el color de la llama. El conjuro permanece mientras el objeto esté en tu presencia.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "hideCheckbox": true
+  },
+  {
+    "id": "cs2",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Santificar - Plegaria",
+    "description": "El agua y la comida que sostengas en tus manos mientras lanzas este conjuro queda consagrada a tu deidad. Además de pasar a ser sagrada o impía, la sustancia afectada queda purificada de cualquier impureza de origen mundano.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "hideCheckbox": true
+  },
+  {
+    "id": "cs3",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Guía - Plegaria",
+    "description": "El símbolo de tu dios aparece ante ti, señalándote la dirección o el curso de acción que debes tomar, para luego desaparecer. El mensaje es únicamente un gesto y tu comunicación a través de este conjuro es muy limitada.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "hideCheckbox": true
+  },
+  {
+    "id": "cs4",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Bendición - Nivel 1 Mantenido",
+    "description": "Tu dios sonríe a un combatiente a tu elección. Recibe +1 hasta que termine la batalla siempre que continúe luchando. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs5",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Curar Heridas Leves - Nivel 1",
+    "description": "Tu tacto hace que las heridas cicatricen y los huesos dejen de doler. Curas 1d8 de daño a un compañero que estés tocando.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs6",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Detectar Alineamiento - Nivel 1",
+    "description": "Elige un alineamiento cuando lances este conjuro: Bueno, Malvado, Legal o Caótico. Serás capaz de detectar brevemente con uno de tus sentidos ese alineamiento. El DJ te dirá quién o qué hay en el entorno que tenga dicho alineamiento.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs7",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Provocar Miedo - Nivel 1 Mantenido",
+    "description": "Elige a un objetivo al que puedas ver y un objeto cercano. El objetivo tendrá miedo del objeto mientras mantengas el conjuro. La reacción depende del objetivo: huir, entrar en pánico, rogar, luchar… Cuando mantienes este conjuro recibes –1 a Lanzar conjuros. No puedes elegir como objetivo a entidades con inteligencia inferior a la animal (constructos mágicos, muertos vivientes, autómatas y cosas por el estilo).",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs8",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Arma Mágica - Nivel 1 Mantenido",
+    "description": "El arma que empuñes cuando lanzas este conjuro hace +1d4 de daño hasta que lo disipes. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs9",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Santuario - Nivel 1",
+    "description": "Cuando lanzas este conjuro marcas con tu paso el perímetro de una zona, que queda consagrada a tu dios. Mientras estés en dicha zona serás alertado cuando alguien actúe con malicia dentro del santuario (incluyendo a los que entren con intenciones dañinas). Cualquiera que reciba curación dentro del santuario cura +1d4 PG.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs10",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Hablar con los Muertos - Nivel 1",
+    "description": "Un cadáver habla brevemente contigo. Responderá lo mejor que pueda a cualesquiera tres preguntas que le hagas con el conocimiento que tuviera en vida y el que ha obtenido después de la muerte.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs11",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Animar a los Muertos - Nivel 3 Mantenido",
+    "description": "Invocas a un espíritu hambriento para que posea un cadáver reciente y lo ponga a tu servicio. Eso crea un zombi que sigue tus órdenes hasta donde le permiten sus limitadas capacidades. Trata al zombi como a un personaje, pero con acceso solo a los movimientos básicos. Tiene un modificador de +1 a todas las características y 1 PG. El zombi también recibe 1d4 rasgos de entre los siguientes, a tu elección. El zombi durará hasta que sea destruido por el daño recibido o hasta que termine el conjuro. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "Rasgos",
+        "bullets": [
+"Tiene talento. Dale a una característica un modificador de +2.",
+"Es duro. Tiene +2 PG por cada nivel que tengas.",
+"Tiene un cerebro funcional y puede llevar a cabo tareas complejas.",
+"No parece estar muerto, al menos durante uno o dos días."
+        ]
+      }
+    ]
+
+  },
+  {
+    "id": "cs12",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Resurrección - Nivel 3",
+    "description": "Dile al DJ que quieres resucitar a una persona cuya alma no haya abandonado este mundo por completo. La resurrección siempre es posible, pero el DJ puede pedir que cumplas una o más de las siguientes condiciones (posiblemente todas):\n\n• Vas a tardar días/semanas/meses.\n• Vas a necesitar la ayuda de _____________.\n• Vas a necesitar un montón de dinero.\n• Vas a tener que sacrificar _____________ para conseguirlo.\n\nDependiendo de las circunstancias, el DJ puede permitirte resucitar a un cadáver inmediatamente, entendiéndose que las condiciones deberán cumplirse más adelante para que el efecto sea permanente, o pedir que se cumplan las condiciones antes de que el cadáver resucite.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "cs13",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Curar Heridas Moderadas - Nivel 3",
+    "description": "Detienes hemorragias y recompones huesos usando tu magia. Curas 2d8 a un compañero que estés tocando.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs14",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Oscuridad - Nivel 3 Mantenido",
+    "description": "Elige un área que puedas ver para llenarla de sombras y oscuridad sobrenatural. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs15",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Retener Persona - Nivel 3",
+    "description": "Elige a una persona a la que puedas ver. No podrá actuar, salvo para hablar, hasta que no lances otro conjuro o abandones su presencia. El efecto termina de manera inmediata si el objetivo recibe algún tipo de daño.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs16",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Revelación - Nivel 5",
+    "description": "Tu deidad responde a tus oraciones a través de un instante de perfecta lucidez. El DJ arrojará luz sobre la situación actual. Si actúas de acuerdo con esa información, recibes +1 a la siguiente tirada.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs17",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Curar Heridas Críticas - Nivel 5",
+    "description": "Curas 3d8 a un compañero que estés tocando.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs18",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Adivinación - Nivel 5",
+    "description": "Nombra a una persona, lugar o cosa sobre la que quieras saber más. Tu deidad te proporcionará visiones sobre aquello que has nombrado, tan claras como si estuvieras ahí.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs19",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Visión Verdadera - Nivel 5 Mantenido",
+    "description": "Tu visión se abre a la verdadera naturaleza de las cosas sobre las que posas tus ojos. Puedes atravesar las ilusiones y ver lo que se oculta tras ellas. El DJ describirá el área ante ti, ignorando cualquier ilusión o falsedad, sea o no mágica. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs20",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Contagio - Nivel 5 Mantenido",
+    "description": "Elige a una criatura que puedas ver. El objetivo sufrirá una enfermedad a tu elección hasta que termine el conjuro. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs21",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Atrapar Alma - Nivel 5",
+    "description": "Atrapas el alma de una criatura moribunda en una gema. La criatura atrapada es consciente de su aprisionamiento, pero todavía puede ser manipulada mediante conjuros, se puede parlamentar con ella y otros efectos. Todos los movimientos contra la criatura atrapada se hacen con +1. Puedes liberar el alma en cualquier momento, pero no puedes volver a capturarla una vez la liberes.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs22",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Palabras de los Silentes - Nivel 5",
+    "description": "Cuando tocas un objeto puedes hablar con los espíritus que lo habitan. El objeto inerte al que toques te responderá lo mejor que pueda a tres preguntas que hagas.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs23",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Palabra del Recuerdo - Nivel 7",
+    "description": "Elige una palabra. La primera vez que la pronuncies tras lanzar el conjuro, tú y los compañeros que te estuvieran tocando mientras se lanzó el conjuro volveréis inmediatamente al mismo lugar donde lanzaste el conjuro. Solo puedes mantener una misma localización en la memoria. Si vuelves a lanzar Palabra del Recuerdo antes de pronunciar la palabra, la nueva palabra remplazará a la anterior.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "cs24",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Curar - Nivel 7",
+    "description": "Curas todo el daño recibido a un compañero que estés tocando, hasta sus PG máximos.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs25",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Dañar - Nivel 7",
+    "description": "Puedes azotar con la ira divina a un enemigo que toques. Le haces 2d8 puntos de daño y tú recibes 1d6 puntos de daño. Este daño atraviesa armadura.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs26",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Amputar - Nivel 7 Mantenido",
+    "description": "Elige un apéndice del objetivo como un brazo, tentáculo o ala. El apéndice será mágicamente amputado de su cuerpo sin causar daño, aunque sí un considerable dolor. El apéndice faltante puede, por ejemplo, evitar que una criatura voladora vuele o que un toro te ensarte en su cornamenta. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs27",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Marca de la Muerte - Nivel 7",
+    "description": "Elige una criatura de la que conozcas su verdadero nombre. Este conjuro crea unas runas permanentes en una superficie elegida por ti que, si son leídas por la criatura, la matarán.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs28",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Controlar el Clima - Nivel 7",
+    "description": "Reza para que llueva, haga sol, viento o nieve. En un plazo de un día tu dios responderá a tus oraciones. El tiempo cambiará de acuerdo con tus deseos y durará unos cuantos días.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs29",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Tormenta de Venganza - Nivel 9",
+    "description": "Tu deidad hace que se produzca la tormenta no natural que tú prefieras. Una lluvia de sangre o ácido, nubes de almas, vientos que levantan edificios o cualquier temporal que puedas imaginar: pídelo y aparecerá.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs30",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Reparar - Nivel 9",
+    "description": "Elige un evento del pasado del objetivo. Todos los efectos de aquel evento, incluyendo el daño, veneno, enfermedad y efectos mágicos, terminan y son reparados. Los PG se curan y las enfermedades sanan, los venenos son neutralizados y los efectos mágicos cesan.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs31",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Consumir a los Muertos - Nivel 9",
+    "description": "Destruyes a una criatura muerta viviente sin mente al tocarla y robas su energía para curarte a ti mismo o al próximo compañero al que toques. La cantidad de daño sanada es igual a los PG que le quedaran a la criatura antes de que la destruyeses de esta forma.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs32",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Plaga - Nivel 9 Mantenido",
+    "description": "Nombra una ciudad, pueblo, campamento u otro lugar en el que viva gente. Mientras este conjuro esté activo, ese lugar es asolado por una plaga adecuada al dominio de tu deidad (langostas, muertes de primogénitos, etcétera). Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "cs33",
+    "category": "🕯️Conjuros de Clérigo",
+    "title": "Presencia Divina - Nivel 9 Mantenido",
+    "description": "Todas las criaturas deben pedir tu permiso expreso para abandonar tu presencia o presentarse ante ti. Cualquier criatura que actúe sin tu permiso recibe 1d10 de daño adicional si es dañada en tu presencia. Cuando mantienes este conjuro recibes –1 a Lanzar conjuros.",
+    "tracks": [
+      {
+        "name": "Concedido",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  }
+]

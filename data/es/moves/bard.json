@@ -1,0 +1,237 @@
+[
+  {
+    "id": "aa",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Bueno** - Ayudar a alguien con tu arte.",
+      "**Neutral** - Evitar un conflicto o calmar una situación tensa.",
+      "**Caótico** - Incitar a otros a llevar a cabo acciones decisivas e importantes no planeadas.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "ar",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elfo - Cuando llegas a un lugar importante (tú decides) puedes preguntar al DJ acerca de un hecho de la historia de dicho emplazamiento.",
+      "Humano - Cuando llegas por primera vez a un asentamiento civilizado, alguien que respeta la costumbre de la hospitalidad hacia los juglares te acogerá como invitado.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "a1",
+    "category": "Movimientos Iniciales",
+    "title": "Artes arcanas (+Car)",
+    "description": "Cuando imbuyes con magia una de tus actuaciones, elige un compañero y un efecto:\n• Cura 1d8 de daño.\n• +1d4 a la siguiente tirada de daño.\n• Su mente es liberada de un encantamiento.\n• La próxima vez que alguien ayude con éxito al objetivo, recibe +2 en lugar de +1.\n\nLuego tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "El compañero recibe el efecto seleccionado."
+      },
+      {
+        "range": "7-9",
+        "text": "Tu conjuro funciona, pero atraes una atención no deseada o tu magia resuena en otros objetivos, afectándoles también a ellos. El DJ elige cuál."
+      }
+    ]
+  },
+  {
+    "id": "a2",
+    "category": "Movimientos Iniciales",
+    "title": "Abierto y encantador",
+    "description": "Cuando hablas sinceramente con alguien, puedes hacer a su jugador una pregunta de la siguiente lista. Debe responderte honestamente y luego puede hacerte una pregunta de la lista que tú deberás responder de forma sincera.\n• ¿A quién sirves?\n• ¿Qué te gustaría que hiciera?\n• ¿Cómo puedo conseguir que hagas ____?\n• ¿Qué es lo que sientes realmente ahora?\n• ¿Qué es lo que más quieres?"
+  },
+  {
+    "id": "a3",
+    "category": "Movimientos Iniciales",
+    "title": "Conocimiento de bardo",
+    "description": "Elige una de las siguientes áreas de conocimiento:\n\nCuando encuentres por primera vez una criatura, lugar u objeto importante (tú decides) que entre dentro de tu conocimiento, puedes hacer al DJ una pregunta al respecto y te responderá con sinceridad. El DJ puede preguntarte luego de qué cuento, canción o leyenda has obtenido esa información.",
+    "pickOne": [
+      "Conjuros y magia",
+      "La Muerte y los no muertos",
+      "Grandes historias del mundo conocido",
+      "Bestiario de criaturas inusuales",
+      "Las Esferas Planares",
+      "Leyendas de antiguos héroes",
+      "Dioses y sus servidores"
+    ]
+  },
+  {
+    "id": "a4",
+    "category": "Movimientos Iniciales",
+    "title": "Un puerto en la tormenta",
+    "description": "Cuando vuelves a un asentamiento civilizado que has visitado con anterioridad, dile al DJ cuándo fue la última vez que estuviste aquí y él te dirá de qué forma ha cambiado desde entonces."
+  },
+  {
+    "id": "a5",
+    "category": "Movimientos Avanzados",
+    "title": "Canción sanadora",
+    "description": "Cuando sanes a alguien con tus Artes arcanas, curas +1d8."
+  },
+  {
+    "id": "a6",
+    "category": "Movimientos Avanzados",
+    "title": "Cacofonía feroz",
+    "description": "Cuando concedes una bonificación al daño usando tus Artes arcanas, proporcionas +1d4."
+  },
+  {
+    "id": "a7",
+    "category": "Movimientos Avanzados",
+    "title": "Haz que suene el once (+Car)",
+    "description": "Cuando lleves a cabo una actuación delirante (un solo de laúd perfecto o quizás un poderoso redoble de metales), elige un objetivo que pueda oírte y tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "El objetivo ataca a su compañero más cercano a su alcance."
+      },
+      {
+        "range": "7-9",
+        "text": "Ataca a su compañero más cercano, pero también tú atraes su ira y atención."
+      }
+    ]
+  },
+  {
+    "id": "a8",
+    "category": "Movimientos Avanzados",
+    "title": "Canción del yunque (+Con)",
+    "description": "Cuando grites a pleno pulmón o toques una nota desgarradora, elige un objetivo y tira+con.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "El objetivo recibe 1d10 de daño y queda ensordecido durante unos minutos."
+      },
+      {
+        "range": "7-9",
+        "text": "Haces el mismo daño, pero sin control: el DJ elegirá un objetivo adicional en las inmediaciones."
+      }
+    ]
+  },
+  {
+    "id": "a9",
+    "category": "Movimientos Avanzados",
+    "title": "Con un poco de ayuda de mis amigos",
+    "description": "Cuando ayudas con éxito a alguien, tú también recibes +1 a la siguiente tirada."
+  },
+  {
+    "id": "a10",
+    "category": "Movimientos Avanzados",
+    "title": "Tonos arcanos",
+    "description": "Tus Artes arcanas son poderosas y te permiten elegir dos efectos en lugar de uno."
+  },
+  {
+    "id": "a11",
+    "category": "Movimientos Avanzados",
+    "title": "Defensa del duelista",
+    "description": "Cuando realices el movimiento de Saja-Raja recibes +1 armadura en la siguiente tirada."
+  },
+  {
+    "id": "a12",
+    "category": "Movimientos Avanzados",
+    "title": "Engatusar",
+    "description": "Si sacas 7 o más cuando parlamentes con alguien también recibes +1 a la siguiente tirada con tu objetivo."
+  },
+  {
+    "id": "a13",
+    "category": "Movimientos Avanzados",
+    "title": "Multiclase aficionado",
+    "description": "Recibes un movimiento de otra clase. Trata tu nivel como si fuera inferior en uno al actual para elegir el movimiento.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  },
+  {
+    "id": "a14",
+    "category": "Movimientos Avanzados",
+    "title": "Multiclase aguerrido",
+    "description": "Recibes un movimiento de otra clase. Trata tu nivel como si fuera inferior en uno al actual para elegir el movimiento.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  },
+  {
+    "id": "a15",
+    "category": "Movimientos Avanzados",
+    "title": "Coro sanador (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Canción sanadora**\n\nCuando sanes a alguien con tus Artes arcanas, curas +2d8."
+  },
+  {
+    "id": "a16",
+    "category": "Movimientos Avanzados",
+    "title": "Explosión feroz (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Cacofonía feroz**\n\nCuando concedes una bonificación al daño usando tus Artes arcanas, proporcionas +2d4."
+  },
+  {
+    "id": "a17",
+    "category": "Movimientos Avanzados",
+    "title": "Rostro inolvidable (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando te reencuentres con alguien que ya hayas conocido (tú decides) y que hayas pasado un tiempo sin ver, recibes +1 a la siguiente tirada con él."
+  },
+  {
+    "id": "a18",
+    "category": "Movimientos Avanzados",
+    "title": "Reputación (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando te encuentras por primera vez con alguien que ha oído canciones sobre ti, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Cuéntale al DJ dos cosas que hayan oído de ti."
+      },
+      {
+        "range": "7-9",
+        "text": "Dile al DJ una cosa que hayan oído de ti y el DJ decidirá cuál es la otra."
+      }
+    ]
+  },
+  {
+    "id": "a19",
+    "category": "Movimientos Avanzados",
+    "title": "Acorde arcano (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Tonos arcanos**\n\nCuando uses tus Artes arcanas, elige dos efectos. También puedes duplicar la intensidad de uno de ellos."
+  },
+  {
+    "id": "a20",
+    "category": "Movimientos Avanzados",
+    "title": "Buen oído para la Magia (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando escuches a un enemigo lanzar un conjuro, el DJ te dirá el nombre del conjuro y sus efectos. Recibes +1 a la siguiente tirada cuando estés actuando conforme a las respuestas."
+  },
+  {
+    "id": "a21",
+    "category": "Movimientos Avanzados",
+    "title": "Taimado (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Cuando utilices Abierto y encantador también puedes preguntar «¿En qué sentido eres vulnerable para mí?» Tu objetivo no puede hacerte a ti esa pregunta."
+  },
+  {
+    "id": "a22",
+    "category": "Movimientos Avanzados",
+    "title": "Parada del duelista (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Defensa del duelista**\n\nCuando realices el movimiento de Saja-Raja recibes +2 armadura en la siguiente tirada."
+  },
+  {
+    "id": "a23",
+    "category": "Movimientos Avanzados",
+    "title": "Timador (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Reemplaza a: **Engatusar**\n\nSi sacas 7 o más cuando parlamentes con alguien también recibes +1 a la siguiente tirada con tu objetivo, y además puedes hacerle una pregunta que debe responder con sinceridad."
+  },
+  {
+    "id": "a24",
+    "category": "Movimientos Avanzados",
+    "title": "Multiclase experto (Requiere nivel 6+)",
+    "weight": 1,
+    "description": "Recibes un movimiento de otra clase. Trata tu nivel como si fuera inferior en uno al actual para elegir el movimiento.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  }
+]

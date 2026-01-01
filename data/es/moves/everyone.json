@@ -168,7 +168,7 @@
   {
     "id": "sm1",
     "title": "Último aliento",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando estás al borde de la muerte llegas a entrever lo que hay más allá de las Puertas Negras del Reino de la Muerte (el DJ te lo describirá). Luego tira (simplemente tira+nada, a la Muerte no le importa lo guay que seas).",
     "outcomes": [
@@ -189,7 +189,7 @@
   {
     "id": "sm2",
     "title": "Impedimenta",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando haces un movimiento cargando peso, puede que tengas algunas dificultades. Si el peso que llevas es:",
     "outcomes": [
@@ -213,14 +213,14 @@
   {
     "id": "sm3",
     "title": "Acampar",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando te acomodes para descansar, consume una ración. Si estás en una zona peligrosa, decide el orden de guardia. Puedes subir de nivel si tienes bastantes PX. Cuando te despiertes tras, al menos, unas cuantas horas de sueño ininterrumpido, cúrate tanto daño como la mitad de tus PG máximos."
   },
   {
     "id": "sm4",
     "title": "Hacer guardia",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando estás de guardia y algo se aproxima al campamento, tira+sab.",
     "outcomes": [
@@ -241,7 +241,7 @@
   {
     "id": "sm5",
     "title": "Realizar un viaje peligroso",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando viajáis a través de territorio hostil, elegid a un miembro del grupo para que actúe como guía, otro como vigía y otro como intendente. Cada personaje con una responsabilidad tira+sab.",
     "submoves": [
@@ -289,14 +289,14 @@
   {
     "id": "sm6",
     "title": "Subir de nivel",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando tengas tiempo para descansar (horas o días) y PX iguales (o mayores) a tu nivel actual+7, puedes reflexionar sobre tus experiencias y perfeccionar tus habilidades.\n• Resta 7+tu nivel actual de tu total de PX.\n• Incrementa en 1 tu nivel.\n• Elige un nuevo movimiento avanzado de tu clase.\n• Si eres un mago también puedes añadir un nuevo conjuro a tu libro.\n• Elige una de tus características e increméntala en 1 (eso puede cambiar el modificador). Cambiar la Constitución incrementará tus PG máximos y actuales. Las puntuaciones de las características no pueden ser mayores de 18."
   },
   {
     "id": "sm7",
     "title": "Fin de sesión",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando llegas al final de la sesión, escoge un vínculo que creas que haya sido resuelto (que esté completamente explorado, que ya no sea importante u otra cosa). Pregunta al jugador con el que tienes el vínculo si está de acuerdo. Si lo está, marca PX y anota un nuevo vínculo con quien quieras.\n\nCuando se hayan actualizado todos los vínculos, echa un vistazo a tu alineamiento. Si lo cumpliste al menos una vez a lo largo de la sesión, marca PX. Luego responded juntos estas tres preguntas:",
     "outcomes": [
@@ -314,7 +314,7 @@
   {
     "id": "sm8",
     "title": "Festejar",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando volváis triunfantes y hagáis una gran fiesta, gastad 100 monedas y tirad +1 por cada 100 monedas adicionales.",
     "outcomes": [
@@ -341,7 +341,7 @@
   {
     "id": "sm9",
     "title": "Abastecerse (+Car)",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando vas a comprar algo con dinero, puedes comprarlo al precio de mercado si se trata de algo que esté fácilmente disponible en el asentamiento en el que te encuentres. Si se trata de algo especial, más allá de lo que suele estar disponible, o no mundano, tira+car.",
     "outcomes": [
@@ -358,7 +358,7 @@
   {
     "id": "sm10",
     "title": "Recuperarse",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando no haces nada salvo descansar en un lugar cómodo y seguro durante un día, recuperas todos tus PG. Tras tres días de descanso puedes borrar una debilidad a tu elección. Si estás bajo los cuidados de un curandero (sea mágico o no), curas una debilidad por cada dos días de descanso.",
     "outcomes": [
@@ -371,7 +371,7 @@
   {
     "id": "sm11",
     "title": "Reclutar",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando haces saber que quieres contratar ayudantes, tira:\n• +1 si haces saber que la paga será generosa.\n• +1 si haces saber qué te propones hacer.\n• +1 si haces saber que tendrán derecho a una parte de lo que sea que encuentres.\n• +1 si tienes una buena reputación por estos lares.",
     "outcomes": [
@@ -392,7 +392,7 @@
   {
     "id": "sm12",
     "title": "Cuentas pendientes (+Car)",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando vuelves a un lugar civilizado en el que causaste problemas, tira+car.",
     "outcomes": [
@@ -414,7 +414,7 @@
   {
     "id": "sm13",
     "title": "Prepararse",
-    "category": "Movimientos especiales",
+    "category": "Movimientos Especiales",
     "hideCheckbox": true,
     "description": "Cuando pasas tu tiempo de ocio estudiando, meditando o entrenando duramente, recibes puntos de preparación. Si te preparas durante una semana o más, recibes 1 punto. Si te preparas durante un mes o más, recibes 3 puntos. Cuando tu preparación sea útil, gasta 1 punto de preparación para recibir un +1 a cualquier tirada. Solo puedes gastar 1 punto de preparación por tirada.",
     "tracks": [
