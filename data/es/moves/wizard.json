@@ -1,0 +1,647 @@
+[
+  
+  {
+    "id": "wa",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Bueno** - Utilizar la magia para ayudar directamente a otro.",
+      "**Neutral** - Descubrir algo acerca de un misterio mágico.",
+      "**Malvado** - Utilizar la magia para infundir el miedo y el terror.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "wr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elfo - La magia es para ti tan natural como respirar. Trata Detectar magia como un truco.",
+      "Humano - Elige un conjuro de clérigo. Puedes lanzarlo como si fuera un conjuro de mago.",
+      "Otro (Describe)"
+    ],
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Conjuros de Clérigo"],
+    "details": true
+  },
+  {
+    "id": "w1",
+    "title": "Lanzar conjuro (+Int)",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando lanzas un conjuro que tenías preparado, tira+int.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "El conjuro es lanzado con éxito y no lo olvidas."
+      },
+      {
+        "range": "7-9",
+        "text": "El conjuro tiene efecto, pero elige una cosa de la siguiente lista:",
+        "bullets": [
+          "Atraes atención no deseada o te pones en riesgo. El DJ te dirá cómo.",
+          "Tu conjuro perturba el tejido de la realidad al ser lanzado. Recibes –1 a Lanzar conjuros hasta que vuelvas a Preparar conjuros.",
+          "Olvidas el conjuro después de lanzarlo. No puedes volver a lanzar ese conjuro hasta que vuelvas a prepararlo."
+        ]
+      }
+    ],
+    "tracks": [{
+      "name": "Penalización",
+      "max": 5,
+      "shape": "hexagon",
+      "dynamic": true
+    }],
+    "details": true
+  },
+  {
+    "id": "w2",
+    "title": "Libro de conjuros",
+    "category": "Movimientos Iniciales",
+    "description": "Has dominado varios conjuros que has transcrito en tu libro de conjuros. Comienzas con tres conjuros de primer nivel en tu libro de conjuros, además de todos los trucos. Cada vez que subas de nivel, añade en tu libro un nuevo conjuro de un nivel igual o inferior al tuyo. Tu libro de conjuros tiene **peso 1**.",
+    "details": true
+  },
+  {
+    "id": "w3",
+    "title": "Defensa mágica",
+    "category": "Movimientos Iniciales",
+    "description": "Puedes hacer que un conjuro mantenido termine inmediatamente y utilizar la energía que libera al disiparlo para desviar un ataque. El conjuro termina y puedes sustraer su nivel del daño recibido."
+  },
+  {
+    "id": "w4",
+    "title": "Preparar conjuros",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando pasas un tiempo ininterrumpido (una hora o así) en tranquila contemplación de tu libro de conjuros:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Pierdes todos los conjuros que tenías preparados.",
+          "Prepara los nuevos conjuros que elijas de tu libro de conjuros cuyos niveles en total no superen tu propio nivel+1.",
+          "Prepara todos tus trucos, que no cuentan para el límite de conjuros."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w5",
+    "title": "Ritual",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando aprovechas un lugar de poder para crear un efecto mágico, dile al DJ lo que estás intentando conseguir. Es posible lograr cualquier efecto con un ritual, pero el DJ te impondrá entre una y cuatro condiciones:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Te va a llevar días/semanas/meses.",
+          "Primero debes ______________.",
+          "Necesitarás ayuda de ______________.",
+          "Hará falta mucho dinero.",
+          "Lo mejor que puedes conseguir es una versión menor, poco fiable y limitada.",
+          "Tus compañeros y tú os arriesgáis a ____________.",
+          "Tienes que desencantar ________ para lograrlo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w6",
+    "title": "Prodigio",
+    "category": "Movimientos Avanzados",
+    "description": "Elige un conjuro. Puedes preparar ese conjuro como si fuera de un nivel inferior.",
+    "details": true
+  },
+  {
+    "id": "w7",
+    "title": "Magia poderosa",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando lanzas un conjuro, con un 10+ tienes la opción de elegir de la lista correspondiente al resultado de entre 7 y 9. Si lo haces, puedes elegir uno de los siguientes efectos:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Los efectos del conjuro se maximizan.",
+          "El número de objetivos del conjuro se dobla."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w8",
+    "title": "Fuente de sabiduría",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando exhibes conocimientos sobre un tema del que nadie más tenga la menor idea, recibes +1."
+  },
+  {
+    "id": "w9",
+    "title": "Sabelotodo",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando otro personaje busca tu consejo y le dices lo que crees que es mejor, recibe +1 a la siguiente tirada, siempre y cuando siga tus consejos. Márcate experiencia si lo hace."
+  },
+  {
+    "id": "w10",
+    "title": "Libro de conjuros avanzado",
+    "category": "Movimientos Avanzados",
+    "description": "Añade un nuevo conjuro a tu libro de conjuros de la lista de conjuros de cualquier clase de personaje.",
+    "takeFrom": ["wizard","cleric"],
+    "takeCategory": ["📜Conjuros de Mago","🕯️Conjuros de Clérigo"]
+  },
+  {
+    "id": "w11",
+    "title": "Encantador",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando dispongas de tiempo y un entorno seguro para estudiar un objeto mágico podrás preguntarle al DJ para qué sirve. El DJ te contestará con sinceridad."
+  },
+  {
+    "id": "w12",
+    "title": "Lógico",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando utilices la deducción para analizar tu entorno, puedes Discernir la realidad con int en lugar de sab."
+  },
+  {
+    "id": "w13",
+    "title": "Guardia arcana",
+    "category": "Movimientos Avanzados",
+    "description": "Mientras tengas preparado al menos un conjuro de primer nivel o superior, recibes **armadura +2**."
+  },
+  {
+    "id": "w14",
+    "title": "Contrahechizo (+Int)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando intentas contrarrestar un conjuro arcano que te podría afectar puedes interponer uno de tus conjuros preparados para defenderte. Tira+int.\n**NOTA:** Este contrahechizo solo te protege a ti; si el hechizo tenía otros objetivos, les afecta normalmente.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "El hechizo ha sido contrarrestado y no te afecta."
+      },
+      {
+        "range": "7-9",
+        "text": "El hechizo ha sido contrarrestado, pero olvidas el conjuro que habías usado para interceptarlo."
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "w15",
+    "title": "Estudio rápido",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando ves los efectos de un conjuro arcano, pregúntale al DJ el nombre del hechizo y sus efectos. Recibes +1 cuando actúes de acuerdo con esas respuestas."
+  },
+  {
+    "id": "w16",
+    "title": "Maestro (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Requiere: **Prodigio**\n\nElige un conjuro más, distinto al que seleccionaste para Prodigio. Puedes preparar ese conjuro como si fuera de un nivel inferior.",
+    "details": true
+  },
+  {
+    "id": "w17",
+    "title": "Magia poderosa mayor (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Magia poderosa**\n\nCuando lanzas un conjuro, con un 10-11 tienes la opción de elegir de la lista correspondiente al resultado de entre 7 y 9 y elegir uno de los siguientes efectos. Con un 12+, puedes elegir uno de los siguientes efectos sin elegir nada de la lista de entre 7 y 9:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Los efectos del conjuro se doblan.",
+          "El número de objetivos del conjuro se dobla."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w18",
+    "title": "Alma del encantador (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Requiere: **Encantador**\n\nCuando dispongas de tiempo y un entorno seguro para estudiar un objeto mágico que esté en un lugar de poder, puedes amplificar la magia del objeto para que sus efectos sean mayores la próxima vez que lo uses. El DJ te dirá en qué sentido exactamente."
+  },
+  {
+    "id": "w19",
+    "title": "Altamente lógico (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Lógico**\n\nCuando utilices la deducción para analizar tu entorno, puedes Discernir la realidad con int en lugar de sab. Con un 12+ puedes hacerle al DJ hasta tres preguntas cualesquiera, sin restringirte a las de la lista."
+  },
+  {
+    "id": "w20",
+    "title": "Hilos de marioneta místicos (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando utilices tu magia para controlar los actos de una persona, no recordará luego lo que le obligaste a hacer y no tendrá nada en contra tuya."
+  },
+  {
+    "id": "w21",
+    "title": "Armadura arcana (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Guardia arcana**\n\nMientras tengas preparado un conjuro de primer nivel o superior, recibes **armadura +4**."
+  },
+  {
+    "id": "w22",
+    "title": "Contrahechizo protector (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Requiere: **Contrahechizo**\n\nCuando un compañero en tu línea de visión sea afectado por un conjuro arcano puedes contrarrestarlo como si te afectase a ti. Si el conjuro afecta a varios compañeros debe ser contrarrestado por separado para cada uno de ellos."
+  },
+  {
+    "id": "w23",
+    "title": "Atadura etérea (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando dispones de tiempo con un objetivo voluntario o indefenso puedes crear una atadura etérea con él. Percibes lo que él percibe y puedes Discernir la realidad sobre alguien al que tengas atado y su entorno, no importa a qué distancia se encuentre. Alguien que se ate a ti voluntariamente puede comunicarse contigo a través del vínculo como si estuvieseis en la misma habitación."
+  },
+  {
+    "id": "w24",
+    "title": "Mejorar conjuro (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando haces daño a una criatura puedes desviar la energía de uno de tus conjuros activos para hacer más daño. Dispersa uno de tus conjuros activos y añade el nivel de ese conjuro a la cantidad de daño provocado."
+  },
+  {
+    "id": "w25",
+    "title": "Autopotenciar (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando dispones de tiempo, materiales arcanos y un entorno seguro, puedes crear tu propio lugar de poder. Describe al DJ qué tipo de poder posee y cómo estás atándolo al lugar. El DJ te dirá un tipo de criatura que puede estar interesada en tus trabajos.",
+    "details": true
+  },
+  {
+    "id": "ws1",
+    "category": "📜Conjuros de Mago",
+    "title": "Luz - Truco",
+    "description": "Un objeto que toques brilla con una luz arcana más o menos igual de resplandeciente que una antorcha. No produce calor ni sonido y no requiere combustible, pero por lo demás funciona como una antorcha normal. Tienes control completo sobre el color de la llama. El conjuro dura tanto tiempo como el objeto esté en tu presencia.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws2",
+    "category": "📜Conjuros de Mago",
+    "title": "Sirviente invisible - Truco",
+    "description": "Convocas un constructo sencillo e invisible que no puede hacer nada salvo acarrear objetos. Tiene Carga 3 y puede llevar cualquier cosa que le entregues. No puede coger objetos por su cuenta, solo tomarlos de tu mano. Los objetos transportados por un sirviente invisible parecen flotar en el aire unos cuantos pasos tras de ti. Un sirviente invisible que recibe daño o abandona tu presencia es desconvocado inmediatamente, dejando caer todos los objetos que transportase.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws3",
+    "category": "📜Conjuros de Mago",
+    "title": "Prestidigitación - Truco",
+    "description": "Puedes realizar truquitos menores de magia real. Si tocas un objeto como parte del lanzamiento del conjuro puedes hacerle cambios cosméticos: limpiarlo, ensuciarlo, calentarlo, darle sabor o cambiar su color. Si lanzas este conjuro sin tocar ningún objeto puedes crear ilusiones menores de un tamaño no superior a ti. La naturaleza ilusoria de los efectos creados con prestidigitación resultan evidentes y no engañarán a nadie, pero pueden distraerles.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws4",
+    "category": "📜Conjuros de Mago",
+    "title": "Contactar con espíritus - Nivel 1 Invocación",
+    "description": "Nombra al espíritu con el que quieres contactar (o déjaselo al DJ). Atraerás a esa criatura de entre los planos, lo bastante como para hablar con ella. Está obligada a responder lo mejor que pueda a una pregunta que le hagas.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws5",
+    "category": "📜Conjuros de Mago",
+    "title": "Detectar magia - Nivel 1 Adivinación",
+    "description": "Uno de tus sentidos se sintoniza brevemente con la magia. El DJ te dirá qué es mágico en las inmediaciones.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws6",
+    "category": "📜Conjuros de Mago",
+    "title": "Proyectil mágico - Nivel 1 Evocación",
+    "description": "De tus dedos surgen proyectiles de pura magia. Haces 2d4 de daño a un objetivo.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws7",
+    "category": "📜Conjuros de Mago",
+    "title": "Encantar persona - Nivel 1 Encantamiento",
+    "description": "La persona (no animal ni monstruo) a la que toques mientras lanzas el conjuro te creerá un amigo hasta que le hagas daño o se demuestre lo contrario.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws8",
+    "category": "📜Conjuros de Mago",
+    "title": "Invisibilidad - Nivel 1 Ilusión",
+    "description": "Toca a un compañero y nadie podrá verle. ¡Es invisible! El conjuro persiste hasta que el objetivo ataca o canceles el efecto.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws9",
+    "category": "📜Conjuros de Mago",
+    "title": "Telepatía - Nivel 1 Adivinación",
+    "description": "Creas un vínculo telepático con una única persona a la que toques, permitiéndote conversar con ella a través del pensamiento. Solo puedes mantener un vínculo telepático al mismo tiempo.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws10",
+    "category": "📜Conjuros de Mago",
+    "title": "Alarma - Nivel 1",
+    "description": "Camina trazando un círculo mientras lanzas este conjuro. Desde ahora, y hasta que vuelvas a preparar conjuros, tu magia te alertará si una criatura cruza el círculo que has trazado. Incluso aunque estés dormido, el conjuro te sacará de tu sueño.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws11",
+    "category": "📜Conjuros de Mago",
+    "title": "Disipar magia - Nivel 3",
+    "description": "Elige un conjuro o efecto mágico en tu presencia y la magia que lo alimenta se dispersará. Los conjuros menores son cancelados y la magia poderosa se queda reducida o disminuida mientras estés cerca.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws12",
+    "category": "📜Conjuros de Mago",
+    "title": "Visiones a través del tiempo - Nivel 3 Adivinación",
+    "description": "Lanza este conjuro mientras contemplas una superficie reflectante para ver a través de las profundidades del tiempo. El DJ te revelará detalles de un presagio oscuro que tenga relación contigo, un acontecimiento aciago que tendrá lugar sin tu intervención, pero también te dirá algo útil sobre cómo puedes interferir en el oscuro desenlace del presagio. Son pocos los presagios que afirman que «viviréis felices y comeréis perdices». Lo siento.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws13",
+    "category": "📜Conjuros de Mago",
+    "title": "Bola de fuego - Nivel 3 Evocación",
+    "description": "Conjuras una poderosa esfera de llamas que envuelve a tu objetivo y a todos los que estén cerca, infligiendo 2d6 de daño que ignora armadura.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws14",
+    "category": "📜Conjuros de Mago",
+    "title": "Mimético - Nivel 3",
+    "description": "Asumes la forma de otra persona que estés tocando mientras lanzas este conjuro. Tus características físicas son idénticas a las suyas, pero tu comportamiento puede ser distinto. Este cambio persiste hasta que recibas daño o elijas volver a tu propia forma. No puedes usar movimientos del libreto del mago mientras mantengas este conjuro.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws15",
+    "category": "📜Conjuros de Mago",
+    "title": "Imagen especular - Nivel 3 Ilusión",
+    "description": "Creas una imagen ilusoria de ti mismo. Tira 1d6 cuando eres atacado. Si sacas 4, 5 o 6, el ataque impacta en la ilusión, la imagen se disipa y el conjuro termina.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws16",
+    "category": "📜Conjuros de Mago",
+    "title": "Dormir - Nivel 3 Encantamiento",
+    "description": "Haces que 1d4 enemigos a los que puedas ver, elegidos por el DJ, caigan dormidos. Este conjuro solo afecta a criaturas capaces de dormir y se despertarán por cosas que les despertarían en condiciones normales: ruidos fuertes, golpes o dolor.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws17",
+    "category": "📜Conjuros de Mago",
+    "title": "Celda - Nivel 5 Evocación",
+    "description": "El objetivo es retenido en una celda mágica, de la que nada puede entrar ni salir. Este conjuro permanece activo hasta que lances otro conjuro o lo disipes. Mientras mantienes este conjuro no puedes perder de vista la celda, y además la criatura enjaulada puede escuchar tus pensamientos.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws18",
+    "category": "📜Conjuros de Mago",
+    "title": "Contactar con otro plano - Nivel 5 Adivinación",
+    "description": "Envías una petición a otro plano. Especifica con quién o con qué quieres contactar, indicando su localización, el tipo de criatura, su nombre o título, y se abrirá una vía de comunicación en ambos sentidos con esa criatura. La comunicación puede ser cortada por ti o por la criatura en cualquier momento.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws19",
+    "category": "📜Conjuros de Mago",
+    "title": "Invocar monstruo - Nivel 5 Invocación",
+    "description": "Un monstruo aparece y te ayuda lo mejor que puede. Trátalo como si fuera tu personaje, pero con acceso únicamente a los movimientos básicos. El monstruo tiene un modificador de +1 en todas las características, 1 PG y utiliza tu dado de daño. El monstruo también recibe 1d6 de los siguientes rasgos. El DJ te dirá qué tipo de monstruo aparece en función de los rasgos que elijas. La criatura permanece en este plano hasta que muera o tú la disperses de nuevo a su plano de origen.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "outcomes": [
+      {
+        "text": "Rasgos",
+        "bullets": [
+          "Tiene un modificador de +2 en vez de +1 en una característica.",
+          "No es imprudente.",
+          "Hace 1d8 de daño.",
+          "Su vínculo con este plano es fuerte: +2 PG por cada nivel que tengas.",
+          "Posee alguna adaptación útil."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ws20",
+    "category": "📜Conjuros de Mago",
+    "title": "Polimorfizar - Nivel 5 Encantamiento",
+    "description": "Puedes cambiar completamente de forma a una criatura que toques, permaneciendo así hasta que lances otro conjuro. Describe la nueva forma, incluyendo los cambios en características, adaptaciones importantes y debilidades principales. El DJ añadirá una o más de las siguientes opciones:",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "La forma será inestable y temporal.",
+          "La mente de la criatura también será alterada.",
+          "La forma tiene un beneficio o debilidad inesperada."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ws21",
+    "category": "📜Conjuros de Mago",
+    "title": "Contingencia - Nivel 7 Evocación",
+    "description": "Elige un conjuro de nivel 5 o inferior que conozcas. Describe una condición desencadenante usando un número de palabras igual a tu nivel. El conjuro elegido quedará retenido hasta que elijas liberarlo o se cumpla la condición desencadenante, lo que ocurra primero. No tienes que tirar para el conjuro retenido, simplemente surte efecto. Solo puedes mantener un conjuro contingente retenido a la vez; si lanzas Contingencia mientras tienes un conjuro retenido, el nuevo conjuro retenido reemplaza al antiguo.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "details": true
+  },
+  {
+    "id": "ws22",
+    "category": "📜Conjuros de Mago",
+    "title": "Visión verdadera - Nivel 7 Adivinación",
+    "description": "Ves todas las cosas tal como realmente son. Este efecto persiste hasta que digas una mentira o disipes el conjuro. Mientras este conjuro está activo, recibes -1 a **lanzar un conjuro**.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws23",
+    "category": "📜Conjuros de Mago",
+    "title": "Atajo sombrío - Nivel 7 Ilusión",
+    "description": "Las sombras sobre las que lanzas este conjuro se convierten en un portal para ti y tus aliados. Nombra una localización, describiéndola con un número de palabras hasta tu nivel. Al atravesar el portal, tú y los aliados presentes cuando lanzaste el conjuro aparecéis en la localización que describiste. El portal solo puede ser usado una vez por cada aliado.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "details": true
+  },
+  {
+    "id": "ws24",
+    "category": "📜Conjuros de Mago",
+    "title": "Niebla mortal - Nivel 7 Invocación",
+    "description": "Una nube de niebla se desliza a este reino desde más allá de las Puertas Negras de la Muerte, llenando el área inmediata. Cada vez que una criatura en el área recibe daño, recibe 1d6 de daño adicional y separado que ignora armadura. Este conjuro persiste mientras puedas ver el área afectada, o hasta que lo disipes. Mientras este conjuro está activo, recibes -1 a **lanzar un conjuro**.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws25",
+    "category": "📜Conjuros de Mago",
+    "title": "Dominar - Nivel 7 Encantamiento",
+    "description": "Tu toque empuja tu mente dentro de la de otra persona. Recibes 1d4 puntos. Gasta un punto para hacer que el objetivo realice una de estas acciones. Si te quedas sin puntos, el conjuro termina. Si el objetivo recibe daño, pierdes 1 punto. Mientras este conjuro está activo, no puedes **lanzar un conjuro**.",
+    "tracks": [
+      {
+        "name": "Preparado",
+        "max": 1,
+        "shape": "square"
+      },
+      {
+        "name": "Puntos",
+        "shape": "square",
+        "max": 4,
+        "dynamic": true
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Decir unas pocas palabras de tu elección",
+          "Darte algo que tenga en su poder",
+          "Realizar un ataque concentrado sobre un objetivo de tu elección",
+          "Responder sinceramente a una pregunta"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ws26",
+    "category": "📜Conjuros de Mago",
+    "title": "Alerta - Nivel 9 Adivinación",
+    "description": "Describe un evento. El DJ te dirá cuándo ese evento ocurre, sin importar dónde estés o lo lejos que esté el evento. Si lo eliges, puedes ver la localización del evento como si estuvieras allí en persona. Solo puedes tener una Alerta activa a la vez.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "details": true
+  },
+  {
+    "id": "ws27",
+    "category": "📜Conjuros de Mago",
+    "title": "Gema del alma - Nivel 9",
+    "description": "Atrapas el alma de una criatura moribunda dentro de una gema. La criatura atrapada es consciente de su encarcelamiento, pero aún puede ser manipulada mediante conjuros, parlamentar y otros efectos. Todas las tiradas contra la criatura atrapada reciben +1. Puedes liberar el alma en cualquier momento, pero nunca podrá ser recapturada una vez liberada.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws28",
+    "category": "📜Conjuros de Mago",
+    "title": "Antipatía - Nivel 9 Encantamiento",
+    "description": "Elige un objetivo y describe un tipo de criatura o un alineamiento. Las criaturas del tipo o alineamiento especificado no pueden acercarse a la vista del objetivo. Si una criatura del tipo especificado se encuentra a la vista del objetivo, huye inmediatamente. Este efecto continúa hasta que abandones la presencia del objetivo o disipes el conjuro. Mientras este conjuro está activo, recibes -1 a **lanzar un conjuro**.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }],
+    "details": true
+  },
+  {
+    "id": "ws29",
+    "category": "📜Conjuros de Mago",
+    "title": "Refugio - Nivel 9 Evocación",
+    "description": "Creas una estructura de puro poder mágico. Puede ser tan grande como un castillo o tan pequeña como una cabaña, pero es impermeable a todo daño no mágico. La estructura perdura hasta que la abandones o termines el conjuro. Mientras este conjuro está activo, recibes -1 a **lanzar un conjuro**.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  },
+  {
+    "id": "ws30",
+    "category": "📜Conjuros de Mago",
+    "title": "Invocaciones perfectas - Nivel 9 Invocación",
+    "description": "Teletransportas una criatura a tu presencia. Nombra una criatura o proporciona una breve descripción de un tipo de criatura. Si nombraste una criatura, esa criatura aparece ante ti. Si describiste un tipo de criatura, una criatura de ese tipo aparece ante ti.",
+    "tracks": [{
+      "name": "Preparado",
+      "max": 1,
+      "shape": "square"
+    }]
+  }
+]
