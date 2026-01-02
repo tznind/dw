@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ra",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Caótico** - Liberar a alguien de sus ataduras, reales o figuradas.",
+      "**Bueno** - Ponerte en peligro para combatir una amenaza no natural.",
+      "**Neutral** - Ayudar a un animal o espíritu de la naturaleza.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "rr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Elfo - Cuando hagas el movimiento de Realizar un viaje peligroso a través de las tierras salvajes, tienes éxito en la tarea que se te encomiende como si hubieras sacado un 10+.",
+      "Humano - Cuando hagas el movimiento de Acampar en una mazmorra o ciudad no necesitas consumir una ración.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "r1",
+    "title": "Compañero animal",
+    "category": "Movimientos Iniciales",
+    "grantsCard": "animal-companion",
+    "description": "Tienes una conexión sobrenatural con un animal leal a ti. Aunque no puedes hablar con él, siempre hace lo que quieres."
+  },
+  {
+    "id": "r2",
+    "title": "Rastrear y cazar (+Sab)",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando sigues el rastro de pistas dejado por una criatura, tira+sab.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Sigues el rastro de la criatura hasta que haya un cambio significativo en su dirección o su manera de viajar. También puedes elegir 1 de las siguientes opciones:",
+        "bullets": [
+          "Obtienes un dato importante sobre tu presa. El DJ te dirá de qué se trata.",
+          "Determinas el motivo que provocó la desaparición del rastro."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Sigues el rastro de la criatura hasta que haya un cambio significativo en su dirección o su manera de viajar."
+      }
+    ]
+  },
+  {
+    "id": "r3",
+    "title": "Disparo certero",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando atacas a distancia a un enemigo indefenso o sorprendido puedes elegir entre hacer tu daño o decir dónde estás apuntando y tirar+des.",
+    "submoves": [
+      {
+        "title": "Cabeza",
+            "outcomes": [
+            {
+              "range": "≥10",
+              "text": "Como el resultado de 7 y 9, más tu daño."
+            },
+            {
+              "range": "7-9",
+              "text": "No hace nada salvo quedarse quieto y embobado durante unos instantes."
+            }
+          ]
+      },
+      {
+        "title": "Brazos",
+        "outcomes": [
+          {
+            "range": "≥10",
+            "text": "Como el resultado de 7 y 9, más tu daño."
+          },
+          {
+            "range": "7-9",
+            "text": "Deja caer lo que estuviera sosteniendo."
+          }
+        ]
+      },
+      {
+        "title": "Piernas",
+        "outcomes": [
+          {
+            "range": "≥10",
+            "text": "Como el resultado de 7 y 9, más tu daño."
+          },
+          {
+            "range": "7-9",
+            "text": "Cojea y se mueve despacio."
+          }
+        ]
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "r4",
+    "title": "Ordenar",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando haces algo en lo que está entrenado tu compañero animal:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "…y atacáis al mismo objetivo, añade su Ferocidad a tu daño.",
+          "…y seguís un rastro, añade su Astucia a tu tirada.",
+          "…y recibes daño, suma su armadura a la tuya.",
+          "…y disciernes la realidad, añade su Astucia a tu tirada.",
+          "…y parlamentas, añade su Astucia a tu tirada.",
+          "…y alguien interfiere contigo, añade su Instinto a su tirada."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "r5",
+    "category": "Movimientos Avanzados",
+    "title": "Semielfo",
+    "description": "Tu linaje se mezcló en algún momento y empieza a notarse. Obtienes el movimiento inicial de elfo si elegiste raza humana al crear el personaje o el de humano si elegiste elfo. **Solo puedes elegir este movimiento si es tu primer avance**."
+  },
+  {
+    "id": "r6",
+    "category": "Movimientos Avanzados",
+    "title": "Empatía animal",
+    "description": "Puedes hablar con los animales y entenderlos."
+  },
+  {
+    "id": "r7",
+    "category": "Movimientos Avanzados",
+    "title": "Una presa familiar",
+    "description": "Cuando exhibes conocimientos acerca de un monstruo, tira+sab en lugar de +int."
+  },
+  {
+    "id": "r8",
+    "category": "Movimientos Avanzados",
+    "title": "Ataque de la víbora",
+    "description": "Cuando golpeas a un enemigo con dos armas al mismo tiempo, añade 1d4 de daño adicional por el ataque con la otra mano."
+  },
+  {
+    "id": "r9",
+    "category": "Movimientos Avanzados",
+    "title": "Camuflaje",
+    "description": "Cuando te mantienes en silencio en un entorno natural, los enemigos no pueden verte hasta que te muevas."
+  },
+  {
+    "id": "r10",
+    "category": "Movimientos Avanzados",
+    "title": "El mejor amigo del hombre",
+    "description": "Cuando permites que tu compañero animal reciba un golpe que iba dirigido a ti, el daño no te afecta y la Ferocidad de tu compañero animal baja a 0, pero si su Ferocidad ya es 0 no puedes usar esta capacidad. Su Ferocidad volverá al valor normal cuando dispongas de unas cuantas horas de descanso junto a tu compañero animal.",
+    "tracks": [
+      {
+        "name": "Penalización de Ferocidad",
+        "max": 5,
+        "dynamic": true,
+        "shape": "square"
+      }
+    ]
+  },
+  {
+    "id": "r11",
+    "category": "Movimientos Avanzados",
+    "title": "Nublar el sol",
+    "description": "Puedes gastar munición adicional antes de tirar los dados con Disparar. Por cada punto de munición que gastes puedes elegir un objetivo adicional. Tira una vez y aplica el daño a todos los objetivos."
+  },
+  {
+    "id": "r12",
+    "category": "Movimientos Avanzados",
+    "title": "Bien entrenado",
+    "description": "Elige otro entrenamiento para tu compañero animal."
+  },
+  {
+    "id": "r13",
+    "category": "Movimientos Avanzados",
+    "title": "Dios en los páramos",
+    "description": "Conságrate a una deidad (pon nombre a una nueva o elige una cuya existencia ya haya sido establecida). Obtienes los movimientos de Comunión y Lanzar conjuros del clérigo. Cuando elijas este movimiento, considérate un clérigo de nivel 1 para utilizar conjuros. Cada vez que ganes un nivel, aumenta tu nivel efectivo de clérigo en 1.",
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Conjuros de Clérigo"],
+    "details": true
+  },
+  {
+    "id": "r14",
+    "category": "Movimientos Avanzados",
+    "title": "Seguidme",
+    "description": "Cuando realices un viaje peligroso puedes asumir dos tareas. Haz tiradas separadas para cada una de ellas."
+  },
+  {
+    "id": "r15",
+    "category": "Movimientos Avanzados",
+    "title": "Un lugar seguro",
+    "description": "Cuando organizas las guardias nocturnas, todo el mundo recibe un +1 para Hacer guardia."
+  },
+  {
+    "id": "r16",
+    "category": "Movimientos Avanzados",
+    "title": "Lengua salvaje (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Empatía animal**\n\nPuedes hablar y entender a cualquier criatura, siempre que no sea mágica ni extraplanar."
+  },
+  {
+    "id": "r17",
+    "category": "Movimientos Avanzados",
+    "title": "La presa del cazador (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Una presa familiar**\n\nCuando exhibas conocimiento acerca de un monstruo, tira+sab en lugar de +int. Con un 12+, además de los efectos normales, puedes preguntarle al DJ cualquier pregunta sobre ese monstruo."
+  },
+  {
+    "id": "r18",
+    "category": "Movimientos Avanzados",
+    "title": "Colmillos de la víbora (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Ataque de la víbora**\n\nCuando golpeas a un enemigo con dos armas al mismo tiempo, añade 1d8 de daño adicional por el ataque con la otra mano."
+  },
+  {
+    "id": "r19",
+    "category": "Movimientos Avanzados",
+    "title": "La tripa de Smaug (Requiere nivel 6+)",
+    "description": "Cuando conoces el punto más débil de tu objetivo se considera que tus flechas poseen penetrante 2."
+  },
+  {
+    "id": "r20",
+    "category": "Movimientos Avanzados",
+    "title": "Montaraz (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Seguidme**\n\nCuando realices un viaje peligroso puedes asumir dos tareas. Tira dos veces y usa el mejor resultado para ambas tareas."
+  },
+  {
+    "id": "r21",
+    "category": "Movimientos Avanzados",
+    "title": "Un lugar más seguro (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Un lugar seguro**\n\nCuando organizas las guardias nocturnas todo el mundo recibe un +1 para Hacer guardia. Después de una noche acampando en la que tú hayas organizado las guardias nocturnas, todo el mundo recibe +1 a la siguiente tirada."
+  },
+  {
+    "id": "r22",
+    "category": "Movimientos Avanzados",
+    "title": "Observador (Requiere nivel 6+)",
+    "description": "Si tienes éxito al hacer el movimiento de Rastrear y cazar puedes hacer gratuitamente una pregunta de la lista del movimiento Discernir la realidad para saber algo sobre la criatura a la que estás rastreando."
+  },
+  {
+    "id": "r23",
+    "category": "Movimientos Avanzados",
+    "title": "Truco especial (Requiere nivel 6+)",
+    "description": "Elige un movimiento de otra clase. Tendrás acceso a ese movimiento mientras actúes junto a tu compañero animal.",
+    "takeFrom": ["*"]
+  },
+  {
+    "id": "r24",
+    "category": "Movimientos Avanzados",
+    "title": "Aliado no natural (Requiere nivel 6+)",
+    "description": "Tu compañero animal es un monstruo, no un animal. Descríbelo. Dale +2 a Ferocidad y +1 a Instinto y dótalo de un nuevo entrenamiento."
+  }
+]
