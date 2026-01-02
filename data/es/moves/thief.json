@@ -1,0 +1,285 @@
+[
+  
+  {
+    "id": "ta",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Caótico** - Lanzarte al peligro sin tener un plan.",
+      "**Neutral** - Evitar ser detectado o colarte en algún lugar.",
+      "**Malvado** - Hacer que sea otro el que se enfrente al peligro o cargue con tus culpas.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "tr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Mediano - Cuando atacas con un arma a distancia, haces daño +2.",
+      "Humano - Eres un profesional. Recibes +1 cuando exhibes conocimientos o disciernes la realidad acerca de actividades criminales.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "t1",
+    "category": "Movimientos Iniciales",
+    "title": "Experto en trampas (+Des)",
+    "description": "Cuando te paras un momento a examinar un área peligrosa, tira+des.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Recibes 3 puntos. Gasta esos puntos a medida que caminas por la zona para realizar las siguientes preguntas:",
+        "bullets": [
+          "¿Hay una trampa aquí? Si es así, ¿cómo se activa?",
+          "¿Qué hace la trampa cuando se activa?",
+          "¿Qué más hay oculto por aquí?"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Recibes 1 punto."
+      }
+    ],
+    "tracks": [{
+      "name": "Puntos",
+      "max": 3,
+      "shape": "circle"
+    }]
+  },
+  {
+    "id": "t2",
+    "category": "Movimientos Iniciales",
+    "title": "Principios flexibles",
+    "description": "Cuando alguien intenta detectar tu alineamiento puedes decir el que quieras."
+  },
+  {
+    "id": "t3",
+    "category": "Movimientos Iniciales",
+    "title": "Trucos del oficio (+Des)",
+    "description": "Cuando abres cerraduras, vacías bolsillos o desarmas trampas, tira+des.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Lo haces sin problema."
+      },
+      {
+        "range": "7-9",
+        "text": "Lo haces, pero el DJ te dará a elegir dos opciones entre sospecha, peligro o un coste."
+      }
+    ]
+  },
+  {
+    "id": "t4",
+    "category": "Movimientos Iniciales",
+    "title": "Apuñalar por la espalda (+Des)",
+    "description": "Cuando atacas a un enemigo sorprendido o indefenso con un arma cuerpo a cuerpo puedes elegir entre hacer tu daño o tirar+des.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Elige dos de las siguientes opciones:",
+        "bullets": [
+          "No te enzarzas en combate.",
+          "Le haces tu daño+1d6.",
+          "Creas una ventaja; +1 a la siguiente tirada para ti o un compañero que actúe contigo.",
+          "Reduce su armadura en 1 hasta que la repare."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Elige una de las siguientes opciones:"
+      }
+    ]
+  },
+  {
+    "id": "t5",
+    "category": "Movimientos Iniciales",
+    "title": "Envenenador",
+    "description": "Has dominado el arte de manejar y utilizar venenos. Elige un veneno de la siguiente lista, el cual ya no es peligroso para ti, y del que tienes tres dosis. Cada vez que tengas tiempo para reunir materiales y un lugar seguro en el que prepararlo puedes hacer gratuitamente tres dosis del veneno que elijas. Ten en cuenta que algunos venenos son **aplicados**, lo que significa que tendrás que aplicarlo sobre algo que beba o ingiera la persona que quieras envenenar. Los venenos de **contacto** solo necesitan tocar al objetivo, pudiendo ser usados incluso en el filo de una espada.",
+    "pickOne": [
+      "Aceite de Tagit - **(aplicado)** El objetivo cae en un sueño ligero.",
+      "Yerbasangre - **(contacto)** El objetivo inflige –1d4 de daño hasta que sea curado.",
+      "Raizdorada - **(aplicado)** El objetivo trata a la siguiente criatura que vea como si fuera un aliado de confianza hasta que se demuestre lo contrario.",
+      "Lágrimas de serpiente - **(contacto)** Cualquiera que haga daño al objetivo tira dos veces y se queda con el mejor resultado."
+    ],
+    "details": true,
+    "tracks": [
+      {
+        "name": "Usos",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ]
+  },
+  {
+    "id": "t6",
+    "category": "Movimientos Avanzados",
+    "title": "Golpe bajo",
+    "description": "Cuando usas un arma con la etiqueta **precisa** o **toque** haces un daño extra de +1d6 al Apuñalar por la espalda."
+  },
+  {
+    "id": "t7",
+    "category": "Movimientos Avanzados",
+    "title": "Cauto",
+    "description": "Cuando usas Experto en trampas siempre consigues +1 punto, aunque saques un 6-."
+  },
+  {
+    "id": "t8",
+    "category": "Movimientos Avanzados",
+    "title": "Opulencia y distinción",
+    "description": "Cuando exhibes ostentosamente tu posesión más valiosa, elige a uno de los presentes. Harán todo lo que puedan para obtener ese objeto o uno como ese."
+  },
+  {
+    "id": "t9",
+    "category": "Movimientos Avanzados",
+    "title": "Yo disparé primero",
+    "description": "Nunca te cogen por sorpresa. Cuando un enemigo pudiera anticiparse, tú actúas primero."
+  },
+  {
+    "id": "t10",
+    "category": "Movimientos Avanzados",
+    "title": "El que lleva las de perder",
+    "description": "Cuando te ves superado en número, recibes +1 armadura."
+  },
+  {
+    "id": "t11",
+    "category": "Movimientos Avanzados",
+    "title": "Maestro envenenador",
+    "description": "Tras usar un veneno una vez ya no te resulta peligroso usarlo."
+  },
+  {
+    "id": "t12",
+    "category": "Movimientos Avanzados",
+    "title": "Envenenar",
+    "description": "Puedes aplicar los venenos, incluso los más complejos, con un solo pinchazo. Se considera que el veneno es de **contacto**, en lugar de **aplicado**, cuando usas un veneno que no sería peligroso al aplicarlo en tu arma."
+  },
+  {
+    "id": "t13",
+    "category": "Movimientos Avanzados",
+    "title": "Cocinero",
+    "description": "Cada vez que tengas tiempo para reunir materiales y un lugar seguro en el que prepararlo, puedes hacer tres dosis de un veneno que hayas utilizado anteriormente.",
+    "tracks": [
+      {
+        "name": "Dosis",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "t14",
+    "category": "Movimientos Avanzados",
+    "title": "Contactos (+Car)",
+    "description": "Cuando haces saber en el submundo criminal que quieres o necesitas algo, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Alguien lo tiene y está dispuesto a ofrecértelo."
+      },
+      {
+        "range": "7-9",
+        "text": "Tienes que llegar a un acuerdo para conseguir algo similar o lo obtienes con condiciones, tú decides."
+      }
+    ]
+  },
+  {
+    "id": "t15",
+    "category": "Movimientos Avanzados",
+    "title": "Jugar sucio (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Golpe bajo**\n\nCuando usas un arma con la etiqueta **precisa** o **toque** haces un daño extra de +1d4, excepto con el movimiento de Apuñalar por la espalda, que hace un daño extra de +1d8."
+  },
+  {
+    "id": "t16",
+    "category": "Movimientos Avanzados",
+    "title": "Extremadamente cauto (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Cauto**\n\nCuando usas Experto en trampas siempre consigues +1 punto, aunque saques un 6-. Con un 12+, recibes 3 puntos y la próxima vez que te acerques a una trampa el DJ te dirá inmediatamente lo que hace, cómo se activa, quién la puso y cómo puedes usarla en tu beneficio."
+  },
+  {
+    "id": "t17",
+    "category": "Movimientos Avanzados",
+    "title": "El que lleva todas las de perder (Requiere nivel 6+)",
+    "description": "Reemplaza a: **El que lleva las de perder**\n\nRecibes +1 armadura. Cuando te ves superado en número, recibes +2 armadura."
+  },
+  {
+    "id": "t18",
+    "category": "Movimientos Avanzados",
+    "title": "Evasión (Requiere nivel 6+)",
+    "description": "Cuando desafías el peligro y obtienes un 12+, no solo haces lo que pretendías, sino mucho más: el DJ te ofrecerá un resultado aún mejor, de auténtica belleza, un instante de gracia."
+  },
+  {
+    "id": "t19",
+    "category": "Movimientos Avanzados",
+    "title": "Asalto (Requiere nivel 6+)",
+    "description": "Cuando te tomas tu tiempo para planear un robo, nombra aquello que quieres robar y hazle las siguientes preguntas al DJ. Cuando actúes de acuerdo con las respuestas que te dé, tus compañeros y tú recibís +1 a la siguiente tirada.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "¿Quién se dará cuenta de que falta?",
+          "¿Cuál es la defensa más poderosa?",
+          "¿Quién vendrá a buscarlo?",
+          "¿Quién más lo quiere?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "t20",
+    "category": "Movimientos Avanzados",
+    "title": "Alquimista (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Cocinero**\n\nCada vez que tengas tiempo para reunir materiales y un lugar seguro en el que prepararlo, puedes hacer tres dosis de cualquier veneno que hayas utilizado anteriormente. También puedes describir los efectos de un veneno que deseas crear. El DJ te dirá que puedes fabricarlo, pero con una o más de las siguientes advertencias:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Solo funcionará bajo unas circunstancias concretas.",
+          "Lo mejor que puedes conseguir es una versión más débil.",
+          "Tardará un poco en hacer efecto.",
+          "Tendrá efectos secundarios evidentes."
+        ]
+      }
+    ],
+    "details": true,
+    "tracks": [
+      {
+        "name": "Dosis",
+        "max": 3,
+        "shape": "triangle"
+      }
+    ]
+  },
+  {
+    "id": "t21",
+    "category": "Movimientos Avanzados",
+    "title": "Ruta de escape (+Des) (Requiere nivel 6+)",
+    "description": "Cuando estás metido hasta el cuello y necesitas una ruta de escape, di cuál es y tira+des.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Te has ido."
+      },
+      {
+        "range": "7-9",
+        "text": "Puedes quedarte o irte, pero a costa de dejar algo atrás o llevarte algo contigo. El DJ te dirá de qué se trata."
+      }
+    ]
+  },
+  {
+    "id": "t22",
+    "category": "Movimientos Avanzados",
+    "title": "Disfraz (Requiere nivel 6+)",
+    "description": "Cuando tienes el tiempo y los materiales necesarios puedes crear un disfraz que engañaría a cualquiera, haciéndole creer que eres otra criatura de aproximadamente el mismo tamaño y forma. Tus acciones pueden delatarte, pero tu apariencia no."
+  },
+  {
+    "id": "t23",
+    "category": "Movimientos Avanzados",
+    "title": "Brazo fuerte y excelente puntería (Requiere nivel 6+)",
+    "description": "Puedes arrojar cualquier arma cuerpo a cuerpo usando el movimiento de Disparar. Siempre pierdes el arma arrojada y no puedes elegir reducir la munición sacando entre 7 y 9."
+  }
+]
