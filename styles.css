@@ -129,6 +129,8 @@ label {
 #language-selector {
   min-width: 90px;
   max-width: 100px;
+  height: 25px;
+  padding: 0;
 }
 
 /* === HELP ICON BUTTON === */
