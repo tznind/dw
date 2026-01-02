@@ -1,0 +1,275 @@
+[
+  {
+    "id": "fa",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Bueno** - Defender a los que son más débiles que tú.",
+      "**Neutral** - Derrotar a un enemigo digno.",
+      "**Malvado** - Matar a un enemigo indefenso o rendido.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "fr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Enano - Cuando compartes una bebida con alguien, puedes Parlamentar usando con en lugar de car.",
+      "Elfo - Elige un arma. Puedes tratar las armas de ese tipo como si tuvieran la etiqueta precisa.",
+      "Mediano - Cuando Desafías el peligro utilizando tu pequeño tamaño a tu favor, recibes +1.",
+      "Humano - Puedes repetir una tirada de daño (tuya o de otro) una vez por batalla.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "f1",
+    "title": "Arma distintiva",
+    "category": "Movimientos Iniciales",
+    "grantsCard": "signature-weapon",
+    "description": "Esta es tu arma. Hay muchas como ella, pero esta es la tuya. Tu arma es tu mejor amiga. Es tu vida. Eres tan dueño de ella como de tu vida. Sin ti, tu arma es inútil. Sin tu arma, también lo eres tú. Debes empuñarla fielmente.",
+    "details": true
+  },
+  {
+    "id": "f2",
+    "title": "Doblar barras, alzar puertas (+Fue)",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando usas la fuerza bruta para destruir un obstáculo inanimado, tira+fue.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Elige 3 de las siguientes opciones:",
+        "bullets": [
+          "No te lleva mucho tiempo.",
+          "No resulta dañado nada de valor.",
+          "No hace una cantidad desorbitada de ruido.",
+          "Puedes volver a repararlo sin mucho esfuerzo."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Elige 2."
+      }
+    ]
+  },
+  {
+    "id": "f3",
+    "title": "Blindado",
+    "category": "Movimientos Iniciales",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Ignoras la etiqueta incómoda de cualquier armadura que lleves."
+      }
+    ]
+  },
+  {
+    "id": "f4",
+    "title": "Despiadado",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando haces daño, suma +1d4."
+      }
+    ]
+  },
+  {
+    "id": "f5",
+    "title": "Reliquia familiar (+Car)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando consultes a los espíritus que habitan en tu arma distintiva, te darán orientación relativa a la situación actual y, a cambio, podrán hacerte algunas preguntas. Tira+car.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "El DJ te dará muchos detalles."
+      },
+      {
+        "range": "7-9",
+        "text": "El DJ te comunicará una sensación."
+      }
+    ]
+  },
+  {
+    "id": "f6",
+    "title": "Arma mejorada",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Elige una mejora adicional para tu arma distintiva."
+      }
+    ]
+  },
+  {
+    "id": "f7",
+    "title": "Herrero",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando tienes acceso a una forja puedes injertar los poderes mágicos de un arma en tu arma distintiva. Este proceso destruye el arma mágica. Tu arma distintiva gana los poderes mágicos del arma destruida."
+      }
+    ]
+  },
+  {
+    "id": "f8",
+    "title": "Piel de hierro",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Recibes +1 armadura."
+      }
+    ]
+  },
+  {
+    "id": "f9",
+    "title": "Maestría con la armadura",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando elijas que tu armadura se lleve la peor parte del daño que te corresponde, el daño se anula, pero debes reducir el valor de la armadura o escudo (a tu elección) en 1. El valor se reduce cada vez que decides hacerlo. El objeto es destruido si la reducción lo deja con armadura 0."
+      }
+    ]
+  },
+  {
+    "id": "f10",
+    "title": "Señales de peligro",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando disciernes la realidad durante el combate, recibes +1."
+      }
+    ]
+  },
+  {
+    "id": "f11",
+    "title": "Interrogador",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando parlamentes con amenazas o la violencia inminente como ventaja, puedes usar fue en lugar de car."
+      }
+    ]
+  },
+  {
+    "id": "f12",
+    "title": "Olor a sangre",
+    "category": "Movimientos Avanzados",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Cuando hagas Saja-Raja a un enemigo con éxito, tu siguiente ataque contra el mismo objetivo hace +1d4 de daño."
+      }
+    ]
+  },
+  {
+    "id": "f13",
+    "title": "Sed de sangre (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Despiadado**\n\nCuando haces daño, suma +1d8."
+  },
+  {
+    "id": "f14",
+    "title": "Con los ojos de la muerte (+Sab) (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando entres en combate, tira+sab. Nombra PNJ, no personajes jugadores. El DJ hará que tu visión se vuelva realidad, incluso aunque sea remotamente posible.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Nombra alguien que saldrá con vida y alguien que morirá."
+      },
+      {
+        "range": "7-9",
+        "text": "Nombra alguien que morirá o alguien que vivirá."
+      },
+      {
+        "range": "6-",
+        "text": "Ves tu propia muerte y recibes -1 hasta que termine la batalla."
+      }
+    ]
+  },
+  {
+    "id": "f15",
+    "title": "Buen ojo para las armas (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando eches un vistazo a las armas del enemigo, puedes preguntar al DJ cuánto daño hacen."
+  },
+  {
+    "id": "f16",
+    "title": "Guerrero supremo (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando hagas Saja-Raja y sacas un 12+, haces daño, evitas el ataque y además impresionas, acobardas o asustas a tu enemigo."
+  },
+  {
+    "id": "f17",
+    "title": "Piel de acero (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Piel de hierro**\n\nRecibes armadura +2."
+  },
+  {
+    "id": "f18",
+    "title": "Armadura perfecta (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Maestría con la armadura**\n\nCuando elijas que tu armadura se lleve la peor parte del daño que te corresponde, el daño se cancela y recibes +1 a la siguiente tirada contra el atacante, pero debes reducir el valor de la armadura o escudo (a tu elección) en 1. El valor se reduce cada vez que decides hacerlo. El objeto es destruido si la reducción lo deja con armadura 0."
+  },
+  {
+    "id": "f19",
+    "title": "Mirada amenazadora (+Car) (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Requiere: **Señales de peligro**\n\nCuando entras en combate, tira+car.",
+    "tracks": [
+      {
+        "name": "Puntos",
+        "max": 2,
+        "shape": "square"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Recibes 2 puntos. Gasta estos puntos para establecer contacto visual con un PNJ presente, que quedará paralizado o acobardado y no podrá actuar mientras no dejes de mirarlo."
+      },
+      {
+        "range": "7-9",
+        "text": "Recibes 1 punto."
+      },
+      {
+        "range": "6-",
+        "text": "Tus enemigos te identifican inmediatamente como la mayor amenaza."
+      }
+    ]
+  },
+  {
+    "id": "f20",
+    "title": "Sabor a sangre (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Reemplaza a: **Olor a sangre**\n\nCuando hagas Saja-Raja a un enemigo con éxito, tu siguiente ataque contra el mismo objetivo hace +1d8 de daño."
+  },
+  {
+    "id": "f21",
+    "title": "Multiclase aficionado (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Recibes un movimiento de otra clase. Trata tu nivel como si fuera inferior en uno al actual para elegir el movimiento.",
+    "takeFrom": ["*"],
+    "takeCategory": ["Movimientos Iniciales", "Movimientos Avanzados"]
+  }
+]
