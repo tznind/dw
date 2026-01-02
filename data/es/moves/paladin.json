@@ -1,0 +1,203 @@
+[
+  {
+    "id": "pa",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Legal** - Negar la piedad a un criminal o no creyente.",
+      "**Bueno** - Ponerte en peligro para proteger a alguien más débil que tú.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "pr",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Humano - Cuando rezas en busca de orientación, aunque sea por un instante, y preguntas «¿Qué hay de maldad aquí?», el DJ te responderá sinceramente.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "p1",
+    "title": "Gesta",
+    "category": "Movimientos Iniciales",
+    "grantsCard": "quest",
+    "description": "Cuando te embarcas en una misión consagrándote a través de la oración y la limpieza espiritual, indica lo que pretendes hacer:"
+  },
+  {
+    "id": "p2",
+    "category": "Movimientos Avanzados",
+    "title": "Favor divino",
+    "description": "Conságrate a una deidad (pon nombre a una nueva o elige de entre las que ya hayan sido establecidas). Obtienes los movimientos de Comunión y Lanzar conjuros del clérigo. Cuando elijas este movimiento, considérate un clérigo de nivel 1 para utilizar conjuros. Cada vez que ganes un nivel, aumenta tu nivel efectivo de clérigo en 1.",
+    "takeFrom": ["cleric"],
+    "takeCategory": ["🕯️Conjuros de Clérigo"],
+    "details": true
+  },
+  {
+    "id": "p3",
+    "category": "Movimientos Avanzados",
+    "title": "Tutela divina",
+    "description": "Cuando recibes daño puedes apretar los dientes y encajar el golpe. Si lo haces no sufres daño, pero sí una debilidad a tu elección. No puedes usar este movimiento si ya tienes las seis debilidades."
+  },
+  {
+    "id": "p4",
+    "category": "Movimientos Avanzados",
+    "title": "Aniquilar",
+    "description": "Mientras estés en una Gesta haces +1d4 de daño."
+  },
+  {
+    "id": "p5",
+    "category": "Movimientos Avanzados",
+    "title": "Protección sagrada",
+    "description": "Recibes armadura +1 mientras estés en una Gesta."
+  },
+  {
+    "id": "p6",
+    "category": "Movimientos Avanzados",
+    "title": "Voz de la autoridad",
+    "description": "Recibes +1 al hacer el movimiento de Comandar mercenarios."
+  },
+  {
+    "id": "p7",
+    "category": "Movimientos Avanzados",
+    "title": "Hospitalario",
+    "description": "Cuando curas a un compañero, curas +1d8 de daño."
+  },
+  {
+    "id": "p8",
+    "category": "Movimientos Avanzados",
+    "title": "Exterminatus",
+    "description": "Cuando haces en voz alta la promesa de derrotar a un enemigo, haces +2d4 de daño contra ese enemigo y -4 de daño contra cualquier otro. Este efecto dura hasta que derrotes al enemigo elegido. Si no consigues derrotar a tu enemigo o te rindes, puedes admitir tu fracaso, pero el efecto continuará hasta que encuentres una forma de redimirte."
+  },
+  {
+    "id": "p9",
+    "category": "Movimientos Avanzados",
+    "title": "¡Cargad!",
+    "description": "Cuando diriges la carga en combate, aquellos a los que lideras reciben +1 a la siguiente tirada."
+  },
+  {
+    "id": "p10",
+    "category": "Movimientos Avanzados",
+    "title": "Defensor acérrimo",
+    "description": "Cuando hagas el movimiento de Defender recibes siempre +1 punto, incluso aunque saques un 6-."
+  },
+  {
+    "id": "p11",
+    "category": "Movimientos Avanzados",
+    "title": "Organizar ataque",
+    "description": "Cuando hagas el movimiento de Saja-Raja, elige un compañero. Su siguiente ataque contra tu objetivo hace +1d4 de daño."
+  },
+  {
+    "id": "p12",
+    "category": "Movimientos Avanzados",
+    "title": "Prueba de fe (Requiere nivel 6+)",
+    "description": "Requiere: **Favor divino**\n\nCuando seas testigo de algún tipo de magia divina puedes preguntar al DJ qué deidad ha concedido el conjuro y qué efectos tiene. Recibes +1 si actúas de manera acorde a la respuesta."
+  },
+  {
+    "id": "p13",
+    "category": "Movimientos Avanzados",
+    "title": "Aniquilación sagrada (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Aniquilar**\n\nMientras estés en una Gesta haces +1d8 de daño."
+  },
+  {
+    "id": "p14",
+    "category": "Movimientos Avanzados",
+    "title": "Siempre en la vanguardia (Requiere nivel 6+)",
+    "description": "Reemplaza a: **¡Cargad!**\n\nCuando diriges la carga en combate, aquellos a los que lideras reciben +1 a la siguiente tirada y su armadura tendrá +2 en la siguiente tirada."
+  },
+  {
+    "id": "p15",
+    "category": "Movimientos Avanzados",
+    "title": "Defensor insuperable (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Defensor acérrimo**\n\nCuando hagas el movimiento de Defender recibes siempre +1 punto, incluso aunque saques un 6-. Cuando sacas 12+ en la tirada, en lugar de recibir puntos, haces que la posición de la criatura atacante más cercana te ofrezca una clara ventaja. El DJ te explicará cómo."
+  },
+  {
+    "id": "p16",
+    "category": "Movimientos Avanzados",
+    "title": "Caballero perfecto (Requiere nivel 6+)",
+    "description": "Cuando estás en una Gesta recibes tres bonificadores, en vez de dos."
+  },
+  {
+    "id": "p17",
+    "category": "Movimientos Avanzados",
+    "title": "Ataque combinado (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Organizar ataque**\n\nCuando hagas el movimiento de Saja-Raja, elige un compañero. Su siguiente ataque contra tu objetivo hace +1d4 de daño y además recibe +1 a la siguiente tirada contra el mismo objetivo."
+  },
+  {
+    "id": "p18",
+    "category": "Movimientos Avanzados",
+    "title": "Protección divina (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Protección sagrada**\n\nRecibes armadura +2 mientras estés en una Gesta."
+  },
+  {
+    "id": "p19",
+    "category": "Movimientos Avanzados",
+    "title": "Autoridad divina (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Voz de la autoridad**\n\nRecibes +1 al hacer el movimiento de Comandar mercenarios. Con un 12+, los mercenarios superan sus miedos y dudas y hacen lo que les ordenas con especial eficacia y eficiencia."
+  },
+  {
+    "id": "p20",
+    "category": "Movimientos Avanzados",
+    "title": "Hospitalario perfecto (Requiere nivel 6+)",
+    "description": "Reemplaza a: **Hospitalario**\n\nCuando curas a un compañero, curas +2d8 de daño."
+  },
+  {
+    "id": "p21",
+    "category": "Movimientos Avanzados",
+    "title": "Indómito (Requiere nivel 6+)",
+    "description": "Cuando sufres una debilidad (aunque sea a través de Tutela divina) recibes +1 a la siguiente tirada contra aquello que la causó."
+  },
+  {
+    "id": "p22",
+    "category": "Movimientos Iniciales",
+    "title": "Imposición de manos (+Car)",
+    "description": "Cuando tocas a alguien, piel con piel, y rezas pidiendo su bienestar, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Le curas 1d8 de daño o eliminas una enfermedad."
+      },
+      {
+        "range": "7-9",
+        "text": "También curas, pero el daño o la enfermedad se transfieren a ti."
+      }
+    ]
+  },
+  {
+    "id": "p23",
+    "category": "Movimientos Iniciales",
+    "title": "Yo soy la Ley (+Car)",
+    "description": "Cuando le das una orden a un PNJ amparándote en tu autoridad divina, tira+car.",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "El PNJ elige una y recibes +1 a la siguiente tirada contra el PNJ:",
+        "bullets": [
+          "Hace lo que dices.",
+          "Se aparta con cuidado y luego huye.",
+          "Te ataca."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "El PNJ elige una."
+      },
+      {
+        "range": "≤6",
+        "text": "Hace lo que le da la gana y recibes -1 a la siguiente tirada contra el PNJ."
+      }
+    ]
+  },
+  {
+    "id": "p24",
+    "category": "Movimientos Iniciales",
+    "title": "Blindado",
+    "description": "Ignoras la etiqueta **incómoda** en cualquier armadura que lleves."
+  }
+]

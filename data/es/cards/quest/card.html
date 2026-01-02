@@ -1,0 +1,109 @@
+<div class="card quest-card">
+  <h3 class="card-title">⚔️ Gesta</h3>
+  <div class="card-content">
+    <!-- Mission Selection -->
+    <div class="form-section">
+      <label class="section-label">Indica lo que pretendes hacer:</label>
+      <div class="mission-options">
+        <div class="mission-option">
+          <input type="radio" id="mission-slay" name="quest-mission" value="Slay" data-hide-if-untaken>
+          <label for="mission-slay" data-hide-if-untaken>Ajusticiar a</label>
+          <input type="text" id="mission-slay-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken>, una enorme plaga para estas tierras</span>
+        </div>
+        <div class="mission-option">
+          <input type="radio" id="mission-defend" name="quest-mission" value="Defend" data-hide-if-untaken>
+          <label for="mission-defend" data-hide-if-untaken>Defender</label>
+          <input type="text" id="mission-defend-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken> de las iniquidades que le asedian</span>
+        </div>
+        <div class="mission-option">
+          <input type="radio" id="mission-discover" name="quest-mission" value="Discover" data-hide-if-untaken>
+          <label for="mission-discover" data-hide-if-untaken>Descubrir la verdad sobre</label>
+          <input type="text" id="mission-discover-target" data-hide-if-untaken>
+          <span class="mission-description" data-hide-if-untaken>.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boons -->
+    <div class="form-section">
+      <label class="section-label">Luego elige dos bendiciones:</label>
+      <div class="checkbox-group">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-direction">
+          <label for="boon-direction">
+            Un inquebrantable sentido de la dirección para llegar a
+            <input type="text" id="boon-direction-target" class="inline-text" placeholder="tu destino">
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-invulnerability">
+          <label for="boon-invulnerability">
+            Invulnerabilidad contra
+            <input type="text" id="boon-invulnerability-target" class="inline-text" placeholder="armas de filo, fuego, encantamientos, etc.">
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-authority">
+          <label for="boon-authority">Una marca de autoridad divina</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-senses">
+          <label for="boon-senses">Sentidos que ven a través de las mentiras</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-voice">
+          <label for="boon-voice">Una voz que trasciende las lenguas</label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="boon-freedom">
+          <label for="boon-freedom">No sufrir hambre, sed ni sueño</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vows -->
+    <div class="form-section">
+      <label class="section-label">El DJ te dirá qué voto o votos debes cumplir para mantener tu bendición:</label>
+      <div class="checkbox-group">
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-honor">
+          <label for="vow-honor">
+            <strong>Honor</strong> (prohibición: tácticas cobardes, celadas y otros engaños)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-temperance">
+          <label for="vow-temperance">
+            <strong>Templanza</strong> (prohibición: placeres carnales y excesos con la comida y la bebida)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-piety">
+          <label for="vow-piety">
+            <strong>Piedad</strong> (requisito: cumplir los servicios sagrados diarios)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-valor">
+          <label for="vow-valor">
+            <strong>Valor</strong> (prohibición: tolerar que viva una criatura malvada)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-truth">
+          <label for="vow-truth">
+            <strong>Verdad</strong> (prohibición: mentir)
+          </label>
+        </div>
+        <div class="checkbox-option" data-hide-if-untaken>
+          <input type="checkbox" id="vow-hospitality">
+          <label for="vow-hospitality">
+            <strong>Hospitalidad</strong> (requisito: confortar a los necesitados, sin importar quiénes sean)
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
