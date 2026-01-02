@@ -1,0 +1,286 @@
+[{
+    "id": "ia",
+    "hideCheckbox": true,
+    "title":"Alineamiento",
+    "category": "Movimientos Iniciales",
+    "pickOne": [
+      "**Malvado** - Sacrificar a una víctima involuntaria a las llamas.",
+      "**Caótico** - Propagar una nueva idea peligrosa.",
+      "**Neutral** - Realizar un sacrificio, voluntario, a cambio de un servicio concreto.",
+      "Otro - Describe a continuación"
+    ],
+    "details": true
+  },
+  {
+    "id": "ir",
+    "category": "Movimientos Iniciales",
+    "title":"Raza",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Humano - Cuando Acampes junto a una hoguera grande, recuperas todos tus PG.",
+      "Salamandriano - El calor y el fuego (no mágicos) no pueden dañarte.",
+      "Otro (Describe)"
+    ],
+    "details": true
+  },
+  {
+    "id": "i1",
+    "title": "Hierro ardiente (+Con)",
+    "description": "Cuando conjuras un arma de fuego puro, tira+con. Para hacer ataques con esta arma, puedes considerar que tu int es igual a tu fue o des. El arma siempre empieza con las etiquetas ardiente, contacto, peligrosa y 3 usos. Cada ataque que se realiza con el arma consume un uso.",
+    "category": "Movimientos Iniciales",
+    "tracks": [
+      {
+        "name": "Usos",
+        "shape": "circle",
+        "max": 3,
+        "dynamic": true
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Elige dos de las siguientes opciones:",
+        "bullets": [
+          "**Toque**",
+          "**Arrojadiza**, **medio alcance**",
+          "+1 daño",
+          "Elimina la etiqueta **peligrosa**"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Elige una."
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "i2",
+    "title": "Combatir fuego con fuego",
+    "category": "Movimientos Iniciales",
+    "description": "Cuando recibes daño en una cantidad impar (después de aplicar la armadura), las llamas que arden dentro de ti te ayudan. Tira 1d4 y elige entre:",
+    "outcomes": [{
+      "text": "",
+      "bullets": [
+         "Añadir a tu hierro ardiente (si está activo) tantos usos como tu resultado",
+         "Guardar ese resultado para convocar más adelante tu hierro ardiente",
+         "Reducir el daño esa cantidad"
+      ]
+    }]
+  },
+  {
+    "id":"i3",
+    "title": "Dame combustible, dame fuego",
+    "description": "Cuando miras fijamente a los ojos de alguien de forma intensa, puedes preguntarle a su jugador «¿Cuál es el combustible de las llamas de tu deseo?». Este responderá la verdad, a pesar de que el personaje no lo sepa o prefiera mantenerlo en secreto.",
+    "category": "Movimientos Iniciales"
+  },
+  {
+    "id":"i4",
+    "title": "Estilo Zuko (+Sab)",
+    "description": "Cuando sometes una llama a tu voluntad, tira+sab.",
+    "category": "Movimientos Iniciales",
+    "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Cumple tus órdenes, adoptando la forma y el movimiento que deseas mientras tenga combustible que quemar."
+      },
+      {
+        "range": "7-9",
+        "text": "El efecto es corto, dura solo un momento."
+      }
+    ]
+  },
+  {
+    "id":"i5",
+    "title": "Hecho a mano",
+    "description": "Puedes usar tus manos en lugar de herramientas y fuego para fabricar objetos de metal. Las armas mundanas, las armaduras y las joyas de metal se pueden construir con materias primas. También puedes deshacer estas cosas, pero hacerlo sin tiempo y sin cuidado podría requerir que Desafiaras el peligro primero.",
+    "category": "Movimientos Iniciales"
+  },
+  {
+    "id": "i6",
+    "title": "Saber de la llama (+Sab)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando miras fijamente una fuente de fuego en busca de respuestas, tira+sab. Si ya sabes todo lo que hay que saber, el DJ te lo dirá.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "El DJ te dirá algo nuevo e interesante sobre la situación actual con un buen detalle."
+      },
+      {
+        "range": "7-9",
+        "text": "El DJ te dará una impresión."
+      }
+    ]
+  },
+  {
+    "id": "i7",
+    "title": "La luz que brilla con el doble de intensidad",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando canalizas las llamas del destino, puedes considerar una tirada fallida como un 7-9 o un resultado de 7-9 como 10+. Puede ser una tirada que hayas hecho tú u otro personaje. Dile al DJ algo que has perdido: una emoción, un recuerdo o algo inherente a tu ser. No puedes volver a usar este movimiento hasta que no uses **Dura la mitad de tiempo**."
+  },
+  {
+    "id": "i8",
+    "title": "Dura la mitad de tiempo",
+    "category": "Movimientos Avanzados",
+    "description": "Recibe este movimiento cuando obtienes **La luz que brilla con el doble de intensidad**.\n\nCuando sacrificas una victoria a las llamas del destino, considera que cualquier tirada de 10+ es un fallo."
+  },
+  {
+    "id": "i9",
+    "title": "Este fuego aniquilador",
+    "category": "Movimientos Avanzados",
+    "description": "Añade las siguientes etiquetas a tus opciones de **Hierro ardiente**: **escabrosa**, **contundente**, **corto alcance**, **medio alcance**, **largo alcance**."
+  },
+  {
+    "id": "i10",
+    "title": "Instigador (+Car)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando introduces una nueva idea en un PNJ, tira+car.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "El personaje cree que la idea ha sido suya y la recibe con fervor."
+      },
+      {
+        "range": "7-9",
+        "text": "Su pasión se desvanece después de un día o dos."
+      },
+      {
+        "range": "6-",
+        "text": "Responde de forma negativa y se pone en contra de la idea."
+      }
+    ]
+  },
+  {
+    "id": "i11",
+    "title": "Ogdru Jahad",
+    "category": "Movimientos Avanzados",
+    "description": "Consigues el movimiento del Mago **Ritual**. El DJ siempre te dirá lo que tienes que sacrificar para conseguir el efecto que deseas.",
+    "submoves": [{
+      "title": "Ritual",
+      "description": "Cuando recurres a un lugar de poder para crear un efecto mágico, dile al DJ lo que intentas conseguir. Los efectos de los rituales siempre son posibles, pero el DJ te dirá lo que tienes que sacrificar:"
+    }]
+  },
+  {
+    "id": "i12",
+    "title": "Como polilla a la llama (+Sab)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando tientas a una mente débil con tu fuego interior, tira+sab.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Su voluntad se somete, te seguirá y hará lo que quieras, siempre y cuando nada lo asuste o lo sorprenda."
+      },
+      {
+        "range": "7-9",
+        "text": "El efecto solo es lo suficientemente fuerte como para distraerlo o confundirlo."
+      },
+      {
+        "range": "6-",
+        "text": "Se queda inquieto y molesto, ya que tu fuego habrá provocado sus deseos ocultos."
+      }
+    ]
+  },
+  {
+    "id": "i13",
+    "title": "Quemar puentes",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando vayas a exhalar tu último aliento, no lo haces. En cambio, puedes eliminar uno de tus vínculos. Esto es permanente y reduce tus vínculos totales disponibles para siempre. Estás vivo y tienes 1d6 PG. Si no te quedan más vínculos, exhala tu último aliento con normalidad."
+  },
+  {
+    "id": "i14",
+    "title": "La chispa que enciende la llama (+Car)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando alientas el coraje de otros, tira+car.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Se quitan de la cabeza todo miedo y duda, envalentonándose al instante."
+      },
+      {
+        "range": "7-9",
+        "text": "Este efecto es volátil, se dan cuenta de que es superficial y se acobardan después de un momento o dos."
+      },
+      {
+        "range": "6-",
+        "text": "Están acobardados o aterrados de tu presencia."
+      }
+    ]
+  },
+  {
+    "id": "i15",
+    "title": "Quemar la moral (+Car)",
+    "category": "Movimientos Avanzados",
+    "description": "Cuando insultas a un PNJ, tira+car.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "No le das tiempo a reaccionar, soporta tu insulto y el desprecio de todos los que te escuchan."
+      },
+      {
+        "range": "7-9",
+        "text": "Te has pasado de la raya, se vengará de ti, algún día."
+      },
+      {
+        "range": "6-",
+        "text": "Has ido demasiado lejos, el PNJ estalla aquí y ahora."
+      }
+    ]
+  },
+  {
+    "id": "i16",
+    "title": "Desde el corazón del infierno (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando convoques fuego con cualquiera de tus movimientos, puedes remplazarlo por el mismísimo fuego negro del infierno. Este fuego no desprende calor e ignora armadura, abrasando la propia alma. Las criaturas que no tienen alma no pueden recibir daño de este tipo de llama."
+  },
+  {
+    "id": "i17",
+    "title": "Ardiente anillo de fuego (+Car) (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando fusionas el alma de una persona voluntaria con la tuya, tira+car. Esta fusión, una vez se lleva a cabo, no se puede deshacer por medios mortales.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Quedáis conectados, sois capaces de sentiros el uno al otro en la distancia, así como de compartir vuestro estado emocional."
+      },
+      {
+        "range": "7-9",
+        "text": "La conexión es inestable y peligrosa, cuando recibes una debilidad, el otro también la recibe (y viceversa)."
+      },
+      {
+        "range": "6-",
+        "text": "Se rechaza el vínculo y ambos elimináis cualquier vínculo que tengáis entre vosotros. Puedes escribir nuevos vínculos con él al final de la sesión, como de costumbre."
+      }
+    ]
+  },
+  {
+    "id": "i18",
+    "title": "Avivar las llamas (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Requiere: **Instigador**\n\nPuedes aplicar los efectos de tu movimiento **Instigador** a un grupo de personas, una docena más o menos, a la vez."
+  },
+  {
+    "id": "i19",
+    "title": "Ver el mundo arder (+Sab) (Requiere nivel 6+)",
+    "category": "Movimientos Avanzados",
+    "weight": 1,
+    "description": "Cuando abres un canal a los planos ardientes y convocas una tormenta de fuego, dile al DJ lo que sacrificas y tira+sab. El cielo se abre y de él cae fuego como si fuera lluvia dentro de un área igual a un pueblo pequeño. Todas las cosas y personas que se encuentran dentro del área reciben el daño pertinente.",
+    "outcomes": [
+      {
+        "range": "10+",
+        "text": "Puedes extinguir la tormenta con un poco de esfuerzo."
+      },
+      {
+        "range": "7-9",
+        "text": "El fuego escapa a tu control, se propaga y prende allá donde lo lleva el viento y el clima."
+      },
+      {
+        "range": "6-",
+        "text": "Algo cruel, inteligente y hambriento surge de la tormenta."
+      }
+    ]
+  }
+]
