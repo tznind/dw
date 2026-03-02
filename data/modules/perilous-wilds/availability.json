@@ -12,5 +12,13 @@
     "pw-s8": true,
     "pw-s9": true,
     "pw-s10": true
+  },
+  "Delver": {
+    "_movesFile": "data/modules/perilous-wilds/moves/delver.json",
+    "pw-d1": true
+  },
+  "Explorer": {
+    "_movesFile": "data/modules/perilous-wilds/moves/explorer.json",
+    "pw-e1": true
   }
 }

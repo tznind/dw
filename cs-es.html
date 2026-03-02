@@ -59,7 +59,7 @@
            - No attribute: shows all roles (same as *) -->
       <div class="role-controls">
         <label for="role">Clase:</label>
-        <select id="role" name="role" data-roles="*">
+        <select id="role" name="role" data-roles="Barbarian, Bard, Cleric, Druid, Fighter, Immolator, Paladin, Ranger, Thief, Wizard">
           <option value="">Seleccionar clase...</option>
         </select>       
   <!--
@@ -75,6 +75,10 @@
           </span>
         </button>
         <button type="button" id="clear-button">Limpiar</button>
+        <label for="role2">Clase de Compendio:</label>
+        <select id="role2" name="role2" data-roles="Delver, Explorer">
+          <option value="">Seleccionar clase de compendio...</option>
+        </select>
       </div>
     </div>
 
@@ -189,6 +193,12 @@
 
 <!-- Language selector -->
 <script src="language-selector.js"></script>
+
+<!-- Modules UI -->
+<script src="modules.js"></script>
+
+<!-- Compendium class visibility -->
+<script src="compendium-class.js"></script>
 
 </body>
 </html>
