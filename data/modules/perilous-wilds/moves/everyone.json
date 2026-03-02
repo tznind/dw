@@ -45,5 +45,161 @@
         "text": "Mark XP, and GM makes a move."
       }
     ]
+  },
+  {
+    "id": "pw-s3",
+    "title": "Navigate (+INT)",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **plot the best course through dangerous or unfamiliar lands**, roll +INT.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You avoid dangers and distractions and make good time, reaching a point of the GM's choosing before you need to Make Camp."
+      },
+      {
+        "range": "7–9",
+        "text": "The GM chooses 1:",
+        "bullets": [
+          "You happen upon a Discovery missed by the scout",
+          "The going is slow, or you wander off course. The GM says which, and where you end up on the map",
+          "You encounter a Danger; whether or not you're surprised depends on whether the scout has the drop on it"
+        ]
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Suggested GM Moves",
+        "outcomes": [
+          {
+            "range": "Soft Moves",
+            "text":"",
+            "bullets": [
+              "The weather worsens",
+              "They're being followed",
+              "They must backtrack, losing valuable time"
+            ]
+          },
+          {
+            "range": "Hard Moves",
+            "text":"",
+            "bullets": [
+              "Someone slips and is injured",
+              "They stumble into a Danger",
+              "They get lost"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pw-s4",
+    "title": "Manage Provisions (+WIS)",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **prepare and distribute food for the party**, roll +WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 1:",
+        "bullets": [
+          "Careful management reduces the amount of rations consumed (ask the GM by how much)",
+          "The party consumes the expected amount and the food you prepare is excellent—describe it, and everyone who licks their lips takes +1 forward"
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": "The party consumes the expected amount of rations (1 per person if Making Camp, 1 per person per day if making a Journey)."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Suggested GM Moves",
+        "outcomes": [
+          {
+            "range": "Soft Moves",
+            "text": "",
+            "bullets": [
+              "They bicker over ration shares",
+              "Local animal life is attracted by food",
+              "Someone becomes weak until they eat 1 additional ration"
+            ]
+          },
+          {
+            "range": "Hard Moves",
+            "text": "",
+            "bullets": [
+              "Water is discovered to be tainted or poisonous",
+              "1d4 rations are lost due to spoilage or over-consumption",
+              "Someone gets food poisoning and becomes shaky and sick",
+              "A nearby Danger is attracted by food"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pw-s5",
+    "title": "Scout Ahead (+WIS)",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **take point and look for anything out of the ordinary**, roll +WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:",
+        "bullets": [
+          "You get the drop on whatever lies ahead",
+          "You discern a beneficial aspect of the terrain—shortcut, shelter, or tactical advantage (describe it)",
+          "You make a Discovery (ask the GM)",
+          "You notice sign of a nearby Danger—ask the GM what it is, and what it might signify"
+        ]
+      },
+      {
+        "range": "7–9",
+        "text": "Choose 1 from the list above."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Suggested GM Moves",
+        "outcomes": [
+          {
+            "range": "Soft Moves",
+            "text": "",
+            "bullets": [
+              "The weather worsens",
+              "Scout attracts unwanted attention",
+              "Scout becomes lost"
+            ]
+          },
+          {
+            "range": "Hard Moves",
+            "text": "",
+            "bullets": [
+              "Scout encounters a Danger",
+              "Scout is ambushed",
+              "The rest of the party is ambushed",
+              "Scout is captured or trapped",
+              "Scout suffers an injury"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
