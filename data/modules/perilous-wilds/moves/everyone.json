@@ -1,0 +1,49 @@
+[
+  {
+    "id": "pw-s1",
+    "title": "Hunker Down",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **take shelter to wait out the elements,** choose 1 party member to roll +nothing.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "It doesn't take long for things to clear up."
+      },
+      {
+        "range": "7–9",
+        "text": "Things aren't going to change any time soon. You can Forge Ahead or  Make Camp here for the night and hope things have changed by morning."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ]
+  },
+  {
+    "id":"pw-s2",
+    "title":"Forge Ahead (+Constitution)",
+    "category": "Perilous Wilds",
+    "hideCheckbox":true,
+    "description":"When you **push on despite powerful opposition from the elements**, roll +CON.  If you make progress, ask the GM where you end up on the map, and if the weather shows any sign of relenting.",
+    "outcomes":[
+      {
+        "range": "≥ 10",
+        "text": "You go as far as you are able before needing to pause for a rest."
+      },
+      {
+        "range": "7–9",
+        "text": "Choose 1:",
+        "bullets":[
+          "You go as far as you are able, but overtax yourself and become *weak*, *shaky* or *sick* (choose one)",
+          "You go as far as you are able, but the weather takes its deepest toll on your gear (ask the GM how)",
+          "On second thought, maybe your're better off staying put."
+        ]
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ]
+  }
+]

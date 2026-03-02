@@ -1,0 +1,7 @@
+{
+  "Everyone": {
+    "_movesFile": "data/modules/perilous-wilds/moves/everyone.json",
+    "pw-s1": true,
+    "pw-s2": true
+  }
+}
