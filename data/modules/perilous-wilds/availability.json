@@ -16,7 +16,11 @@
   "Delver": {
     "_movesFile": "data/modules/perilous-wilds/moves/delver.json",
     "description": "When you reach the lowest level of at least two different dungeons, this compendium class becomes available.",
-    "pw-d1": true
+    "pw-d1": true,
+    "pw-d2": false,
+    "pw-d3": false,
+    "pw-d4": false,
+    "pw-d5": false
   },
   "Explorer": {
     "_movesFile": "data/modules/perilous-wilds/moves/explorer.json",
