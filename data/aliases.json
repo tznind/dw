@@ -34,5 +34,9 @@
     {
         "alias":"parley with someone",
         "move":"Parley"
+    },
+    {
+        "alias":"Hack and Slash",
+        "move":"Hack & Slash"
     }
 ]

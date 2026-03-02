@@ -18,10 +18,12 @@
             if (!select) break;
 
             const label = document.querySelector(`label[for="role${index}"]`);
+            const helpButton = document.getElementById(`role${index}-help-button`);
             const visible = select.options.length > 1;
 
             select.style.display = visible ? '' : 'none';
             if (label) label.style.display = visible ? '' : 'none';
+            if (helpButton) helpButton.style.display = visible ? '' : 'none';
 
             index++;
         }

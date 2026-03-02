@@ -15,10 +15,15 @@
   },
   "Delver": {
     "_movesFile": "data/modules/perilous-wilds/moves/delver.json",
+    "description": "When you reach the lowest level of at least two different dungeons, this compendium class becomes available.",
     "pw-d1": true
   },
   "Explorer": {
     "_movesFile": "data/modules/perilous-wilds/moves/explorer.json",
-    "pw-e1": true
+    "description": "When you enlist the support of a powerful patron to reward your forays into the unknown, this compendium class becomes available.",
+    "pw-e1": true,
+    "pw-e2": false,
+    "pw-e3": false,
+    "pw-e4": false
   }
 }

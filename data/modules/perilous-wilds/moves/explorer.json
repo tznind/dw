@@ -1,8 +1,79 @@
 [
   {
     "id": "pw-e1",
-    "title": "Explorer Move (Placeholder)",
-    "category": "Explorer",
-    "description": "Placeholder move for the Explorer compendium class."
+    "title": "Patron",
+    "category": "Starting Moves",
+    "description": "You have the support of a powerful individual or group, who will reward you for the delivery of certain things gathered from foreign climes. Choose 1 patron, and the thing they want:",
+    "pickOne": [
+      "**Church**: evidence of church's history, divine presence or opposing deity",
+      "**Guild**: location and proof of materials useful to the guild",
+      "**Historian**: evidence of historic events",
+      "**Jeweler**: gemstones",
+      "**Magnate**: evidence of natural resources and their location",
+      "**Wizard**: magical items, or evidence and locations of magical places"
+    ],
+    "submoves": [
+      {
+        "title": "Support",
+        "description": "Your patron will provide you with supplies for any expedition you undertake on their behalf, within reason."
+      },
+      {
+        "title": "Reward",
+        "description": "When you **deliver the desired news or goods to your patron**, you are compensated. Negotiate your compensation with the GM, based on the nature of your patron."
+      }
+    ]
+  },
+  {
+    "id": "pw-e2",
+    "title": "Plant Your Flag",
+    "category": "Advanced Moves",
+    "description": "When you **claim a place in your own name or that of your patron**, plant a flag or standard, and mark the place on your map. When you lead an expedition to that place, you find it unerringly, and you take +1 ongoing to **Hack and Slash** or **Defend** as long as your flag is in sight. These effects apply only to the most recently claimed place."
+  },
+  {
+    "id": "pw-e3",
+    "title": "Thrill of Discovery",
+    "category": "Advanced Moves",
+    "description": "When you **come upon a previously undocumented and notable Discovery**, both of the following effects apply:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "The excitement of the moment grants you **+1 forward**",
+          "Mark XP at the end of the session (max. once per session)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pw-e4",
+    "title": "Log Your Findings (+CHA)",
+    "category": "Advanced Moves",
+    "description": "You have a logbook or other external and portable repository of information that's always with you. Say what it is.\n\nWhen you **encounter a new and notable** **Danger** or **Discovery**, write it down (a brief note will do). This counts as an entry in your log.\n\nWhen you **share your findings with one or more residents of a steading**, choose an entry you want to share, and roll +CHA:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:",
+        "bullets": [
+          "Someone here can tell you more about it—the GM will say who, and what they know",
+          "Someone here is interested in this information—ask the GM who, and what they'll offer for it in trade",
+          "Someone here will respond strongly to this finding—ask the GM who, and whether they'll be impressed, frightened, or otherwise affected",
+          "Mark XP"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 1 from the list above."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Choose 1, but the GM also makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "Once you share a given entry, cross it off. You can only share an entry once."
+      }
+    ]
   }
 ]
