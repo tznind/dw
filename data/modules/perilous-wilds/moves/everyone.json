@@ -201,5 +201,94 @@
         ]
       }
     ]
+  },
+  {
+    "id": "pw-s6",
+    "title": "Journey",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **travel by a safe route**, through safe or dangerous lands, indicate your destination on the map. The GM will tell you how long the trip takes, and what—if anything—happens along the way. When you reach your destination, choose someone to **Manage Provisions** to determine how many rations were consumed over the course of the trip."
+  },
+  {
+    "id": "pw-s7",
+    "title": "Undertake a Perilous Journey",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **travel through dangerous lands, and not on a safe route**, indicate the course you want to take on the map and ask the GM how far you should be able to get before needing to Make Camp. If you're exploring with no set destination, indicate which way you go.\n\nThen, choose one party member to **Scout Ahead**, and one to **Navigate**, resolving those moves in that order."
+  },
+  {
+    "id": "pw-s8",
+    "title": "Forage (+WIS)",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **spend a day seeking food in the wild**, and your surroundings are not barren, roll +WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You gain 1d4 rations, +1d4 rations if you have the knowledge and gear needed to trap or hunt."
+      },
+      {
+        "range": "7–9",
+        "text": "The 10+ result applies, but you must also first face a Discovery or Danger of the GM's choice."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "pw-s9",
+    "title": "Make Camp",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **settle in to rest**, choose one member of the party to **Manage Provisions**. Then, if you eat and drink and have enough XP, you may level up.\n\nWhen you bed down in dangerous lands, decide on a watch order. Then, the GM chooses one person on watch during the night to roll +nothing:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The night passes without incident."
+      },
+      {
+        "range": "7–9",
+        "text": "The GM chooses 1:",
+        "bullets": [
+          "The person on watch notices a nearby Discovery",
+          "One party member of the GM's choice suffers a restless night",
+          "One or more followers causes trouble",
+          "A Danger approaches—it's not immediately hostile, but whoever's on watch had better Stay Sharp anyway"
+        ]
+      },
+      {
+        "range": "≤ 6",
+        "text": "Everyone marks XP, and a Danger manifests. You'd better Stay Sharp!"
+      }
+    ],
+    "submoves": [
+      {
+        "title": "When You Wake",
+        "description": "When you wake from at least a few hours of uninterrupted sleep, and you ate and drank the night before, heal damage equal to half of your max HP."
+      }
+    ]
+  },
+  {
+    "id": "pw-s10",
+    "title": "Stay Sharp (+WIS)",
+    "category": "Perilous Wilds",
+    "hideCheckbox": true,
+    "description": "When you **are on watch and something approaches**, roll +WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You notice in time to alert everyone and prepare a response—all party members take +1 forward."
+      },
+      {
+        "range": "7–9",
+        "text": "You manage to sound the alarm, but no one has time to prepare."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and whatever approaches has the drop on you."
+      }
+    ]
   }
 ]

@@ -1,10 +1,16 @@
 {
+  "_removes": ["sm3", "sm4", "sm5"],
   "Everyone": {
     "_movesFile": "data/modules/perilous-wilds/moves/everyone.json",
     "pw-s1": true,
     "pw-s2": true,
     "pw-s3": true,
     "pw-s4": true,
-    "pw-s5": true
+    "pw-s5": true,
+    "pw-s6": true,
+    "pw-s7": true,
+    "pw-s8": true,
+    "pw-s9": true,
+    "pw-s10": true
   }
 }
