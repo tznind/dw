@@ -26,7 +26,7 @@
       },
       {
         "range": "7–9",
-        "text": "The 10+ result applies, but you must also first face a Discovery or Danger of the GM's choice."
+        "text": "The 10+ result applies, but you must also first face a **Discovery** or **Danger** of the GM's choice."
       },
       {
         "range": "≤ 6",
@@ -49,15 +49,15 @@
         "range": "7–9",
         "text": "The GM chooses 1:",
         "bullets": [
-          "The person on watch notices a nearby Discovery",
+          "The person on watch notices a nearby **Discovery**",
           "One party member of the GM's choice suffers a restless night",
           "One or more followers causes trouble",
-          "A Danger approaches—it's not immediately hostile, but whoever's on watch had better Stay Sharp anyway"
+          "A **Danger** approaches—it's not immediately hostile, but whoever's on watch had better **Stay Sharp** anyway"
         ]
       },
       {
         "range": "≤ 6",
-        "text": "Everyone marks XP, and a Danger manifests. You'd better Stay Sharp!"
+        "text": "Everyone marks XP, and a **Danger** manifests. You'd better **Stay Sharp**!"
       }
     ],
     "submoves": [
@@ -101,7 +101,7 @@
       },
       {
         "range": "7–9",
-        "text": "Things aren't going to change any time soon. You can Forge Ahead or  Make Camp here for the night and hope things have changed by morning."
+        "text": "Things aren't going to change any time soon. You can **Forge Ahead** or **Make Camp** here for the night and hope things have changed by morning."
       },
       {
         "range": "≤ 6",
@@ -148,8 +148,8 @@
         "bullets": [
           "You get the drop on whatever lies ahead",
           "You discern a beneficial aspect of the terrain—shortcut, shelter, or tactical advantage (describe it)",
-          "You make a Discovery (ask the GM)",
-          "You notice sign of a nearby Danger—ask the GM what it is, and what it might signify"
+          "You make a **Discovery** (ask the GM)",
+          "You notice sign of a nearby **Danger**—ask the GM what it is, and what it might signify"
         ]
       },
       {
@@ -178,7 +178,7 @@
             "range": "Hard Moves",
             "text": "",
             "bullets": [
-              "Scout encounters a Danger",
+              "Scout encounters a **Danger**",
               "Scout is ambushed",
               "The rest of the party is ambushed",
               "Scout is captured or trapped",
@@ -198,15 +198,15 @@
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "You avoid dangers and distractions and make good time, reaching a point of the GM's choosing before you need to Make Camp."
+        "text": "You avoid dangers and distractions and make good time, reaching a point of the GM's choosing before you need to **Make Camp**."
       },
       {
         "range": "7–9",
         "text": "The GM chooses 1:",
         "bullets": [
-          "You happen upon a Discovery missed by the scout",
+          "You happen upon a **Discovery** missed by the scout",
           "The going is slow, or you wander off course. The GM says which, and where you end up on the map",
-          "You encounter a Danger; whether or not you're surprised depends on whether the scout has the drop on it"
+          "You encounter a **Danger**; whether or not you're surprised depends on whether the scout has the drop on it"
         ]
       },
       {
@@ -232,7 +232,7 @@
             "text":"",
             "bullets": [
               "Someone slips and is injured",
-              "They stumble into a Danger",
+              "They stumble into a **Danger**",
               "They get lost"
             ]
           }
@@ -284,7 +284,7 @@
               "Water is discovered to be tainted or poisonous",
               "1d4 rations are lost due to spoilage or over-consumption",
               "Someone gets food poisoning and becomes shaky and sick",
-              "A nearby Danger is attracted by food"
+              "A nearby **Danger** is attracted by food"
             ]
           }
         ]

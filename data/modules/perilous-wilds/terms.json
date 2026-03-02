@@ -1,0 +1,38 @@
+[
+  {
+    "term": "Map",
+    "description": "A drawing or diagram showing the spatial relationships of different physical features in the game world. A map is divided into named regions, which may contain areas, steadings, and/or sites."
+  },
+  {
+    "term": "Region",
+    "description": "A large swath of landscape with a set boundary. Its overall character is determined by its dominant natural or political aspect—such as a terrain type (forest, desert) or a political border (kingdom, barony). Regions break the map into distinct, manageable units."
+  },
+  {
+    "term": "Almanac",
+    "description": "A written record of a region's contents, including tags, places, general impressions, obstacles, hazards, and anything else of interest. An almanac is a living document that can grow and change over the course of play."
+  },
+  {
+    "term": "Area",
+    "description": "A smaller piece of geography within a region that stands out from the region's overall character in some notable way—such as a hunting ground within a great forest, or an island in a sea."
+  },
+  {
+    "term": "Steading",
+    "description": "A village, town, city, or other settlement."
+  },
+  {
+    "term": "Site",
+    "description": "A point of interest within a region, area, or steading—such as a waterfall in a jungle, a monastery in the mountains, or a chieftain's hut in a village."
+  },
+  {
+    "term": "Place",
+    "description": "A collective term for regions, areas, steadings, and sites."
+  },
+  {
+    "term": "Discovery",
+    "description": "Anything the party finds that's interesting but not an immediate threat. It might be beneficial (a freshwater spring), worth investigating (an overgrown ruin), or an obstacle (a bog or chasm)."
+  },
+  {
+    "term": "Danger",
+    "description": "Anything which, if left unchecked, may be harmful. Traps and hostile creatures are the most common types. A Danger encountered during a journey may be incidental, or may become part of a larger Front at the GM's discretion."
+  }
+]
