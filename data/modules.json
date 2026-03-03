@@ -4,7 +4,13 @@
       "id": "perilous-wilds",
       "name": "Perilous Wilds",
       "description": "Adds wilderness journey and exploration By Jason Lutes & Jeremy Strandberg. Licensed under CC BY-SA 3.0.",
-      "path": "data/modules/perilous-wilds"
+      "path": "data/modules/perilous-wilds",
+      "attribution": {
+        "url": "https://www.drivethrurpg.com/en/product/407161/the-perilous-wilds-revised-edition",
+        "statement": "written by Jason Lutes with assistance from Jeremy Strandberg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     }
   ]
 }
