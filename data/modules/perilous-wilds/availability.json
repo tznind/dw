@@ -38,5 +38,14 @@
     "pw-h3": false,
     "pw-h4": false,
     "pw-h5": false
+  },
+  "Leader": {
+    "_movesFile": "data/modules/perilous-wilds/moves/leader.json",
+    "description": "When you return to safety from any dangerous journey with at least two surviving followers, this compendium class becomes available.",
+    "pw-l1": true,
+    "pw-l2": false,
+    "pw-l3": false,
+    "pw-l4": false,
+    "pw-l5": false
   }
 }
