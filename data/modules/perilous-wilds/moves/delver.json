@@ -1,0 +1,106 @@
+[
+  {
+    "id": "pw-d1",
+    "title": "Sniff the Air",
+    "category": "Starting Moves",
+    "description": "When you **use your senses to assess a subterranean area**, ask the GM 2 questions from the list below:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Which way lies the nearest danger?",
+          "Which way lies the nearest treasure?",
+          "Which way leads to the nearest exit?",
+          "Which way will take me deeper?",
+          "What lies hidden here?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pw-d2",
+    "title": "Pack Smart",
+    "category": "Advanced Moves",
+    "description": "When you mark the last use of your adventuring gear, it counts as 2 uses instead of 1—say what they both are, right now."
+  },
+  {
+    "id": "pw-d3",
+    "title": "Embrace the Black (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **find yourself in utter darkness underground**, roll +WIS:",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Hold 1, mark XP, and the GM makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Spending Hold",
+        "description": "As long as the darkness persists, you may spend your hold, 1-for-1, to do one of the following:",
+        "outcomes": [
+          {
+            "text": "",
+            "bullets": [
+              "Know exactly where any one thing is in the near vicinity",
+              "Make any one move, without suffering consequences due to the darkness",
+              "Remain still and undetectable by mundane means until you move or make noise"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pw-d4",
+    "title": "Fungivore",
+    "category": "Advanced Moves",
+    "description": "When you **seek edible fungus and lichens underground**, you may **Forage**. Whether or not anyone else wants to eat what you find is another matter."
+  },
+  {
+    "id": "pw-d5",
+    "title": "Eat the Enemy",
+    "category": "Advanced Moves",
+    "description": "When you **clean and dress a fresh monster carcass for consumption**, roll its damage and gain that many **specious rations**.",
+    "submoves": [
+      {
+        "title": "Eating a Specious Ration",
+        "description": "When anyone **eats a specious ration**, they roll +CON:",
+        "outcomes": [
+          {
+            "range": "≥ 10",
+            "text": "It's not good... but not awful, and counts as 1 normal ration consumed."
+          },
+          {
+            "range": "7-9",
+            "text": "It counts as a ration, but choose 1:",
+            "bullets": [
+              "You become sick and acquire a monstrous characteristic until you recover (the GM will tell you what)",
+              "1d6 of your remaining specious rations have spoiled",
+              "Nobody wants to be near you until the next time you **Make Camp**, and your followers suffer -1 Loyalty"
+            ]
+          },
+          {
+            "range": "≤ 6",
+            "text": "Mark XP, and the GM makes a move."
+          }
+        ]
+      }
+    ]
+  }
+]

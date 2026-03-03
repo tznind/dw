@@ -1,0 +1,41 @@
+<div class="card lead-the-way-card">
+  <h3 class="card-title">🧭 Lead the Way</h3>
+  <div class="card-content">
+    <div class="followers-table-wrapper">
+      <table id="followers" data-dynamic-table>
+        <colgroup>
+          <col class="col-name">
+          <col class="col-hp">
+          <col class="col-armor">
+          <col class="col-damage">
+          <col class="col-quality">
+          <col class="col-cost">
+          <col class="col-instinct">
+          <col class="col-moves">
+          <col class="col-loyalty">
+          <col class="col-del">
+        </colgroup>
+        <thead>
+          <tr>
+            <th data-field="name">Name</th>
+            <th data-field="hp">HP</th>
+            <th data-field="armor" data-type="number" data-default="0">Armor</th>
+            <th data-field="damage">Damage</th>
+            <th data-field="quality" data-type="number" data-min="-1" data-max="3" data-default="0">Quality</th>
+            <th data-field="cost">Cost</th>
+            <th data-field="instinct">Instinct</th>
+            <th data-field="moves">Moves / Tags</th>
+            <th data-field="loyalty" data-type="number" data-min="-3" data-max="3" data-default="1">Loyalty</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button type="button" id="add-follower-btn" class="add-follower-btn">+ Add Follower</button>
+    <div class="followers-notes-section">
+      <label for="followers-details">Details:</label>
+      <textarea id="followers-details" data-persist rows="4"></textarea>
+    </div>
+  </div>
+</div>

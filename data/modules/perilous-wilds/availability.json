@@ -1,0 +1,66 @@
+{
+  "_removes": ["sm3", "sm4", "sm5", "sm11"],
+  "Everyone": {
+    "_movesFile": "data/modules/perilous-wilds/moves/everyone.json",
+    "cards": ["modules/perilous-wilds/cards/lead-the-way"],
+    "pw-s1": true,
+    "pw-s2": true,
+    "pw-s3": true,
+    "pw-s4": true,
+    "pw-s5": true,
+    "pw-s6": true,
+    "pw-s7": true,
+    "pw-s8": true,
+    "pw-s9": true,
+    "pw-s10": true,
+    "pw-s11": true,
+    "pw-s16": true,
+    "pw-s12": true,
+    "pw-s13": true,
+    "pw-s14": true,
+    "pw-s15": true
+  },
+  "Delver": {
+    "_movesFile": "data/modules/perilous-wilds/moves/delver.json",
+    "description": "When you reach the lowest level of at least two different dungeons, this compendium class becomes available.",
+    "pw-d1": true,
+    "pw-d2": false,
+    "pw-d3": false,
+    "pw-d4": false,
+    "pw-d5": false
+  },
+  "Explorer": {
+    "_movesFile": "data/modules/perilous-wilds/moves/explorer.json",
+    "description": "When you enlist the support of a powerful patron to reward your forays into the unknown, this compendium class becomes available.",
+    "pw-e1": true,
+    "pw-e2": false,
+    "pw-e3": false,
+    "pw-e4": false
+  },
+  "Hunter": {
+    "_movesFile": "data/modules/perilous-wilds/moves/hunter.json",
+    "description": "When you live for a week off only rations you have hunted yourself, this compendium class becomes available.",
+    "pw-h1": true,
+    "pw-h2": false,
+    "pw-h3": false,
+    "pw-h4": false,
+    "pw-h5": false
+  },
+  "Leader": {
+    "_movesFile": "data/modules/perilous-wilds/moves/leader.json",
+    "description": "When you return to safety from any dangerous journey with at least two surviving followers, this compendium class becomes available.",
+    "pw-l1": true,
+    "pw-l2": false,
+    "pw-l3": false,
+    "pw-l4": false,
+    "pw-l5": false
+  },
+  "Scout": {
+    "_movesFile": "data/modules/perilous-wilds/moves/scout.json",
+    "description": "When you have Scouted Ahead on at least three forays into the wild and back, this compendium class becomes available.",
+    "pw-sc1": true,
+    "pw-sc2": false,
+    "pw-sc3": false,
+    "pw-sc4": false
+  }
+}

@@ -1,0 +1,91 @@
+.lead-the-way-card {
+  margin-bottom: 20px;
+}
+
+.followers-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+
+.lead-the-way-card table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+.lead-the-way-card thead th {
+  text-align: left;
+  padding: 4px 6px;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.lead-the-way-card tbody td {
+  padding: 2px 3px;
+  vertical-align: middle;
+}
+
+/* Make all inputs fill their cell, overriding dynamic-table.js inline widths */
+.lead-the-way-card td input,
+.lead-the-way-card td select {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Column widths */
+.lead-the-way-card .col-name     { width: 120px; }
+.lead-the-way-card .col-hp       { width: 55px; }
+.lead-the-way-card .col-armor    { width: 50px; }
+.lead-the-way-card .col-damage   { width: 65px; }
+.lead-the-way-card .col-quality  { width: 55px; }
+.lead-the-way-card .col-cost     { width: 65px; }
+.lead-the-way-card .col-instinct { width: 115px; }
+.lead-the-way-card .col-moves    { width: 150px; }
+.lead-the-way-card .col-loyalty  { width: 55px; }
+.lead-the-way-card .col-del      { width: 32px; }
+
+.followers-notes-section {
+  margin-top: 10px;
+}
+
+.followers-notes-section label {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.followers-notes-section textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.9em;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.followers-notes-section textarea:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.add-follower-btn {
+  padding: 6px 14px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.add-follower-btn:hover {
+  background: #218838;
+}

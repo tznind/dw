@@ -1,4 +1,10 @@
 {
   "modules": [
+    {
+      "id": "perilous-wilds",
+      "name": "Perilous Wilds",
+      "description": "Adds wilderness journey and exploration By Jason Lutes & Jeremy Strandberg. Licensed under CC BY-SA 3.0.",
+      "path": "data/modules/perilous-wilds"
+    }
   ]
 }

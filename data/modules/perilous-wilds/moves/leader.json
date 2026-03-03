@@ -1,0 +1,101 @@
+[
+  {
+    "id": "pw-l1",
+    "title": "Give Orders (+CHA)",
+    "category": "Starting Moves",
+    "description": "When you **command an ally to take a particular course of action in the face of danger**, roll +CHA:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They take **+1 ongoing** as long as they're acting on your orders."
+      },
+      {
+        "range": "7-9",
+        "text": "They take **+1 forward** to execute your orders."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "pw-l2",
+    "title": "Inspire (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **give an encouraging speech to your allies before facing a known threat**, say your piece and roll +CHA:",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and hold 1."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Spending Hold",
+        "description": "When **your allies face the threat**, you may spend your hold, 1-for-1, to grant a friend or follower one of these tags:",
+        "outcomes": [
+          {
+            "text": "",
+            "bullets": [
+              "**Fearless**: they stand fast and remain stable when they would otherwise hesitate, falter, or flee",
+              "**Invincible**: they ignore all damage from a single damage roll that would otherwise reduce them to 0 HP",
+              "**Vengeful**: they take **+1 ongoing** against the threat, as soon as you are incapacitated by it (maximum of +1 ongoing per character)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Note",
+        "description": "You may spend hold for this move even after you're incapacitated or have passed through Death's Black Gates."
+      }
+    ]
+  },
+  {
+    "id": "pw-l3",
+    "title": "Impress the Locals",
+    "category": "Advanced Moves",
+    "description": "When you **Recruit**, roll +CHA instead of +nothing."
+  },
+  {
+    "id": "pw-l4",
+    "title": "Bring 'Em Back Alive",
+    "category": "Advanced Moves",
+    "description": "When you **return to civilization after a dangerous expedition**, and everyone who left with you survives intact, each of your followers gains 1 Loyalty (maximum of +3), your reputation in the area improves, and you gain 1 XP."
+  },
+  {
+    "id": "pw-l5",
+    "title": "Mourn the Dead (+CHA)",
+    "category": "Advanced Moves",
+    "description": "When you **ensure the last rites of a fallen comrade are conducted in a manner befitting their station and accomplishments**, say some kind words about them and roll +CHA:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Each follower present gains 1 Loyalty (maximum of +3)."
+      },
+      {
+        "range": "7-9",
+        "text": "One follower of the GM's choice gains 1 Loyalty (maximum of +3)."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ]
+  }
+]

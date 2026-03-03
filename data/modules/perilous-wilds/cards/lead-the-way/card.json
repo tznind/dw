@@ -1,0 +1,12 @@
+{
+  "id": "modules/perilous-wilds/cards/lead-the-way",
+  "title": "Lead the Way",
+  "path": "data/modules/perilous-wilds/cards/lead-the-way",
+  "description": "Track your followers",
+  "version": "1.0.0",
+  "files": {
+    "html": "card.html",
+    "css": "card.css",
+    "js": "card.js"
+  }
+}
