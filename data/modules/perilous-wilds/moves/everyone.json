@@ -2,21 +2,21 @@
   {
     "id": "pw-s6",
     "title": "Journey",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **travel by a safe route**, through safe or dangerous lands, indicate your destination on the map. The GM will tell you how long the trip takes, and what—if anything—happens along the way. When you reach your destination, choose someone to **Manage Provisions** to determine how many rations were consumed over the course of the trip."
   },
   {
     "id": "pw-s7",
     "title": "Undertake a Perilous Journey",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **travel through dangerous lands, and not on a safe route**, indicate the course you want to take on the map and ask the GM how far you should be able to get before needing to Make Camp. If you're exploring with no set destination, indicate which way you go.\n\nThen, choose one party member to **Scout Ahead**, and one to **Navigate**, resolving those moves in that order."
   },
   {
     "id": "pw-s8",
     "title": "Forage (+WIS)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **spend a day seeking food in the wild**, and your surroundings are not barren, roll +WIS.",
     "outcomes": [
@@ -37,7 +37,7 @@
   {
     "id": "pw-s9",
     "title": "Make Camp",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **settle in to rest**, choose one member of the party to **Manage Provisions**. Then, if you eat and drink and have enough XP, you may level up.\n\nWhen you bed down in dangerous lands, decide on a watch order. Then, the GM chooses one person on watch during the night to roll +nothing:",
     "outcomes": [
@@ -70,7 +70,7 @@
   {
     "id": "pw-s10",
     "title": "Stay Sharp (+WIS)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **are on watch and something approaches**, roll +WIS.",
     "outcomes": [
@@ -91,7 +91,7 @@
   {
     "id": "pw-s1",
     "title": "Hunker Down",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **take shelter to wait out the elements,** choose 1 party member to roll +nothing.",
     "outcomes": [
@@ -112,7 +112,7 @@
   {
     "id":"pw-s2",
     "title":"Forge Ahead (+Constitution)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox":true,
     "description":"When you **push on despite powerful opposition from the elements**, roll +CON.  If you make progress, ask the GM where you end up on the map, and if the weather shows any sign of relenting.",
     "outcomes":[
@@ -138,7 +138,7 @@
   {
     "id": "pw-s5",
     "title": "Scout Ahead (+WIS)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **take point and look for anything out of the ordinary**, roll +WIS.",
     "outcomes": [
@@ -192,7 +192,7 @@
   {
     "id": "pw-s3",
     "title": "Navigate (+INT)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **plot the best course through dangerous or unfamiliar lands**, roll +INT.",
     "outcomes": [
@@ -241,9 +241,126 @@
     ]
   },
   {
+    "id": "pw-s16",
+    "title": "Recruit",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When you **go looking to hire help**, tell the GM what you're offering and whom you're looking for, phrased in one of the following ways:\n- A group of X (porters, guards, minstrels, angry farmers, etc.)\n- A skilled X (guide, sage, burglar, bodyguard, etc.)\n\nA group is a follower like any other, but with the *group* tag.\n\nIf the GM says you can't find that kind of help in a place like this, start over or move on. Otherwise, **roll +nothing and take +1 if you have a good reputation** in these parts.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They're yours for the hiring."
+      },
+      {
+        "range": "7–9",
+        "text": "The GM chooses 1:",
+        "bullets": [
+          "They demand greater compensation, in coin or some other form",
+          "No one here fits the bill, but you hear of someone elsewhere who does",
+          "They have a need that must be met first (permission from someone else, a favor, etc.)",
+          "You can tell at a glance that they're less than ideal (ask the GM how)"
+        ]
+      },
+      {
+        "range": "≤ 6",
+        "text": "No one shows, but mark XP."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "GM Note",
+        "description": "The GM will choose or roll their specifics (Quality, Loyalty, Instinct, Cost, tags, etc.) as needed, to be discovered through play — which might involve you grilling them, right now."
+      }
+    ]
+  },
+  {
+    "id": "pw-s11",
+    "title": "Order Follower (+Loyalty)",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When you **order or expect a follower to do something dangerous, degrading, or contrary to their Instinct**, roll +Loyalty.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They do it, now."
+      },
+      {
+        "range": "7–9",
+        "text": "They do it, but the GM picks one:",
+        "bullets": [
+          "Decrease the follower's Loyalty by 1",
+          "They complain loudly, now or later, and demand something in return",
+          "Caution, laziness, or fear makes them take a long time to get it done"
+        ]
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "pw-s12",
+    "title": "Do Their Thing (+Quality)",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When a **follower does something chancy within the scope of their tags or moves**, roll +Quality.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They do it, as well as one could reasonably hope."
+      },
+      {
+        "range": "7–9",
+        "text": "They do it, but there's an unforeseen cost, consequence, or limitation (ask the GM what)."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note:",
+        "description": "When a follower does something chancy that falls beyond the scope of their tags or moves, or does anything on their own, the GM says what happens."
+      }
+    ]
+  },
+  {
+    "id": "pw-s13",
+    "title": "Call for Assistance",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When a **follower helps you make a move that calls for a roll**, take +1 to that roll, but know that they will be exposed to any potential consequences.",
+    "submoves": [
+      {
+        "title": "Hack and Slash or Volley",
+        "description": "When a follower helps you **Hack and Slash** or **Volley**, roll their damage die alongside your own, use the higher result, and add any damage bonuses you get on top of that."
+      },
+      {
+        "title": "Defend",
+        "description": "When a follower helps you **Defend**, you can spend 1 hold to redirect an attack to them instead of yourself."
+      }
+    ]
+  },
+  {
+    "id": "pw-s14",
+    "title": "Pay Up",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When you **pay a follower's Cost**, increase their Loyalty by 1 (to a maximum of +3). You can't trigger this move again until both you and your follower have **Made Camp** together."
+  },
+  {
+    "id": "pw-s15",
+    "title": "Watch Them Go",
+    "category": "Perilous Wilds - Followers",
+    "hideCheckbox": true,
+    "description": "When a **follower reaches -3 Loyalty**, they betray or abandon you at the next opportunity."
+  },
+  {
     "id": "pw-s4",
     "title": "Manage Provisions (+WIS)",
-    "category": "Perilous Wilds",
+    "category": "Perilous Wilds - Travel",
     "hideCheckbox": true,
     "description": "When you **prepare and distribute food for the party**, roll +WIS.",
     "outcomes": [

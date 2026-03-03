@@ -1,5 +1,5 @@
 {
-  "_removes": ["sm3", "sm4", "sm5"],
+  "_removes": ["sm3", "sm4", "sm5", "sm11"],
   "Everyone": {
     "_movesFile": "data/modules/perilous-wilds/moves/everyone.json",
     "cards": ["modules/perilous-wilds/cards/lead-the-way"],
@@ -12,7 +12,13 @@
     "pw-s7": true,
     "pw-s8": true,
     "pw-s9": true,
-    "pw-s10": true
+    "pw-s10": true,
+    "pw-s11": true,
+    "pw-s16": true,
+    "pw-s12": true,
+    "pw-s13": true,
+    "pw-s14": true,
+    "pw-s15": true
   },
   "Delver": {
     "_movesFile": "data/modules/perilous-wilds/moves/delver.json",
