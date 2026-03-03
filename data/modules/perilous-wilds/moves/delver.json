@@ -28,6 +28,13 @@
     "title": "Embrace the Black (+WIS)",
     "category": "Advanced Moves",
     "description": "When you **find yourself in utter darkness underground**, roll +WIS:",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle"
+      }
+    ],
     "outcomes": [
       {
         "range": "≥ 10",
@@ -69,11 +76,11 @@
     "id": "pw-d5",
     "title": "Eat the Enemy",
     "category": "Advanced Moves",
-    "description": "When you **clean and dress a fresh monster carcass for consumption**, roll its damage and gain that many specious rations.",
+    "description": "When you **clean and dress a fresh monster carcass for consumption**, roll its damage and gain that many **specious rations**.",
     "submoves": [
       {
         "title": "Eating a Specious Ration",
-        "description": "When anyone eats a specious ration, they roll +CON:",
+        "description": "When anyone **eats a specious ration**, they roll +CON:",
         "outcomes": [
           {
             "range": "≥ 10",
