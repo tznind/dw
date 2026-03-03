@@ -2,6 +2,7 @@
   "_removes": ["sm3", "sm4", "sm5"],
   "Everyone": {
     "_movesFile": "data/modules/perilous-wilds/moves/everyone.json",
+    "cards": ["modules/perilous-wilds/cards/lead-the-way"],
     "pw-s1": true,
     "pw-s2": true,
     "pw-s3": true,
