@@ -1,0 +1,76 @@
+[
+  {
+    "id": "pw-h1",
+    "title": "Track",
+    "category": "Starting Moves",
+    "description": "When you **encounter tracks or spoor and take time to examine the scene**, the GM will describe the sign, and tell you how long ago it was made. Then, you may ask the GM 2 questions about it, within reason."
+  },
+  {
+    "id": "pw-h2",
+    "title": "Stalk",
+    "category": "Advanced Moves",
+    "description": "When you **follow a trail left by a creature in order to locate it**, that creature becomes your quarry. Take +1 to any move made while pursuing, hiding from, subduing, or attacking your quarry. You may only have one quarry at a time."
+  },
+  {
+    "id": "pw-h3",
+    "title": "Shoot to Kill",
+    "category": "Advanced Moves",
+    "description": "When you roll a 10+ to **Volley** at a target that is unaware of your presence, deal your damage +1d6."
+  },
+  {
+    "id": "pw-h4",
+    "title": "Clean and Dress (+INT)",
+    "category": "Advanced Moves",
+    "description": "When you **take the time to reduce a freshly slain creature to its constituent parts as efficiently as possible**, roll +INT:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "All 3 from the list below apply:",
+        "bullets": [
+          "You extract the maximum number of edible rations from the carcass",
+          "You preserve everything of potential value (hide, musk glands, etc.)",
+          "You gain some insight into the creature's history or behavior (ask the GM what)"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 2 from the list above."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and choose 1 from the list above."
+      }
+    ]
+  },
+  {
+    "id": "pw-h5",
+    "title": "Hunter's Rest (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **take the time to establish a shelter in the wild**, say what it looks like, how it takes advantage of the local landscape, and roll +WIS:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "All 3 tags below apply:",
+        "bullets": [
+          "**Ambuscade**: your shelter cannot be found by anyone who doesn't know to look for it",
+          "**Vantage point**: when anyone **Stays Sharp** in your shelter, they always succeed as if they rolled a 10+",
+          "**Sanctuary**: when anyone **Makes Camp** in your shelter, they take +1"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 2 tags from the list above."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and choose 1 tag from the list above."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Active Shelters",
+        "description": "You may maintain a number of active shelters in a given **region** equal to your level."
+      }
+    ]
+  }
+]

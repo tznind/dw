@@ -29,5 +29,14 @@
     "pw-e2": false,
     "pw-e3": false,
     "pw-e4": false
+  },
+  "Hunter": {
+    "_movesFile": "data/modules/perilous-wilds/moves/hunter.json",
+    "description": "When you live for a week off only rations you have hunted yourself, this compendium class becomes available.",
+    "pw-h1": true,
+    "pw-h2": false,
+    "pw-h3": false,
+    "pw-h4": false,
+    "pw-h5": false
   }
 }
