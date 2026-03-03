@@ -1,0 +1,81 @@
+[
+  {
+    "id": "pw-sc1",
+    "title": "Know the Land",
+    "category": "Starting Moves",
+    "multiple": 3,
+    "description": "This move may be taken multiple times. Each time you take this move, choose 1 region in which you have spent at least a week traveling. This region is considered familiar to you.\n\nWhen you **Spout Lore** about a familiar region, roll +WIS instead of +INT.",
+    "details": true
+  },
+  {
+    "id": "pw-sc2",
+    "title": "Read the Land (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **survey the territory ahead from a good vantage point**, roll +WIS:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM must answer all 3 questions below:",
+        "bullets": [
+          "What danger awaits?",
+          "What's the safest route forward?",
+          "Where ahead will I find refuge?"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Ask the GM 2 questions from the list above."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and ask 1 question."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "In any case, take **+1 forward** to the next time you act on one of the answers."
+      }
+    ]
+  },
+  {
+    "id": "pw-sc3",
+    "title": "Be the Land (+DEX)",
+    "category": "Advanced Moves",
+    "description": "When you **conceal yourself in a familiar region**, say how you do it and roll +DEX:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You become nigh invisible, and difficult to locate even with senses other than sight, as long as you do not attract attention to yourself."
+      },
+      {
+        "range": "7-9",
+        "text": "The 10+ result applies, but you must remain still to go unnoticed."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ]
+  },
+  {
+    "id": "pw-sc4",
+    "title": "Sense Danger (+WIS)",
+    "category": "Advanced Moves",
+    "description": "When you **are subject to an imminent but unseen threat**, the GM must tell you. Then, roll +WIS:",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM tells you where it's coming from, **and** you have time to act before the threat manifests."
+      },
+      {
+        "range": "7-9",
+        "text": "The GM tells you where it's coming from, **or** you have time to act before it manifests (choose one)."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Mark XP, and the GM makes a move."
+      }
+    ]
+  }
+]

@@ -47,5 +47,13 @@
     "pw-l3": false,
     "pw-l4": false,
     "pw-l5": false
+  },
+  "Scout": {
+    "_movesFile": "data/modules/perilous-wilds/moves/scout.json",
+    "description": "When you have Scouted Ahead on at least three forays into the wild and back, this compendium class becomes available.",
+    "pw-sc1": true,
+    "pw-sc2": false,
+    "pw-sc3": false,
+    "pw-sc4": false
   }
 }
