@@ -86,8 +86,8 @@ window.CardInitializers['modules/perilous-wilds/cards/lead-the-way'] = function(
             {
                 type: 'text',
                 field: 'tags',
-                title: 'Tags:',
-                placeholder: 'e.g. Loyal, Brave, Cautious...',
+                title: 'Tags/Moves (1 + bonuses):',
+                placeholder: 'e.g. Dungeonwise, Herbwise, Devious...',
             },
         ], { title: 'New Follower (Abridged)' });
 

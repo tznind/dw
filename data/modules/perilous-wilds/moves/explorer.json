@@ -12,6 +12,7 @@
       "**Magnate**: evidence of natural resources and their location",
       "**Wizard**: magical items, or evidence and locations of magical places"
     ],
+    "details":true,
     "submoves": [
       {
         "title": "Support",
