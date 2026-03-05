@@ -49,7 +49,8 @@
     "tracks": [{
       "name": "Hold",
       "max": 3,
-      "shape": "circle"
+      "shape": "circle",
+      "dynamic": true
     }]
   },
   {
