@@ -14,5 +14,13 @@
     {
         "alias": "Weakness",
         "move": "Nosferatu"
+    },
+    {
+        "alias": "Your Base",
+        "move": "🏡Open for Business"
+    },
+    {
+        "alias": "Prestige",
+        "move": "🏡Open for Business"
     }
 ]

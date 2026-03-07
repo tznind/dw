@@ -337,6 +337,7 @@
   },
   "Professional": {
     "_movesFile": "data/modules/lore-and-lords/moves/professional.json",
+    "description": "When you rise to a position of prominence within your community, the next time you level up you may choose to gain this class.",
     "cards": [],
     "placeholders": {
       "damage": "d8",
@@ -357,7 +358,11 @@
     ],
     "pra": true,
     "prr": true,
-    "pr1": true
+    "pr1": true,
+    "pr1b": true,
+    "pr2": false,
+    "pr3": false,
+    "pr4": false
   },
   "Monk": {
     "_movesFile": "data/modules/lore-and-lords/moves/monk.json",

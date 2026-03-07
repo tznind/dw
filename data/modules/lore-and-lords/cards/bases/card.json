@@ -1,0 +1,8 @@
+{
+  "id": "bases",
+  "title": "Bases of Operations",
+  "path": "data/modules/lore-and-lords/cards/bases",
+  "files": {
+    "html": "card.html"
+  }
+}
