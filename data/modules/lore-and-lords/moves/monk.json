@@ -2,6 +2,7 @@
   {
     "id": "mka",
     "hideCheckbox": true,
+    "weight": -1,
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
@@ -57,6 +58,13 @@
     "title": "Monk's Path",
     "description": "You follow a strict way of discipline to focus your ki and follow the way to enlightenment. Choose a path from the list. Each path gives you an additional move, a way to mark XP at the end of the session, and a restriction. If you ever violate your path's restriction, you lose 1 ki and take -1 forward.",
     "takeFrom": ["Monk Paths"]
+  },
+  {
+    "id": "mk4b",
+    "category": "Starting Moves",
+    "title": "Kensei Weapons",
+    "hideCheckbox": true,
+    "description": "Many of the possessions of ancient masters of martial arts contain lingering traces of their powerful ki, long after the master has passed on. Weapons in particular are treasured heirlooms of monasteries. In the hands of a monk, a kensei weapon gains the benefit of any known moves that modify the monk's unarmed strikes."
   },
   {
     "id": "mk2",

@@ -97,8 +97,7 @@
           }
         ]
       }
-    ],
-    "details": true
+    ]
   },
   {
     "id": "r4",
@@ -199,48 +198,56 @@
   {
     "id": "r16",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Wild Speech (Requires level 6+)",
     "description": "Replaces: **Wild Empathy**\n\nYou can speak with and understand any non-magical, non-planar creature."
   },
   {
     "id": "r17",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Hunter's Prey (Requires level 6+)",
     "description": "Replaces: **Familiar Prey**\n\nWhen you **Spout Lore** about a monster you use WIS instead of INT. On a 12+, in addition to the normal effects, you get to ask the GM any one question about the subject."
   },
   {
     "id": "r18",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Viper's Fangs (Requires level 6+)",
     "description": "Replaces: **Viper's Strike**\n\nWhen you **strike an enemy with two weapons at once**, add an extra 1d8 damage for your off-hand strike."
   },
   {
     "id": "r19",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Smaug's Belly (Requires level 6+)",
     "description": "When you **know your target's weakest point** your arrows have 2 piercing."
   },
   {
     "id": "r20",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Strider (Requires level 6+)",
     "description": "Replaces: **Follow Me**\n\nWhen you **Undertake A Perilous Journey** you can take two roles. Roll twice and use the better result for both roles."
   },
   {
     "id": "r21",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "A Safer Place (Requires level 6+)",
     "description": "Replaces: **A Safe Place**\n\nWhen you **set the watch for the night**, everyone takes +1 to **Take Watch**. After a night in camp when you set the watch everyone takes **+1 forward**."
   },
   {
     "id": "r22",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Observant (Requires level 6+)",
     "description": "When you **hunt and track**, on a hit you may also ask one question about the creature you are tracking from the **Discern Realities** list for free."
   },
   {
     "id": "r23",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Special Trick (Requires level 6+)",
     "description": "Choose a move from another class. So long as you are working with your animal companion you have access to that move.",
     "takeFrom": ["*"]
@@ -248,6 +255,7 @@
   {
     "id": "r24",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Unnatural Ally (Requires level 6+)",
     "description": "Your animal companion is a monster, not an animal. Describe it. Give it +2 ferocity and +1 instinct, plus a new training."
   }

@@ -2,6 +2,7 @@
   {
     "id": "tra",
     "hideCheckbox": true,
+    "weight": -1,
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
