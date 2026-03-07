@@ -2,5 +2,17 @@
     {
         "alias": "Hunt and Track",
         "move": "Hunt & Track"
+    },
+    {
+        "alias": "Blood",
+        "move": "Apex Predator"
+    },
+    {
+        "alias": "Hunger",
+        "move": "Nosferatu"
+    },
+    {
+        "alias": "Weakness",
+        "move": "Nosferatu"
     }
 ]
