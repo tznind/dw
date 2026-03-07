@@ -28,7 +28,63 @@
   {
     "id": "tr1",
     "category": "Starting Moves",
-    "title": "[Placeholder Move]",
-    "description": "[Placeholder] This move has not yet been written."
+    "title": "Silvertongue (+CHA)",
+    "description": "When you **persuade someone to believe a partial truth or a half-truth**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They'll believe you until they see or hear something that convinces them otherwise."
+      },
+      {
+        "range": "7-9",
+        "text": "They'll be fooled, but not for very long."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "This move will not work on anyone who is outwardly hostile to you or suspicious of you. Other players are always suspicious of you, since they know you're the Trickster."
+      }
+    ]
+  },
+  {
+    "id": "tr2",
+    "category": "Starting Moves",
+    "title": "Social Engineering (+CHA)",
+    "tracks": [
+      {
+        "name": "Favor",
+        "max": 3,
+        "shape": "triangle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **spend some time scouting a local community for easy marks and opportunities**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Hold 1, and the GM holds 1."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Spend Favor",
+        "description": "You may spend hold to call in a favor; you can ask someone to do a simple, non-dangerous task for you, and they'll do it. The GM may spend his hold at any time to introduce a person hostile to you, suspicious of you, or whom you owe big time. You cannot extract favors from anyone who is outwardly hostile to you or suspicious of you. Other players are always suspicious of you, since they know you're the Trickster."
+      }
+    ]
+  },
+  {
+    "id": "tr3",
+    "category": "Starting Moves",
+    "title": "Dirty Tricks",
+    "description": "When you **Aid Another** using misdirection or distraction, take +1. When another person stands in **Defense** of you, they take +1."
   }
 ]

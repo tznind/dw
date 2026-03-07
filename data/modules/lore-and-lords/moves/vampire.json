@@ -64,8 +64,19 @@
     ],
     "submoves": [
       {
-        "title": "Spend Blood",
-        "description": "Spend 1 Blood to:\n• Take +1 to any roll using +STR, only once per roll\n• Make your next melee attack messy, forceful, and deal +1d4 damage\n• Heal yourself for 2d6 HP\n• Resist a weakness for a short time\n• Reduce your Hunger by 1"
+        "title": "Blood",
+        "outcomes": [
+          {
+            "text": "Spend 1 to",
+            "bullets": [
+              "Take +1 to any roll using +STR, only once per roll",
+              "Make your next melee attack **messy**, **forceful**, and deal +1d4 damage",
+              "Heal yourself for 2d6 HP",
+              "Resist a weakness for a short time",
+              "Reduce your Hunger by 1"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274,8 +285,18 @@
         "description": "When you are **reduced to 0 hit points**, unless you were utterly annihilated or killed by a weakness you turn into mist and return to your last safe resting place and gain 1 Hunger."
       },
       {
-        "title": "Spend Hunger",
-        "description": "The GM can spend 1 Hunger to:\n• Make you attack the nearest or weakest creature\n• Make you drain someone's blood completely when you are feeding\n• Make your appearance monstrously inhuman for a while\n• Run in terror from a weakness"
+        "title": "Hunger",
+        "outcomes": [
+          {
+            "text": "The GM can spend 1 to",
+            "bullets": [
+              "Make you attack the nearest or weakest creature",
+              "Make you drain someone's blood completely when you are feeding",
+              "Make your appearance monstrously inhuman for a while",
+              "Run in terror from a weakness"
+            ]
+          }
+        ]
       }
     ]
   }

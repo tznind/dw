@@ -198,7 +198,11 @@
     ],
     "tra": true,
     "trr": true,
-    "tr1": true
+    "tr1": true,
+    "tr2": true,
+    "tr3": true,
+    "t2": true,
+    "t3": true
   },
   "Shaman": {
     "_movesFile": "data/modules/lore-and-lords/moves/shaman.json",
