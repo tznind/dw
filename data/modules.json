@@ -16,7 +16,7 @@
     {
       "id": "lore-and-lords",
       "name": "Lore and Lords",
-      "description": "Adds new classes.",
+      "description": "Adds new classes written by Peter Johansen. Licensed under CC BY 3.0.",
       "path": "data/modules/lore-and-lords",
       "attribution": {
         "statement": "written by  Peter Johansen",
