@@ -86,5 +86,181 @@
     "category": "Starting Moves",
     "title": "Dirty Tricks",
     "description": "When you **Aid Another** using misdirection or distraction, take +1. When another person stands in **Defense** of you, they take +1."
+  },
+  {
+    "id": "tr4",
+    "category": "Advanced Moves",
+    "title": "Confounding Blade (+DEX)",
+    "description": "When you **Hack & Slash**, you may choose to deal no damage and instead roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:"
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 1:"
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Options",
+        "outcomes": [
+          {
+            "text": "",
+            "bullets": [
+              "Your target drops something they are holding",
+              "Your target is knocked prone",
+              "Your target is confused and attacks an ally on their next action",
+              "You may immediately move without triggering a response"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tr5",
+    "category": "Advanced Moves",
+    "title": "Deep Pockets",
+    "description": "You always seem to have just the right thing on hand. Once per session, you may produce a mundane item of 0 weight from your person — something plausible but unspecified until now."
+  },
+  {
+    "id": "tr6",
+    "category": "Advanced Moves",
+    "title": "Disguise",
+    "description": "Given a few minutes and the right materials, you can disguise yourself as a member of any race or gender, or as a specific person you have observed for at least a few minutes. The disguise holds until someone has strong reason to look closely, or until you take damage."
+  },
+  {
+    "id": "tr7",
+    "category": "Advanced Moves",
+    "title": "New Tricks",
+    "takeFrom": ["Thief"],
+    "takeCategory": "Advanced Moves",
+    "description": "Choose one move from the Thief's advanced moves."
+  },
+  {
+    "id": "tr8",
+    "category": "Advanced Moves",
+    "title": "Smoke Bomb",
+    "description": "You carry smoke bombs. When you **throw a smoke bomb**, everyone in the area must immediately **Defy Danger** or lose track of you. You may move freely through the smoke without penalty."
+  },
+  {
+    "id": "tr9",
+    "category": "Advanced Moves",
+    "title": "Legerdemain (+DEX)",
+    "description": "When you **pick pockets or perform sleight of hand**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You do it, clean and unnoticed."
+      },
+      {
+        "range": "7-9",
+        "text": "You do it, but the GM chooses one:",
+        "bullets": [
+          "You are noticed in the act",
+          "You drop or fumble something",
+          "You attract unwanted attention"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tr10",
+    "category": "Advanced Moves",
+    "title": "Lamentable Belaborment (+CHA)",
+    "description": "When you **distract and bewilder someone with words**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They are completely distracted until something snaps them out of it or you stop talking."
+      },
+      {
+        "range": "7-9",
+        "text": "They are distracted for a moment — long enough for one action."
+      }
+    ]
+  },
+  {
+    "id": "tr11",
+    "category": "Advanced Moves",
+    "title": "Escape Artist",
+    "description": "When you **attempt to escape from bonds, a grapple, or confinement**, you always succeed. The only question is how long it takes and whether you are noticed."
+  },
+  {
+    "id": "tr12",
+    "category": "Advanced Moves",
+    "title": "Rumormonger (+CHA)",
+    "description": "When you **spread a rumor through a community**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The rumor spreads quickly and is widely believed. The GM will tell you one unintended consequence."
+      },
+      {
+        "range": "7-9",
+        "text": "The rumor spreads, but is only partially believed or takes longer to take root."
+      }
+    ]
+  },
+  {
+    "id": "tr16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Pyrotechnics (Requires level 6+)",
+    "description": "Requires: **Smoke Bomb**\n\nWhen you create a smoke bomb, you may instead create an incendiary smoke bomb, which also deals your damage to anyone caught in the effect and may start fires when thrown."
+  },
+  {
+    "id": "tr17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Smokescreen (Requires level 6+)",
+    "description": "Requires: **Smoke Bomb**\n\nWhen you attack someone caught in your smoke bomb, deal your damage+1d6."
+  },
+  {
+    "id": "tr18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Instigator (Requires level 6+)",
+    "description": "Requires: **Lamentable Belaborment**\n\nWhen you use **Lamentable Belaborment**, on a 10+ the argument also gets a little violent; deal your damage to any two affected targets."
+  },
+  {
+    "id": "tr19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Entangling Blade (Requires level 6+)",
+    "description": "Replaces: **Confounding Blade**\n\nWhen you **Hack & Slash**, on a hit you create an advantage against your foe; either you or an ally acting on it takes **+1 forward** and deals +1d4 damage against that foe."
+  },
+  {
+    "id": "tr20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "All According to the Plan… (Requires level 6+)",
+    "description": "You can foresee when you will need help the most, and plan accordingly. You may spend hold from **Social Engineering** to have a fortunate but plausible coincidence befall you."
+  },
+  {
+    "id": "tr21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Cheat Death (Requires level 6+)",
+    "description": "When you take your **Last Breath**, Death will always offer you a bargain, even on a 6-. If you don't keep your end of it, you'll still live, but Death will claim your soul the next time you are reduced to 0 HP."
+  },
+  {
+    "id": "tr22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Blind Lie (Requires level 6+)",
+    "description": "When you **tell a lie to someone**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They will literally not be able to see any evidence that what you said is a lie; it will just vanish from their sight."
+      },
+      {
+        "range": "7-9",
+        "text": "They'll still believe you, but only for a few moments. If you take any action that would contradict your lie, the effect ends."
+      }
+    ]
   }
 ]
