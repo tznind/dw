@@ -1,0 +1,34 @@
+{
+  "Monk": {
+    "_movesFile": "data/modules/lore-and-lords/moves/monk.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "8+Con",
+      "load": "8+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      },
+      {
+        "type": "pickOne",
+        "title": "[Placeholder] Choose your weapon:",
+        "options": [
+          {"item": "Staff (close, two-handed)", "weight": 1},
+          {"item": "Spear (close, thrown, near)", "weight": 1}
+        ]
+      }
+    ],
+    "mka": true,
+    "mkr": true,
+    "mk1": true
+  }
+}

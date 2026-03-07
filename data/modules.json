@@ -12,5 +12,12 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
       }
     }
+    ,
+    {
+      "id": "lore-and-lords",
+      "name": "Lore and Lords",
+      "description": "Adds new classes and lore options. [Placeholder module - content coming soon.]",
+      "path": "data/modules/lore-and-lords"
+    }
   ]
 }

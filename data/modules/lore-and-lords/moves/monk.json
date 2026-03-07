@@ -1,0 +1,29 @@
+[
+  {
+    "id": "mka",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**[Placeholder]** - Alignment option 1.",
+      "**[Placeholder]** - Alignment option 2.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "mkr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "[Placeholder] Race description coming soon.",
+    "details": true
+  },
+  {
+    "id": "mk1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Move]",
+    "description": "[Placeholder] This move has not yet been written."
+  }
+]
