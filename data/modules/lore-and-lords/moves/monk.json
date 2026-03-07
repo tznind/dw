@@ -63,5 +63,162 @@
     "category": "Starting Moves",
     "title": "Iron Palm Training",
     "description": "Your unarmed strikes have a range of hand and close. You can always safely use unarmed strikes against creatures with dangerous forms. For example, you can hit a creature covered in spikes without taking damage, your hand won't be damaged from punching an iron golem, and striking a fire elemental will not burn you. You still may have to Defy Danger to make an unarmed strike against huge creatures, however."
+  },
+  {
+    "id": "mk4",
+    "category": "Advanced Moves",
+    "title": "Tiger Claw",
+    "description": "Your unarmed strikes deal +1d4 damage."
+  },
+  {
+    "id": "mk5",
+    "category": "Advanced Moves",
+    "title": "Serpent Sting",
+    "description": "Your unarmed strikes gain the **precise** tag and +1 piercing."
+  },
+  {
+    "id": "mk6",
+    "category": "Advanced Moves",
+    "title": "Crane Stance",
+    "description": "Your fighting stance makes you very difficult to move or knock down. You ignore the **forceful** tag on any attacks made on you. Additionally, when you **Defy Danger** by standing your ground and letting the threat flow past you, take +1."
+  },
+  {
+    "id": "mk7",
+    "category": "Advanced Moves",
+    "title": "Fortitude of the Mountain",
+    "description": "You no longer require food or drink. When a move would make you use up a dungeon ration, ignore it. Additionally, you can hold your breath for a number of minutes equal to your Constitution score, and a few hours of meditation is as restful as a full night's sleep."
+  },
+  {
+    "id": "mk8",
+    "category": "Advanced Moves",
+    "title": "Leopard's Grace (+DEX)",
+    "description": "When you **move across dangerous or difficult terrain with the grace of a jungle cat**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:",
+        "bullets": [
+          "You leave no trace of your passage, and nobody notices you.",
+          "You are not harmed or hindered while you move.",
+          "You move with near superhuman speed and grace."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 1."
+      }
+    ]
+  },
+  {
+    "id": "mk9",
+    "category": "Advanced Moves",
+    "title": "Still Mind",
+    "description": "When you attempt to resist a magical effect influencing you, take +1."
+  },
+  {
+    "id": "mk10",
+    "category": "Advanced Moves",
+    "title": "Inner Peace",
+    "description": "When you Meditate, hold 4 ki."
+  },
+  {
+    "id": "mk11",
+    "category": "Advanced Moves",
+    "title": "Water Body",
+    "description": "When you are about to be damaged by a non-magical ranged attack, you may spend 1 ki to prevent all of the damage."
+  },
+  {
+    "id": "mk12",
+    "category": "Advanced Moves",
+    "title": "Wind Walker",
+    "description": "You can jump much higher and farther than a normal person, and you can climb surfaces swiftly without tools. You never take damage from falling."
+  },
+  {
+    "id": "mk13",
+    "category": "Advanced Moves",
+    "title": "Shooting Stars",
+    "description": "Your shuriken gain the **flexible** tag, as well as the benefit of the Tiger Claw and Serpent Sting moves, if you have them. Additionally, you may Blot Out the Sun with your shuriken, as per the Ranger move."
+  },
+  {
+    "id": "mk14",
+    "category": "Advanced Moves",
+    "title": "Finish Him!",
+    "description": "When you defeat an opponent, if you currently hold less ki than your WIS, hold +1 ki."
+  },
+  {
+    "id": "mk15",
+    "category": "Advanced Moves",
+    "title": "Sensei",
+    "description": "When you **Spout Lore**, you may roll with +WIS instead of +INT."
+  },
+  {
+    "id": "mk16",
+    "category": "Advanced Moves",
+    "title": "Monkey Moves (Requires level 6+)",
+    "weight": 1,
+    "description": "Your unarmed strikes now have a range of reach in addition to hand and close, and gain the **flexible** tag."
+  },
+  {
+    "id": "mk17",
+    "category": "Advanced Moves",
+    "title": "Dragon Roar (Requires level 6+)",
+    "weight": 1,
+    "description": "Your unarmed strikes have the **forceful** tag, and when you spend ki to deal additional damage with an unarmed strike, deal an extra 1d6 damage."
+  },
+  {
+    "id": "mk18",
+    "category": "Advanced Moves",
+    "title": "Steel Guard (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Water Body OR Still Mind\n\nYou gain +1 armor. If you have both required moves, you gain +3 armor instead."
+  },
+  {
+    "id": "mk19",
+    "category": "Advanced Moves",
+    "title": "Wholeness of Body (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Fortitude of the Mountain\n\nYou are highly resistant to poisons and diseases. Only very potent toxins or magical ailments affect you, and even then the effects are reduced."
+  },
+  {
+    "id": "mk20",
+    "category": "Advanced Moves",
+    "title": "Cloud Steps (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Leopard's Grace OR Wind Walker\n\nYou can balance effortlessly on the smallest or thinnest perches, and walk across the surface of water or even empty air for a few steps. If you have both required moves, when you use Leopard's Grace or Defy Danger with an amazing feat of acrobatics, take +1."
+  },
+  {
+    "id": "mk21",
+    "category": "Advanced Moves",
+    "title": "Ki Palm (Requires level 6+)",
+    "weight": 1,
+    "description": "Your unarmed strikes count as magical weapons, and can affect creatures that normally require a magical weapon to harm, such as monsters with the insubstantial quality."
+  },
+  {
+    "id": "mk22",
+    "category": "Advanced Moves",
+    "title": "Mindfulness (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Sensei\n\nYou no longer spend ki to roll +WIS instead of +Bond when you Aid Another."
+  },
+  {
+    "id": "mk23",
+    "category": "Advanced Moves",
+    "title": "Dairokkan (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Still Mind\n\nYou're never caught by surprise. When an enemy would get the drop on you, you get to act first instead. Additionally, when you Defy Danger, you can spend 1 ki to add +1 to your roll, retroactively."
+  },
+  {
+    "id": "mk24",
+    "category": "Advanced Moves",
+    "title": "Insightful Meditation (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: Inner Peace\n\nWhen you Meditate, you receive a useful insight into a problem of your choice, as if you had cast the Cleric spell Revelation. When you gain an insight, you cannot gain another insight until you have dealt with the current problem at hand."
+  },
+  {
+    "id": "mk25",
+    "category": "Advanced Moves",
+    "title": "Journey of a Thousand Miles (Requires level 6+)",
+    "weight": 1,
+    "description": "You no longer have to spend ki to use the extra move granted by your Monk's Path."
   }
 ]
