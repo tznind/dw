@@ -1,5 +1,5 @@
 {
-  "The Hunter (l&l)": {
+  "Hunter (l&l)": {
     "_movesFile": "data/modules/lore-and-lords/moves/hunter.json",
     "cards": [],
     "placeholders": {
@@ -58,7 +58,7 @@
     "hnr": true,
     "hn1": true
   },
-  "The Vampire": {
+  "Vampire": {
     "_movesFile": "data/modules/lore-and-lords/moves/vampire.json",
     "cards": [],
     "placeholders": {
@@ -97,7 +97,7 @@
     "vpr": true,
     "vp1": true
   },
-  "The Trickster": {
+  "Trickster": {
     "_movesFile": "data/modules/lore-and-lords/moves/trickster.json",
     "cards": [],
     "placeholders": {
@@ -154,7 +154,7 @@
     "trr": true,
     "tr1": true
   },
-  "The Shaman": {
+  "Shaman": {
     "_movesFile": "data/modules/lore-and-lords/moves/shaman.json",
     "cards": [],
     "placeholders": {
@@ -213,7 +213,7 @@
     "shr": true,
     "sh1": true
   },
-  "The Professional": {
+  "Professional": {
     "_movesFile": "data/modules/lore-and-lords/moves/professional.json",
     "cards": [],
     "placeholders": {
@@ -278,6 +278,15 @@
     ],
     "mka": true,
     "mkr": true,
-    "mk1": true
+    "mk1": true,
+    "mk2": true,
+    "mk3": true
+  },
+  "Monk Paths": {
+    "_movesFile": "data/modules/lore-and-lords/moves/monk-paths.json",
+    "mkp1": true,
+    "mkp2": true,
+    "mkp3": true,
+    "mkp4": true
   }
 }

@@ -28,7 +28,40 @@
   {
     "id": "mk1",
     "category": "Starting Moves",
-    "title": "[Placeholder Move]",
-    "description": "[Placeholder] This move has not yet been written."
+    "title": "Meditation (WIS)",
+    "tracks": [
+      {
+        "name": "Ki",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **spend a few hours in quiet meditation**, lose all of your current ki and hold 3 ki. You may only use one ki per roll. You cannot use ki if you are wearing any armor.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Spend 1 ki to:",
+        "bullets": [
+          "Deal an additional +1d6 damage with your next attack",
+          "Prevent 1d6 damage to yourself",
+          "Take +1 forward to your next Spout Lore or Discern Realities move",
+          "Roll +WIS instead of +Bond when you Aid Another"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mk3",
+    "category": "Starting Moves",
+    "title": "Monk's Path",
+    "description": "You follow a strict way of discipline to focus your ki and follow the way to enlightenment. Choose a path from the list. Each path gives you an additional move, a way to mark XP at the end of the session, and a restriction. If you ever violate your path's restriction, you lose 1 ki and take -1 forward.",
+    "takeFrom": ["Monk Paths"]
+  },
+  {
+    "id": "mk2",
+    "category": "Starting Moves",
+    "title": "Iron Palm Training",
+    "description": "Your unarmed strikes have a range of hand and close. You can always safely use unarmed strikes against creatures with dangerous forms. For example, you can hit a creature covered in spikes without taking damage, your hand won't be damaged from punching an iron golem, and striking a fire elemental will not burn you. You still may have to Defy Danger to make an unarmed strike against huge creatures, however."
   }
 ]
