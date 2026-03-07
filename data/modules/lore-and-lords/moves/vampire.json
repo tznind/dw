@@ -1,0 +1,35 @@
+[
+  {
+    "id": "vpa",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Lawful** - Coexist with mortals without harming them or their community.",
+      "**Chaotic** - Spread fear through a community.",
+      "**Evil** - Feed on the innocent and helpless for your own pleasure.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "vpr",
+    "category": "Starting Moves",
+    "title": "Background",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "Choose your race. Then choose how you became a vampire.",
+    "pickOne": [
+      "**Ancient Vampire** - You've been undead for quite some time. When you Spout Lore about times long past, take +1.",
+      "**Accursed Vampire** - You've become a vampire by a curse. Choose a tell for your curse, this counts as another weakness for determining the maximum blood you can hold:\n• Animals become noticeably agitated by your presence\n• Candles and lanterns flicker when you enter a room\n• Food and drink sour at any table you are seated at\n• Those standing next to you feel an unexplainable chill\n• Plants wither and die when you walk by",
+      "**Recently Turned** - Your appearance can never become monstrously inhuman. Additionally, you may call upon the elder vampire who sired you for assistance, and he'll help you… for a price."
+    ],
+    "details": true
+  },
+  {
+    "id": "vp1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Move]",
+    "description": "[Placeholder] This move has not yet been written."
+  }
+]

@@ -1,11 +1,225 @@
 {
-  "Monk": {
-    "_movesFile": "data/modules/lore-and-lords/moves/monk.json",
+  "The Hunter (l&l)": {
+    "_movesFile": "data/modules/lore-and-lords/moves/hunter.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "11+Str"
+    },
+    "default-bonds": [
+      "I have guided ________ before and they owe me for it.",
+      "________ is a friend of nature, so I will be their friend as well.",
+      "________ has no respect for nature, so I have no respect for them.",
+      "________ does not understand life in the wild, so I will teach them."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "3 Traps", "weight": 3}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Short Sword (close)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Spear (reach)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+        ]
+      }
+    ],
+    "hna": true,
+    "hnr": true,
+    "hn1": true
+  },
+  "The Vampire": {
+    "_movesFile": "data/modules/lore-and-lords/moves/vampire.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "________ knew my sire, he speaks for him in his stead.",
+      "I have tasted ________'s blood, and I want more!",
+      "________ knows how I am vulnerable, and is not afraid to use it against me."
+    ],
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Wicked Sharp Knife (hand)", "weight": 1},
+          {"item": "Ornate Rapier (close, precise)", "weight": 1},
+          {"item": "Long Scythe (reach, two-handed)", "weight": 2}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Jug of Animal Blood (grants 1 Blood when consumed)", "weight": 2},
+          {"item": "An Old Family Heirloom (worth 10 coins)", "weight": 0},
+          {"item": "Bag of Books (5 uses)", "weight": 2},
+          {"item": "A Written Promise of a Favor Owed to You by Another Vampire", "weight": 0},
+          {"item": "Archaic Armor (1 armor, worn)", "weight": 1}
+        ]
+      }
+    ],
+    "vpa": true,
+    "vpr": true,
+    "vp1": true
+  },
+  "The Trickster": {
+    "_movesFile": "data/modules/lore-and-lords/moves/trickster.json",
     "cards": [],
     "placeholders": {
       "damage": "d6",
-      "hp": "8+Con",
-      "load": "8+Str"
+      "hp": "6+Con",
+      "load": "7+Str"
+    },
+    "default-bonds": [
+      "I once stole something from ________.",
+      "________ has my back when things go wrong.",
+      "________ knows a secret about me that could be embarrassing if it was let loose.",
+      "________ has helped me run a con before.",
+      "I know a secret about ________, but he doesn't know that I know."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your weapons:",
+        "options": [
+          {
+            "items": [
+              {"item": "Short Sword (close)", "weight": 1},
+              {"item": "3 Throwing Knives (thrown, near)", "weight": 0}
+            ]
+          },
+          {"item": "Rapier (close, precise)", "weight": 1},
+          {
+            "items": [
+              {"item": "Ragged Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Dagger (hand)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "12 Counterfeit Coins", "weight": 0},
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "Knife in a Spring-loaded Wrist Sheath (hand)", "weight": 1}
+        ]
+      }
+    ],
+    "tra": true,
+    "trr": true,
+    "tr1": true
+  },
+  "The Shaman": {
+    "_movesFile": "data/modules/lore-and-lords/moves/shaman.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "6+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "The spirits have spoken to me of ________; he has a strange destiny that I will play a part of.",
+      "________ does not believe in the spirit world, but I will make him listen.",
+      "________ is out of balance, and a danger to himself and others. I will help him.",
+      "I have sworn a covenant with ________, the spirits have witnessed it."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "A trinket that helps you commune with the spirit world (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Staff (close, two-handed)", "weight": 1},
+          {"item": "Spear (close, thrown, near)", "weight": 1},
+          {
+            "items": [
+              {"item": "Worn Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Dagger (hand)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your defenses:",
+        "options": [
+          {"item": "Hide Armor (1 armor, worn)", "weight": 1},
+          {"item": "Poultices and Herbs (2 uses, slow)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "2 Antitoxin", "weight": 0}
+        ]
+      }
+    ],
+    "sha": true,
+    "shr": true,
+    "sh1": true
+  },
+  "The Professional": {
+    "_movesFile": "data/modules/lore-and-lords/moves/professional.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "6+Con",
+      "load": "9+Str"
     },
     "default-bonds": [
       "[Placeholder bond 1]",
@@ -17,13 +231,48 @@
       {
         "type": "get",
         "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "pra": true,
+    "prr": true,
+    "pr1": true
+  },
+  "Monk": {
+    "_movesFile": "data/modules/lore-and-lords/moves/monk.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "8+Str"
+    },
+    "default-bonds": [
+      "Though ________'s ways are different than mine, I can still learn much from him.",
+      "________ is troubled, and needs my help to find inner peace.",
+      "________ has an ulterior motive for coming with me.",
+      "My master would not approve of me traveling with ________."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
       },
       {
         "type": "pickOne",
-        "title": "[Placeholder] Choose your weapon:",
+        "title": "Choose your armament:",
         "options": [
-          {"item": "Staff (close, two-handed)", "weight": 1},
-          {"item": "Spear (close, thrown, near)", "weight": 1}
+          {"item": "Siangham (hand, precise)", "weight": 1},
+          {"item": "3 Shuriken (thrown, near)", "weight": 0},
+          {"item": "Nunchaku (close, flexible)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose one if you selected Path of Charity, otherwise choose two:",
+        "options": [
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Ginseng Tea (3 uses, slow)", "weight": 0}
         ]
       }
     ],

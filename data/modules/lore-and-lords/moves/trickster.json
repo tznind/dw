@@ -1,0 +1,33 @@
+[
+  {
+    "id": "tra",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - Use trickery to help people when the law cannot.",
+      "**Chaotic** - Expose corruption or hypocrisy with your tricks.",
+      "**Evil** - Con people out of their valuables.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "trr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Human** - Once per session, when you Defy Danger with CHA, you may roll twice and keep the better result.",
+      "**Halfling** - When someone underestimates you because of your size, take +1 to act against them."
+    ],
+    "details": true
+  },
+  {
+    "id": "tr1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Move]",
+    "description": "[Placeholder] This move has not yet been written."
+  }
+]

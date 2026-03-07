@@ -5,8 +5,10 @@
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
-      "**[Placeholder]** - Alignment option 1.",
-      "**[Placeholder]** - Alignment option 2.",
+      "**Lawful** - Help people resolve a dispute peacefully.",
+      "**Good** - Place yourself in danger to defend someone helpless.",
+      "**Neutral** - Defeat an opponent stronger than you.",
+      "**Evil** - Dominate an enemy, and make sure everyone knows about it.",
       "Other - Describe below"
     ],
     "details": true
@@ -17,7 +19,10 @@
     "title": "Race",
     "weight": -1,
     "hideCheckbox": true,
-    "description": "[Placeholder] Race description coming soon.",
+    "pickOne": [
+      "**Human** - Most steadings will have temples that are friendly to wandering monks. You may petition them for shelter, and they will almost always give you a place to stay. It won't be luxurious, but you'll have a roof over your head and rice to eat.",
+      "**Dwarf** - Your short stature helps you sneak under your enemies' weapons. When you try to get inside of an opponent's reach, take +1."
+    ],
     "details": true
   },
   {

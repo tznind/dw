@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sha",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - Help people to live in harmony.",
+      "**Neutral** - Resolve a disturbance in the balance.",
+      "**Chaotic** - Reclaim a place or important object for the natural world.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "shr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Dwarf** - When dealing with spirits of earth, stone, or mountains, take +1.",
+      "**Human** - When you Trance, you may prepare one casting of the Bind Spirit spell for free.",
+      "**Orc** - You ignore the ongoing effect of the Aspect of the Wolf spell."
+    ],
+    "details": true
+  },
+  {
+    "id": "sh1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Move]",
+    "description": "[Placeholder] This move has not yet been written."
+  }
+]

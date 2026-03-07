@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hna",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Chaotic** - Free someone from literal or figurative bonds.",
+      "**Good** - Endanger yourself to combat an unnatural threat.",
+      "**Neutral** - Help an animal or spirit of the wild.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "hnr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Elf** - When you undertake a perilous journey through wilderness whatever job you take you succeed as if you rolled a 10+.",
+      "**Human** - When you make camp in a dungeon or city, you don't need to consume a ration.",
+      "**Orc** - Your traps always deal 2 damage as an additional effect."
+    ],
+    "details": true
+  },
+  {
+    "id": "hn1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Move]",
+    "description": "[Placeholder] This move has not yet been written."
+  }
+]

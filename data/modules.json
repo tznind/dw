@@ -16,8 +16,13 @@
     {
       "id": "lore-and-lords",
       "name": "Lore and Lords",
-      "description": "Adds new classes and lore options. [Placeholder module - content coming soon.]",
-      "path": "data/modules/lore-and-lords"
+      "description": "Adds new classes.",
+      "path": "data/modules/lore-and-lords",
+      "attribution": {
+        "statement": "written by  Peter Johansen",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
     }
   ]
 }
