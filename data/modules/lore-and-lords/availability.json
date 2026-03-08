@@ -399,7 +399,7 @@
           {"item": "Bandages (3 uses, slow)", "weight": 0},
           {"item": "Adventuring Gear (5 uses)", "weight": 1},
           {"item": "Antitoxin", "weight": 0},
-          {"item": "Ginseng Tea (3 uses, slow)", "weight": 0}
+          {"item": "Ginseng Tea (3 uses, slow, +1 forward to Meditation)", "weight": 0}
         ]
       }
     ],

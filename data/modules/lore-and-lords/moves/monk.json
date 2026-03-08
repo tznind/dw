@@ -46,7 +46,7 @@
         "bullets": [
           "Deal an additional +1d6 damage with your next attack",
           "Prevent 1d6 damage to yourself",
-          "Take +1 forward to your next Spout Lore or Discern Realities move",
+          "Take +1 forward to your next **Spout Lore** or **Discern Realities** move",
           "Roll +WIS instead of +Bond when you Aid Another"
         ]
       }
@@ -64,7 +64,7 @@
     "category": "Starting Moves",
     "title": "Kensei Weapons",
     "hideCheckbox": true,
-    "description": "Many of the possessions of ancient masters of martial arts contain lingering traces of their powerful ki, long after the master has passed on. Weapons in particular are treasured heirlooms of monasteries. In the hands of a monk, a kensei weapon gains the benefit of any known moves that modify the monk's unarmed strikes."
+    "description": "Many of the possessions of ancient masters of martial arts contain lingering traces of their powerful ki, long after the master has passed on. Weapons in particular are treasured heirlooms of monasteries. In the hands of a monk, a **kensei weapon gains the benefit of any known moves that modify the monk's unarmed strikes**."
   },
   {
     "id": "mk2",
@@ -88,7 +88,7 @@
     "id": "mk6",
     "category": "Advanced Moves",
     "title": "Crane Stance",
-    "description": "Your fighting stance makes you very difficult to move or knock down. You ignore the **forceful** tag on any attacks made on you. Additionally, when you **Defy Danger** by standing your ground and letting the threat flow past you, take +1."
+    "description": "Your fighting stance makes you very difficult to move or knock down. You ignore the **forceful** tag on any attacks made on you. Additionally, when you **Defy Danger** **by standing your ground and letting the threat flow past you**, take +1."
   },
   {
     "id": "mk7",
@@ -121,7 +121,7 @@
     "id": "mk9",
     "category": "Advanced Moves",
     "title": "Still Mind",
-    "description": "When you attempt to resist a magical effect influencing you, take +1."
+    "description": "When you **attempt to resist a magical effect influencing you**, take +1."
   },
   {
     "id": "mk10",
@@ -133,7 +133,7 @@
     "id": "mk11",
     "category": "Advanced Moves",
     "title": "Water Body",
-    "description": "When you are about to be damaged by a non-magical ranged attack, you may spend 1 ki to prevent all of the damage."
+    "description": "When you **are about to be damaged by a non-magical ranged attack**, you may spend 1 ki to prevent all of the damage."
   },
   {
     "id": "mk12",
@@ -145,13 +145,19 @@
     "id": "mk13",
     "category": "Advanced Moves",
     "title": "Shooting Stars",
-    "description": "Your shuriken gain the **flexible** tag, as well as the benefit of the Tiger Claw and Serpent Sting moves, if you have them. Additionally, you may Blot Out the Sun with your shuriken, as per the Ranger move."
+    "description": "Your shuriken gain the **flexible** tag, as well as the benefit of the **Tiger Claw** and **Serpent Sting** moves, if you have them. Additionally, you may Blot Out the Sun with your shuriken, as per the Ranger move.",
+    "submoves":[
+      {
+        "title":"Blot out the Sun",
+        "description": "When you **Volley** you may spend extra ammo before rolling. For each point of ammo spent you may choose an extra target. Roll once and apply damage to all targets."
+      }
+    ]
   },
   {
     "id": "mk14",
     "category": "Advanced Moves",
     "title": "Finish Him!",
-    "description": "When you defeat an opponent, if you currently hold less ki than your WIS, hold +1 ki."
+    "description": "When you **defeat an opponent**, if you currently hold less ki than your WIS, hold +1 ki."
   },
   {
     "id": "mk15",
@@ -164,35 +170,35 @@
     "category": "Advanced Moves",
     "title": "Monkey Moves (Requires level 6+)",
     "weight": 1,
-    "description": "Your unarmed strikes now have a range of reach in addition to hand and close, and gain the **flexible** tag."
+    "description": "Your unarmed strikes now have a range of **reach** in addition to hand and close, and gain the **flexible** tag."
   },
   {
     "id": "mk17",
     "category": "Advanced Moves",
     "title": "Dragon Roar (Requires level 6+)",
     "weight": 1,
-    "description": "Your unarmed strikes have the **forceful** tag, and when you spend ki to deal additional damage with an unarmed strike, deal an extra 1d6 damage."
+    "description": "Your unarmed strikes have the **forceful** tag, and when you **spend ki to deal additional damage with an unarmed strike**, deal an extra 1d6 damage."
   },
   {
     "id": "mk18",
     "category": "Advanced Moves",
     "title": "Steel Guard (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Water Body OR Still Mind\n\nYou gain +1 armor. If you have both required moves, you gain +3 armor instead."
+    "description": "Requires: **Water Body** OR **Still Mind**\n\nYou gain +1 armor. If you have both required moves, you gain +3 armor instead."
   },
   {
     "id": "mk19",
     "category": "Advanced Moves",
     "title": "Wholeness of Body (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Fortitude of the Mountain\n\nYou are highly resistant to poisons and diseases. Only very potent toxins or magical ailments affect you, and even then the effects are reduced."
+    "description": "Requires: **Fortitude of the Mountain**\n\nYou are highly resistant to poisons and diseases. Only very potent toxins or magical ailments affect you, and even then the effects are reduced."
   },
   {
     "id": "mk20",
     "category": "Advanced Moves",
     "title": "Cloud Steps (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Leopard's Grace OR Wind Walker\n\nYou can balance effortlessly on the smallest or thinnest perches, and walk across the surface of water or even empty air for a few steps. If you have both required moves, when you use Leopard's Grace or Defy Danger with an amazing feat of acrobatics, take +1."
+    "description": "Requires: **Leopard's Grace** OR **Wind Walker**\n\nYou can balance effortlessly on the smallest or thinnest perches, and walk across the surface of water or even empty air for a few steps. If you have both required moves, when you use **Leopard's Grace** or **Defy Danger** **with an amazing feat of acrobatics**, take +1."
   },
   {
     "id": "mk21",
@@ -206,21 +212,28 @@
     "category": "Advanced Moves",
     "title": "Mindfulness (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Sensei\n\nYou no longer spend ki to roll +WIS instead of +Bond when you Aid Another."
+    "description": "Requires: **Sensei**\n\nYou no longer spend ki to roll +WIS"
   },
   {
     "id": "mk23",
     "category": "Advanced Moves",
     "title": "Dairokkan (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Still Mind\n\nYou're never caught by surprise. When an enemy would get the drop on you, you get to act first instead. Additionally, when you Defy Danger, you can spend 1 ki to add +1 to your roll, retroactively."
+    "description": "Requires: **Still Mind**\n\nYou're never caught by surprise. When an enemy would get the drop on you, you get to act first instead. Additionally, when you Defy Danger, you can spend 1 ki to add +1 to your roll, retroactively."
   },
   {
     "id": "mk24",
     "category": "Advanced Moves",
     "title": "Insightful Meditation (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Inner Peace\n\nWhen you Meditate, you receive a useful insight into a problem of your choice, as if you had cast the Cleric spell Revelation. When you gain an insight, you cannot gain another insight until you have dealt with the current problem at hand."
+    "description": "Requires: **Inner Peace**\n\nWhen you Meditate, you receive a useful insight into a problem of your choice, as if you had cast the Cleric spell Revelation. When you gain an insight, you cannot gain another insight until you have dealt with the current problem at hand.",
+    "submoves":[
+      {
+          "title": "Revelation",
+          "description": "Your deity answers your prayers with a moment of perfect understanding. The GM will shed light on the current situation. When acting on the information, you take **+1 forward**."
+      }
+    ],
+    "details":true
   },
   {
     "id": "mk25",

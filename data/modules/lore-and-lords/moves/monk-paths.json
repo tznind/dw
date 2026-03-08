@@ -7,7 +7,7 @@
     "submoves":[
       {
         "title": "Move",
-        "description": "When you Defy Danger to act quietly and spend 1 ki, you automatically succeed as if you had rolled a 10+."
+        "description": "When you **Defy Danger to act quietly and spend 1 ki**, you automatically succeed as if you had rolled a 10+."
       },
       {
         "title":"End of Session",
@@ -24,7 +24,7 @@
     "submoves": [
       {
         "title": "Move",
-        "description": "When you **speak with simple wisdom** and spend 1 ki, you may use WIS instead of CHA when you Parley, and on a success you get to ask their player one question, which they must answer truthfully."
+        "description": "When you **speak with simple wisdom and spend 1 ki**, you may use WIS instead of CHA when you Parley, and on a success you get to ask their player one question, which they must answer truthfully."
       },
       {
         "title": "End of Session",
@@ -40,7 +40,7 @@
     "submoves": [
       {
         "title": "Move",
-        "description": "When you **focus on your breathing for a few minutes to restore yourself** and spend 1 ki, remove a debility from yourself."
+        "description": "When you **focus on your breathing for a few minutes to restore yourself and spend 1 ki**, remove a debility from yourself."
       },
       {
         "title": "End of Session",
@@ -56,7 +56,7 @@
     "submoves": [
       {
         "title": "Move",
-        "description": "When you **make an unarmed attack** and spend 1 ki, you make the attack with +WIS instead of +STR, and on a 10+ you may disable one of your foe's weapons or stun them for a few moments instead of dealing damage."
+        "description": "When you **make an unarmed attack and spend 1 ki**, you make the attack with +WIS instead of +STR, and on a 10+ you may disable one of your foe's weapons or stun them for a few moments instead of dealing damage."
       },
       {
         "title": "End of Session",
