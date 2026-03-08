@@ -438,5 +438,11 @@
     "mkp2": true,
     "mkp3": true,
     "mkp4": true
+  },
+  "Vampire Backgrounds": {
+    "_movesFile": "data/modules/lore-and-lords/moves/vampire-backgrounds.json",
+    "vpb1": true,
+    "vpb2": true,
+    "vpb3": true
   }
 }

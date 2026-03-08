@@ -1,0 +1,28 @@
+[
+  {
+    "id": "vpb1",
+    "title": "Ancient Vampire",
+    "hideCheckbox": true,
+    "description": "You've been undead for quite some time. When you Spout Lore about times long past, take +1."
+  },
+  {
+    "id": "vpb2",
+    "title": "Accursed Vampire",
+    "hideCheckbox": true,
+    "description": "You've become a vampire by a curse. Choose a tell for your curse, this counts as another **Weakness** for determining the maximum **Blood** you can hold:",
+    "pickOne": [
+      "Animals become noticeably agitated by your presence",
+      "Candles and lanterns flicker when you enter a room",
+      "Food and drink sour at any table you are seated at",
+      "Those standing next to you feel an unexplainable chill",
+      "Plants wither and die when you walk by"
+    ]
+  },
+  {
+    "id": "vpb3",
+    "title": "Recently Turned",
+    "hideCheckbox": true,
+    "description": "Your appearance can never become monstrously inhuman. Additionally, you may call upon the elder vampire who sired you for assistance, and he'll help you… for a price.",
+    "details": true
+  }
+]
