@@ -1,0 +1,727 @@
+[
+  {
+    "id": "sha",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - Help people to live in harmony.",
+      "**Neutral** - Resolve a disturbance in the balance.",
+      "**Chaotic** - Reclaim a place or important object for the natural world.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "shr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Dwarf** - When dealing with spirits of earth, stone, or mountains, take +1.",
+      "**Human** - When you Trance, you may prepare one casting of the Bind Spirit spell for free.",
+      "**Orc** - You ignore the ongoing effect of the Aspect of the Wolf spell."
+    ],
+    "details": true
+  },
+  {
+    "id": "sh1",
+    "category": "Starting Moves",
+    "title": "Trance",
+    "description": "When you **spend some time opening your mind to the mysteries of the Otherworld**, you lose any spells already prepared and prepare new spells of your choice whose total levels don't exceed your own level+1, and none of which is a higher level than your own level. You may choose from any spell on the Shaman spell list."
+  },
+  {
+    "id": "sh2",
+    "category": "Starting Moves",
+    "title": "Cast a Spell (+WIS)",
+    "description": "When you **call forth a spell you've prepared**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The spell is successfully cast and you do not forget the spell — you may cast it again later."
+      },
+      {
+        "range": "7-9",
+        "text": "The spell is cast, but choose one:",
+        "bullets": [
+          "You draw unwelcome attention or put yourself in a spot. The GM will tell you how.",
+          "The spell disturbs the Mists as it is cast — take -1 ongoing to cast a spell until the next time you **Trance**.",
+          "After it is cast, the spell is forgotten. You cannot cast the spell again until you **Trance** again."
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "Maintaining spells with ongoing effects will sometimes cause a penalty to your roll to cast a spell."
+      }
+    ]
+  },
+  {
+    "id": "sh3",
+    "category": "Starting Moves",
+    "title": "Second Sight (+CHA)",
+    "description": "You are sensitive to the spirit world. When you are in the presence of an influential or important spirit, the GM will let you know.\n\nWhen you **open your senses to the Mists to interact with a spirit**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Ask the GM three questions from the list below."
+      },
+      {
+        "range": "7-9",
+        "text": "Ask one.",
+        "bullets": [
+          "Where exactly are any spirits residing?",
+          "What is the nature of the spirits present?",
+          "What does the spirit want from the material world?",
+          "How is the spirit influencing the material world?"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Note",
+        "description": "Regardless of the roll, any spirit you detect may be communicated with. Some spirits may be unwilling to talk, or not have much to say."
+      }
+    ]
+  },
+  {
+    "id": "sh4",
+    "category": "Starting Moves",
+    "title": "Shaman's Intuition",
+    "description": "When you **Discern Realities**, you may add \"What here is out of balance?\" to the list of questions. Additionally, when you **resist the enchantments of an otherworldly being**, take +1."
+  },
+  {
+    "id": "sh5",
+    "category": "Advanced Moves",
+    "title": "Lodestone",
+    "description": "You can never become lost, and always know the way to get back home. If you are in another world, you intuitively know the location of the nearest gate back to your home world, though this may not necessarily be the most convenient one. Additionally, when you **undertake a perilous journey through wilderness and act as trailblazer**, you automatically succeed as if you rolled a 10+."
+  },
+  {
+    "id": "sh6",
+    "category": "Advanced Moves",
+    "title": "Call of the Wild",
+    "description": "Choose a totem animal. You may take on that animal's form as if you had the Druid's **Shapeshifter** move, rolling for the move as normal.",
+    "details": true
+  },
+  {
+    "id": "sh7",
+    "category": "Advanced Moves",
+    "title": "Parting the Veil",
+    "description": "When someone **takes their Last Breath** in your presence, they take +1 to the roll."
+  },
+  {
+    "id": "sh8",
+    "category": "Advanced Moves",
+    "title": "Widdershins (+CHA)",
+    "description": "You know a simple ritual to banish otherworldly beings — describe it! When you **attempt to banish a nearby spirit**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The spirit is driven back into the Mists from whence it came."
+      },
+      {
+        "range": "7-9",
+        "text": "The spirit is still banished, but choose one:",
+        "bullets": [
+          "The spirit is not banished for long.",
+          "The spirit will remember you and hold a grudge.",
+          "The spirit assaults you as you banish it — take 1d6 damage or a debility of the GM's choice."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh9",
+    "category": "Advanced Moves",
+    "title": "Stormstrike",
+    "description": "When you **imbue your weapon with primal power**, forget a spell you have memorized and add one of the following tags to your weapon. The tag lasts until the next time you **Trance**. You may sacrifice multiple spells to gain multiple tags, but you can only take each tag once.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Tags:",
+        "bullets": [
+          "+1d4 damage",
+          "2 piercing",
+          "Precise",
+          "Forceful"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh10",
+    "category": "Advanced Moves",
+    "title": "Mystic Ward",
+    "description": "Your armor is increased by the levels worth of spells you currently have memorized, up to a maximum of +2."
+  },
+  {
+    "id": "sh11",
+    "category": "Advanced Moves",
+    "title": "The Old Ways",
+    "description": "When you **cast a spell**, on a 10+ you have the option of choosing from the 7-9 list. If you do, you may choose one of these as well:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "",
+        "bullets": [
+          "The spell's effects are doubled",
+          "The spell's targets are doubled"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh12",
+    "category": "Advanced Moves",
+    "title": "Covenant",
+    "description": "When you **Parley** with otherworldly beings you cannot get a 6-, treat that as a 7-9. Additionally, when you use **Second Sight** and get a 12+, you may ask the spirit one question, and it will answer truthfully."
+  },
+  {
+    "id": "sh13",
+    "category": "Advanced Moves",
+    "title": "Healing Waters",
+    "description": "When you **heal someone else of damage**, add +1d6 to the amount of damage healed."
+  },
+  {
+    "id": "sh14",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Seven-League Stride (Requires level 6+)",
+    "description": "Requires: **Lodestone**\n\nWhen you **make a short journey across the Otherworld**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You transport yourself and up to one other person holding your hand to any point you desire, up to seven leagues (21 miles) away."
+      },
+      {
+        "range": "7-9",
+        "text": "You arrive a little off-target in either space or time, or you may have lost something or someone on the trip."
+      }
+    ]
+  },
+  {
+    "id": "sh15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Well of Segais (Requires level 6+)",
+    "description": "Tasting the waters of knowledge has made you wise. You gain an area of knowledge, as per the **Bardic Lore** move.",
+    "details": true
+  },
+  {
+    "id": "sh16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "One With Nature (Requires level 6+)",
+    "takeFrom": ["Druid", "Ranger"],
+    "takeCategory": "Advanced Moves",
+    "description": "Get one move from either the Druid or Ranger class list. Treat your level as one lower for choosing the move."
+  },
+  {
+    "id": "sh17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Mystic Armor (Requires level 6+)",
+    "description": "Replaces: **Mystic Ward**\n\nYour armor is increased by the levels worth of spells you currently have memorized, up to a maximum of +4."
+  },
+  {
+    "id": "sh18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "The Cycle and the Path (Requires level 6+)",
+    "description": "The Mists flow through you easier. When you **cast a spell** you ignore the first -1 penalty from ongoing spells."
+  },
+  {
+    "id": "sh19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Rockbrother (Requires level 6+)",
+    "description": "Your maximum HP is increased by 4."
+  },
+  {
+    "id": "sh20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Storm, Earth, and Fire (Requires level 6+)",
+    "description": "Requires: **Stormstrike**\n\nAdd the following to the list of tags for your **Stormstrike** ability:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Additional tags:",
+        "bullets": [
+          "+1d6 damage again (stacks with +1d4 damage)",
+          "Messy",
+          "Flaming (ignores armor and sets things ablaze)",
+          "Spiritual (makes attack moves with WIS instead of STR or DEX)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Secrets of the Otherworld (Requires level 6+)",
+    "description": "Replaces: **The Old Ways**\n\nWhen you **cast a spell**, on a 10-11 you have the option of choosing from the 7-9 list. If you do, you may choose one of these effects as well. On a 12+ you get to choose one of these effects for free:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "",
+        "bullets": [
+          "The spell's effects are doubled",
+          "The spell's targets are doubled"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sh22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Moondance (Requires level 6+)",
+    "description": "While your bare skin is bathed in moonlight, the effects of your spells are maximized."
+  },
+  {
+    "id": "sh23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Guardian Spirit (Requires level 6+)",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 1,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **Trance** you get 1 hold and lose any hold you already had. Spend that hold when you or an ally takes damage to call on a guardian spirit — they intervene with an appropriate manifestation (a sudden gust of wind, a lucky slip, a burst of light) and prevent the damage."
+  },
+  {
+    "id": "ssh1",
+    "category": "🌿Shaman Spells",
+    "title": "Aspect of the Wolf - Level 1",
+    "description": "The person you touch is imbued with a fraction of wild energy. Choose one of the following effects. While this spell is ongoing you take -1 to **cast a spell**.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Effects:",
+        "bullets": [
+          "They can see perfectly in total darkness",
+          "Their sense of smell and hearing is greatly enhanced",
+          "They become more fierce, dealing +1 damage forward"
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh2",
+    "category": "🌿Shaman Spells",
+    "title": "Bind Spirit - Level 1",
+    "description": "Your words bind a nearby spirit, preventing it from departing or taking any aggressive actions until you release it or leave the area. Once the spell ends, the spirit can behave as normal. While this spell is ongoing you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh3",
+    "category": "🌿Shaman Spells",
+    "title": "Dreamsight - Level 1",
+    "description": "Cast this spell over a sleeping person, and you can see what they are dreaming about, as well as the nature of any influences upon their mind.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh4",
+    "category": "🌿Shaman Spells",
+    "title": "Flames of Wrath - Level 1",
+    "description": "You channel the power of rage to create 1d4 small globes of fire in your hands. You may **Volley** with these as if they were thrown weapons, using WIS instead of DEX on your roll. Each globe deals 1d6 fire damage to one target, ignoring armor.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh5",
+    "category": "🌿Shaman Spells",
+    "title": "Sacred Circle - Level 1",
+    "description": "As you cast this spell, you walk the perimeter of an area. As long as you stay within that area you are alerted whenever someone acts with malice within the circle (including entering with harmful intent). Anyone who receives healing within the circle heals +1d6 HP.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh6",
+    "category": "🌿Shaman Spells",
+    "title": "Healing Touch - Level 1",
+    "description": "Your touch halts bleeding and eases pain. Heal an ally you touch of 1d6 damage.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh7",
+    "category": "🌿Shaman Spells",
+    "title": "Well of Wisdom - Level 3",
+    "description": "Cast this spell as you gaze into a pool of water, and you will receive a portent from the spirit world. The GM will reveal an impending danger that threatens the land. You will also learn something useful about how you can interfere with the danger's dark outcomes.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh8",
+    "category": "🌿Shaman Spells",
+    "title": "Entangle - Level 3",
+    "description": "Roots and vines constrict painfully around the lower body of one target you can see, preventing them from moving their legs. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh9",
+    "category": "🌿Shaman Spells",
+    "title": "Glamour - Level 3",
+    "description": "You create a simple, nonmoving illusion that affects one sense: sight, sound, or smell. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh10",
+    "category": "🌿Shaman Spells",
+    "title": "Elemental Blessing - Level 3",
+    "description": "A person you touch receives a blessing of the elements. Choose one. While this spell is ongoing you take -1 to **cast a spell**.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Effects:",
+        "bullets": [
+          "Fire will not burn them or their possessions.",
+          "They may walk upon water as if it were solid ground.",
+          "They may breathe safely in any environment, even underwater or in toxic fumes.",
+          "Their skin hardens like stone, giving them +1 armor."
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh11",
+    "category": "🌿Shaman Spells",
+    "title": "Silence and Stillness - Level 3",
+    "description": "The winds of magic grow still in your presence. Choose a spell or magical effect in your presence — it ceases to function as long as you remain nearby.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh12",
+    "category": "🌿Shaman Spells",
+    "title": "Whispering Wind - Level 3",
+    "description": "You summon a spirit of the winds to carry a short message to a person of your choice. The spirit will also carry back a short reply.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh13",
+    "category": "🌿Shaman Spells",
+    "title": "Purify - Level 5",
+    "description": "Your touch removes a poison or disease from a person or object.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh14",
+    "category": "🌿Shaman Spells",
+    "title": "Summon Elemental - Level 5",
+    "description": "You conjure an elemental servitor to assist you. Treat it as your character, but with access to only the basic moves. It has +1 modifier for all stats, 1 HP, and uses your damage dice. The elemental remains on this plane until it dies or you dismiss it. While this spell is ongoing you take -1 to **cast a spell**.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "The elemental also gets your choice of 1d4+1 of these traits:",
+        "bullets": [
+          "It has +2 instead of +1 to one stat",
+          "It's not reckless",
+          "It does 1d10 damage",
+          "Its bond to your plane is strong: +1 HP for each level you have",
+          "It has some useful secondary ability"
+        ]
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh15",
+    "category": "🌿Shaman Spells",
+    "title": "Chain Lightning - Level 5",
+    "description": "A bolt of lightning springs from your fingertips, striking your target and everyone nearby for 2d6 damage, ignoring armor.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh16",
+    "category": "🌿Shaman Spells",
+    "title": "Life Touch - Level 5",
+    "description": "Life energy fills the person you touch, healing them of 3d6 damage.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh17",
+    "category": "🌿Shaman Spells",
+    "title": "Sight Beyond Sight - Level 5",
+    "description": "Name a person, place, or thing you want to learn about. You will receive a vision of the subject, as clear as if you were there.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh18",
+    "category": "🌿Shaman Spells",
+    "title": "Ironbane - Level 5",
+    "description": "Cast this spell as you touch an item made of metal — it disintegrates into rust.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh19",
+    "category": "🌿Shaman Spells",
+    "title": "Control Weather - Level 7",
+    "description": "Wish for rain — or sun, wind, or snow. Within a day or so, your wish will be granted. The weather will change according to your will and last a handful of days.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh20",
+    "category": "🌿Shaman Spells",
+    "title": "Renewal - Level 7",
+    "description": "A burst of cleansing energy fills the area, removing any corrupting influences on either the land or a person of your choice. Curses, blights, and debilities are all ended by this spell.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh21",
+    "category": "🌿Shaman Spells",
+    "title": "Masterful Glamour - Level 7",
+    "description": "You create a complex illusion that affects all senses. The illusion can move if you are around to direct it, or you may program it to move under certain conditions. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh22",
+    "category": "🌿Shaman Spells",
+    "title": "True Seeing - Level 7",
+    "description": "Your vision is opened to the true nature of everything you lay your eyes on. You pierce illusions and see things that have been hidden. The GM will describe the area before you ignoring any illusions and falsehoods, magical or otherwise. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh23",
+    "category": "🌿Shaman Spells",
+    "title": "Perfect Binding - Level 7",
+    "description": "Chains of mystic iron bind a nearby spirit, preventing it from doing anything unless you give it permission. While bound, the spirit can only speak the truth, and any agreement it enters with you must be kept. Alternatively, you can call a spirit by name when you cast this spell, and it will appear and be instantly bound. While this spell is ongoing you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh24",
+    "category": "🌿Shaman Spells",
+    "title": "Rebirth - Level 7",
+    "description": "The Mists breathe new life into a person you touch. They are restored to full health, any poisons or diseases are cured, debilities are healed, and even lost limbs are regrown.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh25",
+    "category": "🌿Shaman Spells",
+    "title": "Cataclysm - Level 9",
+    "description": "The Mists bring the unnatural weather of your choice to pass. Rain of blood or acid, meteor storms, wind that can carry away buildings, or any other weather you can imagine: ask and it shall come.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh26",
+    "category": "🌿Shaman Spells",
+    "title": "Reclaiming - Level 9",
+    "description": "The earth reclaims a person that you touch, turning them to stone.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh27",
+    "category": "🌿Shaman Spells",
+    "title": "Gate - Level 9",
+    "description": "Cast this spell upon an arch or doorway. You open a gate to another plane of existence of your choice. The gate remains open as long as you maintain it, and anyone, friend or foe, can walk through it. While this spell is ongoing you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh28",
+    "category": "🌿Shaman Spells",
+    "title": "Haunt - Level 9",
+    "description": "Name a town, city, or other place where people live. Malicious spirits wreak havoc upon that place, causing chaos and strife as long as you maintain the spell. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh29",
+    "category": "🌿Shaman Spells",
+    "title": "Maelstrom - Level 9",
+    "description": "A powerful whirlwind gathers you and your allies up, whisking you away to a destination of your choice.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "ssh30",
+    "category": "🌿Shaman Spells",
+    "title": "Forest Pact - Level 9",
+    "description": "Cast this spell as you plant a wooden staff into the ground — it is transformed into a treant which will do your bidding as long as you maintain the spell. While this spell is ongoing you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Prepared",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  }
+]

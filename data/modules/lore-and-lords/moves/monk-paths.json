@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mkp1",
+    "title": "Path of Silence",
+    "hideCheckbox": true,
+    "description": "You may never speak. You can write messages or communicate with gesture and make sounds, such as snapping your fingers or stomping your feet, but you cannot communicate verbally",
+    "submoves":[
+      {
+        "title": "Move",
+        "description": "When you **Defy Danger to act quietly and spend 1 ki**, you automatically succeed as if you had rolled a 10+."
+      },
+      {
+        "title":"End of Session",
+        "description":"At the end of the session, if you **helped someone solve a personal problem without using words**, mark XP"
+
+      }
+    ]
+  },
+  {
+    "id": "mkp2",
+    "title": "Path of Charity",
+    "hideCheckbox": true,
+    "description": "You must reject as many worldly possessions as possible. Your Load is reduced to 4+STR. You may never own or use a piece of gear that costs more than five coins, and you may never possess more than five coins worth of wealth or equipment.",
+    "submoves": [
+      {
+        "title": "Move",
+        "description": "When you **speak with simple wisdom and spend 1 ki**, you may use WIS instead of CHA when you Parley, and on a success you get to ask their player one question, which they must answer truthfully."
+      },
+      {
+        "title": "End of Session",
+        "description": "At the end of the session, if you **donated a significant amount of wealth or valuables to a worthy charity**, mark XP."
+      }
+    ]
+  },
+  {
+    "id": "mkp3",
+    "title": "Path of Purity",
+    "hideCheckbox": true,
+    "description": "You must keep yourself fastidiously clean at all times. Whenever you or your clothing becomes dirty, you must cleanse yourself at the next available opportunity, no matter how inconvenient. Additionally, you may not touch or be touched by members of the opposite sex.",
+    "submoves": [
+      {
+        "title": "Move",
+        "description": "When you **focus on your breathing for a few minutes to restore yourself and spend 1 ki**, remove a debility from yourself."
+      },
+      {
+        "title": "End of Session",
+        "description": "At the end of the session, if you **ritually cleansed and purified a sacred place**, mark XP."
+      }
+    ]
+  },
+  {
+    "id": "mkp4",
+    "title": "Path of Peace",
+    "hideCheckbox": true,
+    "description": "You can never kill another living being. You may not attack an enemy unless you are attacked first, and even then you must only subdue them, not slay them. You cannot eat meat unless you have no other option.",
+    "submoves": [
+      {
+        "title": "Move",
+        "description": "When you **make an unarmed attack and spend 1 ki**, you make the attack with +WIS instead of +STR, and on a 10+ you may disable one of your foe's weapons or stun them for a few moments instead of dealing damage."
+      },
+      {
+        "title": "End of Session",
+        "description": "At the end of the session, if you **calmed a fight without anyone dying**, mark XP."
+      }
+    ]
+  }
+]

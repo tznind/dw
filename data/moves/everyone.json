@@ -79,7 +79,7 @@
         "bullets": [
           "Redirect an attack from the thing you defend to yourself",
           "Halve the attack's effect or damage",
-          "Open up the attacker to an ally giving that ally +1 forward against the attacker",
+          "Open up the attacker to an ally giving that ally **+1 forward** against the attacker",
           "Deal damage to the attacker equal to your level"
         ]
       },
@@ -115,7 +115,7 @@
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "Ask the GM three questions from the list below. Take +1 forward when acting on the answers.",
+        "text": "Ask the GM three questions from the list below. Take **+1 forward** when acting on the answers.",
         "bullets": [
           "What happened here recently?",
           "What is about to happen?",
@@ -127,7 +127,7 @@
       },
       {
         "range": "7–9",
-        "text": "Ask the GM only one question from the list (still take +1 forward)."
+        "text": "Ask the GM only one question from the list (still take **+1 forward**)."
       }
     ]
   },
@@ -226,7 +226,7 @@
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "You're able to wake the camp and prepare a response, the camp takes +1 forward."
+        "text": "You're able to wake the camp and prepare a response, the camp takes **+1 forward**."
       },
       {
         "range": "7–9",

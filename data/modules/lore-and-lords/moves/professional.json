@@ -1,0 +1,81 @@
+[
+  {
+    "id": "pra",
+    "hideCheckbox": true,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**[Placeholder]** - Alignment option 1.",
+      "**[Placeholder]** - Alignment option 2.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "prr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "[Placeholder] Race description coming soon.",
+    "details": true
+  },
+  {
+    "id": "pr1",
+    "category": "Starting Moves",
+    "title": "🏡Open for Business",
+    "description": "You now have a base of operations, such as a guildhall, temple or a shop. Describe it! Add your new establishment to one of the steadings on the map. Your home will include a reasonably safe place for you to stay and store your stuff. Choose two tags for your home:",
+    "pick": [
+      "**Safehouse**: Your base is either well hidden or well protected. No one will bother you when you're hiding out in there.",
+      "**Labor Pool**: You have a reliable source of specialized help available for hire. When you **Recruit** from your organization you cannot get a 6-, treat that as a 7–9.",
+      "**Resources**: You have access to equipment relevant to your profession. When you purchase something through your organization take +1 to the **Supply** roll, and the cost is reduced by 20%.",
+      "**Rumormill**: Lots of interesting information passes through your establishment. When you listen to the problems of the people the GM will tell you of at least one opportunity within your home steading or the areas surrounding it.",
+      "**Prestige**: Your organization is well known and therefore you are too. Add the tag Guild or Personage (you) to your steading.",
+      "**Clout**: Members of your society enjoy some kind of social privilege that other commoners do not have. Describe it, and why you have it.",
+      "**Skilled**: Your organization has people with exceptional skills, such as blacksmithing or alchemy. Add the Craft tag to your steading, and access to these artisans is readily available to you.",
+      "**Library**: You have access to a large stockpile of information. While you have access to your Library, take **+1 ongoing** to your **Spout Lore** moves.",
+      "**Profitable**: Your organization is very profitable. When you would gain coins from working at your business, gain an additional 1d6 coins."
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Income",
+        "description": "Working at your business provides you with some steady income. Once per month, when you spend at least a week working at your business, you gain coins equal to 1d6 plus the number of tags your base of operations has."
+      }
+    ]
+  },
+  {
+    "id": "pr1b",
+    "category": "Starting Moves",
+    "title": "Open for Business - Complication",
+    "hideCheckbox": true,
+    "description": "The GM will also give your home one complication:",
+    "pickOne": [
+      "**Need**: Your base needs a steady supply of a certain resource. Fulfilling that need is your responsibility.",
+      "**Duty**: You have sworn an oath of fealty or support to someone else. Expect them to make demands of you.",
+      "**Enemy**: Someone influential holds a grudge against you, or people of your profession.",
+      "**Hated**: Your profession is unpopular among other people. Best keep it a secret, or suffer the consequences.",
+      "**Danger**: Your base suffers a recurring threat. Perhaps it is a popular target for monsters, or fights break out frequently there. You'll have to deal with these troubles, or your base will suffer."
+    ]
+  },
+  {
+    "id": "pr2",
+    "category": "Advanced Moves",
+    "multiple": 3,
+    "title": "Entrepreneur",
+    "description": "Your organization is growing! When you take this move, add another tag to your base. If you spend 100 coins when you take this move, add an additional tag to your base. You may take this move multiple times. Each time you do, add a new tag to your base."
+  },
+  {
+    "id": "pr3",
+    "category": "Advanced Moves",
+    "grantsCard": "modules/lore-and-lords/cards/bases",
+    "title": "Guildmaster",
+    "description": "Requires: **Entrepreneur**\n\nYou are now a leader among your organization. Your lodgings become much nicer, and your monthly income increases by 1d10 coins. Your home gains the **Prestige** tag if it doesn't have it already. If it does, add another tag of your choice.\n\nAdditionally, when you spread your influence into another town, choose a nearby steading and delete a tag from your current base. You now have a satellite base of operations in the chosen steading, which gains the deleted tag. The GM will also add a complication to the new base."
+  },
+  {
+    "id": "pr4",
+    "category": "Advanced Moves",
+    "title": "Union",
+    "description": "Requires: **Guildmaster**\n\nWhen you take this move, add one tag of your choice to every base you control."
+  }
+]

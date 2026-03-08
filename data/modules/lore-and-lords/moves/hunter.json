@@ -1,0 +1,183 @@
+[
+  {
+    "id": "hna",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Chaotic** - Free someone from literal or figurative bonds.",
+      "**Good** - Endanger yourself to combat an unnatural threat.",
+      "**Neutral** - Help an animal or spirit of the wild.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "hnr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pick": [
+      "**Elf** - When you undertake a perilous journey through wilderness whatever job you take you succeed as if you rolled a 10+.",
+      "**Human** - When you make camp in a dungeon or city, you don't need to consume a ration.",
+      "**Orc** - Your traps always deal 2 damage as an additional effect."
+    ],
+    "details": true
+  },
+  {
+    "id": "hn3",
+    "category": "Starting Moves",
+    "title": "Trapper (WIS)",
+    "description": "When you **set a trap**, mark off one of your traps and describe how you set it, then choose two effects. When a monster stumbles upon your trap, roll+WIS. The maximum number of traps you may have active is equal to your WIS. Materials for traps cost 3 coins and have 1 weight each.",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Choose two effects when setting:",
+        "bullets": [
+          "Deal your class damage.",
+          "The target is ensnared, and cannot escape until it breaks the trap. Strong monsters can break out of the trap more quickly.",
+          "The trap sets off a loud alarm. No matter where you are, you'll hear it or be able to sense when it goes off.",
+          "The target's leg is crippled; it cannot run until the injury is healed.",
+          "The trap is especially difficult to detect and disarm."
+        ]
+      },
+      {
+        "range": "≥ 10",
+        "text": "You get both effects."
+      },
+      {
+        "range": "7-9",
+        "text": "You get one, your choice."
+      }
+    ]
+  },
+  {
+    "id": "hn4",
+    "category": "Advanced Moves",
+    "title": "Half-blood",
+    "description": "Somewhere in your lineage lies mixed blood and it begins to show its presence. You gain the human starting move if you are an elf or an orc. If you are human, you gain the elf or orc starting move. **You may take this move only if it is your first advancement**."
+  },
+  {
+    "id": "hn5",
+    "category": "Advanced Moves",
+    "title": "Wolf Pack",
+    "description": "When you successfully Aid someone you take **+1 forward** as well."
+  },
+  {
+    "id": "hn11",
+    "category": "Advanced Moves",
+    "title": "Improved Traps",
+    "description": "When you **set a trap**, choose one additional effect, and add the following to the list of trap effects:\n• The trap also affects anyone close to the target.\n• The trap moves the target a short distance.\n\nWhen the trap is sprung, on a 10+ you get all three effects. On a 7-9 choose two effects, and on a 6- you still choose one."
+  },
+  {
+    "id": "hn12",
+    "category": "Advanced Moves",
+    "title": "Natural Cunning",
+    "description": "Get one move from the Druid or Thief class. Treat your level as one lower for choosing the move.",
+    "takeFrom": ["Druid", "Thief"],
+    "takeCategory": ["Starting Moves", "Advanced Moves"]
+  },
+  {
+    "id": "hn13",
+    "category": "Advanced Moves",
+    "title": "Terrain Advantage",
+    "description": "Choose a land from the Druid's Born of the Soil list, adding \"the Great City\" to the list. While you are in your chosen land you take **+1 ongoing** to **Hunt and Track**, and you don't spend materials to set traps.",
+    "pickOne": [
+      "The Great Forests",
+      "The Whispering Plains",
+      "The Vast Desert",
+      "The Stinking Mire",
+      "The River Delta",
+      "The Depths of the Earth",
+      "The Sapphire Islands",
+      "The Open Sea",
+      "The Towering Mountains",
+      "The Frozen North",
+      "The Blasted Wasteland",
+      "The Great City"
+    ]
+  },
+  {
+    "id": "hn14",
+    "category": "Advanced Moves",
+    "title": "Tactical Eye",
+    "description": "When you **Discern Realities** add these options to the list of questions:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Additional questions:",
+        "bullets": [
+          "What is my best escape route?",
+          "Where is my best cover?",
+          "Which of my allies is the most vulnerable?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hn15",
+    "category": "Advanced Moves",
+    "title": "Bull's-eye (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **Volley**, on a 12+ you also damage your target's arms, legs, or head as if you had made a **Called Shot**."
+  },
+  {
+    "id": "hn16",
+    "category": "Advanced Moves",
+    "title": "Black Arrow (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **know your target's weakest point**, your arrows ignore armor."
+  },
+  {
+    "id": "hn17",
+    "category": "Advanced Moves",
+    "title": "The Most Dangerous Game (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: **Improved Traps**\n\nChoose a poison from the Thief's **Poisoner** list, that poison is no longer dangerous for you to use. When you set a trap, you may apply a dose of poison to the trap. When the trap is sprung, on a hit the poison affects the target. Additionally, when your traps deal damage, they do +1d4 damage.",
+    "pickOne": [
+      "Oil of Tagit - **(applied)** The target falls into a light sleep.",
+      "Bloodweed - **(touch)** The target deals -1d4 damage ongoing until cured.",
+      "Goldenroot - **(applied)** The target treats the next creature they see as a trusted ally, until proved otherwise.",
+      "Serpent's Tears - **(touch)** Anyone dealing damage to the target rolls twice and takes the better result."
+    ]
+  },
+  {
+    "id": "hn18",
+    "category": "Advanced Moves",
+    "title": "Hunter's Mark (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **draw an enemy's blood**, you may declare that enemy to be your quarry. Your attacks and traps deal +1d4 damage against the quarry, and when you **Track** your quarry you cannot get a 6-, treat that as a 7-9. You may have only one quarry at a time."
+  },
+  {
+    "id": "hn19",
+    "category": "Advanced Moves",
+    "title": "May the Odds Be Ever in Your Favor (Requires level 6+)",
+    "weight": 1,
+    "description": "Requires: **Terrain Advantage**\n\nWhile you are in your chosen land you take **+1 ongoing** to **Called Shot** and **Trapper**, and your attacks and traps that deal damage deal +1d4 damage."
+  },
+  {
+    "id": "hn20",
+    "category": "Advanced Moves",
+    "title": "Trick Shot (Requires level 6+)",
+    "weight": 1,
+    "description": "When you **make an improbable bow shot with an unusual effect**, describe what you want to happen and roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM tells you one thing you have to do to pull off the shot."
+      },
+      {
+        "range": "7-9",
+        "text": "Up to three things:",
+        "bullets": [
+          "Spend some time lining up the shot",
+          "Get into a vulnerable position",
+          "Spend 1 ammo",
+          "Sacrifice or endanger something important"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,442 @@
+{
+  "Hunter (l&l)": {
+    "_movesFile": "data/modules/lore-and-lords/moves/hunter.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "11+Str"
+    },
+    "default-bonds": [
+      "I have guided ________ before and they owe me for it.",
+      "________ is a friend of nature, so I will be their friend as well.",
+      "________ has no respect for nature, so I have no respect for them.",
+      "________ does not understand life in the wild, so I will teach them."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "3 Traps", "weight": 3}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Short Sword (close)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Hunter's Bow (near, far)", "weight": 1},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Spear (reach)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+        ]
+      }
+    ],
+    "hna": true,
+    "hnr": true,
+    "r2": true,
+    "r3": true,
+    "hn3": true,
+    "hn4": false,
+    "hn5": false,
+    "r7": false,
+    "r9": false,
+    "r11": false,
+    "r14": false,
+    "r15": false,
+    "hn11": false,
+    "hn12": false,
+    "hn13": false,
+    "hn14": false,
+    "r17": false,
+    "r20": false,
+    "r21": false,
+    "r22": false,
+    "hn15": false,
+    "hn16": false,
+    "hn17": false,
+    "hn18": false,
+    "hn19": false,
+    "hn20": false
+  },
+  "Vampire": {
+    "_movesFile": "data/modules/lore-and-lords/moves/vampire.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "________ knew my sire, he speaks for him in his stead.",
+      "I have tasted ________'s blood, and I want more!",
+      "________ knows how I am vulnerable, and is not afraid to use it against me."
+    ],
+    "default-gear": [
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Wicked Sharp Knife (hand)", "weight": 1},
+          {"item": "Ornate Rapier (close, precise)", "weight": 1},
+          {"item": "Long Scythe (reach, two-handed)", "weight": 2}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Jug of Animal Blood (grants 1 Blood when consumed)", "weight": 2},
+          {"item": "An Old Family Heirloom (worth 10 coins)", "weight": 0},
+          {"item": "Bag of Books (5 uses)", "weight": 2},
+          {"item": "A Written Promise of a Favor Owed to You by Another Vampire", "weight": 0},
+          {"item": "Archaic Armor (1 armor, worn)", "weight": 1}
+        ]
+      }
+    ],
+    "vpa": true,
+    "vpr": true,
+    "vp1": true,
+    "vp2": true,
+    "vp3": true,
+    "vp4": false,
+    "vp5": false,
+    "vp6": false,
+    "vp7": false,
+    "vp8": false,
+    "vp9": false,
+    "vp10": false,
+    "vp11": false,
+    "vp12": false,
+    "vp13": false,
+    "vp14": false,
+    "vp15": false,
+    "vp16": false,
+    "vp17": false,
+    "vp18": false,
+    "vp19": false,
+    "vp20": false,
+    "vp21": false,
+    "vp22": false,
+    "vp23": false,
+    "vp24": false
+  },
+  "Trickster": {
+    "_movesFile": "data/modules/lore-and-lords/moves/trickster.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "6+Con",
+      "load": "7+Str"
+    },
+    "default-bonds": [
+      "I once stole something from ________.",
+      "________ has my back when things go wrong.",
+      "________ knows a secret about me that could be embarrassing if it was let loose.",
+      "________ has helped me run a con before.",
+      "I know a secret about ________, but he doesn't know that I know."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your weapons:",
+        "options": [
+          {
+            "items": [
+              {"item": "Short Sword (close)", "weight": 1},
+              {"item": "3 Throwing Knives (thrown, near)", "weight": 0}
+            ]
+          },
+          {"item": "Rapier (close, precise)", "weight": 1},
+          {
+            "items": [
+              {"item": "Ragged Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Dagger (hand)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose two:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "12 Counterfeit Coins", "weight": 0},
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "Knife in a Spring-loaded Wrist Sheath (hand)", "weight": 1}
+        ]
+      }
+    ],
+    "tra": true,
+    "trr": true,
+    "tr1": true,
+    "tr2": true,
+    "tr3": true,
+    "t2": true,
+    "t3": true,
+    "tr4": false,
+    "tr5": false,
+    "tr6": false,
+    "tr7": false,
+    "tr8": false,
+    "tr9": false,
+    "tr10": false,
+    "tr11": false,
+    "tr12": false,
+    "t10": false,
+    "t17": false,
+    "t18": false,
+    "t21": false,
+    "tr16": false,
+    "tr17": false,
+    "tr18": false,
+    "tr19": false,
+    "tr20": false,
+    "tr21": false,
+    "tr22": false
+  },
+  "Shaman": {
+    "_movesFile": "data/modules/lore-and-lords/moves/shaman.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "6+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "The spirits have spoken to me of ________; he has a strange destiny that I will play a part of.",
+      "________ does not believe in the spirit world, but I will make him listen.",
+      "________ is out of balance, and a danger to himself and others. I will help him.",
+      "I have sworn a covenant with ________, the spirits have witnessed it."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "A trinket that helps you commune with the spirit world (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Staff (close, two-handed)", "weight": 1},
+          {"item": "Spear (close, thrown, near)", "weight": 1},
+          {
+            "items": [
+              {"item": "Worn Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1},
+              {"item": "Dagger (hand)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your defenses:",
+        "options": [
+          {"item": "Hide Armor (1 armor, worn)", "weight": 1},
+          {"item": "Poultices and Herbs (2 uses, slow)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "2 Antitoxin", "weight": 0}
+        ]
+      }
+    ],
+    "sha": true,
+    "shr": true,
+    "sh1": true,
+    "sh2": true,
+    "sh3": true,
+    "sh4": true,
+    "sh5": false,
+    "sh6": false,
+    "sh7": false,
+    "sh8": false,
+    "sh9": false,
+    "sh10": false,
+    "sh11": false,
+    "sh12": false,
+    "sh13": false,
+    "sh14": false,
+    "sh15": false,
+    "sh16": false,
+    "sh17": false,
+    "sh18": false,
+    "sh19": false,
+    "sh20": false,
+    "sh21": false,
+    "sh22": false,
+    "sh23": false,
+    "ssh1": true,
+    "ssh2": true,
+    "ssh3": true,
+    "ssh4": true,
+    "ssh5": true,
+    "ssh6": true,
+    "ssh7": true,
+    "ssh8": true,
+    "ssh9": true,
+    "ssh10": true,
+    "ssh11": true,
+    "ssh12": true,
+    "ssh13": true,
+    "ssh14": true,
+    "ssh15": true,
+    "ssh16": true,
+    "ssh17": true,
+    "ssh18": true,
+    "ssh19": true,
+    "ssh20": true,
+    "ssh21": true,
+    "ssh22": true,
+    "ssh23": true,
+    "ssh24": true,
+    "ssh25": true,
+    "ssh26": true,
+    "ssh27": true,
+    "ssh28": true,
+    "ssh29": true,
+    "ssh30": true
+  },
+  "Professional": {
+    "_movesFile": "data/modules/lore-and-lords/moves/professional.json",
+    "description": "When you rise to a position of prominence within your community, the next time you level up you may choose to gain this class.",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "6+Con",
+      "load": "9+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "pra": true,
+    "prr": true,
+    "pr1": true,
+    "pr1b": true,
+    "pr2": false,
+    "pr3": false,
+    "pr4": false
+  },
+  "Monk": {
+    "_movesFile": "data/modules/lore-and-lords/moves/monk.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "8+Str"
+    },
+    "default-bonds": [
+      "Though ________'s ways are different than mine, I can still learn much from him.",
+      "________ is troubled, and needs my help to find inner peace.",
+      "________ has an ulterior motive for coming with me.",
+      "My master would not approve of me traveling with ________."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {"item": "Siangham (hand, precise)", "weight": 1},
+          {"item": "3 Shuriken (thrown, near)", "weight": 0},
+          {"item": "Nunchaku (close, flexible)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose one if you selected Path of Charity, otherwise choose two:",
+        "options": [
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Ginseng Tea (3 uses, slow, +1 forward to Meditation)", "weight": 0}
+        ]
+      }
+    ],
+    "mka": true,
+    "mkr": true,
+    "mk1": true,
+    "mk2": true,
+    "mk3": true,
+    "mk4b": true,
+    "mk4": false,
+    "mk5": false,
+    "mk6": false,
+    "mk7": false,
+    "mk8": false,
+    "mk9": false,
+    "mk10": false,
+    "mk11": false,
+    "mk12": false,
+    "mk13": false,
+    "mk14": false,
+    "mk15": false,
+    "mk16": false,
+    "mk17": false,
+    "mk18": false,
+    "mk19": false,
+    "mk20": false,
+    "mk21": false,
+    "mk22": false,
+    "mk23": false,
+    "mk24": false,
+    "mk25": false
+  },
+  "Monk Paths": {
+    "_movesFile": "data/modules/lore-and-lords/moves/monk-paths.json",
+    "mkp1": true,
+    "mkp2": true,
+    "mkp3": true,
+    "mkp4": true
+  }
+}

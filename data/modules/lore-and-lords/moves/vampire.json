@@ -1,0 +1,303 @@
+[
+  {
+    "id": "vpa",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Lawful** - Coexist with mortals without harming them or their community.",
+      "**Chaotic** - Spread fear through a community.",
+      "**Evil** - Feed on the innocent and helpless for your own pleasure.",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "vpr",
+    "category": "Starting Moves",
+    "title": "Background",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "Choose your race. Then choose how you became a vampire.",
+    "pickOne": [
+      "**Ancient Vampire** - You've been undead for quite some time. When you Spout Lore about times long past, take +1.",
+      "**Accursed Vampire** - You've become a vampire by a curse. Choose a tell for your curse, this counts as another **Weakness** for determining the maximum **Blood** you can hold:\n• Animals become noticeably agitated by your presence\n• Candles and lanterns flicker when you enter a room\n• Food and drink sour at any table you are seated at\n• Those standing next to you feel an unexplainable chill\n• Plants wither and die when you walk by",
+      "**Recently Turned** - Your appearance can never become monstrously inhuman. Additionally, you may call upon the elder vampire who sired you for assistance, and he'll help you… for a price."
+    ],
+    "details": true
+  },
+  {
+    "id": "vp3",
+    "category": "Starting Moves",
+    "title": "The Blood is Life!",
+    "hideCheckbox": true,
+    "description": "When you **make camp**, spend 1 **Blood** or gain 1 **Hunger**. You do not recover HP when you make camp or rest; you must spend **Blood**."
+  },
+  {
+    "id": "vp2",
+    "category": "Starting Moves",
+    "title": "Apex Predator (DEX or CHA)",
+    "tracks": [
+      {
+        "name": "Blood",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **feast on the blood of a living person**, hold 2 Blood if you leave them alive or if they are already weakened, or hold 3 Blood if you kill a healthy person. The maximum Blood you can hold is equal to the number of weaknesses you have, plus your CON.\n\nWhen you **hunt for a victim in a steading**, roll+DEX if you use stealth or aggression, or roll+CHA if you use guile or charm.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You find someone you can feed from undisturbed."
+      },
+      {
+        "range": "7-9",
+        "text": "You still find a victim, but choose one:",
+        "bullets": [
+          "You only hold 1 Blood",
+          "Someone catches you in the act",
+          "You leave behind incriminating evidence"
+        ]
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Blood",
+        "outcomes": [
+          {
+            "text": "Spend 1 to",
+            "bullets": [
+              "Take +1 to any roll using +STR, only once per roll",
+              "Make your next melee attack **messy**, **forceful**, and deal +1d4 damage",
+              "Heal yourself for 2d6 HP",
+              "Resist a weakness for a short time",
+              "Reduce your Hunger by 1"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vp4",
+    "category": "Advanced Moves",
+    "title": "Beast-Blood",
+    "description": "You may spend 1 **Blood** to take the shape of a wolf or a bat, just as if you had used the Druid's Shapeshifter move. You always get 3 hold, no roll is needed."
+  },
+  {
+    "id": "vp5",
+    "category": "Advanced Moves",
+    "title": "Mesmerize (+CHA)",
+    "description": "When you **gaze deeply into a person's eyes**, spend 1 **Blood** and roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:",
+        "bullets": [
+          "They treat you as a friend until you prove otherwise",
+          "They run in terror",
+          "They give you something they hold",
+          "They truthfully answer one question"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 1."
+      }
+    ]
+  },
+  {
+    "id": "vp6",
+    "category": "Advanced Moves",
+    "title": "Blood Bond",
+    "description": "When you **feed some of your blood to a willing person**, spend 1 **Blood**. They become your thrall. You may treat them as a hireling, with Loyalty equal to your CHA, one skill equal to your INT, and Cost: their master's blood."
+  },
+  {
+    "id": "vp7",
+    "category": "Advanced Moves",
+    "title": "Lord of the Dead",
+    "description": "You may spend 1 **Blood** to cast the Cleric spell Animate Dead, no roll is needed. Your created zombie has one additional trait from the list, and you also ignore the ongoing effect from the Animate Dead spell."
+  },
+  {
+    "id": "vp8",
+    "category": "Advanced Moves",
+    "title": "Fang and Claw",
+    "description": "You may grow and retract claws from your fingers at will (hand, +1 damage, messy). Additionally, when you **hunt for a victim** using +DEX, take +1."
+  },
+  {
+    "id": "vp9",
+    "category": "Advanced Moves",
+    "title": "Vampiric Resilience",
+    "description": "While you are not in the presence of any of your **Weaknesses**, gain +2 armor."
+  },
+  {
+    "id": "vp10",
+    "category": "Advanced Moves",
+    "title": "Children of the Night",
+    "description": "When you **make eye contact with a predatory animal**, you can speak with and understand them, and you can spend 1 **Blood** to give them a simple telepathic command, which they will obey to the best of their ability."
+  },
+  {
+    "id": "vp11",
+    "category": "Advanced Moves",
+    "title": "Aspect of the Bat",
+    "description": "Your senses are very sharp. You can sense invisible creatures and navigate even in complete darkness. You may spend 1 **Blood** to take +1 to any move using +WIS, but only once per roll."
+  },
+  {
+    "id": "vp12",
+    "category": "Advanced Moves",
+    "title": "Blood Frenzy",
+    "description": "While you hold zero **Blood**, you take **+1 ongoing** to **Hack & Slash** and deal +1d4 damage."
+  },
+  {
+    "id": "vp13",
+    "category": "Advanced Moves",
+    "title": "Cloak of Night",
+    "description": "When you **vanish into the shadows or fog**, enemies never spot you until you draw attention to yourself or leave your cover."
+  },
+  {
+    "id": "vp14",
+    "category": "Advanced Moves",
+    "title": "Majesty",
+    "description": "You may spend 1 **Blood** to take +1 to any move using +CHA, but only once per roll. Additionally, when you **hunt for a victim** using +CHA, take +1."
+  },
+  {
+    "id": "vp15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Mist Form (Requires level 6+)",
+    "description": "Requires: Beast-Blood\n\nYou may use the Beast-Blood move to transform into a cloud of mist."
+  },
+  {
+    "id": "vp16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Entrance (Requires level 6+)",
+    "description": "Requires: Mesmerize\n\nWhen you use **Mesmerize**, you get one additional choice, even on a 6-. Add the following choices to the list:",
+    "outcomes": [
+      {
+        "range": "",
+        "text": "Additional choices:",
+        "bullets": [
+          "You plant a false memory in their minds; they will remember it as if it really happened",
+          "They forget that you were ever there"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vp17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Soul Reaver (Requires level 6+)",
+    "description": "When you **drain a person's blood and kill them**, hold 1 additional **Blood**, and that person can never be resurrected."
+  },
+  {
+    "id": "vp18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Blood Magic (Requires level 6+)",
+    "description": "You can cast a spell from the Wizard list as if you were a wizard of your class level-1 by spending 1 **Blood**, no roll is necessary. If an ongoing effect gives a penalty to cast a spell, you must pay 1 extra **Blood** to cast a spell."
+  },
+  {
+    "id": "vp19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Dream-speaker (Requires level 6+)",
+    "description": "Requires: Blood Bond\n\nYou may visit the dreams of anyone whose blood you have tasted and communicate with them over any distance this way. The dreams will be remembered as post-hypnotic suggestions, but they will not be compelled to obey unless they are your thrall."
+  },
+  {
+    "id": "vp20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Blood Power (Requires level 6+)",
+    "description": "The maximum **Blood** you may hold is increased by one."
+  },
+  {
+    "id": "vp21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Obfuscate (Requires level 6+)",
+    "description": "Requires: Cloak of Night\n\nYou may spend 1 **Blood** to deepen the local shadows or summon a small bank of fog, perfect for vanishing into."
+  },
+  {
+    "id": "vp22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "For the Dead Travel Fast (Requires level 6+)",
+    "description": "You may spend 1 **Blood** to take +1 to any move using +DEX, but only once per roll. Additionally, when you **use the shadows to travel to your destination or escape pursuit**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose 2:",
+        "bullets": [
+          "You get there unseen or lose your pursuers",
+          "You get there much quicker than it would normally take",
+          "You leave nothing that could be traced back to you or your friends"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose 1."
+      }
+    ]
+  },
+  {
+    "id": "vp23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Bloody Killer (Requires level 6+)",
+    "description": "Requires: Fang and Claw\n\nWhen you **Hack & Slash** with your claws, on a 10+ you gain 1 **Blood**."
+  },
+  {
+    "id": "vp24",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Machiavelli (Requires level 6+)",
+    "description": "When someone is plotting against you, you'll know it, though you can't necessarily tell how. At the end of a session, if during this session you **dismantled the machinations of a powerful rival**, mark XP."
+  },
+  {
+    "id": "vp1",
+    "category": "Starting Moves",
+    "title": "Nosferatu",
+    "hideCheckbox": true,
+    "tracks": [
+      {
+        "name": "Hunger",
+        "max": 5,
+        "shape": "square",
+        "dynamic": true
+      }
+    ],
+    "description": "You are a vampire! You do not age, nor do you need to breathe. You start with the following two weaknesses:\n• Instantly slain by a wooden stake to the heart\n• Repulsed by and vulnerable to fire and sunlight\n\nYou may also choose up to three additional weaknesses:",
+    "pick": [
+      "Mirrors repel you; you do not cast a reflection",
+      "Repulsed by and vulnerable to garlic",
+      "Repulsed by and vulnerable to silver",
+      "Repulsed by and vulnerable to holy symbols and places",
+      "Cannot cross running water, and destroyed by drowning",
+      "May only feed upon people of your own race"
+    ],
+    "submoves": [
+      {
+        "title": "Mist",
+        "description": "When you are **reduced to 0 hit points**, unless you were utterly annihilated or killed by a weakness you turn into mist and return to your last safe resting place and gain 1 Hunger."
+      },
+      {
+        "title": "Hunger",
+        "outcomes": [
+          {
+            "text": "The GM can spend 1 to",
+            "bullets": [
+              "Make you attack the nearest or weakest creature",
+              "Make you drain someone's blood completely when you are feeding",
+              "Make your appearance monstrously inhuman for a while",
+              "Run in terror from a weakness"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

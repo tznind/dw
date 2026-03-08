@@ -76,7 +76,7 @@
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "You notice in time to alert everyone and prepare a response—all party members take +1 forward."
+        "text": "You notice in time to alert everyone and prepare a response—all party members take **+1 forward**."
       },
       {
         "range": "7–9",
@@ -369,7 +369,7 @@
         "text": "Choose 1:",
         "bullets": [
           "Careful management reduces the amount of rations consumed (ask the GM by how much)",
-          "The party consumes the expected amount and the food you prepare is excellent—describe it, and everyone who licks their lips takes +1 forward"
+          "The party consumes the expected amount and the food you prepare is excellent—describe it, and everyone who licks their lips takes **+1 forward**"
         ]
       },
       {
