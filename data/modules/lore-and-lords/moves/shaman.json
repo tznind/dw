@@ -52,6 +52,12 @@
         ]
       }
     ],
+    "tracks": [{
+      "name": "Penalty",
+      "max": 5,
+      "shape": "hexagon",
+      "dynamic": true
+    }],
     "submoves": [
       {
         "title": "Note",
@@ -67,17 +73,17 @@
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "Ask the GM three questions from the list below."
-      },
-      {
-        "range": "7-9",
-        "text": "Ask one.",
+        "text": "Ask the GM three questions from the list below.",
         "bullets": [
           "Where exactly are any spirits residing?",
           "What is the nature of the spirits present?",
           "What does the spirit want from the material world?",
           "How is the spirit influencing the material world?"
         ]
+      },
+      {
+        "range": "7-9",
+        "text": "Ask one."
       }
     ],
     "submoves": [
