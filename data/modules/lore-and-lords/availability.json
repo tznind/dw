@@ -222,7 +222,18 @@
     "tr19": false,
     "tr20": false,
     "tr21": false,
-    "tr22": false
+    "tr22": false,
+    "ws1": true,
+    "ws2": true,
+    "ws3": true,
+    "ws7": false,
+    "ws8": false,
+    "ws15": false,
+    "ws16": false,
+    "ws20": false,
+    "ws23": false,
+    "ws25": false,
+    "ws28": false
   },
   "Shaman": {
     "_movesFile": "data/modules/lore-and-lords/moves/shaman.json",

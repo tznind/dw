@@ -192,30 +192,35 @@
   {
     "id": "t15",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Dirty Fighter (Requires level 6+)",
     "description": "Replaces: **Cheap Shot**\n\nWhen using a **precise** or **hand** weapon, your **Backstab** deals an extra +1d8 damage and all other attacks deal +1d4 damage."
   },
   {
     "id": "t16",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Extremely Cautious (Requires level 6+)",
     "description": "Replaces: **Cautious**\n\nWhen you use **Trap Expert** you always get +1 hold, even on a 6-. On a 12+ you get 3 hold and the next time you come near a trap the GM will immediately tell you what it does, what triggers it, who set it, and how you can use it to your advantage."
   },
   {
     "id": "t17",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Serious Underdog (Requires level 6+)",
     "description": "Replaces: **Underdog**\n\nYou have +1 armor. When you're outnumbered, you have +2 armor instead."
   },
   {
     "id": "t18",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Evasion (Requires level 6+)",
     "description": "When you **Defy Danger** on a 12+, you transcend the danger. You not only do what you set out to, but the GM will offer you a better outcome, true beauty, or a moment of grace."
   },
   {
     "id": "t19",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Heist (Requires level 6+)",
     "description": "When you **take time to make a plan to steal something**, name the thing you want to steal and ask the GM these questions. When acting on the answers you and your allies take **+1 forward**.",
     "outcomes": [
@@ -233,6 +238,7 @@
   {
     "id": "t20",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Alchemist (Requires level 6+)",
     "description": "Replaces: **Brewer**\n\nWhen you **have time to gather materials and a safe place to brew** you can create three doses of any poison you've used before. Alternately you can describe the effects of a poison you'd like to create. The GM will tell you that you can create it, but with one or more caveats:",
     "outcomes": [
@@ -258,6 +264,7 @@
   {
     "id": "t21",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Escape Route (+DEX) (Requires level 6+)",
     "description": "When you're **in too deep and need a way out**, name your escape route and roll+DEX.",
     "outcomes": [
@@ -274,12 +281,14 @@
   {
     "id": "t22",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Disguise (Requires level 6+)",
     "description": "When you **have time and materials** you can create a disguise that will fool anyone into thinking you're another creature of about the same size and shape. Your actions can give you away but your appearance won't."
   },
   {
     "id": "t23",
     "category": "Advanced Moves",
+    "weight": 1,
     "title": "Strong Arm, True Aim (Requires level 6+)",
     "description": "You can throw any melee weapon, using it to **Volley**. A thrown melee weapon is gone; you can never choose to reduce ammo on a 7-9."
   }

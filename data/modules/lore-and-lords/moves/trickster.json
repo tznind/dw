@@ -85,122 +85,111 @@
     "id": "tr3",
     "category": "Starting Moves",
     "title": "Dirty Tricks",
-    "description": "When you **Aid Another** using misdirection or distraction, take +1. When another person stands in **Defense** of you, they take +1."
+    "description": "When you **Aid Another using misdirection or distraction**, take +1. When **another person stands in** **Defense of you**, they take +1."
   },
   {
     "id": "tr4",
     "category": "Advanced Moves",
-    "title": "Confounding Blade (+DEX)",
-    "description": "When you **Hack & Slash**, you may choose to deal no damage and instead roll+DEX.",
-    "outcomes": [
-      {
-        "range": "≥ 10",
-        "text": "Choose 2:"
-      },
-      {
-        "range": "7-9",
-        "text": "Choose 1:"
-      }
-    ],
-    "submoves": [
-      {
-        "title": "Options",
-        "outcomes": [
-          {
-            "text": "",
-            "bullets": [
-              "Your target drops something they are holding",
-              "Your target is knocked prone",
-              "Your target is confused and attacks an ally on their next action",
-              "You may immediately move without triggering a response"
-            ]
-          }
-        ]
-      }
-    ]
+    "title": "Confounding Blade",
+    "description": "When you **Hack & Slash**, on a hit you create an advantage against your foe; either you or an ally acting on it takes **+1 forward** against that foe."
   },
   {
     "id": "tr5",
     "category": "Advanced Moves",
     "title": "Deep Pockets",
-    "description": "You always seem to have just the right thing on hand. Once per session, you may produce a mundane item of 0 weight from your person — something plausible but unspecified until now."
+    "description": "Your Load is increased by 3. Any items that you carry that could fit in the palm of your hand are so well concealed on you that they will never be found, even if you are searched."
   },
   {
     "id": "tr6",
     "category": "Advanced Moves",
     "title": "Disguise",
-    "description": "Given a few minutes and the right materials, you can disguise yourself as a member of any race or gender, or as a specific person you have observed for at least a few minutes. The disguise holds until someone has strong reason to look closely, or until you take damage."
+    "description": "When you have time and materials you can create a disguise that will fool anyone into thinking you're another creature of about the same size and shape. Your actions can give you away but your appearance won't."
   },
   {
     "id": "tr7",
     "category": "Advanced Moves",
     "title": "New Tricks",
-    "takeFrom": ["Thief"],
+    "takeFrom": ["*"],
     "takeCategory": "Advanced Moves",
-    "description": "Choose one move from the Thief's advanced moves."
+    "description": "Gain one non-multiclass move from any class list. Choose the move as if you were one level lower than you are."
   },
   {
     "id": "tr8",
     "category": "Advanced Moves",
-    "title": "Smoke Bomb",
-    "description": "You carry smoke bombs. When you **throw a smoke bomb**, everyone in the area must immediately **Defy Danger** or lose track of you. You may move freely through the smoke without penalty."
-  },
-  {
-    "id": "tr9",
-    "category": "Advanced Moves",
-    "title": "Legerdemain (+DEX)",
-    "description": "When you **pick pockets or perform sleight of hand**, roll+DEX.",
+    "title": "Smoke Bomb (+DEX)",
+    "description": "When you **have time and equipment**, you can create a vial of alchemical smoke from volatile reagents costing 3 coins. It has 1 weight. When you **throw the vial upon a hard surface**, roll+DEX.",
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "You do it, clean and unnoticed."
+        "text": "A cloud of smoke bursts forth, briefly blinding and causing a coughing fit in anyone caught in the cloud, except you."
       },
       {
         "range": "7-9",
-        "text": "You do it, but the GM chooses one:",
+        "text": "As above, but choose 1:",
         "bullets": [
-          "You are noticed in the act",
-          "You drop or fumble something",
-          "You attract unwanted attention"
+          "One of your allies also gets caught in the smoke",
+          "The smoke will only last a few moments",
+          "A person of the GM's choice is unaffected"
         ]
       }
     ]
   },
   {
+    "id": "tr9",
+    "category": "Advanced Moves",
+    "title": "Legerdemain",
+    "description": "Gain a spellbook containing all wizard cantrips. You may learn, memorize, and cast cantrips, illusions, and enchantments as if you were a wizard of your level-1, using +CHA instead of +INT to cast the spell."
+  },
+  {
     "id": "tr10",
     "category": "Advanced Moves",
     "title": "Lamentable Belaborment (+CHA)",
-    "description": "When you **distract and bewilder someone with words**, roll+CHA.",
+    "description": "When you **sow mistrust and discord among your foes**, roll+CHA.",
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "They are completely distracted until something snaps them out of it or you stop talking."
+        "text": "They're confused and will take some time to argue and sort things out."
       },
       {
         "range": "7-9",
-        "text": "They are distracted for a moment — long enough for one action."
+        "text": "They're still confused, but not for very long."
       }
     ]
   },
   {
     "id": "tr11",
     "category": "Advanced Moves",
-    "title": "Escape Artist",
-    "description": "When you **attempt to escape from bonds, a grapple, or confinement**, you always succeed. The only question is how long it takes and whether you are noticed."
+    "title": "Escape Artist (+DEX)",
+    "description": "When you **try to slip free of anything physically restraining you**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You're free. Choose one:",
+        "bullets": [
+          "You take a parting shot at whomever was holding you, deal your damage",
+          "You make it easier for someone else nearby to escape",
+          "You take a little souvenir with you, the GM will tell you what"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "You're free."
+      }
+    ]
   },
   {
     "id": "tr12",
     "category": "Advanced Moves",
     "title": "Rumormonger (+CHA)",
-    "description": "When you **spread a rumor through a community**, roll+CHA.",
+    "description": "When you **spend some time trading gossip in a community**, roll+CHA.",
     "outcomes": [
       {
         "range": "≥ 10",
-        "text": "The rumor spreads quickly and is widely believed. The GM will tell you one unintended consequence."
+        "text": "You learn of an interesting opportunity nearby. You can also start a rumor of your own; it will spread like wildfire."
       },
       {
         "range": "7-9",
-        "text": "The rumor spreads, but is only partially believed or takes longer to take root."
+        "text": "You learn of an interesting opportunity nearby."
       }
     ]
   },

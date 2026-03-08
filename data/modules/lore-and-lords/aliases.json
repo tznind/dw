@@ -22,5 +22,9 @@
     {
         "alias": "Prestige",
         "move": "🏡Open for Business"
+    },
+    {
+        "alias": "Defense of you",
+        "move":"Defend"
     }
 ]
