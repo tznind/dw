@@ -63,7 +63,7 @@
     "id": "hn5",
     "category": "Advanced Moves",
     "title": "Wolf Pack",
-    "description": "When you successfully Aid someone you take +1 forward as well."
+    "description": "When you successfully Aid someone you take **+1 forward** as well."
   },
   {
     "id": "hn11",
@@ -83,8 +83,21 @@
     "id": "hn13",
     "category": "Advanced Moves",
     "title": "Terrain Advantage",
-    "description": "Choose a land from the Druid's Born of the Soil list, adding \"the Great City\" to the list. While you are in your chosen land you take **+1 ongoing** to Hunt and Track, and you don't spend materials to set traps.",
-    "details": true
+    "description": "Choose a land from the Druid's Born of the Soil list, adding \"the Great City\" to the list. While you are in your chosen land you take **+1 ongoing** to **Hunt and Track**, and you don't spend materials to set traps.",
+    "pickOne": [
+      "The Great Forests",
+      "The Whispering Plains",
+      "The Vast Desert",
+      "The Stinking Mire",
+      "The River Delta",
+      "The Depths of the Earth",
+      "The Sapphire Islands",
+      "The Open Sea",
+      "The Towering Mountains",
+      "The Frozen North",
+      "The Blasted Wasteland",
+      "The Great City"
+    ]
   },
   {
     "id": "hn14",
@@ -108,36 +121,41 @@
     "category": "Advanced Moves",
     "title": "Bull's-eye (Requires level 6+)",
     "weight": 1,
-    "description": "When you **Volley**, on a 12+ you also damage your target's arms, legs, or head as if you had made a Called Shot."
+    "description": "When you **Volley**, on a 12+ you also damage your target's arms, legs, or head as if you had made a **Called Shot**."
   },
   {
     "id": "hn16",
     "category": "Advanced Moves",
     "title": "Black Arrow (Requires level 6+)",
     "weight": 1,
-    "description": "When you know your target's weakest point, your arrows ignore armor."
+    "description": "When you **know your target's weakest point**, your arrows ignore armor."
   },
   {
     "id": "hn17",
     "category": "Advanced Moves",
     "title": "The Most Dangerous Game (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Improved Traps\n\nChoose a poison from the Thief's Poisoner list, that poison is no longer dangerous for you to use. When you set a trap, you may apply a dose of poison to the trap. When the trap is sprung, on a hit the poison affects the target. Additionally, when your traps deal damage, they do +1d4 damage.",
-    "details": true
+    "description": "Requires: **Improved Traps**\n\nChoose a poison from the Thief's **Poisoner** list, that poison is no longer dangerous for you to use. When you set a trap, you may apply a dose of poison to the trap. When the trap is sprung, on a hit the poison affects the target. Additionally, when your traps deal damage, they do +1d4 damage.",
+    "pickOne": [
+      "Oil of Tagit - **(applied)** The target falls into a light sleep.",
+      "Bloodweed - **(touch)** The target deals -1d4 damage ongoing until cured.",
+      "Goldenroot - **(applied)** The target treats the next creature they see as a trusted ally, until proved otherwise.",
+      "Serpent's Tears - **(touch)** Anyone dealing damage to the target rolls twice and takes the better result."
+    ]
   },
   {
     "id": "hn18",
     "category": "Advanced Moves",
     "title": "Hunter's Mark (Requires level 6+)",
     "weight": 1,
-    "description": "When you **draw an enemy's blood**, you may declare that enemy to be your quarry. Your attacks and traps deal +1d4 damage against the quarry, and when you Track your quarry you cannot get a 6-, treat that as a 7-9. You may have only one quarry at a time."
+    "description": "When you **draw an enemy's blood**, you may declare that enemy to be your quarry. Your attacks and traps deal +1d4 damage against the quarry, and when you **Track** your quarry you cannot get a 6-, treat that as a 7-9. You may have only one quarry at a time."
   },
   {
     "id": "hn19",
     "category": "Advanced Moves",
     "title": "May the Odds Be Ever in Your Favor (Requires level 6+)",
     "weight": 1,
-    "description": "Requires: Terrain Advantage\n\nWhile you are in your chosen land you take **+1 ongoing** to Called Shot and Trapper, and your attacks and traps that deal damage deal +1d4 damage."
+    "description": "Requires: **Terrain Advantage**\n\nWhile you are in your chosen land you take **+1 ongoing** to **Called Shot** and **Trapper**, and your attacks and traps that deal damage deal +1d4 damage."
   },
   {
     "id": "hn20",
