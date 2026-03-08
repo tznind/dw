@@ -215,7 +215,9 @@
     "category": "Advanced Moves",
     "weight": 1,
     "title": "Blood Magic (Requires level 6+)",
-    "description": "You can cast a spell from the Wizard list as if you were a wizard of your class level-1 by spending 1 **Blood**, no roll is necessary. If an ongoing effect gives a penalty to cast a spell, you must pay 1 extra **Blood** to cast a spell."
+    "description": "You can cast a spell from the Wizard list as if you were a wizard of your class level-1 by spending 1 **Blood**, no roll is necessary. If an ongoing effect gives a penalty to cast a spell, you must pay 1 extra **Blood** to cast a spell.",
+    "takeFrom": ["Wizard"],
+    "takeCategory": ["📜Wizard Spells"]
   },
   {
     "id": "vp19",
