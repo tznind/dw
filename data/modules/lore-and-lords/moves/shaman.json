@@ -108,21 +108,45 @@
   {
     "id": "sh6",
     "category": "Advanced Moves",
-    "title": "Call of the Wild",
+    "title": "Call of the Wild (+WIS)",
     "description": "Choose a totem animal. You may take on that animal's form as if you had the Druid's **Shapeshifter** move, rolling for the move as normal.",
-    "details": true
+    "details": true,
+    "tracks": [{
+            "name": "Hold",
+            "max": 3,
+            "shape": "circle"
+
+    }],
+      "outcomes": [
+      {
+        "range": "≥10",
+        "text": "Hold 3."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤6",
+        "text": "Hold 1 in addition to whatever the GM says."
+      }
+    ],
+    "submoves":[{
+      "title":"Shapeshifter",
+      "description": "You and your possessions meld into a perfect copy of the species' form. You have any innate abilities and weaknesses of the form: claws, wings, gills, breathing water instead of air. You still use your normal stats but some moves may be harder to trigger—a house cat will find it hard to do battle with an ogre. The GM will also tell you one or more moves associated with your new form. Spend 1 hold to make that move. Once you're out of hold, you return to your natural form. At any time, you may spend all your hold and revert to your natural form."
+    }]
   },
   {
     "id": "sh7",
     "category": "Advanced Moves",
     "title": "Parting the Veil",
-    "description": "When someone **takes their Last Breath** in your presence, they take +1 to the roll."
+    "description": "When someone **takes their** **Last Breath** in your presence, they take +1 to the roll."
   },
   {
     "id": "sh8",
     "category": "Advanced Moves",
     "title": "Widdershins (+CHA)",
-    "description": "You know a simple ritual to banish otherworldly beings — describe it! When you **attempt to banish a nearby spirit**, roll+CHA.",
+    "description": "You know a simple ritual to banish otherworldly beings — describe it! ___sh8rt_____ When you **attempt to banish a nearby spirit**, roll+CHA.",
     "outcomes": [
       {
         "range": "≥ 10",
@@ -144,17 +168,12 @@
     "category": "Advanced Moves",
     "title": "Stormstrike",
     "description": "When you **imbue your weapon with primal power**, forget a spell you have memorized and add one of the following tags to your weapon. The tag lasts until the next time you **Trance**. You may sacrifice multiple spells to gain multiple tags, but you can only take each tag once.",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "Tags:",
-        "bullets": [
+    "pick": [
           "+1d4 damage",
           "2 piercing",
           "Precise",
           "Forceful"
-        ]
-      }
+      
     ]
   },
   {
@@ -214,7 +233,20 @@
     "weight": 1,
     "title": "Well of Segais (Requires level 6+)",
     "description": "Tasting the waters of knowledge has made you wise. You gain an area of knowledge, as per the **Bardic Lore** move.",
-    "details": true
+    "pickOne": [
+      "Spells and Magicks",
+      "The Dead and Undead",
+      "Grand Histories of the Known World",
+      "A Bestiary of Creatures Unusual",
+      "The Planar Spheres",
+      "Legends of Heroes Past",
+      "Gods and Their Servants"
+    ],
+    "submoves":[
+      {"title":"Bardic Lore",
+      "description": "When you **first encounter an important creature, location, or item** (your call) covered by your bardic lore you can ask the GM any one question about it; the GM will answer truthfully. The GM may then ask you what tale, song, or legend you heard that information in."
+    }
+    ]
   },
   {
     "id": "sh16",
@@ -252,17 +284,11 @@
     "weight": 1,
     "title": "Storm, Earth, and Fire (Requires level 6+)",
     "description": "Requires: **Stormstrike**\n\nAdd the following to the list of tags for your **Stormstrike** ability:",
-    "outcomes": [
-      {
-        "range": "",
-        "text": "Additional tags:",
-        "bullets": [
+    "pick": [
           "+1d6 damage again (stacks with +1d4 damage)",
           "Messy",
           "Flaming (ignores armor and sets things ablaze)",
           "Spiritual (makes attack moves with WIS instead of STR or DEX)"
-        ]
-      }
     ]
   },
   {
@@ -287,7 +313,7 @@
     "category": "Advanced Moves",
     "weight": 1,
     "title": "Moondance (Requires level 6+)",
-    "description": "While your bare skin is bathed in moonlight, the effects of your spells are maximized."
+    "description": "While **your bare skin is bathed in moonlight**, the effects of your spells are maximized."
   },
   {
     "id": "sh23",
@@ -296,10 +322,9 @@
     "title": "Guardian Spirit (Requires level 6+)",
     "tracks": [
       {
-        "name": "Hold",
+        "name": "Guardian",
         "max": 1,
-        "shape": "circle",
-        "dynamic": true
+        "shape": "hexagon"
       }
     ],
     "description": "When you **Trance** you get 1 hold and lose any hold you already had. Spend that hold when you or an ally takes damage to call on a guardian spirit — they intervene with an appropriate manifestation (a sudden gust of wind, a lucky slip, a burst of light) and prevent the damage."

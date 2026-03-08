@@ -149,7 +149,7 @@
     "id": "d12",
     "category": "Advanced Moves",
     "title": "Formcrafter",
-    "description": "When you **shapeshift** choose a stat: you take **+1 ongoing** to rolls using that stat while shifted. The GM will choose a stat, too: you take **-1 ongoing** to rolls using that stat while shifted."
+    "description": "When you **shapeshift** choose a stat (____d12good____): you take **+1 ongoing** to rolls using that stat while shifted. The GM will choose a stat, too (___d12bad______): you take **-1 ongoing** to rolls using that stat while shifted."
   },
   {
     "id": "d13",
