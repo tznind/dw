@@ -332,6 +332,7 @@
   {
     "id": "ssh1",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Aspect of the Wolf - Level 1",
     "description": "The person you touch is imbued with a fraction of wild energy. Choose one of the following effects. While this spell is ongoing you take -1 to **cast a spell**.",
     "outcomes": [
@@ -356,6 +357,7 @@
   {
     "id": "ssh2",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Bind Spirit - Level 1",
     "description": "Your words bind a nearby spirit, preventing it from departing or taking any aggressive actions until you release it or leave the area. Once the spell ends, the spirit can behave as normal. While this spell is ongoing you can't **cast a spell**.",
     "tracks": [
@@ -369,6 +371,7 @@
   {
     "id": "ssh3",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Dreamsight - Level 1",
     "description": "Cast this spell over a sleeping person, and you can see what they are dreaming about, as well as the nature of any influences upon their mind.",
     "tracks": [
@@ -382,6 +385,7 @@
   {
     "id": "ssh4",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Flames of Wrath - Level 1",
     "description": "You channel the power of rage to create 1d4 small globes of fire in your hands. You may **Volley** with these as if they were thrown weapons, using WIS instead of DEX on your roll. Each globe deals 1d6 fire damage to one target, ignoring armor.",
     "tracks": [
@@ -395,6 +399,7 @@
   {
     "id": "ssh5",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Sacred Circle - Level 1",
     "description": "As you cast this spell, you walk the perimeter of an area. As long as you stay within that area you are alerted whenever someone acts with malice within the circle (including entering with harmful intent). Anyone who receives healing within the circle heals +1d6 HP.",
     "tracks": [
@@ -408,6 +413,7 @@
   {
     "id": "ssh6",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Healing Touch - Level 1",
     "description": "Your touch halts bleeding and eases pain. Heal an ally you touch of 1d6 damage.",
     "tracks": [
@@ -421,6 +427,7 @@
   {
     "id": "ssh7",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Well of Wisdom - Level 3",
     "description": "Cast this spell as you gaze into a pool of water, and you will receive a portent from the spirit world. The GM will reveal an impending danger that threatens the land. You will also learn something useful about how you can interfere with the danger's dark outcomes.",
     "tracks": [
@@ -434,6 +441,7 @@
   {
     "id": "ssh8",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Entangle - Level 3",
     "description": "Roots and vines constrict painfully around the lower body of one target you can see, preventing them from moving their legs. While this spell is ongoing you take -1 to **cast a spell**.",
     "tracks": [
@@ -447,6 +455,7 @@
   {
     "id": "ssh9",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Glamour - Level 3",
     "description": "You create a simple, nonmoving illusion that affects one sense: sight, sound, or smell. While this spell is ongoing you take -1 to **cast a spell**.",
     "tracks": [
@@ -460,6 +469,7 @@
   {
     "id": "ssh10",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Elemental Blessing - Level 3",
     "description": "A person you touch receives a blessing of the elements. Choose one. While this spell is ongoing you take -1 to **cast a spell**.",
     "outcomes": [
@@ -485,6 +495,7 @@
   {
     "id": "ssh11",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Silence and Stillness - Level 3",
     "description": "The winds of magic grow still in your presence. Choose a spell or magical effect in your presence — it ceases to function as long as you remain nearby.",
     "tracks": [
@@ -498,6 +509,7 @@
   {
     "id": "ssh12",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Whispering Wind - Level 3",
     "description": "You summon a spirit of the winds to carry a short message to a person of your choice. The spirit will also carry back a short reply.",
     "tracks": [
@@ -511,6 +523,7 @@
   {
     "id": "ssh13",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Purify - Level 5",
     "description": "Your touch removes a poison or disease from a person or object.",
     "tracks": [
@@ -524,6 +537,7 @@
   {
     "id": "ssh14",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Summon Elemental - Level 5",
     "description": "You conjure an elemental servitor to assist you. Treat it as your character, but with access to only the basic moves. It has +1 modifier for all stats, 1 HP, and uses your damage dice. The elemental remains on this plane until it dies or you dismiss it. While this spell is ongoing you take -1 to **cast a spell**.",
     "outcomes": [
@@ -550,6 +564,7 @@
   {
     "id": "ssh15",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Chain Lightning - Level 5",
     "description": "A bolt of lightning springs from your fingertips, striking your target and everyone nearby for 2d6 damage, ignoring armor.",
     "tracks": [
@@ -563,6 +578,7 @@
   {
     "id": "ssh16",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Life Touch - Level 5",
     "description": "Life energy fills the person you touch, healing them of 3d6 damage.",
     "tracks": [
@@ -576,6 +592,7 @@
   {
     "id": "ssh17",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Sight Beyond Sight - Level 5",
     "description": "Name a person, place, or thing you want to learn about. You will receive a vision of the subject, as clear as if you were there.",
     "tracks": [
@@ -589,6 +606,7 @@
   {
     "id": "ssh18",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Ironbane - Level 5",
     "description": "Cast this spell as you touch an item made of metal — it disintegrates into rust.",
     "tracks": [
@@ -602,6 +620,7 @@
   {
     "id": "ssh19",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Control Weather - Level 7",
     "description": "Wish for rain — or sun, wind, or snow. Within a day or so, your wish will be granted. The weather will change according to your will and last a handful of days.",
     "tracks": [
@@ -615,6 +634,7 @@
   {
     "id": "ssh20",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Renewal - Level 7",
     "description": "A burst of cleansing energy fills the area, removing any corrupting influences on either the land or a person of your choice. Curses, blights, and debilities are all ended by this spell.",
     "tracks": [
@@ -628,6 +648,7 @@
   {
     "id": "ssh21",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Masterful Glamour - Level 7",
     "description": "You create a complex illusion that affects all senses. The illusion can move if you are around to direct it, or you may program it to move under certain conditions. While this spell is ongoing you take -1 to **cast a spell**.",
     "tracks": [
@@ -641,6 +662,7 @@
   {
     "id": "ssh22",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "True Seeing - Level 7",
     "description": "Your vision is opened to the true nature of everything you lay your eyes on. You pierce illusions and see things that have been hidden. The GM will describe the area before you ignoring any illusions and falsehoods, magical or otherwise. While this spell is ongoing you take -1 to **cast a spell**.",
     "tracks": [
@@ -654,6 +676,7 @@
   {
     "id": "ssh23",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Perfect Binding - Level 7",
     "description": "Chains of mystic iron bind a nearby spirit, preventing it from doing anything unless you give it permission. While bound, the spirit can only speak the truth, and any agreement it enters with you must be kept. Alternatively, you can call a spirit by name when you cast this spell, and it will appear and be instantly bound. While this spell is ongoing you can't **cast a spell**.",
     "tracks": [
@@ -667,6 +690,7 @@
   {
     "id": "ssh24",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Rebirth - Level 7",
     "description": "The Mists breathe new life into a person you touch. They are restored to full health, any poisons or diseases are cured, debilities are healed, and even lost limbs are regrown.",
     "tracks": [
@@ -680,6 +704,7 @@
   {
     "id": "ssh25",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Cataclysm - Level 9",
     "description": "The Mists bring the unnatural weather of your choice to pass. Rain of blood or acid, meteor storms, wind that can carry away buildings, or any other weather you can imagine: ask and it shall come.",
     "tracks": [
@@ -693,6 +718,7 @@
   {
     "id": "ssh26",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Reclaiming - Level 9",
     "description": "The earth reclaims a person that you touch, turning them to stone.",
     "tracks": [
@@ -706,6 +732,7 @@
   {
     "id": "ssh27",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Gate - Level 9",
     "description": "Cast this spell upon an arch or doorway. You open a gate to another plane of existence of your choice. The gate remains open as long as you maintain it, and anyone, friend or foe, can walk through it. While this spell is ongoing you can't **cast a spell**.",
     "tracks": [
@@ -719,6 +746,7 @@
   {
     "id": "ssh28",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Haunt - Level 9",
     "description": "Name a town, city, or other place where people live. Malicious spirits wreak havoc upon that place, causing chaos and strife as long as you maintain the spell. While this spell is ongoing you take -1 to **cast a spell**.",
     "tracks": [
@@ -732,6 +760,7 @@
   {
     "id": "ssh29",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Maelstrom - Level 9",
     "description": "A powerful whirlwind gathers you and your allies up, whisking you away to a destination of your choice.",
     "tracks": [
@@ -745,6 +774,7 @@
   {
     "id": "ssh30",
     "category": "🌿Shaman Spells",
+    "hideCheckbox": true,
     "title": "Forest Pact - Level 9",
     "description": "Cast this spell as you plant a wooden staff into the ground — it is transformed into a treant which will do your bidding as long as you maintain the spell. While this spell is ongoing you can't **cast a spell**.",
     "tracks": [
