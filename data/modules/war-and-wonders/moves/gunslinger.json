@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gsa",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - [Placeholder]",
+      "**Neutral** - [Placeholder]",
+      "**Chaotic** - [Placeholder]",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "gsr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Human** - [Placeholder]",
+      "**Other** - [Placeholder]"
+    ],
+    "details": true
+  },
+  {
+    "id": "gs1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 1]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "gs2",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 2]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "gs3",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 3]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "gs4",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 1]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "gs5",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 2]",
+    "description": "[Placeholder description]"
+  }
+]

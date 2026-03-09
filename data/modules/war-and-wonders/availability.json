@@ -1,0 +1,208 @@
+{
+  "Beast Backgrounds": {
+    "_movesFile": "data/modules/war-and-wonders/moves/beast-backgrounds.json",
+    "beb1": true,
+    "beb2": true,
+    "beb3": true,
+    "beb4": true
+  },
+  "Beast": {
+    "_movesFile": "data/modules/war-and-wonders/moves/beast.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "10+Con",
+      "load": "8+Str"
+    },
+    "default-bonds": [
+      "______________ thinks I am a monster; I'll prove them wrong.",
+      "______________ wouldn't last a day in the wild without me; I'll teach them how to survive.",
+      "I owe ______________ a debt of blood that I have yet to repay."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "An item that symbolizes your heritage (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Spear (reach, thrown, near)", "weight": 1},
+              {"item": "Hunting Knife (hand)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Makeshift Club (close)", "weight": 2},
+              {"item": "Adventuring Gear (5 uses)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Poultices and Herbs (2 uses)", "weight": 1},
+          {"item": "Hide Armor (1 armor, worn)", "weight": 1}
+        ]
+      }
+    ],
+    "bea": true,
+    "ber": true,
+    "be1": true,
+    "be2": true,
+    "be3": true,
+    "be4": true,
+    "be7": true,
+    "be5": false,
+    "be6": false
+  },
+  "Warlord": {
+    "_movesFile": "data/modules/war-and-wonders/moves/warlord.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d10",
+      "hp": "10+Con",
+      "load": "12+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "wla": true,
+    "wlr": true,
+    "wl1": true,
+    "wl2": true,
+    "wl3": true,
+    "wl4": false,
+    "wl5": false
+  },
+  "Mask Master": {
+    "_movesFile": "data/modules/war-and-wonders/moves/mask-master.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "7+Con",
+      "load": "7+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "mma": true,
+    "mmr": true,
+    "mm1": true,
+    "mm2": true,
+    "mm3": true,
+    "mm4": false,
+    "mm5": false
+  },
+  "Gunslinger": {
+    "_movesFile": "data/modules/war-and-wonders/moves/gunslinger.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "9+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "gsa": true,
+    "gsr": true,
+    "gs1": true,
+    "gs2": true,
+    "gs3": true,
+    "gs4": false,
+    "gs5": false
+  },
+  "Warlock": {
+    "_movesFile": "data/modules/war-and-wonders/moves/warlock.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d4",
+      "hp": "6+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "wka": true,
+    "wkr": true,
+    "wk1": true,
+    "wk2": true,
+    "wk3": true,
+    "wk4": false,
+    "wk5": false
+  },
+  "Fool": {
+    "_movesFile": "data/modules/war-and-wonders/moves/fool.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d4",
+      "hp": "6+Con",
+      "load": "7+Str"
+    },
+    "default-bonds": [
+      "[Placeholder bond 1]",
+      "[Placeholder bond 2]",
+      "[Placeholder bond 3]",
+      "[Placeholder bond 4]"
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+      }
+    ],
+    "foa": true,
+    "for": true,
+    "fo1": true,
+    "fo2": true,
+    "fo3": true,
+    "fo4": false,
+    "fo5": false
+  }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "bea",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - Endanger yourself to combat an unnatural threat.",
+      "**Neutral** - Teach someone the ways of your people.",
+      "**Chaotic** - Eschew a convention of the civilized world."
+    ],
+    "details": true
+  },
+  {
+    "id": "ber",
+    "category": "Starting Moves",
+    "title": "Background",
+    "weight": -1,
+    "hideCheckbox": true,
+    "description": "Choose your background.",
+    "takeFrom": ["Beast Backgrounds"]
+  },
+  {
+    "id": "be1",
+    "category": "Starting Moves",
+    "title": "Beast-Blooded",
+    "description": "Your heritage includes the blood of a beast or a monster. Describe your species, appearance, and cultural heritage, choosing anything or any combination of things that sounds interesting to you. Choose up to three **heritage moves** to start with, based on the monster moves that best match your heritage. Then choose a method of how you **honor your heritage**:",
+    "pick": [
+      "Acquiring lost knowledge and technology",
+      "Proving your might or superiority",
+      "Guarding or purifying the natural world",
+      "Enforcing your people's code of honor",
+      "Obeying your elders",
+      "Venerating your ancestors or ancestral deity"
+    ],
+    "details":true,
+    "submoves": [
+      {
+        "title":"Appreciation",
+        "description": "When you gain a new appreciation for your heritage, add a new **heritage move** or change an existing one, up to a maximum of three."
+      }
+    ]
+  },
+  {
+    "id": "be2",
+    "category": "Starting Moves",
+    "title": "Blood and Tradition (+CON)",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 4,
+        "shape": "triangle",
+        "dynamic": true
+      }
+    ],
+    "description": "At the beginning of a session, or when you **honor your heritage**, roll+CON.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 4."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 3."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Hold 2, in addition to whatever the GM says."
+      }
+    ],
+    "submoves": [
+      {
+        "description": "Spend a hold to make a **heritage move**; no other roll is necessary, you just make that move."
+      }
+    ]
+  },
+  {
+    "id": "be3",
+    "category": "Starting Moves",
+    "title": "Fight Like a Beast",
+    "description": "Your horns, fangs, claws, or talons are lethal weapons with a range of hand."
+  },
+  {
+    "id": "be4",
+    "category": "Starting Moves",
+    "title": "King of the Jungle (+WIS)",
+    "description": "You can speak with and understand animals, and even closely study them and Parley with them as if they were people. When you **exert your will over a wild animal**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The animal will perform one simple task for you before departing, to the best of its ability."
+      },
+      {
+        "range": "7-9",
+        "text": "The animal will either run away or attack you, your choice."
+      }
+    ]
+  },
+  {
+    "id": "be7",
+    "category": "Starting Moves",
+    "title": "Heritage Moves",
+    "description": "_______be7m1_________\n_______be7m2___________\n_______be7m3___________\n_______be7m4___________\n_______be7m5___________\n_______be7m6___________"
+  },
+  {
+    "id": "be5",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 1]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "be6",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 2]",
+    "description": "[Placeholder description]"
+  }
+]

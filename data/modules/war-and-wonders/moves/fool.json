@@ -1,0 +1,58 @@
+[
+  {
+    "id": "foa",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - [Placeholder]",
+      "**Neutral** - [Placeholder]",
+      "**Chaotic** - [Placeholder]",
+      "Other - Describe below"
+    ],
+    "details": true
+  },
+  {
+    "id": "for",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Human** - [Placeholder]",
+      "**Other** - [Placeholder]"
+    ],
+    "details": true
+  },
+  {
+    "id": "fo1",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 1]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "fo2",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 2]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "fo3",
+    "category": "Starting Moves",
+    "title": "[Placeholder Starting Move 3]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "fo4",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 1]",
+    "description": "[Placeholder description]"
+  },
+  {
+    "id": "fo5",
+    "category": "Advanced Moves",
+    "title": "[Placeholder Advanced Move 2]",
+    "description": "[Placeholder description]"
+  }
+]
