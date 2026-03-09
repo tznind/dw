@@ -92,10 +92,11 @@
       "load": "12+Str"
     },
     "default-bonds": [
-      "[Placeholder bond 1]",
-      "[Placeholder bond 2]",
-      "[Placeholder bond 3]",
-      "[Placeholder bond 4]"
+      "__________ has stood by me in battle and can be trusted completely.",
+      "__________ doesn't think before they act, and it's always causing me trouble.",
+      "I met __________ in the last war, but we weren't exactly on the same side.",
+      "I've seen __________ turn the tide of a battle before.",
+      "__________ isn't suited for battle; I'd better keep an eye on them."
     ],
     "default-gear": [
       {

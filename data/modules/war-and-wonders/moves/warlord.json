@@ -6,10 +6,9 @@
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
-      "**Good** - [Placeholder]",
-      "**Neutral** - [Placeholder]",
-      "**Chaotic** - [Placeholder]",
-      "Other - Describe below"
+      "**Lawful** - Choose honor over personal gain.",
+      "**Neutral** - Defeat a worthy opponent.",
+      "**Evil** - Kill a defenseless or surrendered enemy."
     ],
     "details": true
   },
@@ -20,8 +19,9 @@
     "weight": -1,
     "hideCheckbox": true,
     "pickOne": [
-      "**Human** - [Placeholder]",
-      "**Other** - [Placeholder]"
+      "**Dwarf** - You ignore the clumsy tag on any armor you wear.",
+      "**Orc** - Add the following option to **War Leader**, and you may use this option once per battle without spending hold: Fall upon the enemy in a violent, howling frenzy.",
+      "**Human** - Hirelings under your command have +1 Loyalty."
     ],
     "details": true
   },
