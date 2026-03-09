@@ -106,13 +106,169 @@
   {
     "id": "be5",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 1]",
-    "description": "[Placeholder description]"
+    "title": "Eye of the Tiger",
+    "description": "When you **mark an animal** (with mud, dirt, or blood), you can see through that animal's eyes as if they were your own, no matter what distance separates you. Only one animal at a time may be marked in this way."
   },
   {
     "id": "be6",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 2]",
-    "description": "[Placeholder description]"
+    "title": "Fair Form",
+    "description": "With a bit of a disguise, such as a hooded cloak, you are able to hide your heritage and pass as a member of another race, as long as you don't use your **heritage moves** or draw attention to yourself."
+  },
+  {
+    "id": "be8",
+    "category": "Advanced Moves",
+    "title": "Forager",
+    "description": "When you **Make Camp** in the wilderness, you and one other person don't need to consume a ration."
+  },
+  {
+    "id": "be9",
+    "category": "Advanced Moves",
+    "title": "Night-Eyes",
+    "description": "You can see clearly in the faintest of light; even starlight is enough for you."
+  },
+  {
+    "id": "be10",
+    "category": "Advanced Moves",
+    "title": "Pack Leader",
+    "description": "Choose a second way you can **honor your heritage**."
+  },
+  {
+    "id": "be11",
+    "category": "Advanced Moves",
+    "title": "Pathfinder (+WIS)",
+    "description": "You know places in the wilderness where secret paths lie unseen. When you **travel by a hidden path through the wilderness**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "It leads you where you want."
+      },
+      {
+        "range": "7-9",
+        "text": "It leads you where you want, but choose a difficulty:",
+        "bullets": [
+          "Others find the way who did not know it before",
+          "The journey takes much longer than it seemed to",
+          "The way is long and hard; each person who takes it must mark the debility weak",
+          "You encounter some danger upon the road"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "be12",
+    "category": "Advanced Moves",
+    "title": "Predatory Instinct",
+    "description": "When you use a **heritage move**, take +1d4 damage forward or +2 armor forward."
+  },
+  {
+    "id": "be13",
+    "category": "Advanced Moves",
+    "title": "Savage Beast",
+    "takeFrom": ["Barbarian", "Ranger"],
+    "description": "Gain a non-multiclass move from the barbarian or ranger playbooks."
+  },
+  {
+    "id": "be14",
+    "category": "Advanced Moves",
+    "title": "Sharp Senses",
+    "description": "When you **Discern Realities** about a location, add these questions to the list:",
+    "submoves": [
+      {
+        "bullets": [
+          "How could I be accepted by the people here?",
+          "How could I best attract attention here?",
+          "What here is a source of evil?",
+          "Where could I best hide around here?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "be15",
+    "category": "Advanced Moves",
+    "title": "Tarzan",
+    "description": "When you use a **heritage move** to evade harm or avoid an obstacle, you may also bring someone else along with you safely."
+  },
+  {
+    "id": "be16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Akela (Requires level 6+)",
+    "description": "Requires: **King of the Jungle**\n\nWhen you use **King of the Jungle**, on a 12+ the animal will either tag along with you and assist you for a while, in its own way, or you may command it to perform a very dangerous task for you."
+  },
+  {
+    "id": "be17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Ancient Heritage (Requires level 6+)",
+    "description": "You may now have up to five **heritage moves**."
+  },
+  {
+    "id": "be18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Awakened Blood (Requires level 6+)",
+    "description": "Choose another type of creature that has contributed to your heritage. When you change your **heritage moves**, you may take moves from this new heritage, if you wish. When you take this move, you may change one of your existing **heritage moves** to a move from your new heritage."
+  },
+  {
+    "id": "be19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Bloody Roar (Requires level 6+)",
+    "description": "While you are **afflicted by fear, mind control, or enchanting magic**, you may ignore the effect as long as you attack the closest enemy in sight. If you have no enemies in sight, the GM chooses who you attack."
+  },
+  {
+    "id": "be20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Dire Beast (Requires level 6+)",
+    "takeFrom": ["Barbarian", "Ranger"],
+    "description": "Gain a non-multiclass move from the barbarian or ranger playbooks."
+  },
+  {
+    "id": "be21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "I Am the Tiger (Requires level 6+)",
+    "description": "Requires: **Eye of the Tiger**\n\nWhen you **touch an animal and push your thoughts into its mind**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You can read the animal's mind and memories, reliving its past and seeing what it has seen."
+      },
+      {
+        "range": "7-9",
+        "text": "As above, but you have trouble separating these memories from your own, and you exhibit some aspects of the animal's behavior for a while after you break the link."
+      }
+    ]
+  },
+  {
+    "id": "be22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Killer Instinct (Requires level 6+)",
+    "description": "Replaces: **Predatory Instinct**\n\nWhen you use a **heritage move**, take +1d8 damage forward or +4 armor forward."
+  },
+  {
+    "id": "be23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Monster Blood (Requires level 6+)",
+    "description": "When you roll for **Blood and Tradition**, you get +1 hold, even on a 6-."
+  },
+  {
+    "id": "be24",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Natural Medicine (Requires level 6+)",
+    "description": "Requires: **Forager**\n\nWhen you **have time to gather supplies in the wilderness**, you can prepare a poultice that will heal one debility next time you **Make Camp**."
+  },
+  {
+    "id": "be25",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Nose For Trouble (Requires level 6+)",
+    "description": "When **something hidden threatens you**, the GM will give you a warning in the form of a hunch about the nature of the danger, but not necessarily where it lurks."
   }
 ]
