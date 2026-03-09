@@ -6,5 +6,9 @@
     {
         "alias": "heritage moves",
         "move": "Heritage Moves"
+    },
+    {
+        "alias": "Aid an ally in battle",
+        "move": "Aid or Interfere"
     }
 ]

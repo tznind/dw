@@ -89,7 +89,7 @@
     "placeholders": {
       "damage": "d10",
       "hp": "10+Con",
-      "load": "12+Str"
+      "load": "11+Str"
     },
     "default-bonds": [
       "__________ has stood by me in battle and can be trusted completely.",
@@ -101,7 +101,24 @@
     "default-gear": [
       {
         "type": "get",
-        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Chainmail (1 armor, worn)", "weight": 1},
+          {"item": "Melee weapon of your choice (close)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Dagger (hand) and 5 coins", "weight": 1},
+          {"item": "Shield (+1 armor)", "weight": 2},
+          {"item": "Healing Potion", "weight": 0},
+          {"item": "Bandages (3 uses) and 5 coins", "weight": 0},
+          {"item": "War Horse", "weight": 0}
+        ]
       }
     ],
     "wla": true,
@@ -110,7 +127,25 @@
     "wl2": true,
     "wl3": true,
     "wl4": false,
-    "wl5": false
+    "wl5": false,
+    "wl6": false,
+    "wl7": false,
+    "wl8": false,
+    "wl9": false,
+    "wl10": false,
+    "wl11": false,
+    "wl12": false,
+    "wl13": false,
+    "wl14": false,
+    "wl15": false,
+    "wl16": false,
+    "wl17": false,
+    "wl18": false,
+    "wl19": false,
+    "wl20": false,
+    "wl21": false,
+    "wl22": false,
+    "wl23": false
   },
   "Mask Master": {
     "_movesFile": "data/modules/war-and-wonders/moves/mask-master.json",
