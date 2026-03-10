@@ -6,12 +6,19 @@
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
-      "**Good** - [Placeholder]",
-      "**Neutral** - [Placeholder]",
-      "**Chaotic** - [Placeholder]",
-      "Other - Describe below"
+      "**Good** - Help someone else while protecting your anonymity.",
+      "**Neutral** - Earn recognition for your skills.",
+      "**Chaotic** - Upset the status quo."
     ],
     "details": true
+  },
+  {
+    "id": "mmb",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Background",
+    "category": "Starting Moves",
+    "description": "Yeah, right! Like you'd ever let anyone know about the real you.\n\nWho you were and where you're from doesn't matter now, it's all about the masks for you.\n\nInstead, privately tell the GM one thing about yourself that you must keep a secret. When **that secret is revealed to everyone**, you must retire this playbook and choose a new one, starting over again from level 1. You keep your gear but nothing else."
   },
   {
     "id": "mmr",
@@ -28,31 +35,247 @@
   {
     "id": "mm1",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 1]",
-    "description": "[Placeholder description]"
+    "title": "Masks For All Occasions",
+    "description": "You possess several masks that grant you—and only you—special abilities while you wear them. Each mask in your possession has 1 weight. Donning a mask takes several seconds of uninterrupted concentration, and you may only wear one mask at a time.\n\nWhile you are not wearing a mask or anything covering your face, your confidence is shattered; take **-1 ongoing** to all moves until you put on a mask again.\n\nChoose three masks from the list:",
+    "pick": [
+      "**Iron Mask**: You have 3 armor, but you also get -1 to all WIS and CHA rolls.",
+      "**Death Mask**: Undead creatures ignore you unless you draw attention to yourself, and you may cast the Wizard spell **Speak With Dead** by spending 1 HP.",
+      "**War Mask**: Your damage die is d10.",
+      "**Mystic Mask**: You can see and interact with spirits of any kind. They can sense this, and will be more inclined to appear before you.",
+      "**Demon Mask**: When you make eye contact with someone, they feel fear and will react accordingly as long as you keep staring at them, as per the spell **Cause Fear** with you as the subject.",
+      "**Plague Mask**: When you use an item that restores HP, either on yourself or someone else, the item heals additional HP equal to your level.",
+      "**Blank Mask**: When you hide amongst a crowd or act inconspicuous, no one will notice you unless you draw attention to yourself.",
+      "**Dashing Mask**: When you would Defy Danger, you may roll with CHA instead of what the GM tells you."
+    ],
+    "submoves":[
+      {
+        "title":"Speak With Dead",
+        "description":"A corpse converses with you briefly. It will answer any three questions you pose to it to the best of the knowledge it had in life and the knowledge it gained in death."
+      },
+      {
+        "title":"Cause Fear",
+        "description":"Choose a target you can see and a nearby object. The target is afraid of the object so long as you maintain the spell. Their reaction is up to them: flee, panic, beg, fight. You cannot target entities with less than animal intelligence (magical constructs, undead, automatons, and the like)."
+      }
+    ]
   },
   {
     "id": "mm2",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 2]",
-    "description": "[Placeholder description]"
+    "title": "Mimic",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **Make Camp**, choose a person you have at least one Bond with and gain hold equal to the number of Bonds you have with them. When you witness that person perform a move, you may spend 1 hold to immediately perform that move as well, even if they are using a move that you don't have. If you mimic a move that would require you to spend some other kind of hold, you spend HP instead of hold, 1-for-1."
   },
   {
     "id": "mm3",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 3]",
-    "description": "[Placeholder description]"
+    "title": "Inscrutable",
+    "description": "The masks you wear have their own identity. Any actions you take while wearing a certain mask will be attributed to that mask, and only that mask. No one will recognize your true identity if you wear a different mask.\n\nAdditionally, you never make the **Outstanding Warrants** move, and any attempts to read your mind or scry on your location automatically fail."
   },
   {
     "id": "mm4",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 1]",
-    "description": "[Placeholder description]"
+    "title": "Behind the Mask",
+    "description": "When you **engage someone in conversation**, you can ask their player a question from the list below. They must answer it truthfully, then they may ask you a question from the list. If you lie, you cannot use this move on them ever again. If you tell the truth, you can.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "What are your present intentions?",
+          "What do you most desire?",
+          "What do you not want me to know?",
+          "What do you want from me?"
+        ]
+      }
+    ]
   },
   {
     "id": "mm5",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 2]",
-    "description": "[Placeholder description]"
+    "title": "Doppelgänger",
+    "description": "When you **craft and wear a mask in the guise of another specific person whom you have studied closely**, you create a disguise of that person. When you **put your disguise to the test**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Only that person's most intimate associates can tell it's you."
+      },
+      {
+        "range": "7-9",
+        "text": "Only those who do not know the person are fooled."
+      }
+    ]
+  },
+  {
+    "id": "mm6",
+    "category": "Advanced Moves",
+    "title": "Grand Debut",
+    "description": "When you **make a spectacular entrance while wearing a mask**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose three options from the list below.",
+        "bullets": [
+          "Someone desires to meet you later, the GM will tell you who",
+          "Someone becomes infatuated with you, the GM will tell you who",
+          "Someone will give you a gift, the GM will tell you who"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose two."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Choose one, in addition to whatever the GM tells you."
+      }
+    ]
+  },
+  {
+    "id": "mm7",
+    "category": "Advanced Moves",
+    "title": "Identity Crisis",
+    "description": "Donning a mask takes only a moment for you now."
+  },
+  {
+    "id": "mm8",
+    "category": "Advanced Moves",
+    "title": "Impresario",
+    "description": "You never have to spend money to **Carouse**, and you roll with CHA instead of coins spent. If there is already a gathering happening, you may **Carouse** without having returned triumphant."
+  },
+  {
+    "id": "mm9",
+    "category": "Advanced Moves",
+    "title": "Improv",
+    "description": "Requires: **Mimic**\n\nWhen you use **Mimic**, you get +1 hold."
+  },
+  {
+    "id": "mm10",
+    "category": "Advanced Moves",
+    "title": "Masquerade",
+    "description": "Gain an additional mask from the list."
+  },
+  {
+    "id": "mm11",
+    "category": "Advanced Moves",
+    "title": "Method Actor",
+    "description": "When you don a mask, choose a stat: you take **+1 ongoing** to rolls using that stat until you remove the mask. The GM will also choose a stat: you take **-1 ongoing** to rolls using that stat until you remove the mask.",
+    "details":true
+  },
+  {
+    "id": "mm12",
+    "category": "Advanced Moves",
+    "title": "Supporting Actor",
+    "description": "When you **Aid Another**, on a 10+ you upstage them; choose an extra effect:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Your **Aid** gives +2 instead of +1",
+          "Any consequences from their move affect you instead of them"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mm13",
+    "category": "Advanced Moves",
+    "title": "Understudy",
+    "takeFrom": ["*"],
+    "description": "Gain a non-multiclass move from a playbook no one else is currently using."
+  },
+  {
+    "id": "mm14",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Beyond the Mask (Requires level 6+)",
+    "description": "Requires: **Behind the Mask**\n\nWhen you use **Behind the Mask**, you may also ask \"How are you vulnerable to me?\" Your subject may not ask this question of you."
+  },
+  {
+    "id": "mm15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Clone (Requires level 6+)",
+    "description": "Replaces: **Doppelgänger**\n\nWhen you **craft and wear a mask in the guise of another specific person whom you have studied closely**, you look just like them. Your actions may give you away, but anyone who does not know the person intimately will be fooled by your appearance. When you **meet someone who is intimately associated with the person you are impersonating**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They are fooled, even by strange behavior, until you give yourself away for certain."
+      },
+      {
+        "range": "7-9",
+        "text": "They are suspicious of you."
+      }
+    ]
+  },
+  {
+    "id": "mm16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Curtain Call (Requires level 6+)",
+    "description": "Requires: **Grand Debut**\n\nInstead of choosing one of the options from the list, you may choose a member of the audience. The GM will choose how they react from the list."
+  },
+  {
+    "id": "mm17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Encore (Requires level 6+)",
+    "description": "When you **Mimic** a move, you can use that move again by spending another hold, until the next time you **Make Camp**."
+  },
+  {
+    "id": "mm18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Mirrormask (Requires level 6+)",
+    "description": "When an enemy's move makes you **Defy Danger**, on a 12+ not only do you defy the danger, you may also immediately use that move against your enemy, without rolling or spending hold from **Mimic**."
+  },
+  {
+    "id": "mm19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Performance Artist (Requires level 6+)",
+    "description": "When you **Mimic** a move and need to roll for it, you roll with CHA instead of the usual stat."
+  },
+  {
+    "id": "mm20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Poker Face (Requires level 6+)",
+    "description": "When you **tell a lie or a half-truth**, it will be accepted as fact by anyone who does not have a history with you. As long as no one reveals hard evidence to the contrary, anything you say will be accepted as open honesty."
+  },
+  {
+    "id": "mm21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Super Swing (Requires level 6+)",
+    "takeFrom": ["*"],
+    "description": "Gain a non-multiclass move from a playbook no one else is currently using."
+  },
+  {
+    "id": "mm22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Theater Games (Requires level 6+)",
+    "description": "Requires: **Supporting Actor**\n\nAdd the following option to the **Supporting Actor** list:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "You immediately **Mimic** their move without spending hold"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mm23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Two-Faced (Requires level 6+)",
+    "description": "You may wear two masks at once, gaining the benefit of both at the same time."
   }
 ]

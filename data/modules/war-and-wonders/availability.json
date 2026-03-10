@@ -153,27 +153,82 @@
     "placeholders": {
       "damage": "d6",
       "hp": "7+Con",
-      "load": "7+Str"
+      "load": "10+Str"
     },
     "default-bonds": [
-      "[Placeholder bond 1]",
-      "[Placeholder bond 2]",
-      "[Placeholder bond 3]",
-      "[Placeholder bond 4]"
+      "I tried being like ____________ once, but I got into a lot of trouble.",
+      "I wish I was as brave as ____________.",
+      "____________'s power makes me a little envious, so I mimic them whenever I can.",
+      "If I help ____________ accomplish their goal, maybe I'll find out the truth about myself too.",
+      "My acting skills can fool anyone… except ____________."
     ],
     "default-gear": [
       {
         "type": "get",
-        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Mace (close)", "weight": 1},
+              {"item": "Wooden Shield (+1 armor)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Staff (close, two-handed)", "weight": 1},
+              {"item": "Enchanted Robes (1 armor, worn)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Ragged Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Two Bandages (3 uses each)", "weight": 0}
+        ]
       }
     ],
     "mma": true,
+    "mmb": true,
     "mmr": true,
     "mm1": true,
     "mm2": true,
     "mm3": true,
     "mm4": false,
-    "mm5": false
+    "mm5": false,
+    "mm6": false,
+    "mm7": false,
+    "mm8": false,
+    "mm9": false,
+    "mm10": false,
+    "mm11": false,
+    "mm12": false,
+    "mm13": false,
+    "mm14": false,
+    "mm15": false,
+    "mm16": false,
+    "mm17": false,
+    "mm18": false,
+    "mm19": false,
+    "mm20": false,
+    "mm21": false,
+    "mm22": false,
+    "mm23": false
   },
   "Gunslinger": {
     "_movesFile": "data/modules/war-and-wonders/moves/gunslinger.json",
