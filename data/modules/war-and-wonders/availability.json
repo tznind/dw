@@ -239,15 +239,43 @@
       "load": "9+Str"
     },
     "default-bonds": [
-      "[Placeholder bond 1]",
-      "[Placeholder bond 2]",
-      "[Placeholder bond 3]",
-      "[Placeholder bond 4]"
+      "I once had ______________ in my sights, but I let them live.",
+      "I made a promise to ______________ that I haven't yet kept.",
+      "______________ doesn't have what it takes to get the job done.",
+      "______________ is my lover, or was, or would have been, or… it's complicated."
     ],
     "default-gear": [
       {
         "type": "get",
-        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Bag of Bullets (3 ammo)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose a look for your gun:",
+        "options": [
+          {"item": "Gears, clockwork, and steam gun", "weight": 2},
+          {"item": "Eldritch machinery gun", "weight": 2},
+          {"item": "Sleek and well-made gun", "weight": 2},
+          {"item": "Old and well-worn gun", "weight": 2},
+          {"item": "Fancy and ornate gun", "weight": 2}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Bag of Bullets (3 ammo)", "weight": 1},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Long Knife (hand)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "6 coins", "weight": 0}
+        ]
       }
     ],
     "gsa": true,
@@ -256,7 +284,25 @@
     "gs2": true,
     "gs3": true,
     "gs4": false,
-    "gs5": false
+    "gs5": false,
+    "gs6": false,
+    "gs7": false,
+    "gs8": false,
+    "gs9": false,
+    "gs10": false,
+    "gs11": false,
+    "gs12": false,
+    "gs13": false,
+    "gs14": false,
+    "gs15": false,
+    "gs16": false,
+    "gs17": false,
+    "gs18": false,
+    "gs19": false,
+    "gs20": false,
+    "gs21": false,
+    "gs22": false,
+    "gs23": false
   },
   "Warlock": {
     "_movesFile": "data/modules/war-and-wonders/moves/warlock.json",

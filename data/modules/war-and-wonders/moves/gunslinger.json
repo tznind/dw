@@ -6,10 +6,9 @@
     "title": "Alignment",
     "category": "Starting Moves",
     "pickOne": [
-      "**Good** - [Placeholder]",
-      "**Neutral** - [Placeholder]",
-      "**Chaotic** - [Placeholder]",
-      "Other - Describe below"
+      "**Lawful** - Bring a criminal to justice.",
+      "**Neutral** - Solve someone else's problem without getting emotionally invested.",
+      "**Evil** - Make a profit off of someone else's misery."
     ],
     "details": true
   },
@@ -20,39 +19,249 @@
     "weight": -1,
     "hideCheckbox": true,
     "pickOne": [
-      "**Human** - [Placeholder]",
-      "**Other** - [Placeholder]"
+      "**Human** - When you kill a monster with the Large, Huge, Intelligent, or Terrifying tags, gain +1 Aim, but only once per kill.",
+      "**Dwarf** - When you make a sacrifice or put yourself in danger to save someone else, gain +1 Aim.",
+      "**Gnome** - When you seek out excitement despite the danger to yourself, gain +1 Aim."
     ],
     "details": true
   },
   {
     "id": "gs1",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 1]",
-    "description": "[Placeholder description]"
+    "title": "This is my Boom-Stick!",
+    "description": "You own a unique firearm. Only you can use this gun; it will not function for anyone else.\n\nYour gun has 2 weight, and the following tags: near, **ignores armor**, **loud** and **reload**.\n\nChoose two upgrades for your gun:",
+    "pick": [
+      "**Buckshot**: Add **messy**",
+      "**Double-Barreled**: Add **forceful**",
+      "**Incendiary**: Add the **fiery** tag, and your shots can start fires",
+      "**Longarm**: Add **far** range and **two-handed**, +1 weight",
+      "**Full Metal Jacket**: +1 damage",
+      "**Compact**: -1 weight, and your gun is small enough that you can conceal it on your person, though it will still be found if you are searched",
+      "**Bayonet**: You can **Hack and Slash** with your gun at a range of **close**, rolling with DEX instead of STR"
+    ]
   },
   {
     "id": "gs2",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 2]",
-    "description": "[Placeholder description]"
+    "title": "Gunslinger's Oath",
+    "tracks": [
+      {
+        "name": "Aim",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "Choose up to three tenets of your personal code of honor:",
+    "pick": [
+      "Never leave a comrade behind.",
+      "Always keep your sworn word.",
+      "Always protect the weak.",
+      "Always show courage in the face of danger.",
+      "Always avenge a slight or dishonor.",
+      "Always assist anyone in distress if it is within your power to do so.",
+      "Never accept a reward for any help that you give.",
+      "Never let a _____gs2nv_______ live."
+    ],
+    "submoves": [
+      {
+        "title": "Aim",
+        "description": "As long as you keep true to your oath, your gun will fire true for you. You begin play with 1 **Aim**. Your maximum **Aim** is equal to the number of tenets of your **Gunslinger's Oath**. If you break your oath, reduce your **Aim** to 0, and while you have 0 **Aim**, you take **-1 ongoing** to any rolls that involve using your gun."
+      }
+    ]
   },
   {
     "id": "gs3",
     "category": "Starting Moves",
-    "title": "[Placeholder Starting Move 3]",
-    "description": "[Placeholder description]"
+    "title": "Trick Shot",
+    "description": "When you **go for an improbable shot with an unusual effect**, describe what you want to happen and roll+**Aim**.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Choose one thing you have to do to pull off the shot:",
+        "bullets": [
+          "Reduce your **Aim** by 1 (you may not choose this option if you have 0 **Aim**)",
+          "Spend some time lining up the shot",
+          "Get into a vulnerable position",
+          "Sacrifice or endanger something important"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one, and the GM chooses one:"
+      }
+    ]
   },
   {
     "id": "gs4",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 1]",
-    "description": "[Placeholder description]"
+    "title": "Big Damn Hero",
+    "description": "When you **go above and beyond the call of duty to uphold your Gunslinger's Oath**, gain +1 **Aim**."
   },
   {
     "id": "gs5",
     "category": "Advanced Moves",
-    "title": "[Placeholder Advanced Move 2]",
-    "description": "[Placeholder description]"
+    "title": "Gunsmith",
+    "description": "Choose an additional upgrade for your gun"
+  },
+  {
+    "id": "gs6",
+    "category": "Advanced Moves",
+    "title": "Listen Up, You Primitive Screw-heads!",
+    "description": "When you **dramatically fire your gun into the air and spend 1 ammo**, you may **Parley** with +**Aim** instead of CHA."
+  },
+  {
+    "id": "gs7",
+    "category": "Advanced Moves",
+    "title": "Manhunter",
+    "takeFrom": ["Ranger"],
+    "description": "Gain a non-multiclass move from the ranger playbook."
+  },
+  {
+    "id": "gs8",
+    "category": "Advanced Moves",
+    "title": "Mysterious Stranger",
+    "description": "When you make the **Outstanding Warrants** move, you may have the results of your roll apply to one of the other players instead of yourself."
+  },
+  {
+    "id": "gs9",
+    "category": "Advanced Moves",
+    "title": "Quick Draw",
+    "description": "You're never caught by surprise. When an enemy would get the drop on you, you get to act first instead. You can draw and fire your gun in the blink of an eye."
+  },
+  {
+    "id": "gs10",
+    "category": "Advanced Moves",
+    "title": "Scattershot",
+    "description": "When you **Volley** with your gun, you may spend extra ammo before rolling. For each point of ammo spent you may choose an extra target. Roll once and apply damage to all targets."
+  },
+  {
+    "id": "gs11",
+    "category": "Advanced Moves",
+    "title": "Silver Bullets",
+    "description": "When you **have time and materials to fashion special bullets**, describe what kind of bullets you want to make and roll+INT.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM chooses one from the list below.",
+        "bullets": [
+          "You only get 1 ammo (otherwise, you get 3 ammo)",
+          "You'll need an additional material beyond what you have now",
+          "You need help or someone else's expertise to make it",
+          "The best you can do is a lesser version, unreliable and limited"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "The GM chooses up to three."
+      }
+    ]
+  },
+  {
+    "id": "gs12",
+    "category": "Advanced Moves",
+    "title": "Steady Hand",
+    "description": "Requires: **Trick Shot**\n\nWhen you make a **Trick Shot**, on a 12+ you succeed beyond all expectation. Choose nothing from the list."
+  },
+  {
+    "id": "gs13",
+    "category": "Advanced Moves",
+    "title": "Thousand-Yard Stare",
+    "description": "When you **fix someone with your cold, hard stare**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You get both effects.",
+        "bullets": [
+          "They flinch or hesitate.",
+          "You learn something about their true nature. The GM will tell you what."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one:"
+      }
+    ]
+  },
+  {
+    "id": "gs14",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Bulletproof (Requires level 6+)",
+    "description": "When you **take damage or suffer serious harm**, you may lower your **Aim** by 1 to prevent that damage or otherwise evade the harm. You may not use this move if you have 0 **Aim**."
+  },
+  {
+    "id": "gs15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Bullet Time (Requires level 6+)",
+    "description": "Requires: **Quick Draw**\n\nWhen you **Defy Danger** with your quick reflexes you cannot get a 6-, treat that as a 7-9 result."
+  },
+  {
+    "id": "gs16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Bushwhacker (Requires level 6+)",
+    "takeFrom": ["Ranger"],
+    "description": "Gain a non-multiclass move from the ranger playbook."
+  },
+  {
+    "id": "gs17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Dead Man's Trigger (Requires level 6+)",
+    "description": "Nothing can make you drop your gun, but it can still be forcibly taken from you. When you are **reduced to zero HP**, you may immediately fire your gun one final time before you take your **Last Breath**, even if you have no ammo."
+  },
+  {
+    "id": "gs18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Eagle Eye (Requires level 6+)",
+    "description": "When you **Discern Realities**, ask one additional question, even on a 6-, and add these options to the list of questions:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "What is my best escape route?",
+          "Where is my best cover?",
+          "Which of my allies is the most vulnerable?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gs19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "The Face of My Father (Requires level 6+)",
+    "description": "Your maximum **Aim** is increased by 1."
+  },
+  {
+    "id": "gs20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Long Shot (Requires level 6+)",
+    "description": "Add **reach** and **far** to your gun's ranges. If your gun already has **far**, add **really far** instead."
+  },
+  {
+    "id": "gs21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "More Dakka! (Requires level 6+)",
+    "description": "When you **deal damage with your gun**, you may deal additional damage equal to your **Aim**. If you do, that gunshot is very, *very* loud."
+  },
+  {
+    "id": "gs22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Semper Fidelis (Requires level 6+)",
+    "description": "Requires: **Big Damn Hero**\n\nWhen you **Defy Danger** while acting to uphold your **Gunslinger's Oath**, you cannot get a 6-, treat that as a 7-9 result."
+  },
+  {
+    "id": "gs23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Wanderlust (Requires level 6+)",
+    "description": "You always know the way back to the nearest steading. When you act on this knowledge the GM will give you a choice of a long, safe path or a shorter, more dangerous path. When you arrive at your destination, if anything has changed since your last visit, you spot it right away."
   }
 ]
