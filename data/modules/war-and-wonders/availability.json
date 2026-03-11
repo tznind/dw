@@ -403,18 +403,29 @@
     "placeholders": {
       "damage": "d4",
       "hp": "6+Con",
-      "load": "7+Str"
+      "load": "6+Str"
     },
     "default-bonds": [
-      "[Placeholder bond 1]",
-      "[Placeholder bond 2]",
-      "[Placeholder bond 3]",
-      "[Placeholder bond 4]"
+      "__________ doesn't think I'm cut out for this life. I'll show them!",
+      "__________ is taking this all way too seriously.",
+      "__________ talked me into this adventure, which just goes to show who the real fool is.",
+      "__________ is a friend of a friend, so if they don't get me out of this mess, they're going to be in trouble!",
+      "Why does __________ never believe anything I tell them? …Oh, right. That."
     ],
     "default-gear": [
       {
-        "type": "get",
-        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+        "type": "pick",
+        "title": "Choose three things you grabbed on your way out the door:",
+        "pick": 3,
+        "options": [
+          {"item": "A really interesting looking rock (thrown, near)", "weight": 0},
+          {"item": "A sturdy walking stick or cooking implement (close)", "weight": 1},
+          {"item": "A letter to you from someone important", "weight": 0},
+          {"item": "A packed lunch from your mom (ration, 1 use)", "weight": 1},
+          {"item": "A magic potion, though you don't know what it does", "weight": 0},
+          {"item": "An extra change of underclothes", "weight": 0},
+          {"item": "A map of a nearby dungeon", "weight": 0}
+        ]
       }
     ],
     "foa": true,
@@ -422,7 +433,26 @@
     "fo1": true,
     "fo2": true,
     "fo3": true,
-    "fo4": false,
-    "fo5": false
+    "fo4": true,
+    "fo5": false,
+    "fo6": false,
+    "fo7": false,
+    "fo8": false,
+    "fo9": false,
+    "fo10": false,
+    "fo11": false,
+    "fo12": false,
+    "fo13": false,
+    "fo14": false,
+    "fo15": false,
+    "fo16": false,
+    "fo17": false,
+    "fo18": false,
+    "fo19": false,
+    "fo20": false,
+    "fo21": false,
+    "fo22": false,
+    "fo23": false,
+    "fo24": false
   }
 }

@@ -14,5 +14,9 @@
     {
         "alias":"Brimstone",
         "move":"Brimstone - Level 1 - Ongoing"
+    },
+    {
+        "alias": "Luck",
+        "move": "Fool's Luck"
     }
 ]

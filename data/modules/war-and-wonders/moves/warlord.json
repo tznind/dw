@@ -146,7 +146,6 @@
     "category": "Advanced Moves",
     "title": "Crusader",
     "takeFrom": ["Paladin"],
-    "takeCategory": "Advanced Moves",
     "description": "Gain a non-multiclass move from the paladin playbook, except Quest."
   },
   {
@@ -256,7 +255,6 @@
     "weight": 1,
     "title": "Paragon (Requires level 6+)",
     "takeFrom": ["Paladin"],
-    "takeCategory": "Advanced Moves",
     "description": "Gain a non-multiclass move from the paladin playbook, except Quest."
   },
   {
