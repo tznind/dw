@@ -73,7 +73,7 @@
   {
     "id": "gs3",
     "category": "Starting Moves",
-    "title": "Trick Shot",
+    "title": "Trick Shot (+Aim)",
     "description": "When you **go for an improbable shot with an unusual effect**, describe what you want to happen and roll+**Aim**.",
     "outcomes": [
       {
@@ -138,7 +138,7 @@
   {
     "id": "gs11",
     "category": "Advanced Moves",
-    "title": "Silver Bullets",
+    "title": "Silver Bullets (+INT)",
     "description": "When you **have time and materials to fashion special bullets**, describe what kind of bullets you want to make and roll+INT.",
     "outcomes": [
       {
@@ -166,7 +166,7 @@
   {
     "id": "gs13",
     "category": "Advanced Moves",
-    "title": "Thousand-Yard Stare",
+    "title": "Thousand-Yard Stare (+CHA)",
     "description": "When you **fix someone with your cold, hard stare**, roll+CHA.",
     "outcomes": [
       {

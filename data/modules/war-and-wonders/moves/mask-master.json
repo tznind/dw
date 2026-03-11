@@ -98,7 +98,7 @@
   {
     "id": "mm5",
     "category": "Advanced Moves",
-    "title": "Doppelgänger",
+    "title": "Doppelgänger (+CHA)",
     "description": "When you **craft and wear a mask in the guise of another specific person whom you have studied closely**, you create a disguise of that person. When you **put your disguise to the test**, roll+CHA.",
     "outcomes": [
       {
@@ -114,7 +114,7 @@
   {
     "id": "mm6",
     "category": "Advanced Moves",
-    "title": "Grand Debut",
+    "title": "Grand Debut (+CHA)",
     "description": "When you **make a spectacular entrance while wearing a mask**, roll+CHA.",
     "outcomes": [
       {
@@ -200,7 +200,7 @@
     "id": "mm15",
     "category": "Advanced Moves",
     "weight": 1,
-    "title": "Clone (Requires level 6+)",
+    "title": "Clone (+CHA) (Requires level 6+)",
     "description": "Replaces: **Doppelgänger**\n\nWhen you **craft and wear a mask in the guise of another specific person whom you have studied closely**, you look just like them. Your actions may give you away, but anyone who does not know the person intimately will be fooled by your appearance. When you **meet someone who is intimately associated with the person you are impersonating**, roll+CHA.",
     "outcomes": [
       {

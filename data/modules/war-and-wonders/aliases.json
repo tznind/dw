@@ -10,5 +10,9 @@
     {
         "alias": "Aid an ally in battle",
         "move": "Aid or Interfere"
+    },
+    {
+        "alias":"Brimstone",
+        "move":"Brimstone - Level 1 - Ongoing"
     }
 ]

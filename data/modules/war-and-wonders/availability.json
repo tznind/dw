@@ -310,18 +310,35 @@
     "placeholders": {
       "damage": "d4",
       "hp": "6+Con",
-      "load": "6+Str"
+      "load": "7+Str"
     },
     "default-bonds": [
-      "[Placeholder bond 1]",
-      "[Placeholder bond 2]",
-      "[Placeholder bond 3]",
-      "[Placeholder bond 4]"
+      "My patron greatly desires ____________'s soul.",
+      "____________ thinks they call the shots around here, but they're wrong.",
+      "I have learned something of ____________'s deepest desires.",
+      "I need help from ____________ to achieve my patron's goals."
     ],
     "default-gear": [
       {
         "type": "get",
-        "options": [{"item": "Dungeon Rations (5 uses, ration)", "weight": 1}]
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "A mark placed upon you by your patron (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Carved Ritual Staff (close, two-handed)", "weight": 1},
+          {"item": "Sacrificial Dagger (hand)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Bag of Books (5 uses)", "weight": 2},
+          {"item": "Enchanted Robes (1 armor, worn)", "weight": 1},
+          {"item": "A suitable sacrifice or offering that will please your patron (describe: _____)", "weight": 0},
+          {"item": "The name of someone else that worships your patron in another steading", "weight": 0}
+        ]
       }
     ],
     "wka": true,
@@ -329,8 +346,56 @@
     "wk1": true,
     "wk2": true,
     "wk3": true,
-    "wk4": false,
-    "wk5": false
+    "wk4": true,
+    "wk5": false,
+    "wk6": false,
+    "wk7": false,
+    "wk8": false,
+    "wk9": false,
+    "wk10": false,
+    "wk11": false,
+    "wk12": false,
+    "wk13": false,
+    "wk14": false,
+    "wk15": false,
+    "wk16": false,
+    "wk17": false,
+    "wk18": false,
+    "wk19": false,
+    "wk20": false,
+    "wk21": false,
+    "wk22": false,
+    "wk23": false,
+    "wk24": false,
+    "wk25": true,
+    "wk26": true,
+    "wk27": true,
+    "wk28": false,
+    "wk29": false,
+    "wk30": false,
+    "wk31": false,
+    "wk32": false,
+    "wk33": false,
+    "wk34": false,
+    "wk35": false,
+    "wk36": false,
+    "wk37": false,
+    "wk38": false,
+    "wk39": false,
+    "wk40": false,
+    "wk41": false,
+    "wk42": false,
+    "wk43": false,
+    "wk44": false,
+    "wk45": false,
+    "wk46": false,
+    "wk47": false,
+    "wk48": false,
+    "wk49": false,
+    "wk50": false,
+    "wk51": false,
+    "wk52": false,
+    "wk53": false
   },
   "Fool": {
     "_movesFile": "data/modules/war-and-wonders/moves/fool.json",
