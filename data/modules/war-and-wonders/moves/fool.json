@@ -1,0 +1,269 @@
+[
+  {
+    "id": "foa",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Good** - Give hope or cheer to someone who needs it.",
+      "**Neutral** - Accomplish something great in spite of yourself.",
+      "**Chaotic** - Evade responsibility for the consequences of your actions."
+    ],
+    "details": true
+  },
+  {
+    "id": "for",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Dwarf** - You hold your liquor like a pro. You can drink anyone under the table. *Anyone*.",
+      "**Human** - At the end of the session, if all of the other players mark XP from **A Very Special Episode**, you mark XP too.",
+      "**Halfling** - You have sticky fingers. When you **depart from a steading**, a small trinket \"appears\" in your pocket; the GM will tell you what you found."
+    ],
+    "details": true
+  },
+  {
+    "id": "fo1",
+    "category": "Starting Moves",
+    "title": "Fool's Luck",
+    "tracks": [
+      {
+        "name": "Luck",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **Make Camp**, set your Luck to 3. When you roll and get a 6-, you may lower your Luck by 1 to re-roll. Take the second result, and if it is a hit, explain how you succeeded only through sheer luck. When your Luck is zero, you may not lower it further."
+  },
+  {
+    "id": "fo2",
+    "category": "Starting Moves",
+    "title": "I'm On An Adventure!",
+    "takeFrom": ["*"],
+    "takeCategory": ["Starting Moves"],
+    "description": "Gain a starting move from a playbook no one else is using. When you use that move, if you fail, after the GM makes their move, you can add a comical or embarrassing detail to your failure. Your move is still a miss, of course."
+  },
+  {
+    "id": "fo3",
+    "category": "Starting Moves",
+    "title": "Comic Relief",
+    "description": "When you **make everyone else laugh, including the GM**, take **+1 forward**. When someone else **Aids or Interferes** with you, they take +1.\n\nWhen the **rest of the group ditches you or sets you up to die**, you will meet up with them again at the next available opportunity; describe how you improbably cheated certain death to rejoin them. Alternatively, you may choose to give up this character. If you do, the Fool will return again someday… but as a villain under the GM's control, looking for revenge."
+  },
+  {
+    "id": "fo4",
+    "category": "Starting Moves",
+    "title": "A Very Special Episode",
+    "description": "At the end of the session, each other player may tell you something they learned from you—a positive moral for everyone to take home and reflect upon. If they do, they mark XP."
+  },
+  {
+    "id": "fo5",
+    "category": "Advanced Moves",
+    "title": "Curly Shuffle",
+    "description": "When you **Hack and Slash** while you're all fired up, on a 10+, choose one in addition to dealing your damage:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Your foe stumbles and is knocked flat on their face",
+          "You snatch something from your foe in the confusion",
+          "You open your foe up to someone else's attack instead of dealing damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fo6",
+    "category": "Advanced Moves",
+    "title": "Hey, What Does This Do? (+Luck)",
+    "description": "When you **put yourself at risk to check something out**, ask the GM any one question related to the risks and roll+**Luck**.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The GM will answer it, as clearly as the circumstances allow."
+      },
+      {
+        "range": "7-9",
+        "text": "The GM will tell you what more you need to do to find the answer yourself."
+      }
+    ]
+  },
+  {
+    "id": "fo7",
+    "category": "Advanced Moves",
+    "title": "Fool's Wisdom (+INT)",
+    "description": "When you **Spout Lore**, don't roll. Instead, just blurt out the first thing that comes to mind. When the truth of what you say is put to the test, roll+INT.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You were right, more or less."
+      },
+      {
+        "range": "7-9",
+        "text": "You messed up or forgot a key detail."
+      }
+    ]
+  },
+  {
+    "id": "fo8",
+    "category": "Advanced Moves",
+    "title": "I Think I'm Getting The Hang Of This",
+    "takeFrom": ["*"],
+    "description": "Gain a non-multiclass move from the playbook you chose for **I'm On An Adventure!** You may not choose a move that requires level 6 or higher."
+  },
+  {
+    "id": "fo9",
+    "category": "Advanced Moves",
+    "title": "Look, A Distraction!",
+    "description": "When you **Volley**, on a 10+ you may draw your target's attention elsewhere instead of dealing damage."
+  },
+  {
+    "id": "fo10",
+    "category": "Advanced Moves",
+    "title": "Oooh, Something Shiny",
+    "description": "When you're **in the presence of something hidden and valuable**, you notice it right away."
+  },
+  {
+    "id": "fo11",
+    "category": "Advanced Moves",
+    "title": "Party Crasher (+CHA)",
+    "description": "When you **brazenly stride into a place you're not supposed to be**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Your entrance goes unnoticed until you draw attention to yourself."
+      },
+      {
+        "range": "7-9",
+        "text": "Someone is already suspicious of you."
+      }
+    ]
+  },
+  {
+    "id": "fo12",
+    "category": "Advanced Moves",
+    "title": "Short Attention Span (+DEX)",
+    "description": "When you **take advantage of the fact that no one is paying attention to you to discreetly do something**, roll+DEX.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "No one will notice what you did until you're no longer around, and they won't even think to blame you unless you personally tell them you did it."
+      },
+      {
+        "range": "7-9",
+        "text": "No one will notice what you did until you're no longer around."
+      }
+    ]
+  },
+  {
+    "id": "fo13",
+    "category": "Advanced Moves",
+    "title": "Take One For The Team",
+    "description": "When you **take damage that was intended for someone else**, you get +1 **Luck**. You may not spend Luck to negate this damage."
+  },
+  {
+    "id": "fo14",
+    "category": "Advanced Moves",
+    "title": "Was That Wrong?",
+    "description": "When you **do something so incredibly stupid that everyone else can only stare at you in disbelief**, you get +1 **Luck**. You'll probably need it soon."
+  },
+  {
+    "id": "fo15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Fool's Errand (+CHA) (Requires level 6+)",
+    "description": "When you **con someone into taking an unwise or imprudent course of action**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "They are tricked, and don't realize the error of their ways until the consequences fall on them."
+      },
+      {
+        "range": "7-9",
+        "text": "They're either not fooled for long, or they'll hold a grudge against you, GM's choice."
+      }
+    ]
+  },
+  {
+    "id": "fo16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Four-Leaf Clover (Requires level 6+)",
+    "description": "When you **Make Camp**, set your **Luck** to 4 instead of 3. When you take damage, you may lower your **Luck** by 1 to ignore it; describe the comedic, contrived, or outright miraculous circumstances that saved you from harm."
+  },
+  {
+    "id": "fo17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "I Meant To Do That (Requires level 6+)",
+    "description": "When you **fail a move**, you can choose to not mark XP. If you do, choose someone who will either stare at you dumbfounded or double over in uncontrolled laughter. Describe the epic failure of yours that causes them to react that way. You have to fail; if you spend **Luck** to succeed, this move is not triggered."
+  },
+  {
+    "id": "fo18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Idiot Savant (Requires level 6+)",
+    "description": "When you gain this move, pick one of the following moves. You may choose to make that move with +**Luck** instead of the usual stat from now on:",
+    "pickOne": [
+      "**Hack and Slash**",
+      "**Volley**",
+      "**Defend**",
+      "**Discern Realities**"
+    ]
+  },
+  {
+    "id": "fo19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Mostly Harmless (Requires level 6+)",
+    "description": "While you **show a friendly face and act charming**, anyone not already actively hostile to you will treat you as a friend until proven otherwise."
+  },
+  {
+    "id": "fo20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Nyuk Nyuk Nyuk (Requires level 6+)",
+    "description": "You may lower your **Luck** by 1 to deal 1d10 damage to an enemy. Describe how you embarrass, humiliate, or accidentally clobber them."
+  },
+  {
+    "id": "fo21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Pop Goes the Weasel (Requires level 6+)",
+    "description": "Requires: **Curly Shuffle**\n\nWhen you **Hack and Slash** while you're all fired up, deal +1d4 damage."
+  },
+  {
+    "id": "fo22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Robin Goodfellow (+CHA) (Requires level 6+)",
+    "description": "When you **publicly mock someone of higher social standing than you**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Your audience takes it in good humor, and you avoid reprisal... for now. You may also ask the subject of your mockery one question, which they must answer honestly and publicly."
+      },
+      {
+        "range": "7-9",
+        "text": "Your audience takes it in good humor, and you avoid reprisal... for now."
+      }
+    ]
+  },
+  {
+    "id": "fo23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Should I Not Have Done That? (Requires level 6+)",
+    "description": "Requires: **Was That Wrong?**\n\nWhen you **draw unwanted attention or are put in a spot**, you can choose not to personally suffer the consequences. Someone or something else nearby, possibly your equipment but certainly not you, suffers the consequences instead."
+  },
+  {
+    "id": "fo24",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Woo Woo Woo (Requires level 6+)",
+    "description": "When you **Defy Danger** **by running around in an idiotic panic**, you roll with +**Luck** instead of whatever the GM says, and on a 12+ you turn the danger back on itself, describe the ridiculous circumstances that caused it."
+  }
+]

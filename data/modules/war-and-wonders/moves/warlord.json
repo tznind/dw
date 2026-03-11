@@ -1,0 +1,342 @@
+[
+  {
+    "id": "wla",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Lawful** - Choose honor over personal gain.",
+      "**Neutral** - Defeat a worthy opponent.",
+      "**Evil** - Kill a defenseless or surrendered enemy."
+    ],
+    "details": true
+  },
+  {
+    "id": "wlr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Dwarf** - You ignore the clumsy tag on any armor you wear.",
+      "**Orc** - Add the following option to **War Leader**, and you may use this option once per battle without spending hold: \n- Fall upon the enemy in a violent, howling frenzy.",
+      "**Human** - Hirelings under your command have +1 Loyalty."
+    ],
+    "details": true
+  },
+  {
+    "id": "wl1",
+    "category": "Starting Moves",
+    "title": "War Leader (+CHA)",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "You can rally warriors to your banner at any time there are suitable people available for you to recruit or lead. When you **rally a war-band together**, they will fight for you for one battle, though they will demand a cut of any loot in exchange. The war-band's strength, equipment, and bearing will be proportionate to the quality of the warriors available, as well as your level.\n\nWhen you **lead your war-band into battle**, roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3. Over the course of the fight, spend a hold to make your war-band:",
+        "bullets": [
+          "Make a strong assault",
+          "Stand firm against a strong assault",
+          "Make an organized retreat",
+          "Show mercy to their defeated enemies",
+          "Hold fast despite fear or danger",
+          "Restore discipline and form ranks after a lapse or break"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Hold 1 anyway, but there will be hell to pay afterwards."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Aftermath",
+        "description":  "After the battle, assuming your war-band is still fit for duty, you may spend a hold to call them together and follow you into another battle. If you don't, they disperse afterwards."
+
+      }
+    ]
+  },
+  {
+    "id": "wl2",
+    "category": "Starting Moves",
+    "title": "Tactician (+WIS)",
+    "description": "When you **use your knowledge of tactics, discipline, and strategy on the battlefield**, roll Wisdom",
+    "outcomes":[
+    {
+        "range": "≥ 10",
+        "text": "You do it, no problem.  Describe how you accomplish one of the following:",
+        "bullets": [
+          "Create an advantage; you or an ally takes +1 forward when you exploit it",
+          "Disengage from melee with one enemy",
+          "Avoid a hazard on the battlefield without **Defying Danger**",
+          "Block a blow meant for you or someone else nearby, you take half damage",
+          "Shake off the effects of fear, confusion, or being stunned"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "You still get your desired effect (above), but you also expose yourself to danger, retribution, or cost."
+      }
+    ]
+  },
+  {
+    "id": "wl3",
+    "category": "Starting Moves",
+    "title": "All For One, and One For All",
+    "description": "When you **Aid an ally in battle**, on a hit, in addition to giving them +1, choose one of the following:",
+    "outcomes": [
+      {
+        "text":"",
+        "bullets": [
+          "They take +1d4 damage forward",
+          "They take +2 armor forward"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl4",
+    "category": "Advanced Moves",
+    "title": "Battlefield Strategy",
+    "description": "When you **Spout Lore** **about a military unit or situation you have observed**, you may roll with WIS instead of INT. The first person acting on your information takes +1 forward."
+  },
+  {
+    "id": "wl5",
+    "category": "Advanced Moves",
+    "title": "Call to Arms",
+    "description": "When you **Recruit**, also pick options equal to your CHA:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "You may **Carouse** in town before leaving without spending coins",
+          "Any hirelings you recruit have the cost \"blind patriotism\" instead of their usual cost",
+          "One hireling you recruit gets an additional skill point",
+          "You requisition a piece of equipment from the locals"
+        ]
+      },
+      {
+        "range": "≥ 10",
+        "text": "All of them are true."
+      },
+      {
+        "range": "7-9",
+        "text": "Only one of them is true, GM's choice."
+      },
+      {
+        "range": "≤ 6",
+        "text": "None of them are true."
+      }
+    ]
+  },
+  {
+    "id": "wl6",
+    "category": "Advanced Moves",
+    "title": "Crusader",
+    "takeFrom": ["Paladin"],
+    "description": "Gain a non-multiclass move from the paladin playbook, except Quest."
+  },
+  {
+    "id": "wl7",
+    "category": "Advanced Moves",
+    "title": "Flanking Maneuver",
+    "description": "When you **Aid** an ally in battle, on a hit, you give them both options from **All For One, And One For All**."
+  },
+  {
+    "id": "wl8",
+    "category": "Advanced Moves",
+    "title": "For the Cause",
+    "description": "When you **rally a war-band**, the GM will tell you something they will accept in lieu of a cut of any loot:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Vengeance",
+          "Glory",
+          "Renown",
+          "The greater good"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl9",
+    "category": "Advanced Moves",
+    "title": "Hold the Line",
+    "description": "While you are **standing side by side with your allies on the front lines of battle**, you may **Defend** with CHA instead of CON."
+  },
+  {
+    "id": "wl10",
+    "category": "Advanced Moves",
+    "title": "Reconnaissance",
+    "description": "When you **send your war-band to scout a dangerous place** for you, you may **Discern Realities** about the place as if you were there."
+  },
+  {
+    "id": "wl11",
+    "category": "Advanced Moves",
+    "title": "Stentorian Voice",
+    "description": "You can give **Aid** to anyone who can hear you with inspiring words, strategic advice, or grisly threats, as long as you are within shouting distance."
+  },
+  {
+    "id": "wl12",
+    "category": "Advanced Moves",
+    "title": "Tactical Eye",
+    "description": "When you **survey a battlefield or dangerous environment**, ask the GM two of the following questions. The GM will answer truthfully.",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Is there a trap or ambush here, and if so, where?",
+          "Where is the best place to make a defensive stand?",
+          "Where is the best place to attack from?",
+          "What here is the biggest threat to me?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl13",
+    "category": "Advanced Moves",
+    "title": "Watch Duty",
+    "description": "When you **organize your camp's defenses**, everyone takes +1 to **Take Watch**."
+  },
+  {
+    "id": "wl14",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Drill Sergeant (Requires level 6+)",
+    "description": "As long as you're around, no NPCs under your command will have discipline problems. A hard glare or a sharp rebuke from you will snap them back into line or banish any fear from them, and your war-band will never rout on your watch."
+  },
+  {
+    "id": "wl15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Field Logistics (Requires level 6+)",
+    "description": "When you **Undertake a Perilous Journey**, everyone takes +1 to their roles."
+  },
+  {
+    "id": "wl16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Fingerspitzengefühl (Requires level 6+)",
+    "description": "When you use **Tactician**, on a hit you may also immediately ask one question from the **Discern Realities** list."
+  },
+  {
+    "id": "wl17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Lordly Caliber (Requires level 6+)",
+    "description": "When you use **War Leader**, you get +1 hold, even on a miss, and add the following choices to the list:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Bring magical support to a situation",
+          "Fight and die to the last without fear"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Paragon (Requires level 6+)",
+    "takeFrom": ["Paladin"],
+    "description": "Gain a non-multiclass move from the paladin playbook, except Quest."
+  },
+  {
+    "id": "wl19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Reconnaissance-By-Force (Requires level 6+)",
+    "description": "Requires: **Reconnaissance**\n\nWhen you use **Reconnaissance**, on a hit, the war-band provides an additional service for you; choose one:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "They make the enemy break formation or reveal a vulnerability",
+          "They make a hidden enemy or threat reveal itself",
+          "They distract, lure away, or sabotage the first foe they encounter"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Shield Wall (Requires level 6+)",
+    "description": "Requires: **Hold the Line**\n\nYou and all allies in your presence get +1 hold when they **Defend**, even on a 6-."
+  },
+  {
+    "id": "wl21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Tactical Commander (Requires level 6+)",
+    "description": "When you use **Tactician**, you may apply your chosen effects to your war-band instead of you, as long as you are present to command them."
+  },
+  {
+    "id": "wl22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Turn the Tables (Requires level 6+)",
+    "description": "Add the following options to **Tactician**:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Escape from a dangerous position",
+          "Lure or push an enemy into a bad position for them"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wl23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "War Stories (Requires level 6+)",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "description": "When you **share tales of glorious battles with your comrades**, lose any hold on this move and roll+CHA.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 2."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Hold 1 anyway, but there will be trouble when it is spent."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Spend Hold",
+        "description": "Anyone may spend a hold from this move to immediately make the **Tactician** move, rolling for it as usual with their own WIS and taking +1 to the roll."
+      }
+    ]
+  }
+]

@@ -1,0 +1,695 @@
+[
+  {
+    "id": "wka",
+    "hideCheckbox": true,
+    "weight": -1,
+    "title": "Alignment",
+    "category": "Starting Moves",
+    "pickOne": [
+      "**Lawful** - Strike a bargain with someone, and keep your end of it.",
+      "**Neutral** - Increase your patron's influence among mortals.",
+      "**Evil** - Gain power or prestige for yourself at someone else's expense."
+    ],
+    "details": true
+  },
+  {
+    "id": "wkr",
+    "category": "Starting Moves",
+    "title": "Race",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "**Elf** - You can see clearly in darkness, including magical darkness.",
+      "**Human** - You are immune to any effects that would control or manipulate your mind, including fear.",
+      "**Tiefling** - **Brimstone** is a rote for you, and deals +1 damage."
+    ],
+    "details": true
+  },
+  {
+    "id": "wk1",
+    "category": "Starting Moves",
+    "title": "Pact",
+    "description": "You have made a pact with a powerful being from beyond your reality that desires more influence in your world. In exchange, it has given you power.\n\n\"My patron is ____wk11____, master of the domain of ____wk12____, known among mortals as the ____wk13____. It appears in my visions as ____wk14____, and has marked me with ____wk15____. Its desire for this world is to ____wk16____, and I am its agent in this.\""
+  },
+  {
+    "id": "wk2",
+    "category": "Starting Moves",
+    "title": "Invocation",
+    "description": "When you **roll for another move while invoking the power of your patron**, you may choose options equal to your WIS or less and then tell the other players:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "...how your patron's domain manifests itself on earth.",
+          "...what your patron asks for in return.",
+          "...how your patron empowers your action.",
+          "...why your patron has taken an interest in this affair."
+        ]
+      },
+      {
+        "range": "≥ 10",
+        "text": "All that you say is true."
+      },
+      {
+        "range": "7-9",
+        "text": "The GM chooses one statement to be false, the others are true."
+      },
+      {
+        "range": "≤ 6",
+        "text": "No guarantees."
+      }
+    ]
+  },
+  {
+    "id": "wk3",
+    "category": "Starting Moves",
+    "title": "Cast a Spell (+CHA)",
+    "description": "When you **unleash a spell granted to you by your patron**, roll+CHA.\n\nNote that maintaining spells with ongoing effects will sometimes cause a penalty to your roll to cast a spell.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The spell is successfully cast and your patron does not revoke the spell, you may cast it again."
+      },
+      {
+        "range": "7-9",
+        "text": "The spell is cast, but choose one:",
+        "bullets": [
+          "After you cast it, the spell is revoked. You cannot cast the spell again until you commune and have it granted to you.",
+          "You draw unwelcome attention or put yourself in a spot. The GM will tell you how.",
+          "Your casting warps your mind—take **-1 ongoing** to cast a spell until the next time you commune."
+        ]
+      }
+    ],
+    "tracks": [{
+      "name": "Penalty",
+      "max": 5,
+      "shape": "hexagon",
+      "dynamic": true
+    }]
+  },
+  {
+    "id": "wk4",
+    "category": "Starting Moves",
+    "title": "Commune",
+    "description": "When you spend uninterrupted time (an hour or so) in a **trance to hear the will of your patron**, you:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "Lose any spells already granted to you.",
+          "Are granted new spells of your choice, whose total levels don't exceed your own level+1, and none of which is a higher level than your own level.",
+          "Prepare all of your rotes, which never count against your limit."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk5",
+    "category": "Advanced Moves",
+    "title": "Elder Sign (+WIS)",
+    "description": "When you **attempt to banish a creature from another plane of existence**, roll+WIS.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "It may not approach you further unless you allow it to (or you let your guard down), and if it lacks an anchor in this world, it must return to whence it came."
+      },
+      {
+        "range": "7-9",
+        "text": "It may not approach you further unless you allow it to (or you let your guard down)."
+      }
+    ]
+  },
+  {
+    "id": "wk6",
+    "category": "Advanced Moves",
+    "title": "Forbidden Knowledge",
+    "description": "When you **pray to your patron for knowledge**, you may **Spout Lore** with WIS instead of INT, though you may get more than you bargained for…"
+  },
+  {
+    "id": "wk7",
+    "category": "Advanced Moves",
+    "title": "Mister Nick",
+    "description": "At the end of the session, if someone else willingly yielded to temptation or committed an act of betrayal as a result of your actions, mark XP."
+  },
+  {
+    "id": "wk8",
+    "category": "Advanced Moves",
+    "title": "The Power Flows Through Me",
+    "description": "When you **fulfill your patron's desire**, you are granted some useful knowledge or boon related to one of your patron's domains. The GM will tell you what."
+  },
+  {
+    "id": "wk9",
+    "category": "Advanced Moves",
+    "title": "Sandman",
+    "description": "When you **touch a sleeping person**, you can see what they are dreaming about, as well as the nature of any influences upon their mind."
+  },
+  {
+    "id": "wk10",
+    "category": "Advanced Moves",
+    "title": "Serpent's Tongue",
+    "description": "When you **Parley** with someone, on a 10+ you also learn something about their true nature or what they desire most, the GM will tell you what. Take **+1 forward** when you act on this information."
+  },
+  {
+    "id": "wk11",
+    "category": "Advanced Moves",
+    "title": "The Stars Are Right (+WIS)",
+    "description": "When you **perform a ritual to summon a monster from beyond this world**, say\n- what it's for, \n- one thing it is,\n- one thing it is not.\n Then roll+WIS, and find out what comes through.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Both",
+        "bullets": [
+          "It fulfills its purpose and leaves without incident",
+          "It's perfect for the job"
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one or the other:"
+      },
+      {
+        "range": "≤ 6",
+        "text": "It isn't what you said it is, but it is what you said it is not."
+      }
+    ]
+  },
+  {
+    "id": "wk12",
+    "category": "Advanced Moves",
+    "title": "Thaumaturgy",
+    "takeFrom": ["Cleric"],
+    "description": "Gain a non-multiclass move from the cleric playbook."
+  },
+  {
+    "id": "wk13",
+    "category": "Advanced Moves",
+    "title": "Things Man Was Not Meant to Know",
+    "description": "Add the following choices to **Invocation**:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "…what secret knowledge your patron reveals to you.",
+          "…who is briefly stunned by horrifying visions."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk14",
+    "category": "Advanced Moves",
+    "title": "Wolf Among The Flock",
+    "description": "While you are not using any of your powers, your true nature is concealed. Anyone who examines you, either physically or magically, will believe you to be mundane and harmless, as long as you don't obviously threaten them or start using your powers again."
+  },
+  {
+    "id": "wk15",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Chaos Magic (Requires level 6+)",
+    "description": "When you **cast a spell**, you can choose to double the spell's effects or double the number of targets affected, but you must also choose one:",
+    "outcomes": [
+      {
+        "text": "",
+        "bullets": [
+          "The land around you is warped or tainted, the GM describes how",
+          "The spell has additional, unwanted effects",
+          "You must shed your own blood, take 1d6 damage, ignoring armor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk16",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Dark Avatar (Requires level 6+)",
+    "description": "When you choose options for **Invocation**, you may also choose to take on the likeness of your patron, describe it! Anyone witnessing your acts will react accordingly. This manifestation lasts until you stop channeling your patron's power."
+  },
+  {
+    "id": "wk17",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Dorian Grey (Requires level 6+)",
+    "description": "When you gain this move, choose a vessel to store your soul in: ____wk17v____ While the vessel is intact you are unkillable; you automatically get a 10+ on **Last Breath**, and any taint, burdens, or judgments upon your soul affect the vessel instead. When your vessel is destroyed, you die instantly, no **Last Breath**."
+  },
+  {
+    "id": "wk18",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Empowered Pact (Requires level 6+)",
+    "description": "Add an additional desire and domain to your **Pact**.",
+    "details":true
+  },
+  {
+    "id": "wk19",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Hellfire (Requires level 6+)",
+    "description": "Your **Brimstone** spell now conjures the black fires of Hell. This fire does not burn with heat and ignores armor, scorching the soul itself. Even creatures normally immune to fire are harmed by this type of flame, but creatures without souls are not."
+  },
+  {
+    "id": "wk20",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Mystical Puppet Strings (Requires level 6+)",
+    "description": "When you **use magic to control a person's actions**, they have no memory of what you had them do and bear you no ill will."
+  },
+  {
+    "id": "wk21",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Nightmare (Requires level 6+)",
+    "description": "Requires: **Sandman**\n\nWhen you **touch a sleeping person**, you may also plant a post-hypnotic suggestion in their minds; they will carry out your command at a convenient time when they awaken, as long as it does not directly endanger them."
+  },
+  {
+    "id": "wk22",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Revelations (Requires level 6+)",
+    "description": "When you **fulfill your patron's desire**, you may also ask the GM any one question. The GM will answer truthfully. You or your allies take **+1 forward** when acting on the answer."
+  },
+  {
+    "id": "wk23",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Serpent's Guile (Requires level 6+)",
+    "description": "Requires: **Serpent's Tongue**\n\nWhen you **Parley** with someone, on a 12+ you may ask their player one question, which they must answer truthfully."
+  },
+  {
+    "id": "wk24",
+    "category": "Advanced Moves",
+    "weight": 1,
+    "title": "Theurgy (Requires level 6+)",
+    "takeFrom": ["Cleric"],
+    "description": "Gain a non-multiclass move from the cleric playbook."
+  },
+  {
+    "id": "wk28",
+    "category": "𖤐Warlock Spells",
+    "title": "Brimstone - Level 1 - Ongoing",
+    "description": "A burst of magical flame flies from your hands. Deal 2d4 damage to one target within near range.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk29",
+    "category": "𖤐Warlock Spells",
+    "title": "Terrorize - Level 1 - Ongoing",
+    "description": "Choose a target you can see and a nearby object. The target is afraid of the object so long as you maintain the spell. Their reaction is up to them: flee, panic, beg, fight. While this spell is ongoing you take -1 to **cast a spell**. You cannot target entities with less than animal intelligence (magical constructs, undead, automatons, and the like).",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk30",
+    "category": "𖤐Warlock Spells",
+    "title": "Speak With Dead - Level 1",
+    "description": "A corpse converses with you briefly. It will answer any three questions you pose to it to the best of the knowledge it had in life and the knowledge it gained in death.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk31",
+    "category": "𖤐Warlock Spells",
+    "title": "Trust In Me - Level 1 - Ongoing",
+    "description": "The person (not beast or monster) you touch while casting this spell counts you as a friend until they take damage or you prove otherwise. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk32",
+    "category": "𖤐Warlock Spells",
+    "title": "Ring of Gyges - Level 1 - Ongoing",
+    "description": "Touch an ally: nobody can see them. They're invisible! This spell persists until the target attacks or you dismiss the effect. While this spell is ongoing, you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk33",
+    "category": "𖤐Warlock Spells",
+    "title": "The Urge - Level 1",
+    "description": "You touch someone and create an urge in them—escape, greed, hunger, sexual desire, or thirst, for example. You choose the urge, but they react of their own free will. The urge fades after a few hours.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk34",
+    "category": "𖤐Warlock Spells",
+    "title": "Arise! - Level 3 - Ongoing",
+    "description": "You summon forth a servant of your patron, which aids you as best it can. Describe it! Treat it as your character, but with access to only the basic moves. It has +1 modifier for all stats, 1 HP, and uses your damage dice. The servant also gets your choice of 1d4 of these traits. The creature remains on this plane until it dies or you dismiss it. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ],
+    "details":true,
+    "outcomes": [
+      {
+        "text": "Traits",
+        "bullets": [
+          "It has +2 instead of +1 to one stat.",
+          "It has some useful extra ability, the GM will tell you what.",
+          "It's not reckless.",
+          "Its bond to your plane is strong: +2 HP for each level you have."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk35",
+    "category": "𖤐Warlock Spells",
+    "title": "Disjunction - Level 3",
+    "description": "Choose a spell or magical effect in your presence; this spell rips it apart. Lesser spells are ended, powerful magic is just reduced or dampened so long as you are nearby.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk36",
+    "category": "𖤐Warlock Spells",
+    "title": "Bloodfury - Level 3 - Ongoing",
+    "description": "Supernatural bloodlust fills the veins of a person you touch. When the target deals damage in melee, they roll their damage twice and take the better result. This spell ends when the target does anything besides attack mindlessly. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk37",
+    "category": "𖤐Warlock Spells",
+    "title": "Nightfall - Level 3 - Ongoing",
+    "description": "Choose an area you can see: it's filled with supernatural darkness and shadow. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk38",
+    "category": "𖤐Warlock Spells",
+    "title": "Chaos Blast - Level 3",
+    "description": "A burst of dark energy surges from the ground underneath your target, inflicting 2d6 damage which ignores armor to the target and everyone nearby.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk39",
+    "category": "𖤐Warlock Spells",
+    "title": "Mimic - Level 3 - Ongoing",
+    "description": "You take the form of someone you touch while casting this spell. Your physical characteristics match theirs exactly but your behavior may not. This change persists until you take damage or choose to return to your own form. While this spell is ongoing you can't **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk40",
+    "category": "𖤐Warlock Spells",
+    "title": "Trap Soul - Level 5",
+    "description": "You trap the soul of a dying creature within a gem. The trapped creature is aware of its imprisonment but can still be manipulated through spells, parley, and other effects. All moves against the trapped creature are at +1. You can free the soul at any time but it can never be recaptured once freed.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk41",
+    "category": "𖤐Warlock Spells",
+    "title": "Chill of the Void - Level 5",
+    "description": "With a snap of your fingers, the temperature in a location you can see plummets below freezing. Crops die, animals flee, and people who aren't protected may suffer frostbite if they remain in the cold. The temperature and weather does not return to normal for the remainder of the day, unless you wish it to.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk42",
+    "category": "𖤐Warlock Spells",
+    "title": "Contact Other Plane - Level 5",
+    "description": "You send a request to another plane. Specify who or what you'd like to contact by location, type of creature, name, or title. You open a two-way communication with that creature. You or the creature you contacted can cut off your communication at any time.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk43",
+    "category": "𖤐Warlock Spells",
+    "title": "Solomon's Seal - Level 5",
+    "description": "Cast this spell upon a location with clearly defined boundaries, or a circle marked with chalk, paint, or blood. Then name a type of creature; the spell prohibits that type of creature from entering or leaving the specified area.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk44",
+    "category": "𖤐Warlock Spells",
+    "title": "Divination - Level 5",
+    "description": "Name a person, place, or thing you want to learn about. Your patron grants you visions of the target, as clear as if you were there.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk45",
+    "category": "𖤐Warlock Spells",
+    "title": "Pestilence - Level 5 - Ongoing",
+    "description": "Choose a creature you can see. Until you end this spell, the target suffers from a disease of your choice. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk46",
+    "category": "𖤐Warlock Spells",
+    "title": "Star Gate - Level 7 - Ongoing",
+    "description": "You open a gateway to another dimension or plane of existence. You can pass through this gate, either entering this other location or passing through it to get to another place in your present dimension. You can bring a number of others with you equal to your level, if they are willing, or you can send one target of your choice that you touch through, by themselves.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk47",
+    "category": "𖤐Warlock Spells",
+    "title": "Mindshatter - Level 7 - Ongoing",
+    "description": "Psychic trauma overwhelms a target you can see, reducing their intelligence and personality to that of an animal. While under the effect of this spell, they are unable to speak, understand language, or do anything else involving higher thought or willpower. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk48",
+    "category": "𖤐Warlock Spells",
+    "title": "The Sight - Level 7 - Ongoing",
+    "description": "You see all things as they truly are. This effect persists until you tell a lie or dismiss the spell. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk49",
+    "category": "𖤐Warlock Spells",
+    "title": "Dominate - Level 7 - Ongoing",
+    "description": "Your touch pushes your mind into someone else's. You gain 1d4 hold. Spend one hold to make the target take one of these actions. If you run out of hold the spell ends. If the target takes damage you lose 1 hold. While this spell is ongoing you cannot **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      },
+      {
+        "name": "Hold",
+        "max": 4,
+        "shape": "circle",
+        "dynamic": true
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "Spend hold to make the target:",
+        "bullets": [
+          "Give you something they hold.",
+          "Make a concerted attack on a target of your choice.",
+          "Speak a few words of your choice.",
+          "Truthfully answer one question."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wk50",
+    "category": "𖤐Warlock Spells",
+    "title": "False World - Level 9 - Ongoing",
+    "description": "With a touch, you can put someone's body into an enchanted sleep and their mind into a false world that they believe is real. Until the spell is ended, they continue to live on in a world entirely of your creation, never knowing it is a lie and that their body lies sleeping somewhere else.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk51",
+    "category": "𖤐Warlock Spells",
+    "title": "Plague - Level 9 - Ongoing",
+    "description": "Name a city, town, encampment, or other place where people live. As long as this spell is active that place is beset by a plague appropriate to your patron's domains (locusts, death of the first born, etc). While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk52",
+    "category": "𖤐Warlock Spells",
+    "title": "Hellfire - Level 9",
+    "description": "You call down fire from the sky. Choose a specific area: everyone in that area takes 2d8 damage, which ignores armor.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk53",
+    "category": "𖤐Warlock Spells",
+    "title": "Gateway Runes - Level 9",
+    "description": "This spell may be used to create two effects. The first effect is to place a gate rune upon a location. The second use of this spell transports yourself and a small handful of other people from one gate rune to another, no matter the distance between. When the spell is cast, you may only do one or the other, not both.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk25",
+    "category": "𖤐Warlock Spells",
+    "weight": -1,
+    "title": "Corpse Whispers - Rote",
+    "description": "Cast this spell when you touch a corpse. You experience that person's last moments of life through one of their senses—you see what they saw or hear what they heard, for example.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk26",
+    "category": "𖤐Warlock Spells",
+    "weight": -1,
+    "title": "Contract - Rote",
+    "description": "When you sign a contract you have cast this spell upon, you are mystically notified if the other party breaks it.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  },
+  {
+    "id": "wk27",
+    "category": "𖤐Warlock Spells",
+    "weight": -1,
+    "title": "Unseen Servant - Rote - Ongoing",
+    "description": "You conjure a simple invisible construct that can do nothing but carry items. It has Load 3 and carries anything you hand to it. It cannot pick up items on its own and can only carry those you give to it. Items carried by an unseen servant appear to float in the air a few paces behind you. An unseen servant that takes damage or leaves your presence is immediately dispelled, dropping any items it carried. Otherwise the unseen servant serves you until you end the spell. While this spell is ongoing you take -1 to **cast a spell**.",
+    "tracks": [
+      {
+        "name": "Granted",
+        "max": 1,
+        "shape": "hexagon"
+      }
+    ]
+  }
+]

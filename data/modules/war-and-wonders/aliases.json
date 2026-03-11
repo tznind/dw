@@ -1,0 +1,22 @@
+[
+    {
+        "alias": "heritage move",
+        "move": "Heritage Moves"
+    },
+    {
+        "alias": "heritage moves",
+        "move": "Heritage Moves"
+    },
+    {
+        "alias": "Aid an ally in battle",
+        "move": "Aid or Interfere"
+    },
+    {
+        "alias":"Brimstone",
+        "move":"Brimstone - Level 1 - Ongoing"
+    },
+    {
+        "alias": "Luck",
+        "move": "Fool's Luck"
+    }
+]
