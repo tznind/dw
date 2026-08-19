@@ -1,0 +1,458 @@
+{
+  "Beast Backgrounds": {
+    "_movesFile": "data/modules/war-and-wonders/moves/beast-backgrounds.json",
+    "beb1": true,
+    "beb2": true,
+    "beb3": true,
+    "beb4": true
+  },
+  "Beast": {
+    "_movesFile": "data/modules/war-and-wonders/moves/beast.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "10+Con",
+      "load": "8+Str"
+    },
+    "default-bonds": [
+      "______________ thinks I am a monster; I'll prove them wrong.",
+      "______________ wouldn't last a day in the wild without me; I'll teach them how to survive.",
+      "I owe ______________ a debt of blood that I have yet to repay."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "An item that symbolizes your heritage (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Spear (reach, thrown, near)", "weight": 1},
+              {"item": "Hunting Knife (hand)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Makeshift Club (close)", "weight": 2},
+              {"item": "Adventuring Gear (5 uses)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Poultices and Herbs (2 uses)", "weight": 1},
+          {"item": "Hide Armor (1 armor, worn)", "weight": 1}
+        ]
+      }
+    ],
+    "bea": true,
+    "ber": true,
+    "be1": true,
+    "be2": true,
+    "be3": true,
+    "be4": true,
+    "be7": true,
+    "be5": false,
+    "be6": false,
+    "be8": false,
+    "be9": false,
+    "be10": false,
+    "be11": false,
+    "be12": false,
+    "be13": false,
+    "be14": false,
+    "be15": false,
+    "be16": false,
+    "be17": false,
+    "be18": false,
+    "be19": false,
+    "be20": false,
+    "be21": false,
+    "be22": false,
+    "be23": false,
+    "be24": false,
+    "be25": false
+  },
+  "Warlord": {
+    "_movesFile": "data/modules/war-and-wonders/moves/warlord.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d10",
+      "hp": "10+Con",
+      "load": "11+Str"
+    },
+    "default-bonds": [
+      "__________ has stood by me in battle and can be trusted completely.",
+      "__________ doesn't think before they act, and it's always causing me trouble.",
+      "I met __________ in the last war, but we weren't exactly on the same side.",
+      "I've seen __________ turn the tide of a battle before.",
+      "__________ isn't suited for battle; I'd better keep an eye on them."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Chainmail (1 armor, worn)", "weight": 1},
+          {"item": "Melee weapon of your choice (close)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Dagger (hand) and 5 coins", "weight": 1},
+          {"item": "Shield (+1 armor)", "weight": 2},
+          {"item": "Healing Potion", "weight": 0},
+          {"item": "Bandages (3 uses) and 5 coins", "weight": 0},
+          {"item": "War Horse", "weight": 0}
+        ]
+      }
+    ],
+    "wla": true,
+    "wlr": true,
+    "wl1": true,
+    "wl2": true,
+    "wl3": true,
+    "wl4": false,
+    "wl5": false,
+    "wl6": false,
+    "wl7": false,
+    "wl8": false,
+    "wl9": false,
+    "wl10": false,
+    "wl11": false,
+    "wl12": false,
+    "wl13": false,
+    "wl14": false,
+    "wl15": false,
+    "wl16": false,
+    "wl17": false,
+    "wl18": false,
+    "wl19": false,
+    "wl20": false,
+    "wl21": false,
+    "wl22": false,
+    "wl23": false
+  },
+  "Mask Master": {
+    "_movesFile": "data/modules/war-and-wonders/moves/mask-master.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d6",
+      "hp": "7+Con",
+      "load": "10+Str"
+    },
+    "default-bonds": [
+      "I tried being like ____________ once, but I got into a lot of trouble.",
+      "I wish I was as brave as ____________.",
+      "____________'s power makes me a little envious, so I mimic them whenever I can.",
+      "If I help ____________ accomplish their goal, maybe I'll find out the truth about myself too.",
+      "My acting skills can fool anyone… except ____________."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose your armament:",
+        "options": [
+          {
+            "items": [
+              {"item": "Mace (close)", "weight": 1},
+              {"item": "Wooden Shield (+1 armor)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Staff (close, two-handed)", "weight": 1},
+              {"item": "Enchanted Robes (1 armor, worn)", "weight": 1}
+            ]
+          },
+          {
+            "items": [
+              {"item": "Ragged Bow (near)", "weight": 2},
+              {"item": "Bundle of Arrows (3 ammo)", "weight": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose one:",
+        "options": [
+          {"item": "Halfling Pipeleaf (6 uses)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Two Bandages (3 uses each)", "weight": 0}
+        ]
+      }
+    ],
+    "mma": true,
+    "mmb": true,
+    "mmr": true,
+    "mm1": true,
+    "mm2": true,
+    "mm3": true,
+    "mm4": false,
+    "mm5": false,
+    "mm6": false,
+    "mm7": false,
+    "mm8": false,
+    "mm9": false,
+    "mm10": false,
+    "mm11": false,
+    "mm12": false,
+    "mm13": false,
+    "mm14": false,
+    "mm15": false,
+    "mm16": false,
+    "mm17": false,
+    "mm18": false,
+    "mm19": false,
+    "mm20": false,
+    "mm21": false,
+    "mm22": false,
+    "mm23": false
+  },
+  "Gunslinger": {
+    "_movesFile": "data/modules/war-and-wonders/moves/gunslinger.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d8",
+      "hp": "8+Con",
+      "load": "9+Str"
+    },
+    "default-bonds": [
+      "I once had ______________ in my sights, but I let them live.",
+      "I made a promise to ______________ that I haven't yet kept.",
+      "______________ doesn't have what it takes to get the job done.",
+      "______________ is my lover, or was, or would have been, or… it's complicated."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "Bag of Bullets (3 ammo)", "weight": 1}
+        ]
+      },
+      {
+        "type": "pickOne",
+        "title": "Choose a look for your gun:",
+        "options": [
+          {"item": "Gears, clockwork, and steam gun", "weight": 2},
+          {"item": "Eldritch machinery gun", "weight": 2},
+          {"item": "Sleek and well-made gun", "weight": 2},
+          {"item": "Old and well-worn gun", "weight": 2},
+          {"item": "Fancy and ornate gun", "weight": 2}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Bag of Bullets (3 ammo)", "weight": 1},
+          {"item": "Leather Armor (1 armor, worn)", "weight": 1},
+          {"item": "Bandages (3 uses, slow)", "weight": 0},
+          {"item": "Adventuring Gear (5 uses)", "weight": 1},
+          {"item": "Long Knife (hand)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "6 coins", "weight": 0}
+        ]
+      }
+    ],
+    "gsa": true,
+    "gsr": true,
+    "gs1": true,
+    "gs2": true,
+    "gs3": true,
+    "gs4": false,
+    "gs5": false,
+    "gs6": false,
+    "gs7": false,
+    "gs8": false,
+    "gs9": false,
+    "gs10": false,
+    "gs11": false,
+    "gs12": false,
+    "gs13": false,
+    "gs14": false,
+    "gs15": false,
+    "gs16": false,
+    "gs17": false,
+    "gs18": false,
+    "gs19": false,
+    "gs20": false,
+    "gs21": false,
+    "gs22": false,
+    "gs23": false
+  },
+  "Warlock": {
+    "_movesFile": "data/modules/war-and-wonders/moves/warlock.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d4",
+      "hp": "6+Con",
+      "load": "7+Str"
+    },
+    "default-bonds": [
+      "My patron greatly desires ____________'s soul.",
+      "____________ thinks they call the shots around here, but they're wrong.",
+      "I have learned something of ____________'s deepest desires.",
+      "I need help from ____________ to achieve my patron's goals."
+    ],
+    "default-gear": [
+      {
+        "type": "get",
+        "options": [
+          {"item": "Dungeon Rations (5 uses, ration)", "weight": 1},
+          {"item": "A mark placed upon you by your patron (describe: _____)", "weight": 0}
+        ]
+      },
+      {
+        "type": "pick",
+        "title": "Choose three:",
+        "pick": 3,
+        "options": [
+          {"item": "Carved Ritual Staff (close, two-handed)", "weight": 1},
+          {"item": "Sacrificial Dagger (hand)", "weight": 1},
+          {"item": "Antitoxin", "weight": 0},
+          {"item": "Bag of Books (5 uses)", "weight": 2},
+          {"item": "Enchanted Robes (1 armor, worn)", "weight": 1},
+          {"item": "A suitable sacrifice or offering that will please your patron (describe: _____)", "weight": 0},
+          {"item": "The name of someone else that worships your patron in another steading", "weight": 0}
+        ]
+      }
+    ],
+    "wka": true,
+    "wkr": true,
+    "wk1": true,
+    "wk2": true,
+    "wk3": true,
+    "wk4": true,
+    "wk5": false,
+    "wk6": false,
+    "wk7": false,
+    "wk8": false,
+    "wk9": false,
+    "wk10": false,
+    "wk11": false,
+    "wk12": false,
+    "wk13": false,
+    "wk14": false,
+    "wk15": false,
+    "wk16": false,
+    "wk17": false,
+    "wk18": false,
+    "wk19": false,
+    "wk20": false,
+    "wk21": false,
+    "wk22": false,
+    "wk23": false,
+    "wk24": false,
+    "wk25": true,
+    "wk26": true,
+    "wk27": true,
+    "wk28": false,
+    "wk29": false,
+    "wk30": false,
+    "wk31": false,
+    "wk32": false,
+    "wk33": false,
+    "wk34": false,
+    "wk35": false,
+    "wk36": false,
+    "wk37": false,
+    "wk38": false,
+    "wk39": false,
+    "wk40": false,
+    "wk41": false,
+    "wk42": false,
+    "wk43": false,
+    "wk44": false,
+    "wk45": false,
+    "wk46": false,
+    "wk47": false,
+    "wk48": false,
+    "wk49": false,
+    "wk50": false,
+    "wk51": false,
+    "wk52": false,
+    "wk53": false
+  },
+  "Fool": {
+    "_movesFile": "data/modules/war-and-wonders/moves/fool.json",
+    "cards": [],
+    "placeholders": {
+      "damage": "d4",
+      "hp": "6+Con",
+      "load": "6+Str"
+    },
+    "default-bonds": [
+      "__________ doesn't think I'm cut out for this life. I'll show them!",
+      "__________ is taking this all way too seriously.",
+      "__________ talked me into this adventure, which just goes to show who the real fool is.",
+      "__________ is a friend of a friend, so if they don't get me out of this mess, they're going to be in trouble!",
+      "Why does __________ never believe anything I tell them? …Oh, right. That."
+    ],
+    "default-gear": [
+      {
+        "type": "pick",
+        "title": "Choose three things you grabbed on your way out the door:",
+        "pick": 3,
+        "options": [
+          {"item": "A really interesting looking rock (thrown, near)", "weight": 0},
+          {"item": "A sturdy walking stick or cooking implement (close)", "weight": 1},
+          {"item": "A letter to you from someone important", "weight": 0},
+          {"item": "A packed lunch from your mom (ration, 1 use)", "weight": 1},
+          {"item": "A magic potion, though you don't know what it does", "weight": 0},
+          {"item": "An extra change of underclothes", "weight": 0},
+          {"item": "A map of a nearby dungeon", "weight": 0}
+        ]
+      }
+    ],
+    "foa": true,
+    "for": true,
+    "fo1": true,
+    "fo2": true,
+    "fo3": true,
+    "fo4": true,
+    "fo5": false,
+    "fo6": false,
+    "fo7": false,
+    "fo8": false,
+    "fo9": false,
+    "fo10": false,
+    "fo11": false,
+    "fo12": false,
+    "fo13": false,
+    "fo14": false,
+    "fo15": false,
+    "fo16": false,
+    "fo17": false,
+    "fo18": false,
+    "fo19": false,
+    "fo20": false,
+    "fo21": false,
+    "fo22": false,
+    "fo23": false,
+    "fo24": false
+  }
+}

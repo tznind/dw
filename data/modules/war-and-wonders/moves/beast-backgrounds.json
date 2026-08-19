@@ -1,0 +1,35 @@
+[
+  {
+    "id": "beb1",
+    "title": "Warrior",
+    "hideCheckbox": true,
+    "description": "Your damage die is a d10, and choose one of the following tags to add to your natural weapons from **Fight Like a Beast**:",
+    "pickOne": [
+      "messy",
+      "forceful",
+      "precise"
+    ]
+  },
+  {
+    "id": "beb2",
+    "title": "Hunter",
+    "hideCheckbox": true,
+    "description": "Add one of the following to your list of **heritage moves**. This does not count towards your maximum number of **heritage moves**:",
+    "pickOne": [
+      "Track by scent",
+      "Move silently"
+    ]
+  },
+  {
+    "id": "beb3",
+    "title": "Counselor",
+    "hideCheckbox": true,
+    "description": "You may be a Beast, but you're not uncivilized. When you **Parley**, you roll with WIS instead of CHA."
+  },
+  {
+    "id": "beb4",
+    "title": "Nomad",
+    "hideCheckbox": true,
+    "description": "You've travelled the wide world over. When you **arrive in a steading**, ask the GM about any important traditions, rituals, and so on, they'll tell you what you need to know."
+  }
+]

@@ -23,6 +23,17 @@
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
       }
+    },
+    {
+      "id": "war-and-wonders",
+      "name": "War and Wonders",
+      "description": "Adds new classes written by Peter Johansen. Licensed under CC BY 3.0.",
+      "path": "data/modules/war-and-wonders",
+      "attribution": {
+        "statement": "written by Peter Johansen",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
     }
   ]
 }

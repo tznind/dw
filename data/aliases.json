@@ -38,5 +38,9 @@
     {
         "alias":"Hack and Slash",
         "move":"Hack & Slash"
+    },
+    {
+        "alias":"Aid",
+        "move":"Aid or Interfere"
     }
 ]
